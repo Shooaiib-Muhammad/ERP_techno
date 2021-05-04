@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="Con" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Con (MySettings)" PropertyReference="ApplicationSettings.FS_ERP_MM.My.MySettings.GlobalReference.Default.Con" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_Sec_Maker_NEWTableAdapter" GeneratorDataComponentClassName="tbl_Sec_Maker_NEWTableAdapter" Name="tbl_Sec_Maker_NEW" UserDataComponentName="tbl_Sec_Maker_NEWTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Con (MySettings)" DbObjectName="MIS.dbo.tbl_Sec_Maker" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        MakerID, Maker
+FROM            tbl_Sec_Maker</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MakerID" DataSetColumn="MakerID" />
+              <Mapping SourceColumn="Maker" DataSetColumn="Maker" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_Sec_Maker_NEW" msprop:Generator_TableClassName="tbl_Sec_Maker_NEWDataTable" msprop:Generator_TableVarName="tabletbl_Sec_Maker_NEW" msprop:Generator_TablePropName="tbl_Sec_Maker_NEW" msprop:Generator_RowDeletingName="tbl_Sec_Maker_NEWRowDeleting" msprop:Generator_RowChangingName="tbl_Sec_Maker_NEWRowChanging" msprop:Generator_RowEvHandlerName="tbl_Sec_Maker_NEWRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_Sec_Maker_NEWRowDeleted" msprop:Generator_UserTableName="tbl_Sec_Maker_NEW" msprop:Generator_RowChangedName="tbl_Sec_Maker_NEWRowChanged" msprop:Generator_RowEvArgName="tbl_Sec_Maker_NEWRowChangeEvent" msprop:Generator_RowClassName="tbl_Sec_Maker_NEWRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MakerID" msprop:Generator_ColumnVarNameInTable="columnMakerID" msprop:Generator_ColumnPropNameInRow="MakerID" msprop:Generator_ColumnPropNameInTable="MakerIDColumn" msprop:Generator_UserColumnName="MakerID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Maker" msprop:Generator_ColumnVarNameInTable="columnMaker" msprop:Generator_ColumnPropNameInRow="Maker" msprop:Generator_ColumnPropNameInTable="MakerColumn" msprop:Generator_UserColumnName="Maker" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

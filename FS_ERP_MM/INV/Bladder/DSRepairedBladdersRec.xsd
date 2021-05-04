@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSRepairedBladdersRec" targetNamespace="http://tempuri.org/DSRepairedBladdersRec.xsd" xmlns:mstns="http://tempuri.org/DSRepairedBladdersRec.xsd" xmlns="http://tempuri.org/DSRepairedBladdersRec.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="Con" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Con (MySettings)" PropertyReference="ApplicationSettings.FS_ERP_MM.My.MySettings.GlobalReference.Default.Con" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_Repair_Bladder_OutTableAdapter" GeneratorDataComponentClassName="View_Repair_Bladder_OutTableAdapter" Name="View_Repair_Bladder_Out" UserDataComponentName="View_Repair_Bladder_OutTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Con (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        tbl_Bladder_Repair_Out.DayNo, tbl_Bladder_Repair_Out.TranOutId, tbl_Bladder_Repair_Out.TranId, tbl_Bladder_Repair_Out.TranType, 
+                         tbl_Bladder_Repair_Out.Code, tbl_Bladder_Repair_Out.IssueQty - isnull(View_Bladder_Puncture_Rec.RecQty, 0) AS IssueQty, tbl_Bladder_Repair_Out.EntryDate, 
+                         tbl_Bladder_Repair_Out.RecStatus, tbl_Bladder_Repair_Out.RecDate, tbl_Inv_L4.L4Name, tbl_Inv_L4.Unit, tbl_Winded_ExectName.ExectID AS SuplierId, 
+                         tbl_Winded_ExectName.ExectName AS CompanyName
+FROM            tbl_Inv_L4, tbl_Winded_ExectName, { oj tbl_Bladder_Repair_Out LEFT OUTER JOIN
+                         View_Bladder_Puncture_Rec ON tbl_Bladder_Repair_Out.TranOutId = View_Bladder_Puncture_Rec.RBRId }
+WHERE        tbl_Bladder_Repair_Out.Code = tbl_Inv_L4.Code AND tbl_Bladder_Repair_Out.SuplierId = tbl_Winded_ExectName.ExectID AND 
+                         (tbl_Bladder_Repair_Out.RecStatus = 0)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DayNo" DataSetColumn="DayNo" />
+              <Mapping SourceColumn="TranOutId" DataSetColumn="TranOutId" />
+              <Mapping SourceColumn="TranId" DataSetColumn="TranId" />
+              <Mapping SourceColumn="TranType" DataSetColumn="TranType" />
+              <Mapping SourceColumn="Code" DataSetColumn="Code" />
+              <Mapping SourceColumn="SuplierId" DataSetColumn="SuplierId" />
+              <Mapping SourceColumn="EntryDate" DataSetColumn="EntryDate" />
+              <Mapping SourceColumn="L4Name" DataSetColumn="L4Name" />
+              <Mapping SourceColumn="CompanyName" DataSetColumn="CompanyName" />
+              <Mapping SourceColumn="RecStatus" DataSetColumn="RecStatus" />
+              <Mapping SourceColumn="RecDate" DataSetColumn="RecDate" />
+              <Mapping SourceColumn="Unit" DataSetColumn="Unit" />
+              <Mapping SourceColumn="IssueQty" DataSetColumn="IssueQty" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="Con (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteQuery" Modifier="Public" Name="DeleteQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="DeleteQuery">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>DELETE FROM tbl_Inv_Tran_In
+WHERE        (TranInID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param2" ColumnName="TranInID" DataSourceName="MIS.dbo.tbl_Inv_Tran_In" DataTypeServer="int identity" DbType="Int32" Direction="Input" ParameterName="TranInID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TranInID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+              </DbSource>
+              <DbSource ConnectionRef="Con (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateQuery" Modifier="Public" Name="UpdateQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="UpdateQuery">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE       tbl_Bladder_Repair_Out
+SET                RecStatus = ?, RecDate = ?
+WHERE        (TranOutId = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param1" ColumnName="RecStatus" DataSourceName="MIS.dbo.tbl_Bladder_Repair_Out" DataTypeServer="bit" DbType="Boolean" Direction="Input" ParameterName="RecStatus" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="RecStatus" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param2" ColumnName="RecDate" DataSourceName="MIS.dbo.tbl_Bladder_Repair_Out" DataTypeServer="smalldatetime" DbType="DateTime" Direction="Input" ParameterName="RecDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="RecDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param4" ColumnName="TranOutId" DataSourceName="MIS.dbo.tbl_Bladder_Repair_Out" DataTypeServer="int identity" DbType="Int32" Direction="Input" ParameterName="Original_TranOutId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TranOutId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_Inv_Tran_InTableAdapter" GeneratorDataComponentClassName="tbl_Inv_Tran_InTableAdapter" Name="tbl_Inv_Tran_In" UserDataComponentName="tbl_Inv_Tran_InTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Con (MySettings)" DbObjectName="MIS.dbo.tbl_Inv_Tran_In" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [tbl_Inv_Tran_In] WHERE (([DayNo] = ?) AND ([TranInID] = ?) AND ((? = 1 AND [TranType] IS NULL) OR ([TranType] = ?)) AND ((? = 1 AND [SupplierID] IS NULL) OR ([SupplierID] = ?)) AND ([Code] = ?) AND ([Qty] = ?) AND ((? = 1 AND [UOM] IS NULL) OR ([UOM] = ?)) AND ((? = 1 AND [RBRId] IS NULL) OR ([RBRId] = ?)) AND ((? = 1 AND [ExectID] IS NULL) OR ([ExectID] = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_DayNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DayNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_TranInID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TranInID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_TranType" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TranType" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_TranType" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TranType" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_SupplierID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SupplierID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_SupplierID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SupplierID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_Code" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Code" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_Qty" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="Qty" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_UOM" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="UOM" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_UOM" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="UOM" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_RBRId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="RBRId" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_RBRId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="RBRId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ExectID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ExectID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ExectID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ExectID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [tbl_Inv_Tran_In] ([DayNo], [TranType], [SupplierID], [Code], [Qty], [UOM], [RBRId], [ExectID]) VALUES (?, ?, ?, ?, ?, ?, ?, ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="DayNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DayNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="TranType" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TranType" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="SupplierID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SupplierID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Code" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Code" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Qty" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="Qty" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="UOM" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="UOM" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="RBRId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="RBRId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="ExectID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ExectID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        DayNo, TranInID, TranType, SupplierID, Code, Qty, UOM, RBRId, ExectID
+FROM            tbl_Inv_Tran_In</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [tbl_Inv_Tran_In] SET [DayNo] = ?, [TranType] = ?, [SupplierID] = ?, [Code] = ?, [Qty] = ?, [UOM] = ?, [RBRId] = ?, [ExectID] = ? WHERE (([DayNo] = ?) AND ([TranInID] = ?) AND ((? = 1 AND [TranType] IS NULL) OR ([TranType] = ?)) AND ((? = 1 AND [SupplierID] IS NULL) OR ([SupplierID] = ?)) AND ([Code] = ?) AND ([Qty] = ?) AND ((? = 1 AND [UOM] IS NULL) OR ([UOM] = ?)) AND ((? = 1 AND [RBRId] IS NULL) OR ([RBRId] = ?)) AND ((? = 1 AND [ExectID] IS NULL) OR ([ExectID] = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="DayNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DayNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="TranType" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TranType" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="SupplierID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SupplierID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Code" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Code" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Qty" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="Qty" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="UOM" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="UOM" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="RBRId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="RBRId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="ExectID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ExectID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_DayNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DayNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_TranInID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TranInID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_TranType" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TranType" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_TranType" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TranType" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_SupplierID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SupplierID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_SupplierID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SupplierID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_Code" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Code" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_Qty" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="Qty" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_UOM" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="UOM" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="Original_UOM" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="UOM" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_RBRId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="RBRId" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_RBRId" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="RBRId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ExectID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ExectID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_ExectID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ExectID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DayNo" DataSetColumn="DayNo" />
+              <Mapping SourceColumn="TranInID" DataSetColumn="TranInID" />
+              <Mapping SourceColumn="TranType" DataSetColumn="TranType" />
+              <Mapping SourceColumn="SupplierID" DataSetColumn="SupplierID" />
+              <Mapping SourceColumn="Code" DataSetColumn="Code" />
+              <Mapping SourceColumn="Qty" DataSetColumn="Qty" />
+              <Mapping SourceColumn="UOM" DataSetColumn="UOM" />
+              <Mapping SourceColumn="RBRId" DataSetColumn="RBRId" />
+              <Mapping SourceColumn="ExectID" DataSetColumn="ExectID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_Inv_Tran_INTableAdapter" GeneratorDataComponentClassName="View_Inv_Tran_INTableAdapter" Name="View_Inv_Tran_IN" UserDataComponentName="View_Inv_Tran_INTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Con (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        tbl_Inv_L4.L4Name, tbl_Inv_Tran_In.DayNo, tbl_Inv_Tran_In.TranInID, tbl_Inv_Tran_In.TranPRNo, tbl_Inv_Tran_In.TranType, tbl_Inv_Tran_In.Qty, tbl_Inv_L4.Unit, 
+                         tbl_Inv_Tran_In.RBRId, tbl_Winded_ExectName.ExectName AS CompanyName, tbl_Inv_Tran_In.FailQty
+FROM            tbl_Inv_Tran_In, tbl_Inv_L4, tbl_Winded_ExectName
+WHERE        tbl_Inv_Tran_In.Code = tbl_Inv_L4.Code AND tbl_Inv_Tran_In.ExectID = tbl_Winded_ExectName.ExectID AND (tbl_Inv_Tran_In.TranType = 'RBR')</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE       tbl_Inv_Tran_In
+SET                FailQty = ?
+WHERE        (TranInID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param1" ColumnName="FailQty" DataSourceName="MIS.dbo.tbl_Inv_Tran_In" DataTypeServer="numeric" DbType="Decimal" Direction="Input" ParameterName="FailQty" Precision="18" ProviderType="Numeric" Scale="1" Size="0" SourceColumn="FailQty" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param3" ColumnName="TranInID" DataSourceName="MIS.dbo.tbl_Inv_Tran_In" DataTypeServer="int identity" DbType="Int32" Direction="Input" ParameterName="Original_TranInID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TranInID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="L4Name" DataSetColumn="L4Name" />
+              <Mapping SourceColumn="CompanyName" DataSetColumn="CompanyName" />
+              <Mapping SourceColumn="DayNo" DataSetColumn="DayNo" />
+              <Mapping SourceColumn="TranInID" DataSetColumn="TranInID" />
+              <Mapping SourceColumn="TranPRNo" DataSetColumn="TranPRNo" />
+              <Mapping SourceColumn="TranType" DataSetColumn="TranType" />
+              <Mapping SourceColumn="Qty" DataSetColumn="Qty" />
+              <Mapping SourceColumn="Unit" DataSetColumn="Unit" />
+              <Mapping SourceColumn="RBRId" DataSetColumn="RBRId" />
+              <Mapping SourceColumn="FailQty" DataSetColumn="FailQty" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_Inv_Tran_DateTableAdapter" GeneratorDataComponentClassName="tbl_Inv_Tran_DateTableAdapter" Name="tbl_Inv_Tran_Date" UserDataComponentName="tbl_Inv_Tran_DateTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Con (MySettings)" DbObjectName="MIS.dbo.tbl_Inv_Tran_Date" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [tbl_Inv_Tran_Date] WHERE (([DayNo] = ?) AND ([DateName] = ?))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_DayNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DayNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_DateName" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DateName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [tbl_Inv_Tran_Date] ([DateName]) VALUES (?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="DateName" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DateName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        DayNo, DateName
+FROM            tbl_Inv_Tran_Date
+WHERE        (DateName = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param2" ColumnName="DateName" DataSourceName="MIS.dbo.tbl_Inv_Tran_Date" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="DateName" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DateName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [tbl_Inv_Tran_Date] SET [DateName] = ? WHERE (([DayNo] = ?) AND ([DateName] = ?))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="DateName" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DateName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_DayNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DayNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_DateName" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DateName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DayNo" DataSetColumn="DayNo" />
+              <Mapping SourceColumn="DateName" DataSetColumn="DateName" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="Con (MySettings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        TOP (10) DayNo, DateName
+FROM            dbo.tbl_Inv_Tran_Date
+ORDER BY DateName DESC</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSRepairedBladdersRec" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DSRepairedBladdersRec" msprop:Generator_DataSetName="DSRepairedBladdersRec" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_Repair_Bladder_Out" msprop:Generator_UserTableName="View_Repair_Bladder_Out" msprop:Generator_RowDeletedName="View_Repair_Bladder_OutRowDeleted" msprop:Generator_RowChangedName="View_Repair_Bladder_OutRowChanged" msprop:Generator_RowClassName="View_Repair_Bladder_OutRow" msprop:Generator_RowChangingName="View_Repair_Bladder_OutRowChanging" msprop:Generator_RowEvArgName="View_Repair_Bladder_OutRowChangeEvent" msprop:Generator_RowEvHandlerName="View_Repair_Bladder_OutRowChangeEventHandler" msprop:Generator_TableClassName="View_Repair_Bladder_OutDataTable" msprop:Generator_TableVarName="tableView_Repair_Bladder_Out" msprop:Generator_RowDeletingName="View_Repair_Bladder_OutRowDeleting" msprop:Generator_TablePropName="View_Repair_Bladder_Out">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DayNo" msprop:Generator_UserColumnName="DayNo" msprop:Generator_ColumnPropNameInRow="DayNo" msprop:Generator_ColumnVarNameInTable="columnDayNo" msprop:Generator_ColumnPropNameInTable="DayNoColumn" type="xs:int" />
+              <xs:element name="TranOutId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="TranOutId" msprop:Generator_ColumnPropNameInRow="TranOutId" msprop:Generator_ColumnVarNameInTable="columnTranOutId" msprop:Generator_ColumnPropNameInTable="TranOutIdColumn" type="xs:int" />
+              <xs:element name="TranId" msprop:Generator_UserColumnName="TranId" msprop:Generator_ColumnPropNameInRow="TranId" msprop:Generator_ColumnVarNameInTable="columnTranId" msprop:Generator_ColumnPropNameInTable="TranIdColumn" type="xs:int" />
+              <xs:element name="TranType" msprop:Generator_UserColumnName="TranType" msprop:Generator_ColumnPropNameInRow="TranType" msprop:Generator_ColumnVarNameInTable="columnTranType" msprop:Generator_ColumnPropNameInTable="TranTypeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Code" msprop:Generator_UserColumnName="Code" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInTable="CodeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SuplierId" msprop:Generator_UserColumnName="SuplierId" msprop:Generator_ColumnPropNameInRow="SuplierId" msprop:Generator_ColumnVarNameInTable="columnSuplierId" msprop:Generator_ColumnPropNameInTable="SuplierIdColumn" type="xs:int" />
+              <xs:element name="EntryDate" msprop:Generator_UserColumnName="EntryDate" msprop:Generator_ColumnPropNameInRow="EntryDate" msprop:Generator_ColumnVarNameInTable="columnEntryDate" msprop:Generator_ColumnPropNameInTable="EntryDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="L4Name" msprop:Generator_UserColumnName="L4Name" msprop:Generator_ColumnPropNameInRow="L4Name" msprop:Generator_ColumnVarNameInTable="columnL4Name" msprop:Generator_ColumnPropNameInTable="L4NameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CompanyName" msprop:Generator_UserColumnName="CompanyName" msprop:Generator_ColumnPropNameInRow="CompanyName" msprop:Generator_ColumnVarNameInTable="columnCompanyName" msprop:Generator_ColumnPropNameInTable="CompanyNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RecStatus" msprop:Generator_UserColumnName="RecStatus" msprop:Generator_ColumnPropNameInRow="RecStatus" msprop:Generator_ColumnVarNameInTable="columnRecStatus" msprop:Generator_ColumnPropNameInTable="RecStatusColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="RecDate" msprop:Generator_UserColumnName="RecDate" msprop:Generator_ColumnPropNameInRow="RecDate" msprop:Generator_ColumnVarNameInTable="columnRecDate" msprop:Generator_ColumnPropNameInTable="RecDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Unit" msprop:Generator_UserColumnName="Unit" msprop:Generator_ColumnPropNameInRow="Unit" msprop:Generator_ColumnVarNameInTable="columnUnit" msprop:Generator_ColumnPropNameInTable="UnitColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IssueQty" msdata:ReadOnly="true" msprop:Generator_UserColumnName="IssueQty" msprop:Generator_ColumnPropNameInRow="IssueQty" msprop:Generator_ColumnVarNameInTable="columnIssueQty" msprop:Generator_ColumnPropNameInTable="IssueQtyColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_Inv_Tran_In" msprop:Generator_UserTableName="tbl_Inv_Tran_In" msprop:Generator_RowDeletedName="tbl_Inv_Tran_InRowDeleted" msprop:Generator_RowChangedName="tbl_Inv_Tran_InRowChanged" msprop:Generator_RowClassName="tbl_Inv_Tran_InRow" msprop:Generator_RowChangingName="tbl_Inv_Tran_InRowChanging" msprop:Generator_RowEvArgName="tbl_Inv_Tran_InRowChangeEvent" msprop:Generator_RowEvHandlerName="tbl_Inv_Tran_InRowChangeEventHandler" msprop:Generator_TableClassName="tbl_Inv_Tran_InDataTable" msprop:Generator_TableVarName="tabletbl_Inv_Tran_In" msprop:Generator_RowDeletingName="tbl_Inv_Tran_InRowDeleting" msprop:Generator_TablePropName="tbl_Inv_Tran_In">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DayNo" msprop:Generator_UserColumnName="DayNo" msprop:Generator_ColumnPropNameInRow="DayNo" msprop:Generator_ColumnVarNameInTable="columnDayNo" msprop:Generator_ColumnPropNameInTable="DayNoColumn" type="xs:int" />
+              <xs:element name="TranInID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="TranInID" msprop:Generator_ColumnPropNameInRow="TranInID" msprop:Generator_ColumnVarNameInTable="columnTranInID" msprop:Generator_ColumnPropNameInTable="TranInIDColumn" type="xs:int" />
+              <xs:element name="TranType" msprop:Generator_UserColumnName="TranType" msprop:Generator_ColumnPropNameInRow="TranType" msprop:Generator_ColumnVarNameInTable="columnTranType" msprop:Generator_ColumnPropNameInTable="TranTypeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SupplierID" msprop:Generator_UserColumnName="SupplierID" msprop:Generator_ColumnPropNameInRow="SupplierID" msprop:Generator_ColumnVarNameInTable="columnSupplierID" msprop:Generator_ColumnPropNameInTable="SupplierIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Code" msprop:Generator_UserColumnName="Code" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInTable="CodeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:decimal" />
+              <xs:element name="UOM" msprop:Generator_UserColumnName="UOM" msprop:Generator_ColumnPropNameInRow="UOM" msprop:Generator_ColumnVarNameInTable="columnUOM" msprop:Generator_ColumnPropNameInTable="UOMColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RBRId" msprop:Generator_UserColumnName="RBRId" msprop:Generator_ColumnPropNameInRow="RBRId" msprop:Generator_ColumnVarNameInTable="columnRBRId" msprop:Generator_ColumnPropNameInTable="RBRIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ExectID" msprop:Generator_UserColumnName="ExectID" msprop:Generator_ColumnVarNameInTable="columnExectID" msprop:Generator_ColumnPropNameInRow="ExectID" msprop:Generator_ColumnPropNameInTable="ExectIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="View_Inv_Tran_IN" msprop:Generator_UserTableName="View_Inv_Tran_IN" msprop:Generator_RowDeletedName="View_Inv_Tran_INRowDeleted" msprop:Generator_RowChangedName="View_Inv_Tran_INRowChanged" msprop:Generator_RowClassName="View_Inv_Tran_INRow" msprop:Generator_RowChangingName="View_Inv_Tran_INRowChanging" msprop:Generator_RowEvArgName="View_Inv_Tran_INRowChangeEvent" msprop:Generator_RowEvHandlerName="View_Inv_Tran_INRowChangeEventHandler" msprop:Generator_TableClassName="View_Inv_Tran_INDataTable" msprop:Generator_TableVarName="tableView_Inv_Tran_IN" msprop:Generator_RowDeletingName="View_Inv_Tran_INRowDeleting" msprop:Generator_TablePropName="View_Inv_Tran_IN">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="L4Name" msprop:Generator_UserColumnName="L4Name" msprop:Generator_ColumnPropNameInRow="L4Name" msprop:Generator_ColumnVarNameInTable="columnL4Name" msprop:Generator_ColumnPropNameInTable="L4NameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CompanyName" msprop:Generator_UserColumnName="CompanyName" msprop:Generator_ColumnPropNameInRow="CompanyName" msprop:Generator_ColumnVarNameInTable="columnCompanyName" msprop:Generator_ColumnPropNameInTable="CompanyNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DayNo" msprop:Generator_UserColumnName="DayNo" msprop:Generator_ColumnPropNameInRow="DayNo" msprop:Generator_ColumnVarNameInTable="columnDayNo" msprop:Generator_ColumnPropNameInTable="DayNoColumn" type="xs:int" />
+              <xs:element name="TranInID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="TranInID" msprop:Generator_ColumnPropNameInRow="TranInID" msprop:Generator_ColumnVarNameInTable="columnTranInID" msprop:Generator_ColumnPropNameInTable="TranInIDColumn" type="xs:int" />
+              <xs:element name="TranPRNo" msprop:Generator_UserColumnName="TranPRNo" msprop:Generator_ColumnPropNameInRow="TranPRNo" msprop:Generator_ColumnVarNameInTable="columnTranPRNo" msprop:Generator_ColumnPropNameInTable="TranPRNoColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TranType" msprop:Generator_UserColumnName="TranType" msprop:Generator_ColumnPropNameInRow="TranType" msprop:Generator_ColumnVarNameInTable="columnTranType" msprop:Generator_ColumnPropNameInTable="TranTypeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:decimal" />
+              <xs:element name="Unit" msprop:Generator_UserColumnName="Unit" msprop:Generator_ColumnPropNameInRow="Unit" msprop:Generator_ColumnVarNameInTable="columnUnit" msprop:Generator_ColumnPropNameInTable="UnitColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RBRId" msprop:Generator_UserColumnName="RBRId" msprop:Generator_ColumnPropNameInRow="RBRId" msprop:Generator_ColumnVarNameInTable="columnRBRId" msprop:Generator_ColumnPropNameInTable="RBRIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="FailQty" msprop:Generator_UserColumnName="FailQty" msprop:Generator_ColumnPropNameInRow="FailQty" msprop:Generator_ColumnVarNameInTable="columnFailQty" msprop:Generator_ColumnPropNameInTable="FailQtyColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_Inv_Tran_Date" msprop:Generator_UserTableName="tbl_Inv_Tran_Date" msprop:Generator_RowDeletedName="tbl_Inv_Tran_DateRowDeleted" msprop:Generator_RowChangedName="tbl_Inv_Tran_DateRowChanged" msprop:Generator_RowClassName="tbl_Inv_Tran_DateRow" msprop:Generator_RowChangingName="tbl_Inv_Tran_DateRowChanging" msprop:Generator_RowEvArgName="tbl_Inv_Tran_DateRowChangeEvent" msprop:Generator_RowEvHandlerName="tbl_Inv_Tran_DateRowChangeEventHandler" msprop:Generator_TableClassName="tbl_Inv_Tran_DateDataTable" msprop:Generator_TableVarName="tabletbl_Inv_Tran_Date" msprop:Generator_RowDeletingName="tbl_Inv_Tran_DateRowDeleting" msprop:Generator_TablePropName="tbl_Inv_Tran_Date">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DayNo" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="DayNo" msprop:Generator_ColumnPropNameInRow="DayNo" msprop:Generator_ColumnVarNameInTable="columnDayNo" msprop:Generator_ColumnPropNameInTable="DayNoColumn" type="xs:int" />
+              <xs:element name="DateName" msprop:Generator_UserColumnName="DateName" msprop:Generator_ColumnPropNameInRow="DateName" msprop:Generator_ColumnVarNameInTable="columnDateName" msprop:Generator_ColumnPropNameInTable="DateNameColumn" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tbl_Inv_Tran_In" />
+      <xs:field xpath="mstns:TranInID" />
+    </xs:unique>
+    <xs:unique name="tbl_Inv_Tran_Date_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tbl_Inv_Tran_Date" />
+      <xs:field xpath="mstns:DayNo" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="tbl_Inv_Tran_Date_View_Inv_Tran_IN" msdata:parent="tbl_Inv_Tran_Date" msdata:child="View_Inv_Tran_IN" msdata:parentkey="DayNo" msdata:childkey="DayNo" msprop:Generator_UserRelationName="tbl_Inv_Tran_Date_View_Inv_Tran_IN" msprop:Generator_RelationVarName="relationtbl_Inv_Tran_Date_View_Inv_Tran_IN" msprop:Generator_UserChildTable="View_Inv_Tran_IN" msprop:Generator_UserParentTable="tbl_Inv_Tran_Date" msprop:Generator_ParentPropName="tbl_Inv_Tran_DateRow" msprop:Generator_ChildPropName="GetView_Inv_Tran_INRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

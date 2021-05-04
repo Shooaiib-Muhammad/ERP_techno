@@ -1,0 +1,858 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSPOImportEntry" targetNamespace="http://tempuri.org/DSPOImportEntry.xsd" xmlns:mstns="http://tempuri.org/DSPOImportEntry.xsd" xmlns="http://tempuri.org/DSPOImportEntry.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="Con" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Con (MySettings)" PropertyReference="ApplicationSettings.FS_ERP_MM.My.MySettings.GlobalReference.Default.Con" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_PO_IDTableAdapter" GeneratorDataComponentClassName="View_PO_IDTableAdapter" Name="View_PO_ID" UserDataComponentName="View_PO_IDTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Con (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        tbl_Pur_PO.POID, tbl_Inv_Supplier.CompanyName, tbl_Pur_PO.SupplierID, tbl_Pur_PO.ImportStatus, tbl_Pur_PO.PODate
+FROM            tbl_Pur_PO, tbl_Inv_Supplier
+WHERE        tbl_Pur_PO.SupplierID = tbl_Inv_Supplier.SupplierID AND (tbl_Pur_PO.ImportStatus = 1)
+ORDER BY tbl_Pur_PO.POID DESC</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="POID" DataSetColumn="POID" />
+              <Mapping SourceColumn="CompanyName" DataSetColumn="CompanyName" />
+              <Mapping SourceColumn="SupplierID" DataSetColumn="SupplierID" />
+              <Mapping SourceColumn="ImportStatus" DataSetColumn="ImportStatus" />
+              <Mapping SourceColumn="PODate" DataSetColumn="PODate" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_PO_DTableAdapter" GeneratorDataComponentClassName="View_PO_DTableAdapter" Name="View_PO_D" UserDataComponentName="View_PO_DTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Con (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        tbl_Pur_PO_D.POID, tbl_Pur_PO_D.PODNo, tbl_Pur_PO_D.SupplierID, tbl_Pur_Supplier_Code.Code, tbl_Pur_PO_D.POQty, tbl_Pur_PO_D.Curency, tbl_Pur_PO_D.UnitPrice, tbl_Pur_PO_D.UOM, 
+                         tbl_Inv_L4.L4Name, tbl_Pur_PO.ImportStatus
+FROM            tbl_Pur_PO_D, tbl_Pur_Supplier_Code, tbl_Inv_L4, tbl_Pur_PO
+WHERE        tbl_Pur_PO_D.SupplierID = tbl_Pur_Supplier_Code.SupplierID AND tbl_Pur_PO_D.SupplierCodeID = tbl_Pur_Supplier_Code.SupplierCodeID AND tbl_Pur_Supplier_Code.Code = tbl_Inv_L4.Code AND 
+                         tbl_Pur_PO_D.POID = tbl_Pur_PO.POID AND (tbl_Pur_PO.ImportStatus = 1)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="POID" DataSetColumn="POID" />
+              <Mapping SourceColumn="PODNo" DataSetColumn="PODNo" />
+              <Mapping SourceColumn="SupplierID" DataSetColumn="SupplierID" />
+              <Mapping SourceColumn="Code" DataSetColumn="Code" />
+              <Mapping SourceColumn="POQty" DataSetColumn="POQty" />
+              <Mapping SourceColumn="Curency" DataSetColumn="Curency" />
+              <Mapping SourceColumn="UnitPrice" DataSetColumn="UnitPrice" />
+              <Mapping SourceColumn="UOM" DataSetColumn="UOM" />
+              <Mapping SourceColumn="L4Name" DataSetColumn="L4Name" />
+              <Mapping SourceColumn="ImportStatus" DataSetColumn="ImportStatus" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_Inv_Imp_Mat_TransTableAdapter" GeneratorDataComponentClassName="tbl_Inv_Imp_Mat_TransTableAdapter" Name="tbl_Inv_Imp_Mat_Trans" UserDataComponentName="tbl_Inv_Imp_Mat_TransTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Con (MySettings)" DbObjectName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [tbl_Inv_Imp_Mat_Trans] WHERE (([TranID] = ?) AND ([SuplierID] = ?) AND ([POID] = ?) AND ([PODNo] = ?) AND ([Code] = ?) AND ((? = 1 AND [ImportNo] IS NULL) OR ([ImportNo] = ?)) AND ((? = 1 AND [PInvoiceNo] IS NULL) OR ([PInvoiceNo] = ?)) AND ((? = 1 AND [PKGS] IS NULL) OR ([PKGS] = ?)) AND ((? = 1 AND [PkGSUnit] IS NULL) OR ([PkGSUnit] = ?)) AND ((? = 1 AND [Quantity] IS NULL) OR ([Quantity] = ?)) AND ((? = 1 AND [Unit] IS NULL) OR ([Unit] = ?)) AND ((? = 1 AND [LCNo] IS NULL) OR ([LCNo] = ?)) AND ((? = 1 AND [LCOpenDate] IS NULL) OR ([LCOpenDate] = ?)) AND ((? = 1 AND [DeliveryDate] IS NULL) OR ([DeliveryDate] = ?)) AND ((? = 1 AND [LCValidDate] IS NULL) OR ([LCValidDate] = ?)) AND ((? = 1 AND [ShipmentMode] IS NULL) OR ([ShipmentMode] = ?)) AND ((? = 1 AND [ARWayBillNo] IS NULL) OR ([ARWayBillNo] = ?)) AND ((? = 1 AND [ContainerNo] IS NULL) OR ([ContainerNo] = ?)) AND ((? = 1 AND [PaymentTerm] IS NULL) OR ([PaymentTerm] = ?)) AND ((? = 1 AND [NonNegotiableDoc] IS NULL) OR ([NonNegotiableDoc] = ?)) AND ((? = 1 AND [OrginalDoc] IS NULL) OR ([OrginalDoc] = ?)) AND ((? = 1 AND [ShipmentOnBoardDate] IS NULL) OR ([ShipmentOnBoardDate] = ?)) AND ((? = 1 AND [ETAKarachi] IS NULL) OR ([ETAKarachi] = ?)) AND ((? = 1 AND [ShipmentExKarachiDate] IS NULL) OR ([ShipmentExKarachiDate] = ?)) AND ((? = 1 AND [IBondSubDate] IS NULL) OR ([IBondSubDate] = ?)) AND ((? = 1 AND [ChequeNoAmt] IS NULL) OR ([ChequeNoAmt] = ?)) AND ((? = 1 AND [ShipmentRcvDate] IS NULL) OR ([ShipmentRcvDate] = ?)) AND ((? = 1 AND [BENo] IS NULL) OR ([BENo] = ?)) AND ((? = 1 AND [BEDate] IS NULL) OR ([BEDate] = ?)) AND ((? = 1 AND [PaymentStatus] IS NULL) OR ([PaymentStatus] = ?)) AND ((? = 1 AND [IFormNo] IS NULL) OR ([IFormNo] = ?)) AND ((? = 1 AND [InvoiceAmt] IS NULL) OR ([InvoiceAmt] = ?)) AND ((? = 1 AND [Currency] IS NULL) OR ([Currency] = ?)) AND ((? = 1 AND [SysIP] IS NULL) OR ([SysIP] = ?)) AND ((? = 1 AND [EntryDate] IS NULL) OR ([EntryDate] = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_TranID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TranID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_SuplierID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SuplierID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_POID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="POID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_PODNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PODNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_Code" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Code" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ImportNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ImportNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_ImportNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ImportNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PInvoiceNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PInvoiceNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_PInvoiceNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PInvoiceNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PKGS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PKGS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_PKGS" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="PKGS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PkGSUnit" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PkGSUnit" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_PkGSUnit" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PkGSUnit" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Quantity" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Quantity" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_Quantity" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="Quantity" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Unit" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Unit" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_Unit" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Unit" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_LCNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="LCNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_LCNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LCNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_LCOpenDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="LCOpenDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_LCOpenDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="LCOpenDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DeliveryDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DeliveryDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_DeliveryDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DeliveryDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_LCValidDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="LCValidDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_LCValidDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="LCValidDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ShipmentMode" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ShipmentMode" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_ShipmentMode" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ShipmentMode" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ARWayBillNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ARWayBillNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_ARWayBillNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ARWayBillNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ContainerNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ContainerNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_ContainerNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ContainerNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PaymentTerm" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentTerm" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_PaymentTerm" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PaymentTerm" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_NonNegotiableDoc" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NonNegotiableDoc" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_NonNegotiableDoc" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NonNegotiableDoc" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_OrginalDoc" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="OrginalDoc" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_OrginalDoc" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="OrginalDoc" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ShipmentOnBoardDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ShipmentOnBoardDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_ShipmentOnBoardDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ShipmentOnBoardDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ETAKarachi" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ETAKarachi" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_ETAKarachi" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ETAKarachi" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ShipmentExKarachiDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ShipmentExKarachiDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_ShipmentExKarachiDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ShipmentExKarachiDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_IBondSubDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IBondSubDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_IBondSubDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="IBondSubDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ChequeNoAmt" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ChequeNoAmt" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_ChequeNoAmt" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="ChequeNoAmt" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ShipmentRcvDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ShipmentRcvDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_ShipmentRcvDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ShipmentRcvDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BENo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BENo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_BENo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BENo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BEDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BEDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_BEDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="BEDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PaymentStatus" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentStatus" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_PaymentStatus" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PaymentStatus" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_IFormNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IFormNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_IFormNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="IFormNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_InvoiceAmt" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="InvoiceAmt" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_InvoiceAmt" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="InvoiceAmt" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Currency" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Currency" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_Currency" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Currency" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_SysIP" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SysIP" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_SysIP" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SysIP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_EntryDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EntryDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_EntryDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="EntryDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [tbl_Inv_Imp_Mat_Trans] ([SuplierID], [POID], [PODNo], [Code], [ImportNo], [PInvoiceNo], [PKGS], [PkGSUnit], [Quantity], [Unit], [LCNo], [LCOpenDate], [DeliveryDate], [LCValidDate], [ShipmentMode], [ARWayBillNo], [ContainerNo], [PaymentTerm], [NonNegotiableDoc], [OrginalDoc], [ShipmentOnBoardDate], [ETAKarachi], [ShipmentExKarachiDate], [IBondSubDate], [ChequeNoAmt], [ShipmentRcvDate], [BENo], [BEDate], [PaymentStatus], [IFormNo], [InvoiceAmt], [Currency], [SysIP], [EntryDate]) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="SuplierID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SuplierID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="POID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="POID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="PODNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PODNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Code" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Code" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="ImportNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ImportNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="PInvoiceNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PInvoiceNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="PKGS" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="PKGS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="PkGSUnit" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PkGSUnit" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Quantity" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="Quantity" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Unit" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Unit" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="LCNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LCNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="LCOpenDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="LCOpenDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="DeliveryDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DeliveryDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="LCValidDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="LCValidDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="ShipmentMode" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ShipmentMode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="ARWayBillNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ARWayBillNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="ContainerNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ContainerNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="PaymentTerm" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PaymentTerm" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="NonNegotiableDoc" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NonNegotiableDoc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="OrginalDoc" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="OrginalDoc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="ShipmentOnBoardDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ShipmentOnBoardDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="ETAKarachi" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ETAKarachi" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="ShipmentExKarachiDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ShipmentExKarachiDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="IBondSubDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="IBondSubDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="ChequeNoAmt" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="ChequeNoAmt" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="ShipmentRcvDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ShipmentRcvDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="BENo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BENo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="BEDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="BEDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="PaymentStatus" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PaymentStatus" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="IFormNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="IFormNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="InvoiceAmt" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="InvoiceAmt" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Currency" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Currency" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="SysIP" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SysIP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="EntryDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="EntryDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        tbl_Inv_Imp_Mat_Trans.*
+FROM            tbl_Inv_Imp_Mat_Trans</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [tbl_Inv_Imp_Mat_Trans] SET [SuplierID] = ?, [POID] = ?, [PODNo] = ?, [Code] = ?, [ImportNo] = ?, [PInvoiceNo] = ?, [PKGS] = ?, [PkGSUnit] = ?, [Quantity] = ?, [Unit] = ?, [LCNo] = ?, [LCOpenDate] = ?, [DeliveryDate] = ?, [LCValidDate] = ?, [ShipmentMode] = ?, [ARWayBillNo] = ?, [ContainerNo] = ?, [PaymentTerm] = ?, [NonNegotiableDoc] = ?, [OrginalDoc] = ?, [ShipmentOnBoardDate] = ?, [ETAKarachi] = ?, [ShipmentExKarachiDate] = ?, [IBondSubDate] = ?, [ChequeNoAmt] = ?, [ShipmentRcvDate] = ?, [BENo] = ?, [BEDate] = ?, [PaymentStatus] = ?, [IFormNo] = ?, [InvoiceAmt] = ?, [Currency] = ?, [SysIP] = ?, [EntryDate] = ? WHERE (([TranID] = ?) AND ([SuplierID] = ?) AND ([POID] = ?) AND ([PODNo] = ?) AND ([Code] = ?) AND ((? = 1 AND [ImportNo] IS NULL) OR ([ImportNo] = ?)) AND ((? = 1 AND [PInvoiceNo] IS NULL) OR ([PInvoiceNo] = ?)) AND ((? = 1 AND [PKGS] IS NULL) OR ([PKGS] = ?)) AND ((? = 1 AND [PkGSUnit] IS NULL) OR ([PkGSUnit] = ?)) AND ((? = 1 AND [Quantity] IS NULL) OR ([Quantity] = ?)) AND ((? = 1 AND [Unit] IS NULL) OR ([Unit] = ?)) AND ((? = 1 AND [LCNo] IS NULL) OR ([LCNo] = ?)) AND ((? = 1 AND [LCOpenDate] IS NULL) OR ([LCOpenDate] = ?)) AND ((? = 1 AND [DeliveryDate] IS NULL) OR ([DeliveryDate] = ?)) AND ((? = 1 AND [LCValidDate] IS NULL) OR ([LCValidDate] = ?)) AND ((? = 1 AND [ShipmentMode] IS NULL) OR ([ShipmentMode] = ?)) AND ((? = 1 AND [ARWayBillNo] IS NULL) OR ([ARWayBillNo] = ?)) AND ((? = 1 AND [ContainerNo] IS NULL) OR ([ContainerNo] = ?)) AND ((? = 1 AND [PaymentTerm] IS NULL) OR ([PaymentTerm] = ?)) AND ((? = 1 AND [NonNegotiableDoc] IS NULL) OR ([NonNegotiableDoc] = ?)) AND ((? = 1 AND [OrginalDoc] IS NULL) OR ([OrginalDoc] = ?)) AND ((? = 1 AND [ShipmentOnBoardDate] IS NULL) OR ([ShipmentOnBoardDate] = ?)) AND ((? = 1 AND [ETAKarachi] IS NULL) OR ([ETAKarachi] = ?)) AND ((? = 1 AND [ShipmentExKarachiDate] IS NULL) OR ([ShipmentExKarachiDate] = ?)) AND ((? = 1 AND [IBondSubDate] IS NULL) OR ([IBondSubDate] = ?)) AND ((? = 1 AND [ChequeNoAmt] IS NULL) OR ([ChequeNoAmt] = ?)) AND ((? = 1 AND [ShipmentRcvDate] IS NULL) OR ([ShipmentRcvDate] = ?)) AND ((? = 1 AND [BENo] IS NULL) OR ([BENo] = ?)) AND ((? = 1 AND [BEDate] IS NULL) OR ([BEDate] = ?)) AND ((? = 1 AND [PaymentStatus] IS NULL) OR ([PaymentStatus] = ?)) AND ((? = 1 AND [IFormNo] IS NULL) OR ([IFormNo] = ?)) AND ((? = 1 AND [InvoiceAmt] IS NULL) OR ([InvoiceAmt] = ?)) AND ((? = 1 AND [Currency] IS NULL) OR ([Currency] = ?)) AND ((? = 1 AND [SysIP] IS NULL) OR ([SysIP] = ?)) AND ((? = 1 AND [EntryDate] IS NULL) OR ([EntryDate] = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="SuplierID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SuplierID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="POID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="POID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="PODNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PODNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Code" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Code" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="ImportNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ImportNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="PInvoiceNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PInvoiceNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="PKGS" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="PKGS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="PkGSUnit" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PkGSUnit" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Quantity" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="Quantity" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Unit" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Unit" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="LCNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LCNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="LCOpenDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="LCOpenDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="DeliveryDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DeliveryDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="LCValidDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="LCValidDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="ShipmentMode" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ShipmentMode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="ARWayBillNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ARWayBillNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="ContainerNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ContainerNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="PaymentTerm" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PaymentTerm" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="NonNegotiableDoc" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NonNegotiableDoc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="OrginalDoc" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="OrginalDoc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="ShipmentOnBoardDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ShipmentOnBoardDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="ETAKarachi" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ETAKarachi" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="ShipmentExKarachiDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ShipmentExKarachiDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="IBondSubDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="IBondSubDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="ChequeNoAmt" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="ChequeNoAmt" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="ShipmentRcvDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ShipmentRcvDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="BENo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BENo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="BEDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="BEDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="PaymentStatus" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PaymentStatus" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="IFormNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="IFormNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="InvoiceAmt" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="InvoiceAmt" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Currency" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Currency" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="SysIP" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SysIP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="EntryDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="EntryDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_TranID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TranID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_SuplierID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SuplierID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_POID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="POID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_PODNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PODNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_Code" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Code" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ImportNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ImportNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_ImportNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ImportNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PInvoiceNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PInvoiceNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_PInvoiceNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PInvoiceNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PKGS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PKGS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_PKGS" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="PKGS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PkGSUnit" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PkGSUnit" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_PkGSUnit" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PkGSUnit" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Quantity" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Quantity" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_Quantity" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="Quantity" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Unit" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Unit" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_Unit" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Unit" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_LCNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="LCNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_LCNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LCNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_LCOpenDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="LCOpenDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_LCOpenDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="LCOpenDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_DeliveryDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DeliveryDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_DeliveryDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DeliveryDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_LCValidDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="LCValidDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_LCValidDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="LCValidDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ShipmentMode" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ShipmentMode" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_ShipmentMode" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ShipmentMode" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ARWayBillNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ARWayBillNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_ARWayBillNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ARWayBillNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ContainerNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ContainerNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_ContainerNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ContainerNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PaymentTerm" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentTerm" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_PaymentTerm" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PaymentTerm" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_NonNegotiableDoc" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NonNegotiableDoc" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_NonNegotiableDoc" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NonNegotiableDoc" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_OrginalDoc" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="OrginalDoc" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_OrginalDoc" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="OrginalDoc" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ShipmentOnBoardDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ShipmentOnBoardDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_ShipmentOnBoardDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ShipmentOnBoardDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ETAKarachi" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ETAKarachi" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_ETAKarachi" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ETAKarachi" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ShipmentExKarachiDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ShipmentExKarachiDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_ShipmentExKarachiDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ShipmentExKarachiDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_IBondSubDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IBondSubDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_IBondSubDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="IBondSubDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ChequeNoAmt" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ChequeNoAmt" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_ChequeNoAmt" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="ChequeNoAmt" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_ShipmentRcvDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ShipmentRcvDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_ShipmentRcvDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ShipmentRcvDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BENo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BENo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_BENo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BENo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_BEDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BEDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_BEDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="BEDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_PaymentStatus" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PaymentStatus" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_PaymentStatus" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PaymentStatus" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_IFormNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IFormNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_IFormNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="IFormNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_InvoiceAmt" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="InvoiceAmt" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_InvoiceAmt" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="InvoiceAmt" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Currency" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Currency" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_Currency" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Currency" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_SysIP" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SysIP" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_SysIP" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SysIP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_EntryDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EntryDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_EntryDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="EntryDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TranID" DataSetColumn="TranID" />
+              <Mapping SourceColumn="SuplierID" DataSetColumn="SuplierID" />
+              <Mapping SourceColumn="POID" DataSetColumn="POID" />
+              <Mapping SourceColumn="Code" DataSetColumn="Code" />
+              <Mapping SourceColumn="ImportNo" DataSetColumn="ImportNo" />
+              <Mapping SourceColumn="PInvoiceNo" DataSetColumn="PInvoiceNo" />
+              <Mapping SourceColumn="PKGS" DataSetColumn="PKGS" />
+              <Mapping SourceColumn="PkGSUnit" DataSetColumn="PkGSUnit" />
+              <Mapping SourceColumn="Quantity" DataSetColumn="Quantity" />
+              <Mapping SourceColumn="Unit" DataSetColumn="Unit" />
+              <Mapping SourceColumn="LCNo" DataSetColumn="LCNo" />
+              <Mapping SourceColumn="LCOpenDate" DataSetColumn="LCOpenDate" />
+              <Mapping SourceColumn="DeliveryDate" DataSetColumn="DeliveryDate" />
+              <Mapping SourceColumn="LCValidDate" DataSetColumn="LCValidDate" />
+              <Mapping SourceColumn="ShipmentMode" DataSetColumn="ShipmentMode" />
+              <Mapping SourceColumn="ARWayBillNo" DataSetColumn="ARWayBillNo" />
+              <Mapping SourceColumn="ContainerNo" DataSetColumn="ContainerNo" />
+              <Mapping SourceColumn="PaymentTerm" DataSetColumn="PaymentTerm" />
+              <Mapping SourceColumn="NonNegotiableDoc" DataSetColumn="NonNegotiableDoc" />
+              <Mapping SourceColumn="OrginalDoc" DataSetColumn="OrginalDoc" />
+              <Mapping SourceColumn="ShipmentOnBoardDate" DataSetColumn="ShipmentOnBoardDate" />
+              <Mapping SourceColumn="ETAKarachi" DataSetColumn="ETAKarachi" />
+              <Mapping SourceColumn="ShipmentExKarachiDate" DataSetColumn="ShipmentExKarachiDate" />
+              <Mapping SourceColumn="IBondSubDate" DataSetColumn="IBondSubDate" />
+              <Mapping SourceColumn="ChequeNoAmt" DataSetColumn="ChequeNoAmt" />
+              <Mapping SourceColumn="ShipmentRcvDate" DataSetColumn="ShipmentRcvDate" />
+              <Mapping SourceColumn="BENo" DataSetColumn="BENo" />
+              <Mapping SourceColumn="BEDate" DataSetColumn="BEDate" />
+              <Mapping SourceColumn="PaymentStatus" DataSetColumn="PaymentStatus" />
+              <Mapping SourceColumn="IFormNo" DataSetColumn="IFormNo" />
+              <Mapping SourceColumn="InvoiceAmt" DataSetColumn="InvoiceAmt" />
+              <Mapping SourceColumn="Currency" DataSetColumn="Currency" />
+              <Mapping SourceColumn="SysIP" DataSetColumn="SysIP" />
+              <Mapping SourceColumn="EntryDate" DataSetColumn="EntryDate" />
+              <Mapping SourceColumn="PODNo" DataSetColumn="PODNo" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_Inv_Mat_TransTableAdapter" GeneratorDataComponentClassName="View_Inv_Mat_TransTableAdapter" Name="View_Inv_Mat_Trans" UserDataComponentName="View_Inv_Mat_TransTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Con (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        tbl_Inv_Imp_Mat_Trans.TranID, tbl_Inv_Imp_Mat_Trans.SuplierID, tbl_Inv_Imp_Mat_Trans.POID, tbl_Inv_Imp_Mat_Trans.PODNo, tbl_Inv_Imp_Mat_Trans.Code, tbl_Inv_Imp_Mat_Trans.ImportNo, 
+                         tbl_Inv_Imp_Mat_Trans.PInvoiceNo, tbl_Inv_Imp_Mat_Trans.PKGS, tbl_Inv_Imp_Mat_Trans.PkGSUnit, tbl_Inv_Imp_Mat_Trans.Quantity, tbl_Inv_Imp_Mat_Trans.Unit, tbl_Inv_Imp_Mat_Trans.LCNo, 
+                         tbl_Inv_Imp_Mat_Trans.LCOpenDate, tbl_Inv_Imp_Mat_Trans.DeliveryDate, tbl_Inv_Imp_Mat_Trans.LCValidDate, tbl_Inv_Imp_Mat_Trans.ShipmentMode, tbl_Inv_Imp_Mat_Trans.ARWayBillNo, 
+                         tbl_Inv_Imp_Mat_Trans.ContainerNo, tbl_Inv_Imp_Mat_Trans.PaymentTerm, tbl_Inv_Imp_Mat_Trans.NonNegotiableDoc, tbl_Inv_Imp_Mat_Trans.OrginalDoc, tbl_Inv_Imp_Mat_Trans.ShipmentOnBoardDate, 
+                         tbl_Inv_Imp_Mat_Trans.ETAKarachi, tbl_Inv_Imp_Mat_Trans.ShipmentExKarachiDate, tbl_Inv_Imp_Mat_Trans.IBondSubDate, tbl_Inv_Imp_Mat_Trans.ChequeNoAmt, tbl_Inv_Imp_Mat_Trans.ShipmentRcvDate, 
+                         tbl_Inv_Imp_Mat_Trans.BENo, tbl_Inv_Imp_Mat_Trans.BEDate, tbl_Inv_Imp_Mat_Trans.PaymentStatus, tbl_Inv_Imp_Mat_Trans.IFormNo, tbl_Inv_Imp_Mat_Trans.InvoiceAmt, tbl_Inv_Imp_Mat_Trans.Currency, 
+                         tbl_Inv_Imp_Mat_Trans.SysIP, tbl_Inv_Imp_Mat_Trans.EntryDate, tbl_Inv_L4.L4Name, tbl_Inv_Supplier.CompanyName, tbl_Pur_PO.PODate
+FROM            tbl_Inv_Imp_Mat_Trans, tbl_Inv_Supplier, tbl_Inv_L4, tbl_Pur_PO
+WHERE        tbl_Inv_Imp_Mat_Trans.SuplierID = tbl_Inv_Supplier.SupplierID AND tbl_Inv_Imp_Mat_Trans.Code = tbl_Inv_L4.Code AND tbl_Inv_Imp_Mat_Trans.POID = tbl_Pur_PO.POID AND 
+                         (tbl_Inv_Imp_Mat_Trans.ShipmentRcvDate IS NULL)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE       tbl_Inv_Imp_Mat_Trans
+SET                ImportNo = ?, PInvoiceNo = ?, PKGS = ?, PkGSUnit = ?, Quantity = ?, Unit = ?, LCNo = ?, LCOpenDate = ?, DeliveryDate = ?, LCValidDate = ?, ShipmentMode = ?, ARWayBillNo = ?, ContainerNo = ?, 
+                         PaymentTerm = ?, NonNegotiableDoc = ?, OrginalDoc = ?, ShipmentOnBoardDate = ?, ETAKarachi = ?, ShipmentExKarachiDate = ?, IBondSubDate = ?, ChequeNoAmt = ?, ShipmentRcvDate = ?, BENo = ?, 
+                         BEDate = ?, PaymentStatus = ?, IFormNo = ?, InvoiceAmt = ?, Currency = ?
+WHERE        (TranID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param1" ColumnName="ImportNo" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="ImportNo" Precision="0" ProviderType="VarChar" Scale="0" Size="1024" SourceColumn="ImportNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param2" ColumnName="PInvoiceNo" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="PInvoiceNo" Precision="0" ProviderType="VarChar" Scale="0" Size="1024" SourceColumn="PInvoiceNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param3" ColumnName="PKGS" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="numeric" DbType="Decimal" Direction="Input" ParameterName="PKGS" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="PKGS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param4" ColumnName="PkGSUnit" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="PkGSUnit" Precision="0" ProviderType="VarChar" Scale="0" Size="1024" SourceColumn="PkGSUnit" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param5" ColumnName="Quantity" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="numeric" DbType="Decimal" Direction="Input" ParameterName="Quantity" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="Quantity" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param6" ColumnName="Unit" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="Unit" Precision="0" ProviderType="VarChar" Scale="0" Size="1024" SourceColumn="Unit" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param7" ColumnName="LCNo" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="LCNo" Precision="0" ProviderType="VarChar" Scale="0" Size="1024" SourceColumn="LCNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param8" ColumnName="LCOpenDate" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="smalldatetime" DbType="DateTime" Direction="Input" ParameterName="LCOpenDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="LCOpenDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param9" ColumnName="DeliveryDate" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="smalldatetime" DbType="DateTime" Direction="Input" ParameterName="DeliveryDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DeliveryDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param10" ColumnName="LCValidDate" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="smalldatetime" DbType="DateTime" Direction="Input" ParameterName="LCValidDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="LCValidDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param11" ColumnName="ShipmentMode" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="ShipmentMode" Precision="0" ProviderType="VarChar" Scale="0" Size="1024" SourceColumn="ShipmentMode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param12" ColumnName="ARWayBillNo" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="ARWayBillNo" Precision="0" ProviderType="VarChar" Scale="0" Size="1024" SourceColumn="ARWayBillNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param13" ColumnName="ContainerNo" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="ContainerNo" Precision="0" ProviderType="VarChar" Scale="0" Size="1024" SourceColumn="ContainerNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param14" ColumnName="PaymentTerm" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="PaymentTerm" Precision="0" ProviderType="VarChar" Scale="0" Size="1024" SourceColumn="PaymentTerm" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param15" ColumnName="NonNegotiableDoc" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="NonNegotiableDoc" Precision="0" ProviderType="VarChar" Scale="0" Size="1024" SourceColumn="NonNegotiableDoc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param16" ColumnName="OrginalDoc" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="OrginalDoc" Precision="0" ProviderType="VarChar" Scale="0" Size="1024" SourceColumn="OrginalDoc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param17" ColumnName="ShipmentOnBoardDate" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="smalldatetime" DbType="DateTime" Direction="Input" ParameterName="ShipmentOnBoardDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ShipmentOnBoardDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param18" ColumnName="ETAKarachi" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="ETAKarachi" Precision="0" ProviderType="VarChar" Scale="0" Size="1024" SourceColumn="ETAKarachi" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param19" ColumnName="ShipmentExKarachiDate" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="smalldatetime" DbType="DateTime" Direction="Input" ParameterName="ShipmentExKarachiDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ShipmentExKarachiDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param20" ColumnName="IBondSubDate" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="smalldatetime" DbType="DateTime" Direction="Input" ParameterName="IBondSubDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="IBondSubDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param21" ColumnName="ChequeNoAmt" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="numeric" DbType="Decimal" Direction="Input" ParameterName="ChequeNoAmt" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="ChequeNoAmt" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param22" ColumnName="ShipmentRcvDate" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="smalldatetime" DbType="DateTime" Direction="Input" ParameterName="ShipmentRcvDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ShipmentRcvDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param23" ColumnName="BENo" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="BENo" Precision="0" ProviderType="VarChar" Scale="0" Size="1024" SourceColumn="BENo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param24" ColumnName="BEDate" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="smalldatetime" DbType="DateTime" Direction="Input" ParameterName="BEDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="BEDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param25" ColumnName="PaymentStatus" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="PaymentStatus" Precision="0" ProviderType="VarChar" Scale="0" Size="1024" SourceColumn="PaymentStatus" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param26" ColumnName="IFormNo" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="IFormNo" Precision="0" ProviderType="VarChar" Scale="0" Size="1024" SourceColumn="IFormNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param27" ColumnName="InvoiceAmt" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="numeric" DbType="Decimal" Direction="Input" ParameterName="InvoiceAmt" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="InvoiceAmt" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param28" ColumnName="Currency" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="Currency" Precision="0" ProviderType="VarChar" Scale="0" Size="1024" SourceColumn="Currency" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param30" ColumnName="TranID" DataSourceName="MIS.dbo.tbl_Inv_Imp_Mat_Trans" DataTypeServer="int identity" DbType="Int32" Direction="Input" ParameterName="Original_TranID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TranID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TranID" DataSetColumn="TranID" />
+              <Mapping SourceColumn="SuplierID" DataSetColumn="SuplierID" />
+              <Mapping SourceColumn="POID" DataSetColumn="POID" />
+              <Mapping SourceColumn="PODNo" DataSetColumn="PODNo" />
+              <Mapping SourceColumn="Code" DataSetColumn="Code" />
+              <Mapping SourceColumn="ImportNo" DataSetColumn="ImportNo" />
+              <Mapping SourceColumn="PInvoiceNo" DataSetColumn="PInvoiceNo" />
+              <Mapping SourceColumn="PKGS" DataSetColumn="PKGS" />
+              <Mapping SourceColumn="PkGSUnit" DataSetColumn="PkGSUnit" />
+              <Mapping SourceColumn="Quantity" DataSetColumn="Quantity" />
+              <Mapping SourceColumn="Unit" DataSetColumn="Unit" />
+              <Mapping SourceColumn="LCNo" DataSetColumn="LCNo" />
+              <Mapping SourceColumn="LCOpenDate" DataSetColumn="LCOpenDate" />
+              <Mapping SourceColumn="DeliveryDate" DataSetColumn="DeliveryDate" />
+              <Mapping SourceColumn="LCValidDate" DataSetColumn="LCValidDate" />
+              <Mapping SourceColumn="ShipmentMode" DataSetColumn="ShipmentMode" />
+              <Mapping SourceColumn="ARWayBillNo" DataSetColumn="ARWayBillNo" />
+              <Mapping SourceColumn="ContainerNo" DataSetColumn="ContainerNo" />
+              <Mapping SourceColumn="PaymentTerm" DataSetColumn="PaymentTerm" />
+              <Mapping SourceColumn="NonNegotiableDoc" DataSetColumn="NonNegotiableDoc" />
+              <Mapping SourceColumn="OrginalDoc" DataSetColumn="OrginalDoc" />
+              <Mapping SourceColumn="ShipmentOnBoardDate" DataSetColumn="ShipmentOnBoardDate" />
+              <Mapping SourceColumn="ETAKarachi" DataSetColumn="ETAKarachi" />
+              <Mapping SourceColumn="ShipmentExKarachiDate" DataSetColumn="ShipmentExKarachiDate" />
+              <Mapping SourceColumn="IBondSubDate" DataSetColumn="IBondSubDate" />
+              <Mapping SourceColumn="ChequeNoAmt" DataSetColumn="ChequeNoAmt" />
+              <Mapping SourceColumn="ShipmentRcvDate" DataSetColumn="ShipmentRcvDate" />
+              <Mapping SourceColumn="BENo" DataSetColumn="BENo" />
+              <Mapping SourceColumn="BEDate" DataSetColumn="BEDate" />
+              <Mapping SourceColumn="PaymentStatus" DataSetColumn="PaymentStatus" />
+              <Mapping SourceColumn="IFormNo" DataSetColumn="IFormNo" />
+              <Mapping SourceColumn="InvoiceAmt" DataSetColumn="InvoiceAmt" />
+              <Mapping SourceColumn="Currency" DataSetColumn="Currency" />
+              <Mapping SourceColumn="SysIP" DataSetColumn="SysIP" />
+              <Mapping SourceColumn="EntryDate" DataSetColumn="EntryDate" />
+              <Mapping SourceColumn="L4Name" DataSetColumn="L4Name" />
+              <Mapping SourceColumn="CompanyName" DataSetColumn="CompanyName" />
+              <Mapping SourceColumn="PODate" DataSetColumn="PODate" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="Con (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        tbl_Inv_Imp_Mat_Trans.TranID, tbl_Inv_Imp_Mat_Trans.SuplierID, tbl_Inv_Imp_Mat_Trans.POID, tbl_Inv_Imp_Mat_Trans.PODNo, tbl_Inv_Imp_Mat_Trans.Code, tbl_Inv_Imp_Mat_Trans.ImportNo, 
+                         tbl_Inv_Imp_Mat_Trans.PInvoiceNo, tbl_Inv_Imp_Mat_Trans.PKGS, tbl_Inv_Imp_Mat_Trans.PkGSUnit, tbl_Inv_Imp_Mat_Trans.Quantity, tbl_Inv_Imp_Mat_Trans.Unit, tbl_Inv_Imp_Mat_Trans.LCNo, 
+                         tbl_Inv_Imp_Mat_Trans.LCOpenDate, tbl_Inv_Imp_Mat_Trans.DeliveryDate, tbl_Inv_Imp_Mat_Trans.LCValidDate, tbl_Inv_Imp_Mat_Trans.ShipmentMode, tbl_Inv_Imp_Mat_Trans.ARWayBillNo, 
+                         tbl_Inv_Imp_Mat_Trans.ContainerNo, tbl_Inv_Imp_Mat_Trans.PaymentTerm, tbl_Inv_Imp_Mat_Trans.NonNegotiableDoc, tbl_Inv_Imp_Mat_Trans.OrginalDoc, tbl_Inv_Imp_Mat_Trans.ShipmentOnBoardDate, 
+                         tbl_Inv_Imp_Mat_Trans.ETAKarachi, tbl_Inv_Imp_Mat_Trans.ShipmentExKarachiDate, tbl_Inv_Imp_Mat_Trans.IBondSubDate, tbl_Inv_Imp_Mat_Trans.ChequeNoAmt, tbl_Inv_Imp_Mat_Trans.ShipmentRcvDate, 
+                         tbl_Inv_Imp_Mat_Trans.BENo, tbl_Inv_Imp_Mat_Trans.BEDate, tbl_Inv_Imp_Mat_Trans.PaymentStatus, tbl_Inv_Imp_Mat_Trans.IFormNo, tbl_Inv_Imp_Mat_Trans.InvoiceAmt, tbl_Inv_Imp_Mat_Trans.Currency, 
+                         tbl_Inv_Imp_Mat_Trans.SysIP, tbl_Inv_Imp_Mat_Trans.EntryDate, tbl_Inv_L4.L4Name, tbl_Inv_Supplier.CompanyName, tbl_Pur_PO.PODate
+FROM            tbl_Inv_Imp_Mat_Trans, tbl_Inv_Supplier, tbl_Inv_L4, tbl_Pur_PO
+WHERE        tbl_Inv_Imp_Mat_Trans.SuplierID = tbl_Inv_Supplier.SupplierID AND tbl_Inv_Imp_Mat_Trans.Code = tbl_Inv_L4.Code AND tbl_Inv_Imp_Mat_Trans.POID = tbl_Pur_PO.POID AND 
+                         (tbl_Inv_Imp_Mat_Trans.ShipmentRcvDate IS NOT NULL)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSPOImportEntry" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DSPOImportEntry" msprop:Generator_DataSetName="DSPOImportEntry" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_PO_ID" msprop:Generator_UserTableName="View_PO_ID" msprop:Generator_RowDeletedName="View_PO_IDRowDeleted" msprop:Generator_RowChangedName="View_PO_IDRowChanged" msprop:Generator_RowClassName="View_PO_IDRow" msprop:Generator_RowChangingName="View_PO_IDRowChanging" msprop:Generator_RowEvArgName="View_PO_IDRowChangeEvent" msprop:Generator_RowEvHandlerName="View_PO_IDRowChangeEventHandler" msprop:Generator_TableClassName="View_PO_IDDataTable" msprop:Generator_TableVarName="tableView_PO_ID" msprop:Generator_RowDeletingName="View_PO_IDRowDeleting" msprop:Generator_TablePropName="View_PO_ID">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="POID" msprop:Generator_UserColumnName="POID" msprop:Generator_ColumnVarNameInTable="columnPOID" msprop:Generator_ColumnPropNameInRow="POID" msprop:Generator_ColumnPropNameInTable="POIDColumn" type="xs:int" />
+              <xs:element name="CompanyName" msprop:Generator_UserColumnName="CompanyName" msprop:Generator_ColumnVarNameInTable="columnCompanyName" msprop:Generator_ColumnPropNameInRow="CompanyName" msprop:Generator_ColumnPropNameInTable="CompanyNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SupplierID" msprop:Generator_UserColumnName="SupplierID" msprop:Generator_ColumnVarNameInTable="columnSupplierID" msprop:Generator_ColumnPropNameInRow="SupplierID" msprop:Generator_ColumnPropNameInTable="SupplierIDColumn" type="xs:int" />
+              <xs:element name="ImportStatus" msprop:Generator_UserColumnName="ImportStatus" msprop:Generator_ColumnVarNameInTable="columnImportStatus" msprop:Generator_ColumnPropNameInRow="ImportStatus" msprop:Generator_ColumnPropNameInTable="ImportStatusColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="PODate" msprop:Generator_UserColumnName="PODate" msprop:Generator_ColumnVarNameInTable="columnPODate" msprop:Generator_ColumnPropNameInRow="PODate" msprop:Generator_ColumnPropNameInTable="PODateColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="View_PO_D" msprop:Generator_UserTableName="View_PO_D" msprop:Generator_RowDeletedName="View_PO_DRowDeleted" msprop:Generator_RowChangedName="View_PO_DRowChanged" msprop:Generator_RowClassName="View_PO_DRow" msprop:Generator_RowChangingName="View_PO_DRowChanging" msprop:Generator_RowEvArgName="View_PO_DRowChangeEvent" msprop:Generator_RowEvHandlerName="View_PO_DRowChangeEventHandler" msprop:Generator_TableClassName="View_PO_DDataTable" msprop:Generator_TableVarName="tableView_PO_D" msprop:Generator_RowDeletingName="View_PO_DRowDeleting" msprop:Generator_TablePropName="View_PO_D">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="POID" msprop:Generator_UserColumnName="POID" msprop:Generator_ColumnVarNameInTable="columnPOID" msprop:Generator_ColumnPropNameInRow="POID" msprop:Generator_ColumnPropNameInTable="POIDColumn" type="xs:int" />
+              <xs:element name="PODNo" msprop:Generator_UserColumnName="PODNo" msprop:Generator_ColumnVarNameInTable="columnPODNo" msprop:Generator_ColumnPropNameInRow="PODNo" msprop:Generator_ColumnPropNameInTable="PODNoColumn" type="xs:int" />
+              <xs:element name="SupplierID" msprop:Generator_UserColumnName="SupplierID" msprop:Generator_ColumnVarNameInTable="columnSupplierID" msprop:Generator_ColumnPropNameInRow="SupplierID" msprop:Generator_ColumnPropNameInTable="SupplierIDColumn" type="xs:int" />
+              <xs:element name="Code" msprop:Generator_UserColumnName="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POQty" msprop:Generator_UserColumnName="POQty" msprop:Generator_ColumnVarNameInTable="columnPOQty" msprop:Generator_ColumnPropNameInRow="POQty" msprop:Generator_ColumnPropNameInTable="POQtyColumn" type="xs:decimal" />
+              <xs:element name="Curency" msprop:Generator_UserColumnName="Curency" msprop:Generator_ColumnVarNameInTable="columnCurency" msprop:Generator_ColumnPropNameInRow="Curency" msprop:Generator_ColumnPropNameInTable="CurencyColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UnitPrice" msprop:Generator_UserColumnName="UnitPrice" msprop:Generator_ColumnVarNameInTable="columnUnitPrice" msprop:Generator_ColumnPropNameInRow="UnitPrice" msprop:Generator_ColumnPropNameInTable="UnitPriceColumn" type="xs:decimal" />
+              <xs:element name="UOM" msprop:Generator_UserColumnName="UOM" msprop:Generator_ColumnVarNameInTable="columnUOM" msprop:Generator_ColumnPropNameInRow="UOM" msprop:Generator_ColumnPropNameInTable="UOMColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="L4Name" msprop:Generator_UserColumnName="L4Name" msprop:Generator_ColumnVarNameInTable="columnL4Name" msprop:Generator_ColumnPropNameInRow="L4Name" msprop:Generator_ColumnPropNameInTable="L4NameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ImportStatus" msprop:Generator_UserColumnName="ImportStatus" msprop:Generator_ColumnVarNameInTable="columnImportStatus" msprop:Generator_ColumnPropNameInRow="ImportStatus" msprop:Generator_ColumnPropNameInTable="ImportStatusColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_Inv_Imp_Mat_Trans" msprop:Generator_UserTableName="tbl_Inv_Imp_Mat_Trans" msprop:Generator_RowDeletedName="tbl_Inv_Imp_Mat_TransRowDeleted" msprop:Generator_RowChangedName="tbl_Inv_Imp_Mat_TransRowChanged" msprop:Generator_RowClassName="tbl_Inv_Imp_Mat_TransRow" msprop:Generator_RowChangingName="tbl_Inv_Imp_Mat_TransRowChanging" msprop:Generator_RowEvArgName="tbl_Inv_Imp_Mat_TransRowChangeEvent" msprop:Generator_RowEvHandlerName="tbl_Inv_Imp_Mat_TransRowChangeEventHandler" msprop:Generator_TableClassName="tbl_Inv_Imp_Mat_TransDataTable" msprop:Generator_TableVarName="tabletbl_Inv_Imp_Mat_Trans" msprop:Generator_RowDeletingName="tbl_Inv_Imp_Mat_TransRowDeleting" msprop:Generator_TablePropName="tbl_Inv_Imp_Mat_Trans">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TranID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="TranID" msprop:Generator_ColumnVarNameInTable="columnTranID" msprop:Generator_ColumnPropNameInRow="TranID" msprop:Generator_ColumnPropNameInTable="TranIDColumn" type="xs:int" />
+              <xs:element name="SuplierID" msprop:Generator_UserColumnName="SuplierID" msprop:Generator_ColumnVarNameInTable="columnSuplierID" msprop:Generator_ColumnPropNameInRow="SuplierID" msprop:Generator_ColumnPropNameInTable="SuplierIDColumn" type="xs:int" />
+              <xs:element name="POID" msprop:Generator_UserColumnName="POID" msprop:Generator_ColumnVarNameInTable="columnPOID" msprop:Generator_ColumnPropNameInRow="POID" msprop:Generator_ColumnPropNameInTable="POIDColumn" type="xs:int" />
+              <xs:element name="Code" msprop:Generator_UserColumnName="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ImportNo" msprop:Generator_UserColumnName="ImportNo" msprop:Generator_ColumnVarNameInTable="columnImportNo" msprop:Generator_ColumnPropNameInRow="ImportNo" msprop:Generator_ColumnPropNameInTable="ImportNoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PInvoiceNo" msprop:Generator_UserColumnName="PInvoiceNo" msprop:Generator_ColumnVarNameInTable="columnPInvoiceNo" msprop:Generator_ColumnPropNameInRow="PInvoiceNo" msprop:Generator_ColumnPropNameInTable="PInvoiceNoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PKGS" msprop:Generator_UserColumnName="PKGS" msprop:Generator_ColumnVarNameInTable="columnPKGS" msprop:Generator_ColumnPropNameInRow="PKGS" msprop:Generator_ColumnPropNameInTable="PKGSColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PkGSUnit" msprop:Generator_UserColumnName="PkGSUnit" msprop:Generator_ColumnVarNameInTable="columnPkGSUnit" msprop:Generator_ColumnPropNameInRow="PkGSUnit" msprop:Generator_ColumnPropNameInTable="PkGSUnitColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Quantity" msprop:Generator_UserColumnName="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Unit" msprop:Generator_UserColumnName="Unit" msprop:Generator_ColumnVarNameInTable="columnUnit" msprop:Generator_ColumnPropNameInRow="Unit" msprop:Generator_ColumnPropNameInTable="UnitColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LCNo" msprop:Generator_UserColumnName="LCNo" msprop:Generator_ColumnVarNameInTable="columnLCNo" msprop:Generator_ColumnPropNameInRow="LCNo" msprop:Generator_ColumnPropNameInTable="LCNoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="550" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LCOpenDate" msprop:Generator_UserColumnName="LCOpenDate" msprop:Generator_ColumnVarNameInTable="columnLCOpenDate" msprop:Generator_ColumnPropNameInRow="LCOpenDate" msprop:Generator_ColumnPropNameInTable="LCOpenDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DeliveryDate" msprop:Generator_UserColumnName="DeliveryDate" msprop:Generator_ColumnVarNameInTable="columnDeliveryDate" msprop:Generator_ColumnPropNameInRow="DeliveryDate" msprop:Generator_ColumnPropNameInTable="DeliveryDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LCValidDate" msprop:Generator_UserColumnName="LCValidDate" msprop:Generator_ColumnVarNameInTable="columnLCValidDate" msprop:Generator_ColumnPropNameInRow="LCValidDate" msprop:Generator_ColumnPropNameInTable="LCValidDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ShipmentMode" msprop:Generator_UserColumnName="ShipmentMode" msprop:Generator_ColumnVarNameInTable="columnShipmentMode" msprop:Generator_ColumnPropNameInRow="ShipmentMode" msprop:Generator_ColumnPropNameInTable="ShipmentModeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ARWayBillNo" msprop:Generator_UserColumnName="ARWayBillNo" msprop:Generator_ColumnVarNameInTable="columnARWayBillNo" msprop:Generator_ColumnPropNameInRow="ARWayBillNo" msprop:Generator_ColumnPropNameInTable="ARWayBillNoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="750" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ContainerNo" msprop:Generator_UserColumnName="ContainerNo" msprop:Generator_ColumnVarNameInTable="columnContainerNo" msprop:Generator_ColumnPropNameInRow="ContainerNo" msprop:Generator_ColumnPropNameInTable="ContainerNoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="550" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PaymentTerm" msprop:Generator_UserColumnName="PaymentTerm" msprop:Generator_ColumnVarNameInTable="columnPaymentTerm" msprop:Generator_ColumnPropNameInRow="PaymentTerm" msprop:Generator_ColumnPropNameInTable="PaymentTermColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="750" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NonNegotiableDoc" msprop:Generator_UserColumnName="NonNegotiableDoc" msprop:Generator_ColumnVarNameInTable="columnNonNegotiableDoc" msprop:Generator_ColumnPropNameInRow="NonNegotiableDoc" msprop:Generator_ColumnPropNameInTable="NonNegotiableDocColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="750" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OrginalDoc" msprop:Generator_UserColumnName="OrginalDoc" msprop:Generator_ColumnVarNameInTable="columnOrginalDoc" msprop:Generator_ColumnPropNameInRow="OrginalDoc" msprop:Generator_ColumnPropNameInTable="OrginalDocColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="750" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShipmentOnBoardDate" msprop:Generator_UserColumnName="ShipmentOnBoardDate" msprop:Generator_ColumnVarNameInTable="columnShipmentOnBoardDate" msprop:Generator_ColumnPropNameInRow="ShipmentOnBoardDate" msprop:Generator_ColumnPropNameInTable="ShipmentOnBoardDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ETAKarachi" msprop:Generator_UserColumnName="ETAKarachi" msprop:Generator_ColumnVarNameInTable="columnETAKarachi" msprop:Generator_ColumnPropNameInRow="ETAKarachi" msprop:Generator_ColumnPropNameInTable="ETAKarachiColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1050" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShipmentExKarachiDate" msprop:Generator_UserColumnName="ShipmentExKarachiDate" msprop:Generator_ColumnVarNameInTable="columnShipmentExKarachiDate" msprop:Generator_ColumnPropNameInRow="ShipmentExKarachiDate" msprop:Generator_ColumnPropNameInTable="ShipmentExKarachiDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IBondSubDate" msprop:Generator_UserColumnName="IBondSubDate" msprop:Generator_ColumnVarNameInTable="columnIBondSubDate" msprop:Generator_ColumnPropNameInRow="IBondSubDate" msprop:Generator_ColumnPropNameInTable="IBondSubDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ChequeNoAmt" msprop:Generator_UserColumnName="ChequeNoAmt" msprop:Generator_ColumnVarNameInTable="columnChequeNoAmt" msprop:Generator_ColumnPropNameInRow="ChequeNoAmt" msprop:Generator_ColumnPropNameInTable="ChequeNoAmtColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ShipmentRcvDate" msprop:Generator_UserColumnName="ShipmentRcvDate" msprop:Generator_ColumnVarNameInTable="columnShipmentRcvDate" msprop:Generator_ColumnPropNameInRow="ShipmentRcvDate" msprop:Generator_ColumnPropNameInTable="ShipmentRcvDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="BENo" msprop:Generator_UserColumnName="BENo" msprop:Generator_ColumnVarNameInTable="columnBENo" msprop:Generator_ColumnPropNameInRow="BENo" msprop:Generator_ColumnPropNameInTable="BENoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="750" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BEDate" msprop:Generator_UserColumnName="BEDate" msprop:Generator_ColumnVarNameInTable="columnBEDate" msprop:Generator_ColumnPropNameInRow="BEDate" msprop:Generator_ColumnPropNameInTable="BEDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PaymentStatus" msprop:Generator_UserColumnName="PaymentStatus" msprop:Generator_ColumnVarNameInTable="columnPaymentStatus" msprop:Generator_ColumnPropNameInRow="PaymentStatus" msprop:Generator_ColumnPropNameInTable="PaymentStatusColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IFormNo" msprop:Generator_UserColumnName="IFormNo" msprop:Generator_ColumnVarNameInTable="columnIFormNo" msprop:Generator_ColumnPropNameInRow="IFormNo" msprop:Generator_ColumnPropNameInTable="IFormNoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1050" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InvoiceAmt" msprop:Generator_UserColumnName="InvoiceAmt" msprop:Generator_ColumnVarNameInTable="columnInvoiceAmt" msprop:Generator_ColumnPropNameInRow="InvoiceAmt" msprop:Generator_ColumnPropNameInTable="InvoiceAmtColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Currency" msprop:Generator_UserColumnName="Currency" msprop:Generator_ColumnVarNameInTable="columnCurrency" msprop:Generator_ColumnPropNameInRow="Currency" msprop:Generator_ColumnPropNameInTable="CurrencyColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SysIP" msprop:Generator_UserColumnName="SysIP" msprop:Generator_ColumnVarNameInTable="columnSysIP" msprop:Generator_ColumnPropNameInRow="SysIP" msprop:Generator_ColumnPropNameInTable="SysIPColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EntryDate" msprop:Generator_UserColumnName="EntryDate" msprop:Generator_ColumnVarNameInTable="columnEntryDate" msprop:Generator_ColumnPropNameInRow="EntryDate" msprop:Generator_ColumnPropNameInTable="EntryDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PODNo" msprop:Generator_UserColumnName="PODNo" msprop:Generator_ColumnPropNameInRow="PODNo" msprop:Generator_ColumnVarNameInTable="columnPODNo" msprop:Generator_ColumnPropNameInTable="PODNoColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="View_Inv_Mat_Trans" msprop:Generator_UserTableName="View_Inv_Mat_Trans" msprop:Generator_RowDeletedName="View_Inv_Mat_TransRowDeleted" msprop:Generator_RowChangedName="View_Inv_Mat_TransRowChanged" msprop:Generator_RowClassName="View_Inv_Mat_TransRow" msprop:Generator_RowChangingName="View_Inv_Mat_TransRowChanging" msprop:Generator_RowEvArgName="View_Inv_Mat_TransRowChangeEvent" msprop:Generator_RowEvHandlerName="View_Inv_Mat_TransRowChangeEventHandler" msprop:Generator_TableClassName="View_Inv_Mat_TransDataTable" msprop:Generator_TableVarName="tableView_Inv_Mat_Trans" msprop:Generator_RowDeletingName="View_Inv_Mat_TransRowDeleting" msprop:Generator_TablePropName="View_Inv_Mat_Trans">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TranID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_UserColumnName="TranID" msprop:Generator_ColumnVarNameInTable="columnTranID" msprop:Generator_ColumnPropNameInRow="TranID" msprop:Generator_ColumnPropNameInTable="TranIDColumn" type="xs:int" />
+              <xs:element name="SuplierID" msprop:Generator_UserColumnName="SuplierID" msprop:Generator_ColumnVarNameInTable="columnSuplierID" msprop:Generator_ColumnPropNameInRow="SuplierID" msprop:Generator_ColumnPropNameInTable="SuplierIDColumn" type="xs:int" />
+              <xs:element name="POID" msprop:Generator_UserColumnName="POID" msprop:Generator_ColumnVarNameInTable="columnPOID" msprop:Generator_ColumnPropNameInRow="POID" msprop:Generator_ColumnPropNameInTable="POIDColumn" type="xs:int" />
+              <xs:element name="PODNo" msprop:Generator_UserColumnName="PODNo" msprop:Generator_ColumnVarNameInTable="columnPODNo" msprop:Generator_ColumnPropNameInRow="PODNo" msprop:Generator_ColumnPropNameInTable="PODNoColumn" type="xs:int" />
+              <xs:element name="Code" msprop:Generator_UserColumnName="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ImportNo" msprop:Generator_UserColumnName="ImportNo" msprop:Generator_ColumnVarNameInTable="columnImportNo" msprop:Generator_ColumnPropNameInRow="ImportNo" msprop:Generator_ColumnPropNameInTable="ImportNoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PInvoiceNo" msprop:Generator_UserColumnName="PInvoiceNo" msprop:Generator_ColumnVarNameInTable="columnPInvoiceNo" msprop:Generator_ColumnPropNameInRow="PInvoiceNo" msprop:Generator_ColumnPropNameInTable="PInvoiceNoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PKGS" msprop:Generator_UserColumnName="PKGS" msprop:Generator_ColumnVarNameInTable="columnPKGS" msprop:Generator_ColumnPropNameInRow="PKGS" msprop:Generator_ColumnPropNameInTable="PKGSColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PkGSUnit" msprop:Generator_UserColumnName="PkGSUnit" msprop:Generator_ColumnVarNameInTable="columnPkGSUnit" msprop:Generator_ColumnPropNameInRow="PkGSUnit" msprop:Generator_ColumnPropNameInTable="PkGSUnitColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Quantity" msprop:Generator_UserColumnName="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Unit" msprop:Generator_UserColumnName="Unit" msprop:Generator_ColumnVarNameInTable="columnUnit" msprop:Generator_ColumnPropNameInRow="Unit" msprop:Generator_ColumnPropNameInTable="UnitColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LCNo" msprop:Generator_UserColumnName="LCNo" msprop:Generator_ColumnVarNameInTable="columnLCNo" msprop:Generator_ColumnPropNameInRow="LCNo" msprop:Generator_ColumnPropNameInTable="LCNoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="550" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LCOpenDate" msprop:Generator_UserColumnName="LCOpenDate" msprop:Generator_ColumnVarNameInTable="columnLCOpenDate" msprop:Generator_ColumnPropNameInRow="LCOpenDate" msprop:Generator_ColumnPropNameInTable="LCOpenDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DeliveryDate" msprop:Generator_UserColumnName="DeliveryDate" msprop:Generator_ColumnVarNameInTable="columnDeliveryDate" msprop:Generator_ColumnPropNameInRow="DeliveryDate" msprop:Generator_ColumnPropNameInTable="DeliveryDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LCValidDate" msprop:Generator_UserColumnName="LCValidDate" msprop:Generator_ColumnVarNameInTable="columnLCValidDate" msprop:Generator_ColumnPropNameInRow="LCValidDate" msprop:Generator_ColumnPropNameInTable="LCValidDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ShipmentMode" msprop:Generator_UserColumnName="ShipmentMode" msprop:Generator_ColumnVarNameInTable="columnShipmentMode" msprop:Generator_ColumnPropNameInRow="ShipmentMode" msprop:Generator_ColumnPropNameInTable="ShipmentModeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ARWayBillNo" msprop:Generator_UserColumnName="ARWayBillNo" msprop:Generator_ColumnVarNameInTable="columnARWayBillNo" msprop:Generator_ColumnPropNameInRow="ARWayBillNo" msprop:Generator_ColumnPropNameInTable="ARWayBillNoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="750" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ContainerNo" msprop:Generator_UserColumnName="ContainerNo" msprop:Generator_ColumnVarNameInTable="columnContainerNo" msprop:Generator_ColumnPropNameInRow="ContainerNo" msprop:Generator_ColumnPropNameInTable="ContainerNoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="550" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PaymentTerm" msprop:Generator_UserColumnName="PaymentTerm" msprop:Generator_ColumnVarNameInTable="columnPaymentTerm" msprop:Generator_ColumnPropNameInRow="PaymentTerm" msprop:Generator_ColumnPropNameInTable="PaymentTermColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="750" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NonNegotiableDoc" msprop:Generator_UserColumnName="NonNegotiableDoc" msprop:Generator_ColumnVarNameInTable="columnNonNegotiableDoc" msprop:Generator_ColumnPropNameInRow="NonNegotiableDoc" msprop:Generator_ColumnPropNameInTable="NonNegotiableDocColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="750" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OrginalDoc" msprop:Generator_UserColumnName="OrginalDoc" msprop:Generator_ColumnVarNameInTable="columnOrginalDoc" msprop:Generator_ColumnPropNameInRow="OrginalDoc" msprop:Generator_ColumnPropNameInTable="OrginalDocColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="750" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShipmentOnBoardDate" msprop:Generator_UserColumnName="ShipmentOnBoardDate" msprop:Generator_ColumnVarNameInTable="columnShipmentOnBoardDate" msprop:Generator_ColumnPropNameInRow="ShipmentOnBoardDate" msprop:Generator_ColumnPropNameInTable="ShipmentOnBoardDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ETAKarachi" msprop:Generator_UserColumnName="ETAKarachi" msprop:Generator_ColumnVarNameInTable="columnETAKarachi" msprop:Generator_ColumnPropNameInRow="ETAKarachi" msprop:Generator_ColumnPropNameInTable="ETAKarachiColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1050" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShipmentExKarachiDate" msprop:Generator_UserColumnName="ShipmentExKarachiDate" msprop:Generator_ColumnVarNameInTable="columnShipmentExKarachiDate" msprop:Generator_ColumnPropNameInRow="ShipmentExKarachiDate" msprop:Generator_ColumnPropNameInTable="ShipmentExKarachiDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IBondSubDate" msprop:Generator_UserColumnName="IBondSubDate" msprop:Generator_ColumnVarNameInTable="columnIBondSubDate" msprop:Generator_ColumnPropNameInRow="IBondSubDate" msprop:Generator_ColumnPropNameInTable="IBondSubDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ChequeNoAmt" msprop:Generator_UserColumnName="ChequeNoAmt" msprop:Generator_ColumnVarNameInTable="columnChequeNoAmt" msprop:Generator_ColumnPropNameInRow="ChequeNoAmt" msprop:Generator_ColumnPropNameInTable="ChequeNoAmtColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ShipmentRcvDate" msprop:Generator_UserColumnName="ShipmentRcvDate" msprop:Generator_ColumnVarNameInTable="columnShipmentRcvDate" msprop:Generator_ColumnPropNameInRow="ShipmentRcvDate" msprop:Generator_ColumnPropNameInTable="ShipmentRcvDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="BENo" msprop:Generator_UserColumnName="BENo" msprop:Generator_ColumnVarNameInTable="columnBENo" msprop:Generator_ColumnPropNameInRow="BENo" msprop:Generator_ColumnPropNameInTable="BENoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="750" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BEDate" msprop:Generator_UserColumnName="BEDate" msprop:Generator_ColumnVarNameInTable="columnBEDate" msprop:Generator_ColumnPropNameInRow="BEDate" msprop:Generator_ColumnPropNameInTable="BEDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PaymentStatus" msprop:Generator_UserColumnName="PaymentStatus" msprop:Generator_ColumnVarNameInTable="columnPaymentStatus" msprop:Generator_ColumnPropNameInRow="PaymentStatus" msprop:Generator_ColumnPropNameInTable="PaymentStatusColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IFormNo" msprop:Generator_UserColumnName="IFormNo" msprop:Generator_ColumnVarNameInTable="columnIFormNo" msprop:Generator_ColumnPropNameInRow="IFormNo" msprop:Generator_ColumnPropNameInTable="IFormNoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1050" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InvoiceAmt" msprop:Generator_UserColumnName="InvoiceAmt" msprop:Generator_ColumnVarNameInTable="columnInvoiceAmt" msprop:Generator_ColumnPropNameInRow="InvoiceAmt" msprop:Generator_ColumnPropNameInTable="InvoiceAmtColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Currency" msprop:Generator_UserColumnName="Currency" msprop:Generator_ColumnVarNameInTable="columnCurrency" msprop:Generator_ColumnPropNameInRow="Currency" msprop:Generator_ColumnPropNameInTable="CurrencyColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SysIP" msprop:Generator_UserColumnName="SysIP" msprop:Generator_ColumnVarNameInTable="columnSysIP" msprop:Generator_ColumnPropNameInRow="SysIP" msprop:Generator_ColumnPropNameInTable="SysIPColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EntryDate" msprop:Generator_UserColumnName="EntryDate" msprop:Generator_ColumnVarNameInTable="columnEntryDate" msprop:Generator_ColumnPropNameInRow="EntryDate" msprop:Generator_ColumnPropNameInTable="EntryDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="L4Name" msprop:Generator_UserColumnName="L4Name" msprop:Generator_ColumnVarNameInTable="columnL4Name" msprop:Generator_ColumnPropNameInRow="L4Name" msprop:Generator_ColumnPropNameInTable="L4NameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CompanyName" msprop:Generator_UserColumnName="CompanyName" msprop:Generator_ColumnVarNameInTable="columnCompanyName" msprop:Generator_ColumnPropNameInRow="CompanyName" msprop:Generator_ColumnPropNameInTable="CompanyNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PODate" msprop:Generator_UserColumnName="PODate" msprop:Generator_ColumnPropNameInRow="PODate" msprop:Generator_ColumnVarNameInTable="columnPODate" msprop:Generator_ColumnPropNameInTable="PODateColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_PO_ID" />
+      <xs:field xpath="mstns:POID" />
+    </xs:unique>
+    <xs:unique name="View_PO_D_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_PO_D" />
+      <xs:field xpath="mstns:POID" />
+      <xs:field xpath="mstns:PODNo" />
+      <xs:field xpath="mstns:SupplierID" />
+      <xs:field xpath="mstns:Code" />
+    </xs:unique>
+    <xs:unique name="tbl_Inv_Imp_Mat_Trans_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tbl_Inv_Imp_Mat_Trans" />
+      <xs:field xpath="mstns:TranID" />
+    </xs:unique>
+    <xs:unique name="View_Inv_Mat_Trans_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_Inv_Mat_Trans" />
+      <xs:field xpath="mstns:TranID" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="View_PO_ID_View_PO_D" msdata:parent="View_PO_ID" msdata:child="View_PO_D" msdata:parentkey="POID SupplierID" msdata:childkey="POID SupplierID" msprop:Generator_UserRelationName="View_PO_ID_View_PO_D" msprop:Generator_RelationVarName="relationView_PO_ID_View_PO_D" msprop:Generator_UserChildTable="View_PO_D" msprop:Generator_UserParentTable="View_PO_ID" msprop:Generator_ParentPropName="View_PO_IDRowParent" msprop:Generator_ChildPropName="GetView_PO_DRows" />
+      <msdata:Relationship name="View_PO_ID_tbl_Inv_Imp_Mat_Trans" msdata:parent="View_PO_ID" msdata:child="tbl_Inv_Imp_Mat_Trans" msdata:parentkey="POID SupplierID" msdata:childkey="POID SuplierID" msprop:Generator_UserRelationName="View_PO_ID_tbl_Inv_Imp_Mat_Trans" msprop:Generator_RelationVarName="relationView_PO_ID_tbl_Inv_Imp_Mat_Trans" msprop:Generator_UserChildTable="tbl_Inv_Imp_Mat_Trans" msprop:Generator_UserParentTable="View_PO_ID" msprop:Generator_ParentPropName="View_PO_IDRowParent" msprop:Generator_ChildPropName="Gettbl_Inv_Imp_Mat_TransRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

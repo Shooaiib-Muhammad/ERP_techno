@@ -1,0 +1,336 @@
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\bin\Release\FS_ERP_MM.exe.config
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\bin\Release\FS_ERP_MM.exe.manifest
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\bin\Release\FS_ERP_MM.application
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\bin\Release\FS_ERP_MM.exe
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\bin\Release\FS_ERP_MM.pdb
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\bin\Release\FS_ERP_MM.xml
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\ResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmExtCust.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.FrmGroupComp.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmLocalCust.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmOut.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmTranIn.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmInspectionMaterial.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.FrmPartialQty.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPOIn.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPurchaseReturn.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmNewTranIn.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmNewTranOut.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmTranYear.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmCode.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmUOM.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmDispatchPOsReceive.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPackOut.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPackTranIn.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmMatBorrowedIssued.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmMat_Lended.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmCustItems.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmCustomer.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmMaterialSale.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmSaleAccounts.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmSaleInvoice.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptDeptWiseOut.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptFilterBalance.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptFilterBalance1.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptFilterCode.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptFilterTran.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptMaterialAging.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptMaterialReceiving.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptMIRN.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptPurchaseReturn.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptReq.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptSaleInvoice.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmAdminUser.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmUserslog.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmChngPswd.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmLogin.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmMain.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptViewer.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.Resources.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmAddDemands.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmBookingStatus.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmCodeProc.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmDemandCompletion.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmDemandPurchased.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPartialPO.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPartialRecAmt.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPartialReceiving.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmProcDemandExceptPO.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmProcDemandSleep.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmProcessDemand.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPurOrders.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmSetPurchaseAmt.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmSupItems.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmSuppliers.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmUndoChanges.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmVerifyAfterComp.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmVerifyDemand.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmDemandReports.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmDemandReports4Acc.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmDemandReports4Ver.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmMiscReports4Purchase.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPartialRecVStatus.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPOBalance.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptPO.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptPOLedger.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmTMBalances.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\frmRptFilterTran.vb.vbproj.GenerateResource.Cache
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.exe.manifest
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.application
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.exe
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.xml
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.pdb
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmMatReq.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmSalesBill.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptGatePasses.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.FrmRptMatRequisition.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptSaleBill.resources
+D:\Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmInvAdjReceive.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\ResolveAssemblyReference.cache
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmExtCust.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.FrmGroupComp.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmLocalCust.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmOut.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmTranIn.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmInspectionMaterial.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmMatReq.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.FrmPartialQty.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPOIn.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPurchaseReturn.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmInvAdjReceive.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmNewTranIn.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmNewTranOut.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmTranYear.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmCode.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmUOM.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmDispatchPOsReceive.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPackOut.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPackTranIn.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmMatBorrowedIssued.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmMat_Lended.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmCustItems.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmCustomer.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmMaterialSale.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmSaleAccounts.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmSaleInvoice.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmSalesBill.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptDeptWiseOut.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptFilterBalance.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptFilterBalance1.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptFilterCode.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptFilterTran.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptGatePasses.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptMaterialAging.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptMaterialReceiving.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.FrmRptMatRequisition.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptMIRN.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptPurchaseReturn.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptReq.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptSaleBill.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptSaleInvoice.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmAdminUser.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmUserslog.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmChngPswd.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmLogin.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmMain.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptViewer.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.Resources.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmAddDemands.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmBookingStatus.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmCodeProc.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmDemandCompletion.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmDemandPurchased.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPartialPO.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPartialRecAmt.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPartialReceiving.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmProcDemandExceptPO.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmProcDemandSleep.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmProcessDemand.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPurOrders.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmSetPurchaseAmt.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmSupItems.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmSuppliers.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmUndoChanges.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmVerifyAfterComp.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmVerifyDemand.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmDemandReports.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmDemandReports4Acc.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmDemandReports4Ver.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmMiscReports4Purchase.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPartialRecVStatus.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPOBalance.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptPO.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptPOLedger.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmTMBalances.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\frmRptFilterTran.vb.vbproj.GenerateResource.Cache
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\bin\Release\FS_ERP_MM.exe.config
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\bin\Release\FS_ERP_MM.exe.manifest
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\bin\Release\FS_ERP_MM.application
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\bin\Release\FS_ERP_MM.exe
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\bin\Release\FS_ERP_MM.pdb
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\bin\Release\FS_ERP_MM.xml
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmMatAdjustment.resources
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.exe.manifest
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.application
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.exe
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.xml
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.pdb
+D:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmLoginVer.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\bin\Release\FS_ERP_MM.exe.config
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\bin\Release\FS_ERP_MM.exe.manifest
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\bin\Release\FS_ERP_MM.application
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\bin\Release\FS_ERP_MM.exe
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\bin\Release\FS_ERP_MM.pdb
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\bin\Release\FS_ERP_MM.xml
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\ResolveAssemblyReference.cache
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmBERec.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmNewBEMatIssued.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptDailyTran.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmExtCust.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.FrmGroupComp.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmLocalCust.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmOut.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmTranIn.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmUOMD.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmActsBilling.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmBillingParty.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmBillingTranNew.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmBillingTranNewUndoVerifying.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmBillingTranNewVerifying.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptBillingTran.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmBladderRepairIssuance.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmBladerBillingTran4Winding.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmBladerBillingTran.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmCustBladderFormula.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.FrmRepaireBladderRec.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRepairedBladderRec.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmWindedBladderProcess4Winding.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmWindedBladderProcess.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmWindedExect.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptBillingTransactions.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptRepairedBladders.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmBladderProcesses.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmBladerRepRec.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPassBaladerRec.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmAutoPOIN.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmInspectionMaterial.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmMatReq.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.FrmPartialQty.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPOIn.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPurchaseReturn.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmLinesRacksInfo.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmMatWrongAdjustment.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmMatAdjustment.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmNewTranIn.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmNewTranOut.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPOAtGate.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRepairIssuance.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmTranYear.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmCode.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmCurrency.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmUOM.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmDispatchPOsReceive.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmDispMat.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPackOut.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPackTranIn.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmMatBorrowedIssued.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmLendedMatRec.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmAutoSaleIssuance.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmCustItems.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmCustomer.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmMaterialSale.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmSaleAccounts.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmSaleInvoice.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmSalesBill.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmSaleReturn.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptDeptWiseOut.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptFilterBalance.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptFilterBalance1.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptFilterCode.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptFilterTran.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptFortechTran.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptGatePasses.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptMaterialAging.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptMaterialReceiving.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptMRP.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.FrmRptMRPD.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptMIRN.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptPurchaseReturn.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptSaleBill.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptSaleInvoice.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptSupplierLedger.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmLOMRec.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmLoginVer.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmNewDemandCompletion.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmDailyJALAEntry.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmDemandIssuance.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPartialRecDemands.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPOImportTrans.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPOImpShipmentTrans.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPurOrders.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPurOrdersNew.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPurVendorInfo.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmSetPurchaseAmtBilling.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptScrapeSale.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmLockedUsers.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmModuleMgt.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmChngPswd.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmMain.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmUL.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmUserMgt.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptViewer.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.Resources.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmAddDemands.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmBookingStatus.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmCodeProc.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmDemandCompletion.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmDemandPurchased.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPartialPO.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPartialRecAmt.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPartialReceiving.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmProcDemandExceptPO.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmProcDemandSleep.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmProcessDemand.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.FrmScrapSale.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmSetPurchaseAmtTemp.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmSupItems.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmSuppliers.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmUndoChanges.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmVendorInfo.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmVerifyAfterComp.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmVerifyDemand.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmDemandReports.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmDemandReports4Acc.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmDemandReports4Ver.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmMiscReports4Purchase.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPartialRecVStatus.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPOBalance.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptPO.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptPOLedger.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptSupList.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmTMBalances.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmPRRN.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmWareHouseInfo.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmWareHouseIssuance.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmWareHouseRec.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\frmRptFilterTran.vb.vbproj.GenerateResource.Cache
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.exe.manifest
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.application
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.exe
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.xml
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.pdb
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmInwardTranVer.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmDailyTranIn.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmNewSetPurchaseAmt.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmNewVerifyAfterComp.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmNewUndoChanges.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmNewPartialRecAmt.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmNewProcDemandExceptPO.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmNewPartialReceiving.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmUndoVerifyAfterComp.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmLocalSale.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmGP.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmGPReports.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmbillingMatTran.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptBillingTranNew.resources
+E:\My Documents\Visual Studio 2008\Projects\FS_ERP_MM\FS_ERP_MM\obj\Release\FS_ERP_MM.frmRptArticle.resources

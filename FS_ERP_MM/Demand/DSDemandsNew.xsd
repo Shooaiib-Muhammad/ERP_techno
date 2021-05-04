@@ -1,0 +1,567 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSDemandsNew" targetNamespace="http://tempuri.org/DSDemandsNew.xsd" xmlns:mstns="http://tempuri.org/DSDemandsNew.xsd" xmlns="http://tempuri.org/DSDemandsNew.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="Con" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Con (MySettings)" PropertyReference="ApplicationSettings.FS_ERP_MM.My.MySettings.GlobalReference.Default.Con" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_Tran_INTableAdapter" GeneratorDataComponentClassName="View_Tran_INTableAdapter" Name="View_Tran_IN" UserDataComponentName="View_Tran_INTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Con (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        tbl_Inv_Tran_In.DayNo, tbl_Inv_Tran_In.TranInID, tbl_Inv_Tran_In.TranType, tbl_Inv_Tran_In.Code, tbl_Inv_Tran_In.Qty, tbl_Inv_Tran_In.GMNO, tbl_Inv_Tran_In.PDID, tbl_Inv_Tran_In.VendorName, tbl_Inv_Tran_In.RNo, 
+                         tbl_Inv_Tran_In.PPU, tbl_Inv_L4.L4Name, tbl_Inv_LocalCust.CustName, tbl_Inv_Tran_In.AmtEntryDate, tbl_Inv_Tran_In.BillNo, tbl_Inv_Tran_In.Amount, tbl_Inv_Tran_In.PaymentMode, tbl_Inv_Tran_In.FareAmount, 
+                         tbl_Inv_Tran_In.PurchaseStatus, tbl_Inv_Tran_In.OtherCharges, tbl_Inv_Tran_In.UpdateUOM, tbl_Inv_Tran_In.GSTAmt, tbl_Inv_Tran_In.AuditVerification, tbl_Inv_Tran_In.AuditVerDate, tbl_Inv_Tran_Date.DateName, 
+                         ISNull(tbl_Inv_Tran_In.DemandQty, 0) AS DemandQty, ISNull(tbl_Inv_Tran_In.DemandQty, 0) - ISNull(tbl_Inv_Tran_In.Qty, 0) AS Balance, tbl_Inv_Tran_In.DemandNarration, tbl_Inv_LocalCust.LocalCustID, 
+                         tbl_Inv_Tran_In.DNarraiton
+FROM            tbl_Inv_Tran_In, tbl_Inv_LocalCust, tbl_Inv_L4, tbl_Inv_Tran_Date
+WHERE        tbl_Inv_Tran_In.LocalCustID = tbl_Inv_LocalCust.LocalCustID AND tbl_Inv_Tran_In.Code = tbl_Inv_L4.Code AND tbl_Inv_Tran_In.DayNo = tbl_Inv_Tran_Date.DayNo AND (tbl_Inv_Tran_In.TranType = 'GDR')</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DayNo" DataSetColumn="DayNo" />
+              <Mapping SourceColumn="TranInID" DataSetColumn="TranInID" />
+              <Mapping SourceColumn="TranType" DataSetColumn="TranType" />
+              <Mapping SourceColumn="Code" DataSetColumn="Code" />
+              <Mapping SourceColumn="Qty" DataSetColumn="Qty" />
+              <Mapping SourceColumn="GMNO" DataSetColumn="GMNO" />
+              <Mapping SourceColumn="PDID" DataSetColumn="PDID" />
+              <Mapping SourceColumn="VendorName" DataSetColumn="VendorName" />
+              <Mapping SourceColumn="RNo" DataSetColumn="RNo" />
+              <Mapping SourceColumn="PPU" DataSetColumn="PPU" />
+              <Mapping SourceColumn="L4Name" DataSetColumn="L4Name" />
+              <Mapping SourceColumn="CustName" DataSetColumn="CustName" />
+              <Mapping SourceColumn="AmtEntryDate" DataSetColumn="AmtEntryDate" />
+              <Mapping SourceColumn="BillNo" DataSetColumn="BillNo" />
+              <Mapping SourceColumn="Amount" DataSetColumn="Amount" />
+              <Mapping SourceColumn="PaymentMode" DataSetColumn="PaymentMode" />
+              <Mapping SourceColumn="FareAmount" DataSetColumn="FareAmount" />
+              <Mapping SourceColumn="PurchaseStatus" DataSetColumn="PurchaseStatus" />
+              <Mapping SourceColumn="OtherCharges" DataSetColumn="OtherCharges" />
+              <Mapping SourceColumn="UpdateUOM" DataSetColumn="UpdateUOM" />
+              <Mapping SourceColumn="GSTAmt" DataSetColumn="GSTAmt" />
+              <Mapping SourceColumn="AuditVerification" DataSetColumn="AuditVerification" />
+              <Mapping SourceColumn="AuditVerDate" DataSetColumn="AuditVerDate" />
+              <Mapping SourceColumn="DateName" DataSetColumn="DateName" />
+              <Mapping SourceColumn="DemandQty" DataSetColumn="DemandQty" />
+              <Mapping SourceColumn="Balance" DataSetColumn="Balance" />
+              <Mapping SourceColumn="DemandNarration" DataSetColumn="DemandNarration" />
+              <Mapping SourceColumn="LocalCustID" DataSetColumn="LocalCustID" />
+              <Mapping SourceColumn="DNarraiton" DataSetColumn="DNarraiton" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="Con (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteQuery" Modifier="Public" Name="DeleteQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="DeleteQuery">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM tbl_Inv_Tran_In
+WHERE        (TranInID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="TranInID" DataSourceName="" DataTypeServer="int identity" DbType="Int32" Direction="Input" ParameterName="TranInID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TranInID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+              </DbSource>
+              <DbSource ConnectionRef="Con (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy1" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBy1" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        tbl_Inv_Tran_In.DayNo, tbl_Inv_Tran_In.TranInID, tbl_Inv_Tran_In.TranType, tbl_Inv_Tran_In.Code, tbl_Inv_Tran_In.Qty, tbl_Inv_Tran_In.GMNO, tbl_Inv_Tran_In.PDID, tbl_Inv_Tran_In.VendorName, tbl_Inv_Tran_In.RNo, 
+                         tbl_Inv_Tran_In.PPU, tbl_Inv_L4.L4Name, tbl_Inv_LocalCust.CustName, tbl_Inv_Tran_In.AmtEntryDate, tbl_Inv_Tran_In.BillNo, tbl_Inv_Tran_In.Amount, tbl_Inv_Tran_In.PaymentMode, tbl_Inv_Tran_In.FareAmount, 
+                         tbl_Inv_Tran_In.PurchaseStatus, tbl_Inv_Tran_In.OtherCharges, tbl_Inv_Tran_In.UpdateUOM, tbl_Inv_Tran_In.GSTAmt, tbl_Inv_Tran_Date.DateName, tbl_Inv_Tran_In.DNarraiton AS Narration
+FROM            tbl_Inv_Tran_In, tbl_Inv_LocalCust, tbl_Inv_L4, tbl_Inv_Tran_Date
+WHERE        tbl_Inv_Tran_In.LocalCustID = tbl_Inv_LocalCust.LocalCustID AND tbl_Inv_Tran_In.Code = tbl_Inv_L4.Code AND tbl_Inv_Tran_In.DayNo = tbl_Inv_Tran_Date.DayNo AND (tbl_Inv_Tran_Date.DateName BETWEEN ? AND ?) AND 
+                         (tbl_Inv_Tran_In.TranType = 'GDR')</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="DateName" DataSourceName="" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="DateName" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DateName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param2" ColumnName="DateName" DataSourceName="" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="DateName1" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DateName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="Con (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy2" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy2" GeneratorSourceName="FillBy2" GetMethodModifier="Public" GetMethodName="GetDataBy2" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="FillBy2">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        tbl_Inv_Tran_In.DayNo, tbl_Inv_Tran_In.TranInID, tbl_Inv_Tran_In.TranType, tbl_Inv_Tran_In.Code, tbl_Inv_Tran_In.Qty, tbl_Inv_Tran_In.GMNO, tbl_Inv_Tran_In.PDID, tbl_Inv_Tran_In.VendorName, tbl_Inv_Tran_In.RNo, 
+                         tbl_Inv_Tran_In.PPU, tbl_Inv_L4.L4Name, tbl_Inv_LocalCust.CustName, tbl_Inv_Tran_In.AmtEntryDate, tbl_Inv_Tran_In.BillNo, tbl_Inv_Tran_In.Amount, tbl_Inv_Tran_In.PaymentMode, tbl_Inv_Tran_In.FareAmount, 
+                         tbl_Inv_Tran_In.PurchaseStatus, tbl_Inv_Tran_In.OtherCharges, tbl_Inv_Tran_In.UpdateUOM, tbl_Inv_Tran_In.GSTAmt, tbl_Inv_Tran_In.AuditVerification, tbl_Inv_Tran_In.AuditVerDate, tbl_Inv_Tran_Date.DateName, 
+                         tbl_Inv_Tran_In.DNarraiton AS Narration, ISNull(tbl_Inv_Tran_In.DemandQty, 0) AS DemandQty, ISNull(tbl_Inv_Tran_In.DemandQty, 0) - ISNull(tbl_Inv_Tran_In.Qty, 0) AS Balance, tbl_Inv_Tran_In.DemandNarration
+FROM            tbl_Inv_Tran_In, tbl_Inv_LocalCust, tbl_Inv_L4, tbl_Inv_Tran_Date
+WHERE        tbl_Inv_Tran_In.LocalCustID = tbl_Inv_LocalCust.LocalCustID AND tbl_Inv_Tran_In.Code = tbl_Inv_L4.Code AND tbl_Inv_Tran_In.DayNo = tbl_Inv_Tran_Date.DayNo AND (tbl_Inv_Tran_In.TranType = 'GDR') AND 
+                         (tbl_Inv_Tran_Date.DateName BETWEEN ? AND ?) AND (tbl_Inv_Tran_In.Code = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="DateName" DataSourceName="" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="DateName" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DateName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param2" ColumnName="DateName" DataSourceName="" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="DateName1" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DateName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param3" ColumnName="Code" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="Code" Precision="0" ProviderType="VarChar" Scale="0" Size="1024" SourceColumn="Code" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="Con (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy3" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy3" GeneratorSourceName="FillBy3" GetMethodModifier="Public" GetMethodName="GetDataBy3" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="FillBy3">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        tbl_Inv_Tran_In.DayNo, tbl_Inv_Tran_In.TranInID, tbl_Inv_Tran_In.TranType, tbl_Inv_Tran_In.Code, tbl_Inv_Tran_In.Qty, tbl_Inv_Tran_In.GMNO, tbl_Inv_Tran_In.PDID, tbl_Inv_Tran_In.VendorName, tbl_Inv_Tran_In.RNo, 
+                         tbl_Inv_Tran_In.PPU, tbl_Inv_L4.L4Name, tbl_Inv_LocalCust.CustName, tbl_Inv_Tran_In.AmtEntryDate, tbl_Inv_Tran_In.BillNo, tbl_Inv_Tran_In.Amount, tbl_Inv_Tran_In.PaymentMode, tbl_Inv_Tran_In.FareAmount, 
+                         tbl_Inv_Tran_In.PurchaseStatus, tbl_Inv_Tran_In.OtherCharges, tbl_Inv_Tran_In.UpdateUOM, tbl_Inv_Tran_In.GSTAmt, tbl_Inv_Tran_In.AuditVerification, tbl_Inv_Tran_In.AuditVerDate, tbl_Inv_Tran_Date.DateName, 
+                         tbl_Inv_Tran_In.DNarraiton AS Narration, ISNull(tbl_Inv_Tran_In.DemandQty, 0) AS DemandQty, ISNull(tbl_Inv_Tran_In.DemandQty, 0) - ISNull(tbl_Inv_Tran_In.Qty, 0) AS Balance, tbl_Inv_Tran_In.DemandNarration, 
+                         tbl_Inv_LocalCust.LocalCustID
+FROM            tbl_Inv_Tran_In, tbl_Inv_LocalCust, tbl_Inv_L4, tbl_Inv_Tran_Date
+WHERE        tbl_Inv_Tran_In.LocalCustID = tbl_Inv_LocalCust.LocalCustID AND tbl_Inv_Tran_In.Code = tbl_Inv_L4.Code AND tbl_Inv_Tran_In.DayNo = tbl_Inv_Tran_Date.DayNo AND (tbl_Inv_Tran_In.TranType = 'GDR') AND 
+                         (tbl_Inv_LocalCust.LocalCustID = ?) AND (tbl_Inv_Tran_Date.DateName BETWEEN ? AND ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="LocalCustID" DataSourceName="" DataTypeServer="int identity" DbType="Int32" Direction="Input" ParameterName="LocalCustID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="LocalCustID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param2" ColumnName="DateName" DataSourceName="" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="DateName" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DateName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param3" ColumnName="DateName" DataSourceName="" DataTypeServer="datetime" DbType="DateTime" Direction="Input" ParameterName="DateName1" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DateName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="Con (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy4" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy4" GeneratorSourceName="FillBy4" GetMethodModifier="Public" GetMethodName="GetDataBy4" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="FillBy4">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        tbl_Inv_Tran_In.DayNo, tbl_Inv_Tran_In.TranInID, tbl_Inv_Tran_In.TranType, tbl_Inv_Tran_In.Code, tbl_Inv_Tran_In.Qty, tbl_Inv_Tran_In.GMNO, tbl_Inv_Tran_In.PDID, tbl_Inv_Tran_In.VendorName, tbl_Inv_Tran_In.RNo, 
+                         tbl_Inv_Tran_In.PPU, tbl_Inv_L4.L4Name, tbl_Inv_LocalCust.CustName, tbl_Inv_Tran_In.AmtEntryDate, tbl_Inv_Tran_In.BillNo, tbl_Inv_Tran_In.Amount, tbl_Inv_Tran_In.PaymentMode, tbl_Inv_Tran_In.FareAmount, 
+                         tbl_Inv_Tran_In.PurchaseStatus, tbl_Inv_Tran_In.OtherCharges, tbl_Inv_Tran_In.UpdateUOM, tbl_Inv_Tran_In.GSTAmt, tbl_Inv_Tran_In.AuditVerification, tbl_Inv_Tran_In.AuditVerDate, tbl_Inv_Tran_Date.DateName, 
+                         tbl_Inv_Tran_In.Narration AS DNarraiton, ISNull(tbl_Inv_Tran_In.DemandQty, 0) AS DemandQty, ISNull(tbl_Inv_Tran_In.Qty, 0) - ISNull(tbl_Inv_Tran_In.DemandQty, 0) AS Balance, tbl_Inv_Tran_In.GPNO
+FROM            tbl_Inv_Tran_In, tbl_Inv_LocalCust, tbl_Inv_L4, tbl_Inv_Tran_Date
+WHERE        tbl_Inv_Tran_In.LocalCustID = tbl_Inv_LocalCust.LocalCustID AND tbl_Inv_Tran_In.Code = tbl_Inv_L4.Code AND tbl_Inv_Tran_In.DayNo = tbl_Inv_Tran_Date.DayNo AND (tbl_Inv_Tran_In.GMNO = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param1" ColumnName="GMNO" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="GMNO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="GMNO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_Inv_Tran_DateTableAdapter" GeneratorDataComponentClassName="tbl_Inv_Tran_DateTableAdapter" Name="tbl_Inv_Tran_Date" UserDataComponentName="tbl_Inv_Tran_DateTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Con (MySettings)" DbObjectName="MIS.dbo.tbl_Inv_Tran_Date" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [tbl_Inv_Tran_Date] WHERE (([DayNo] = ?) AND ([DateName] = ?))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_DayNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DayNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_DateName" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DateName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [tbl_Inv_Tran_Date] ([DateName]) VALUES (?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="DateName" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DateName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        DayNo, DateName
+FROM            tbl_Inv_Tran_Date</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [tbl_Inv_Tran_Date] SET [DateName] = ? WHERE (([DayNo] = ?) AND ([DateName] = ?))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="DateName" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DateName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_DayNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DayNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_DateName" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DateName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DayNo" DataSetColumn="DayNo" />
+              <Mapping SourceColumn="DateName" DataSetColumn="DateName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_Tran_IN_TransTableAdapter" GeneratorDataComponentClassName="View_Tran_IN_TransTableAdapter" Name="View_Tran_IN_Trans" UserDataComponentName="View_Tran_IN_TransTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Con (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        tbl_Inv_Tran_In.DayNo, tbl_Inv_Tran_In.TranInID, tbl_Inv_Tran_In.TranType, tbl_Inv_Tran_In.Code, tbl_Inv_Tran_In.Qty, tbl_Inv_Tran_In.GMNO, tbl_Inv_Tran_In.PDID, tbl_Inv_Tran_In.VendorName, tbl_Inv_Tran_In.RNo, 
+                         tbl_Inv_Tran_In.PPU, tbl_Inv_L4.L4Name, tbl_Inv_LocalCust.CustName, tbl_Inv_Tran_In.AmtEntryDate, tbl_Inv_Tran_In.BillNo, tbl_Inv_Tran_In.Amount, tbl_Inv_Tran_In.PaymentMode, tbl_Inv_Tran_In.FareAmount, 
+                         tbl_Inv_Tran_In.PurchaseStatus, tbl_Inv_Tran_In.OtherCharges, tbl_Inv_Tran_In.UpdateUOM, tbl_Inv_Tran_In.GSTAmt, tbl_Inv_Tran_In.AuditVerification, tbl_Inv_Tran_In.AuditVerDate, tbl_Inv_Tran_Date.DateName, 
+                         View_Demand_Balance.Qty AS Balance, tbl_Inv_Tran_In.LocalCustID, tbl_Inv_Tran_In.Narration, ISNull(tbl_Inv_Tran_In.DemandQty, 0) AS DemandQty, ISNull(tbl_Inv_Tran_In.Qty, 0) - ISNull(tbl_Inv_Tran_In.DemandQty, 0) 
+                         AS FinalBalance, tbl_Inv_Tran_In.DemandNarration
+FROM            tbl_Inv_Tran_In, tbl_Inv_LocalCust, tbl_Inv_L4, tbl_Inv_Tran_Date, View_Demand_Balance
+WHERE        tbl_Inv_Tran_In.LocalCustID = tbl_Inv_LocalCust.LocalCustID AND tbl_Inv_Tran_In.Code = tbl_Inv_L4.Code AND tbl_Inv_Tran_In.DayNo = tbl_Inv_Tran_Date.DayNo AND tbl_Inv_Tran_In.Code = View_Demand_Balance.Code AND
+                          tbl_Inv_Tran_In.GMNO = View_Demand_Balance.GMNO AND (tbl_Inv_Tran_In.GMNO IS NOT NULL) AND (View_Demand_Balance.Qty &gt; 0)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DayNo" DataSetColumn="DayNo" />
+              <Mapping SourceColumn="TranInID" DataSetColumn="TranInID" />
+              <Mapping SourceColumn="TranType" DataSetColumn="TranType" />
+              <Mapping SourceColumn="Code" DataSetColumn="Code" />
+              <Mapping SourceColumn="Qty" DataSetColumn="Qty" />
+              <Mapping SourceColumn="GMNO" DataSetColumn="GMNO" />
+              <Mapping SourceColumn="PDID" DataSetColumn="PDID" />
+              <Mapping SourceColumn="VendorName" DataSetColumn="VendorName" />
+              <Mapping SourceColumn="RNo" DataSetColumn="RNo" />
+              <Mapping SourceColumn="PPU" DataSetColumn="PPU" />
+              <Mapping SourceColumn="L4Name" DataSetColumn="L4Name" />
+              <Mapping SourceColumn="CustName" DataSetColumn="CustName" />
+              <Mapping SourceColumn="AmtEntryDate" DataSetColumn="AmtEntryDate" />
+              <Mapping SourceColumn="BillNo" DataSetColumn="BillNo" />
+              <Mapping SourceColumn="Amount" DataSetColumn="Amount" />
+              <Mapping SourceColumn="PaymentMode" DataSetColumn="PaymentMode" />
+              <Mapping SourceColumn="FareAmount" DataSetColumn="FareAmount" />
+              <Mapping SourceColumn="PurchaseStatus" DataSetColumn="PurchaseStatus" />
+              <Mapping SourceColumn="OtherCharges" DataSetColumn="OtherCharges" />
+              <Mapping SourceColumn="UpdateUOM" DataSetColumn="UpdateUOM" />
+              <Mapping SourceColumn="GSTAmt" DataSetColumn="GSTAmt" />
+              <Mapping SourceColumn="AuditVerification" DataSetColumn="AuditVerification" />
+              <Mapping SourceColumn="AuditVerDate" DataSetColumn="AuditVerDate" />
+              <Mapping SourceColumn="DateName" DataSetColumn="DateName" />
+              <Mapping SourceColumn="Balance" DataSetColumn="Balance" />
+              <Mapping SourceColumn="LocalCustID" DataSetColumn="LocalCustID" />
+              <Mapping SourceColumn="Narration" DataSetColumn="Narration" />
+              <Mapping SourceColumn="DemandQty" DataSetColumn="DemandQty" />
+              <Mapping SourceColumn="FinalBalance" DataSetColumn="FinalBalance" />
+              <Mapping SourceColumn="DemandNarration" DataSetColumn="DemandNarration" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="Con (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertQuery" Modifier="Public" Name="InsertQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="InsertQuery">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO tbl_Inv_Tran_Out
+                         (TranType, TranDocNo, Code, Qty, LocalCustID, Naration, UOM, DayNo, UserID, PPU, IssuedQty)
+VALUES        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param1" ColumnName="TranType" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="TranType" Precision="0" ProviderType="NVarChar" Scale="0" Size="1024" SourceColumn="TranType" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param2" ColumnName="TranDocNo" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="TranDocNo" Precision="0" ProviderType="NVarChar" Scale="0" Size="1024" SourceColumn="TranDocNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param3" ColumnName="Code" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="Code" Precision="0" ProviderType="VarChar" Scale="0" Size="1024" SourceColumn="Code" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param4" ColumnName="Qty" DataSourceName="" DataTypeServer="numeric" DbType="Decimal" Direction="Input" ParameterName="Qty" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="Qty" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param5" ColumnName="LocalCustID" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="LocalCustID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="LocalCustID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param6" ColumnName="Naration" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="Naration" Precision="0" ProviderType="VarChar" Scale="0" Size="1024" SourceColumn="Naration" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param7" ColumnName="UOM" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="UOM" Precision="0" ProviderType="NVarChar" Scale="0" Size="1024" SourceColumn="UOM" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param8" ColumnName="DayNo" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="DayNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DayNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param9" ColumnName="UserID" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="UserID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="UserID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param10" ColumnName="PPU" DataSourceName="" DataTypeServer="numeric" DbType="Decimal" Direction="Input" ParameterName="PPU" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="PPU" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param11" ColumnName="IssuedQty" DataSourceName="" DataTypeServer="numeric" DbType="Decimal" Direction="Input" ParameterName="IssuedQty" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="IssuedQty" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_Demand_IssuanceTableAdapter" GeneratorDataComponentClassName="View_Demand_IssuanceTableAdapter" Name="View_Demand_Issuance" UserDataComponentName="View_Demand_IssuanceTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Con (MySettings)" DbObjectName="MIS.dbo.View_GDR_Store" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        TranType, L4Name, RequiredQty, DateName, IssuedQty, DeptName, UOM, TranDocNo, TranOutID
+FROM            View_GDR_Store
+WHERE        (TranDocNo = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="TranDocNo" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="TranDocNo" Precision="0" ProviderType="NVarChar" Scale="0" Size="1024" SourceColumn="TranDocNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TranType" DataSetColumn="TranType" />
+              <Mapping SourceColumn="L4Name" DataSetColumn="L4Name" />
+              <Mapping SourceColumn="RequiredQty" DataSetColumn="RequiredQty" />
+              <Mapping SourceColumn="DateName" DataSetColumn="DateName" />
+              <Mapping SourceColumn="IssuedQty" DataSetColumn="IssuedQty" />
+              <Mapping SourceColumn="DeptName" DataSetColumn="DeptName" />
+              <Mapping SourceColumn="UOM" DataSetColumn="UOM" />
+              <Mapping SourceColumn="TranDocNo" DataSetColumn="TranDocNo" />
+              <Mapping SourceColumn="TranOutID" DataSetColumn="TranOutID" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="Con (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteQuery" Modifier="Public" Name="DeleteQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="DeleteQuery">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM tbl_Inv_Tran_Out
+WHERE        (TranOutID = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="TranOutID" DataSourceName="" DataTypeServer="int identity" DbType="Int32" Direction="Input" ParameterName="TranOutID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TranOutID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSDemandsNew" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSDemandsNew" msprop:Generator_UserDSName="DSDemandsNew">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_Tran_IN" msprop:Generator_TableClassName="View_Tran_INDataTable" msprop:Generator_TableVarName="tableView_Tran_IN" msprop:Generator_TablePropName="View_Tran_IN" msprop:Generator_RowDeletingName="View_Tran_INRowDeleting" msprop:Generator_RowChangingName="View_Tran_INRowChanging" msprop:Generator_RowEvHandlerName="View_Tran_INRowChangeEventHandler" msprop:Generator_RowDeletedName="View_Tran_INRowDeleted" msprop:Generator_UserTableName="View_Tran_IN" msprop:Generator_RowChangedName="View_Tran_INRowChanged" msprop:Generator_RowEvArgName="View_Tran_INRowChangeEvent" msprop:Generator_RowClassName="View_Tran_INRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DayNo" msprop:Generator_ColumnVarNameInTable="columnDayNo" msprop:Generator_ColumnPropNameInRow="DayNo" msprop:Generator_ColumnPropNameInTable="DayNoColumn" msprop:Generator_UserColumnName="DayNo" type="xs:int" />
+              <xs:element name="TranInID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnTranInID" msprop:Generator_ColumnPropNameInRow="TranInID" msprop:Generator_ColumnPropNameInTable="TranInIDColumn" msprop:Generator_UserColumnName="TranInID" type="xs:int" />
+              <xs:element name="TranType" msprop:Generator_ColumnVarNameInTable="columnTranType" msprop:Generator_ColumnPropNameInRow="TranType" msprop:Generator_ColumnPropNameInTable="TranTypeColumn" msprop:Generator_UserColumnName="TranType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnPropNameInTable="QtyColumn" msprop:Generator_UserColumnName="Qty" type="xs:decimal" />
+              <xs:element name="GMNO" msprop:Generator_ColumnVarNameInTable="columnGMNO" msprop:Generator_ColumnPropNameInRow="GMNO" msprop:Generator_ColumnPropNameInTable="GMNOColumn" msprop:Generator_UserColumnName="GMNO" type="xs:int" minOccurs="0" />
+              <xs:element name="PDID" msprop:Generator_ColumnVarNameInTable="columnPDID" msprop:Generator_ColumnPropNameInRow="PDID" msprop:Generator_ColumnPropNameInTable="PDIDColumn" msprop:Generator_UserColumnName="PDID" type="xs:int" minOccurs="0" />
+              <xs:element name="VendorName" msprop:Generator_ColumnVarNameInTable="columnVendorName" msprop:Generator_ColumnPropNameInRow="VendorName" msprop:Generator_ColumnPropNameInTable="VendorNameColumn" msprop:Generator_UserColumnName="VendorName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RNo" msprop:Generator_ColumnVarNameInTable="columnRNo" msprop:Generator_ColumnPropNameInRow="RNo" msprop:Generator_ColumnPropNameInTable="RNoColumn" msprop:Generator_UserColumnName="RNo" type="xs:int" minOccurs="0" />
+              <xs:element name="PPU" msprop:Generator_ColumnVarNameInTable="columnPPU" msprop:Generator_ColumnPropNameInRow="PPU" msprop:Generator_ColumnPropNameInTable="PPUColumn" msprop:Generator_UserColumnName="PPU" type="xs:decimal" minOccurs="0" />
+              <xs:element name="L4Name" msprop:Generator_ColumnVarNameInTable="columnL4Name" msprop:Generator_ColumnPropNameInRow="L4Name" msprop:Generator_ColumnPropNameInTable="L4NameColumn" msprop:Generator_UserColumnName="L4Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CustName" msprop:Generator_ColumnVarNameInTable="columnCustName" msprop:Generator_ColumnPropNameInRow="CustName" msprop:Generator_ColumnPropNameInTable="CustNameColumn" msprop:Generator_UserColumnName="CustName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AmtEntryDate" msprop:Generator_ColumnVarNameInTable="columnAmtEntryDate" msprop:Generator_ColumnPropNameInRow="AmtEntryDate" msprop:Generator_ColumnPropNameInTable="AmtEntryDateColumn" msprop:Generator_UserColumnName="AmtEntryDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="BillNo" msprop:Generator_ColumnVarNameInTable="columnBillNo" msprop:Generator_ColumnPropNameInRow="BillNo" msprop:Generator_ColumnPropNameInTable="BillNoColumn" msprop:Generator_UserColumnName="BillNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PaymentMode" msprop:Generator_ColumnVarNameInTable="columnPaymentMode" msprop:Generator_ColumnPropNameInRow="PaymentMode" msprop:Generator_ColumnPropNameInTable="PaymentModeColumn" msprop:Generator_UserColumnName="PaymentMode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FareAmount" msprop:Generator_ColumnVarNameInTable="columnFareAmount" msprop:Generator_ColumnPropNameInRow="FareAmount" msprop:Generator_ColumnPropNameInTable="FareAmountColumn" msprop:Generator_UserColumnName="FareAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PurchaseStatus" msprop:Generator_ColumnVarNameInTable="columnPurchaseStatus" msprop:Generator_ColumnPropNameInRow="PurchaseStatus" msprop:Generator_ColumnPropNameInTable="PurchaseStatusColumn" msprop:Generator_UserColumnName="PurchaseStatus" type="xs:boolean" minOccurs="0" />
+              <xs:element name="OtherCharges" msprop:Generator_ColumnVarNameInTable="columnOtherCharges" msprop:Generator_ColumnPropNameInRow="OtherCharges" msprop:Generator_ColumnPropNameInTable="OtherChargesColumn" msprop:Generator_UserColumnName="OtherCharges" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UpdateUOM" msprop:Generator_ColumnVarNameInTable="columnUpdateUOM" msprop:Generator_ColumnPropNameInRow="UpdateUOM" msprop:Generator_ColumnPropNameInTable="UpdateUOMColumn" msprop:Generator_UserColumnName="UpdateUOM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GSTAmt" msprop:Generator_ColumnVarNameInTable="columnGSTAmt" msprop:Generator_ColumnPropNameInRow="GSTAmt" msprop:Generator_ColumnPropNameInTable="GSTAmtColumn" msprop:Generator_UserColumnName="GSTAmt" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AuditVerification" msprop:Generator_ColumnVarNameInTable="columnAuditVerification" msprop:Generator_ColumnPropNameInRow="AuditVerification" msprop:Generator_ColumnPropNameInTable="AuditVerificationColumn" msprop:Generator_UserColumnName="AuditVerification" type="xs:boolean" minOccurs="0" />
+              <xs:element name="AuditVerDate" msprop:Generator_ColumnVarNameInTable="columnAuditVerDate" msprop:Generator_ColumnPropNameInRow="AuditVerDate" msprop:Generator_ColumnPropNameInTable="AuditVerDateColumn" msprop:Generator_UserColumnName="AuditVerDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DateName" msprop:Generator_ColumnVarNameInTable="columnDateName" msprop:Generator_ColumnPropNameInRow="DateName" msprop:Generator_ColumnPropNameInTable="DateNameColumn" msprop:Generator_UserColumnName="DateName" type="xs:dateTime" />
+              <xs:element name="DemandQty" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDemandQty" msprop:Generator_ColumnPropNameInRow="DemandQty" msprop:Generator_ColumnPropNameInTable="DemandQtyColumn" msprop:Generator_UserColumnName="DemandQty" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Balance" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnBalance" msprop:Generator_ColumnPropNameInRow="Balance" msprop:Generator_ColumnPropNameInTable="BalanceColumn" msprop:Generator_UserColumnName="Balance" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DemandNarration" msprop:Generator_ColumnVarNameInTable="columnDemandNarration" msprop:Generator_ColumnPropNameInRow="DemandNarration" msprop:Generator_ColumnPropNameInTable="DemandNarrationColumn" msprop:Generator_UserColumnName="DemandNarration" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2050" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LocalCustID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnLocalCustID" msprop:Generator_ColumnPropNameInRow="LocalCustID" msprop:Generator_ColumnPropNameInTable="LocalCustIDColumn" msprop:Generator_UserColumnName="LocalCustID" type="xs:int" />
+              <xs:element name="DNarraiton" msprop:Generator_ColumnVarNameInTable="columnDNarraiton" msprop:Generator_ColumnPropNameInRow="DNarraiton" msprop:Generator_ColumnPropNameInTable="DNarraitonColumn" msprop:Generator_UserColumnName="DNarraiton" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_Inv_Tran_Date" msprop:Generator_TableClassName="tbl_Inv_Tran_DateDataTable" msprop:Generator_TableVarName="tabletbl_Inv_Tran_Date" msprop:Generator_TablePropName="tbl_Inv_Tran_Date" msprop:Generator_RowDeletingName="tbl_Inv_Tran_DateRowDeleting" msprop:Generator_RowChangingName="tbl_Inv_Tran_DateRowChanging" msprop:Generator_RowEvHandlerName="tbl_Inv_Tran_DateRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_Inv_Tran_DateRowDeleted" msprop:Generator_UserTableName="tbl_Inv_Tran_Date" msprop:Generator_RowChangedName="tbl_Inv_Tran_DateRowChanged" msprop:Generator_RowEvArgName="tbl_Inv_Tran_DateRowChangeEvent" msprop:Generator_RowClassName="tbl_Inv_Tran_DateRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DayNo" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnDayNo" msprop:Generator_ColumnPropNameInRow="DayNo" msprop:Generator_ColumnPropNameInTable="DayNoColumn" msprop:Generator_UserColumnName="DayNo" type="xs:int" />
+              <xs:element name="DateName" msprop:Generator_ColumnVarNameInTable="columnDateName" msprop:Generator_ColumnPropNameInRow="DateName" msprop:Generator_ColumnPropNameInTable="DateNameColumn" msprop:Generator_UserColumnName="DateName" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="View_Tran_IN_Trans" msprop:Generator_TableClassName="View_Tran_IN_TransDataTable" msprop:Generator_TableVarName="tableView_Tran_IN_Trans" msprop:Generator_TablePropName="View_Tran_IN_Trans" msprop:Generator_RowDeletingName="View_Tran_IN_TransRowDeleting" msprop:Generator_RowChangingName="View_Tran_IN_TransRowChanging" msprop:Generator_RowEvHandlerName="View_Tran_IN_TransRowChangeEventHandler" msprop:Generator_RowDeletedName="View_Tran_IN_TransRowDeleted" msprop:Generator_UserTableName="View_Tran_IN_Trans" msprop:Generator_RowChangedName="View_Tran_IN_TransRowChanged" msprop:Generator_RowEvArgName="View_Tran_IN_TransRowChangeEvent" msprop:Generator_RowClassName="View_Tran_IN_TransRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DayNo" msprop:Generator_ColumnVarNameInTable="columnDayNo" msprop:Generator_ColumnPropNameInRow="DayNo" msprop:Generator_ColumnPropNameInTable="DayNoColumn" msprop:Generator_UserColumnName="DayNo" type="xs:int" />
+              <xs:element name="TranInID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnTranInID" msprop:Generator_ColumnPropNameInRow="TranInID" msprop:Generator_ColumnPropNameInTable="TranInIDColumn" msprop:Generator_UserColumnName="TranInID" type="xs:int" />
+              <xs:element name="TranType" msprop:Generator_ColumnVarNameInTable="columnTranType" msprop:Generator_ColumnPropNameInRow="TranType" msprop:Generator_ColumnPropNameInTable="TranTypeColumn" msprop:Generator_UserColumnName="TranType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnPropNameInTable="QtyColumn" msprop:Generator_UserColumnName="Qty" type="xs:decimal" />
+              <xs:element name="GMNO" msprop:Generator_ColumnVarNameInTable="columnGMNO" msprop:Generator_ColumnPropNameInRow="GMNO" msprop:Generator_ColumnPropNameInTable="GMNOColumn" msprop:Generator_UserColumnName="GMNO" type="xs:int" minOccurs="0" />
+              <xs:element name="PDID" msprop:Generator_ColumnVarNameInTable="columnPDID" msprop:Generator_ColumnPropNameInRow="PDID" msprop:Generator_ColumnPropNameInTable="PDIDColumn" msprop:Generator_UserColumnName="PDID" type="xs:int" minOccurs="0" />
+              <xs:element name="VendorName" msprop:Generator_ColumnVarNameInTable="columnVendorName" msprop:Generator_ColumnPropNameInRow="VendorName" msprop:Generator_ColumnPropNameInTable="VendorNameColumn" msprop:Generator_UserColumnName="VendorName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RNo" msprop:Generator_ColumnVarNameInTable="columnRNo" msprop:Generator_ColumnPropNameInRow="RNo" msprop:Generator_ColumnPropNameInTable="RNoColumn" msprop:Generator_UserColumnName="RNo" type="xs:int" minOccurs="0" />
+              <xs:element name="PPU" msprop:Generator_ColumnVarNameInTable="columnPPU" msprop:Generator_ColumnPropNameInRow="PPU" msprop:Generator_ColumnPropNameInTable="PPUColumn" msprop:Generator_UserColumnName="PPU" type="xs:decimal" minOccurs="0" />
+              <xs:element name="L4Name" msprop:Generator_ColumnVarNameInTable="columnL4Name" msprop:Generator_ColumnPropNameInRow="L4Name" msprop:Generator_ColumnPropNameInTable="L4NameColumn" msprop:Generator_UserColumnName="L4Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CustName" msprop:Generator_ColumnVarNameInTable="columnCustName" msprop:Generator_ColumnPropNameInRow="CustName" msprop:Generator_ColumnPropNameInTable="CustNameColumn" msprop:Generator_UserColumnName="CustName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AmtEntryDate" msprop:Generator_ColumnVarNameInTable="columnAmtEntryDate" msprop:Generator_ColumnPropNameInRow="AmtEntryDate" msprop:Generator_ColumnPropNameInTable="AmtEntryDateColumn" msprop:Generator_UserColumnName="AmtEntryDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="BillNo" msprop:Generator_ColumnVarNameInTable="columnBillNo" msprop:Generator_ColumnPropNameInRow="BillNo" msprop:Generator_ColumnPropNameInTable="BillNoColumn" msprop:Generator_UserColumnName="BillNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PaymentMode" msprop:Generator_ColumnVarNameInTable="columnPaymentMode" msprop:Generator_ColumnPropNameInRow="PaymentMode" msprop:Generator_ColumnPropNameInTable="PaymentModeColumn" msprop:Generator_UserColumnName="PaymentMode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FareAmount" msprop:Generator_ColumnVarNameInTable="columnFareAmount" msprop:Generator_ColumnPropNameInRow="FareAmount" msprop:Generator_ColumnPropNameInTable="FareAmountColumn" msprop:Generator_UserColumnName="FareAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PurchaseStatus" msprop:Generator_ColumnVarNameInTable="columnPurchaseStatus" msprop:Generator_ColumnPropNameInRow="PurchaseStatus" msprop:Generator_ColumnPropNameInTable="PurchaseStatusColumn" msprop:Generator_UserColumnName="PurchaseStatus" type="xs:boolean" minOccurs="0" />
+              <xs:element name="OtherCharges" msprop:Generator_ColumnVarNameInTable="columnOtherCharges" msprop:Generator_ColumnPropNameInRow="OtherCharges" msprop:Generator_ColumnPropNameInTable="OtherChargesColumn" msprop:Generator_UserColumnName="OtherCharges" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UpdateUOM" msprop:Generator_ColumnVarNameInTable="columnUpdateUOM" msprop:Generator_ColumnPropNameInRow="UpdateUOM" msprop:Generator_ColumnPropNameInTable="UpdateUOMColumn" msprop:Generator_UserColumnName="UpdateUOM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GSTAmt" msprop:Generator_ColumnVarNameInTable="columnGSTAmt" msprop:Generator_ColumnPropNameInRow="GSTAmt" msprop:Generator_ColumnPropNameInTable="GSTAmtColumn" msprop:Generator_UserColumnName="GSTAmt" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AuditVerification" msprop:Generator_ColumnVarNameInTable="columnAuditVerification" msprop:Generator_ColumnPropNameInRow="AuditVerification" msprop:Generator_ColumnPropNameInTable="AuditVerificationColumn" msprop:Generator_UserColumnName="AuditVerification" type="xs:boolean" minOccurs="0" />
+              <xs:element name="AuditVerDate" msprop:Generator_ColumnVarNameInTable="columnAuditVerDate" msprop:Generator_ColumnPropNameInRow="AuditVerDate" msprop:Generator_ColumnPropNameInTable="AuditVerDateColumn" msprop:Generator_UserColumnName="AuditVerDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DateName" msprop:Generator_ColumnVarNameInTable="columnDateName" msprop:Generator_ColumnPropNameInRow="DateName" msprop:Generator_ColumnPropNameInTable="DateNameColumn" msprop:Generator_UserColumnName="DateName" type="xs:dateTime" />
+              <xs:element name="Balance" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnBalance" msprop:Generator_ColumnPropNameInRow="Balance" msprop:Generator_ColumnPropNameInTable="BalanceColumn" msprop:Generator_UserColumnName="Balance" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LocalCustID" msprop:Generator_ColumnVarNameInTable="columnLocalCustID" msprop:Generator_ColumnPropNameInRow="LocalCustID" msprop:Generator_ColumnPropNameInTable="LocalCustIDColumn" msprop:Generator_UserColumnName="LocalCustID" type="xs:int" minOccurs="0" />
+              <xs:element name="Narration" msprop:Generator_ColumnVarNameInTable="columnNarration" msprop:Generator_ColumnPropNameInRow="Narration" msprop:Generator_ColumnPropNameInTable="NarrationColumn" msprop:Generator_UserColumnName="Narration" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DemandQty" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDemandQty" msprop:Generator_ColumnPropNameInRow="DemandQty" msprop:Generator_ColumnPropNameInTable="DemandQtyColumn" msprop:Generator_UserColumnName="DemandQty" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FinalBalance" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnFinalBalance" msprop:Generator_ColumnPropNameInRow="FinalBalance" msprop:Generator_ColumnPropNameInTable="FinalBalanceColumn" msprop:Generator_UserColumnName="FinalBalance" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DemandNarration" msprop:Generator_ColumnVarNameInTable="columnDemandNarration" msprop:Generator_ColumnPropNameInRow="DemandNarration" msprop:Generator_ColumnPropNameInTable="DemandNarrationColumn" msprop:Generator_UserColumnName="DemandNarration" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2050" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="View_Demand_Issuance" msprop:Generator_TableClassName="View_Demand_IssuanceDataTable" msprop:Generator_TableVarName="tableView_Demand_Issuance" msprop:Generator_TablePropName="View_Demand_Issuance" msprop:Generator_RowDeletingName="View_Demand_IssuanceRowDeleting" msprop:Generator_RowChangingName="View_Demand_IssuanceRowChanging" msprop:Generator_RowEvHandlerName="View_Demand_IssuanceRowChangeEventHandler" msprop:Generator_RowDeletedName="View_Demand_IssuanceRowDeleted" msprop:Generator_UserTableName="View_Demand_Issuance" msprop:Generator_RowChangedName="View_Demand_IssuanceRowChanged" msprop:Generator_RowEvArgName="View_Demand_IssuanceRowChangeEvent" msprop:Generator_RowClassName="View_Demand_IssuanceRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TranType" msprop:Generator_ColumnVarNameInTable="columnTranType" msprop:Generator_ColumnPropNameInRow="TranType" msprop:Generator_ColumnPropNameInTable="TranTypeColumn" msprop:Generator_UserColumnName="TranType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="L4Name" msprop:Generator_ColumnVarNameInTable="columnL4Name" msprop:Generator_ColumnPropNameInRow="L4Name" msprop:Generator_ColumnPropNameInTable="L4NameColumn" msprop:Generator_UserColumnName="L4Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RequiredQty" msprop:Generator_ColumnVarNameInTable="columnRequiredQty" msprop:Generator_ColumnPropNameInRow="RequiredQty" msprop:Generator_ColumnPropNameInTable="RequiredQtyColumn" msprop:Generator_UserColumnName="RequiredQty" type="xs:decimal" />
+              <xs:element name="DateName" msprop:Generator_ColumnVarNameInTable="columnDateName" msprop:Generator_ColumnPropNameInRow="DateName" msprop:Generator_ColumnPropNameInTable="DateNameColumn" msprop:Generator_UserColumnName="DateName" type="xs:dateTime" />
+              <xs:element name="IssuedQty" msprop:Generator_ColumnVarNameInTable="columnIssuedQty" msprop:Generator_ColumnPropNameInRow="IssuedQty" msprop:Generator_ColumnPropNameInTable="IssuedQtyColumn" msprop:Generator_UserColumnName="IssuedQty" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DeptName" msprop:Generator_ColumnVarNameInTable="columnDeptName" msprop:Generator_ColumnPropNameInRow="DeptName" msprop:Generator_ColumnPropNameInTable="DeptNameColumn" msprop:Generator_UserColumnName="DeptName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="900" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UOM" msprop:Generator_ColumnVarNameInTable="columnUOM" msprop:Generator_ColumnPropNameInRow="UOM" msprop:Generator_ColumnPropNameInTable="UOMColumn" msprop:Generator_UserColumnName="UOM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TranDocNo" msprop:Generator_ColumnVarNameInTable="columnTranDocNo" msprop:Generator_ColumnPropNameInRow="TranDocNo" msprop:Generator_ColumnPropNameInTable="TranDocNoColumn" msprop:Generator_UserColumnName="TranDocNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TranOutID" msprop:Generator_ColumnVarNameInTable="columnTranOutID" msprop:Generator_ColumnPropNameInRow="TranOutID" msprop:Generator_ColumnPropNameInTable="TranOutIDColumn" msprop:Generator_UserColumnName="TranOutID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tbl_Inv_Tran_Date" />
+      <xs:field xpath="mstns:DayNo" />
+    </xs:unique>
+    <xs:unique name="View_Demand_Issuance_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:View_Demand_Issuance" />
+      <xs:field xpath="mstns:L4Name" />
+    </xs:unique>
+    <xs:unique name="Constraint2">
+      <xs:selector xpath=".//mstns:View_Demand_Issuance" />
+      <xs:field xpath="mstns:DateName" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

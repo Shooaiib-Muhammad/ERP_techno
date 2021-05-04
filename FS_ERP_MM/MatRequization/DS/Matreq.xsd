@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Matreq" targetNamespace="http://tempuri.org/Matreq.xsd" xmlns:mstns="http://tempuri.org/Matreq.xsd" xmlns="http://tempuri.org/Matreq.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="Con" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Con (MySettings)" PropertyReference="ApplicationSettings.FS_ERP_MM.My.MySettings.GlobalReference.Default.Con" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_PlanTableAdapter" GeneratorDataComponentClassName="tbl_planTableAdapter" Name="tbl_Plan" UserDataComponentName="tbl_PlanTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Con (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        tbl_Pro_Plan.MPID, tbl_Pro_Plan.ClientID, tbl_Pro_Plan.ModelID, tbl_Pro_Plan.ArtID, tbl_Pro_Plan.ArtSize, tbl_Pro_Plan.PrdLine, tbl_Pro_Plan.BarCode, tbl_Pro_Article.ArtCode, tbl_Pro_Model.ModelNo, 
+                         tbl_Pro_Model.ModelName, tbl_Pro_Model.FactoryCode, tbl_Pro_Plan.PlanDate, tbl_Pro_Plan.TotalQty
+FROM            tbl_Pro_Model, tbl_Pro_Article, tbl_Pro_Plan, tbl_Pro_Plan_D
+WHERE        tbl_Pro_Model.ClientID = tbl_Pro_Article.ClientID AND tbl_Pro_Model.ModelID = tbl_Pro_Article.ModelID AND tbl_Pro_Article.ClientID = tbl_Pro_Plan.ClientID AND tbl_Pro_Article.ModelID = tbl_Pro_Plan.ModelID AND 
+                         tbl_Pro_Article.ArtID = tbl_Pro_Plan.ArtID AND tbl_Pro_Plan.MPID = tbl_Pro_Plan_D.MPID
+GROUP BY tbl_Pro_Plan.MPID, tbl_Pro_Plan.ClientID, tbl_Pro_Plan.ModelID, tbl_Pro_Plan.ArtID, tbl_Pro_Plan.ArtSize, tbl_Pro_Plan.PrdLine, tbl_Pro_Plan.BarCode, tbl_Pro_Article.ArtCode, tbl_Pro_Model.ModelNo, 
+                         tbl_Pro_Model.ModelName, tbl_Pro_Model.FactoryCode, tbl_Pro_Plan.PlanDate, tbl_Pro_Plan.TotalQty
+HAVING        (tbl_Pro_Plan.ClientID = 1) AND (NOT (tbl_Pro_Plan.PrdLine IN (8, 31)))</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MPID" DataSetColumn="MPID" />
+              <Mapping SourceColumn="ClientID" DataSetColumn="ClientID" />
+              <Mapping SourceColumn="ModelID" DataSetColumn="ModelID" />
+              <Mapping SourceColumn="ArtID" DataSetColumn="ArtID" />
+              <Mapping SourceColumn="ArtSize" DataSetColumn="ArtSize" />
+              <Mapping SourceColumn="PrdLine" DataSetColumn="PrdLine" />
+              <Mapping SourceColumn="BarCode" DataSetColumn="BarCode" />
+              <Mapping SourceColumn="ArtCode" DataSetColumn="ArtCode" />
+              <Mapping SourceColumn="ModelNo" DataSetColumn="ModelNo" />
+              <Mapping SourceColumn="ModelName" DataSetColumn="ModelName" />
+              <Mapping SourceColumn="FactoryCode" DataSetColumn="FactoryCode" />
+              <Mapping SourceColumn="PlanDate" DataSetColumn="PlanDate" />
+              <Mapping SourceColumn="TotalQty" DataSetColumn="TotalQty" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_MPNO_Wise_MaterialTableAdapter" GeneratorDataComponentClassName="tbl_MPNO_Wise_MaterialTableAdapter" Name="tbl_MPNO_Wise_Material" UserDataComponentName="tbl_MPNO_Wise_MaterialTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Con (MySettings)" DbObjectName="MIS.dbo.tbl_MPNO_Wise_Material" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [tbl_MPNO_Wise_Material] WHERE (([TID] = ?) AND ((? = 1 AND [MPNo] IS NULL) OR ([MPNo] = ?)) AND ((? = 1 AND [MaterialName] IS NULL) OR ([MaterialName] = ?)) AND ((? = 1 AND [Qty] IS NULL) OR ([Qty] = ?)) AND ((? = 1 AND [UOM] IS NULL) OR ([UOM] = ?)) AND ((? = 1 AND [Naration] IS NULL) OR ([Naration] = ?)) AND ((? = 1 AND [Ipaddress] IS NULL) OR ([Ipaddress] = ?)) AND ((? = 1 AND [EntryDate] IS NULL) OR ([EntryDate] = ?)) AND ((? = 1 AND [Code] IS NULL) OR ([Code] = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_TID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_MPNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MPNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_MPNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MPNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_MaterialName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MaterialName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_MaterialName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MaterialName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Qty" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Qty" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_Qty" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="Qty" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_UOM" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="UOM" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_UOM" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="UOM" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Naration" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Naration" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_Naration" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Naration" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Ipaddress" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Ipaddress" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_Ipaddress" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Ipaddress" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_EntryDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EntryDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_EntryDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="EntryDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Code" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Code" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_Code" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Code" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [tbl_MPNO_Wise_Material] ([MPNo], [MaterialName], [Qty], [UOM], [Naration], [Ipaddress], [EntryDate], [Code]) VALUES (?, ?, ?, ?, ?, ?, ?, ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="MPNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MPNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="MaterialName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MaterialName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Qty" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="Qty" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="UOM" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="UOM" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Naration" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Naration" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Ipaddress" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Ipaddress" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="EntryDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="EntryDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Code" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Code" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        TID, MPNo, MaterialName, Qty, UOM, Naration, Ipaddress, EntryDate, Code
+FROM            tbl_MPNO_Wise_Material</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [tbl_MPNO_Wise_Material] SET [MPNo] = ?, [MaterialName] = ?, [Qty] = ?, [UOM] = ?, [Naration] = ?, [Ipaddress] = ?, [EntryDate] = ?, [Code] = ? WHERE (([TID] = ?) AND ((? = 1 AND [MPNo] IS NULL) OR ([MPNo] = ?)) AND ((? = 1 AND [MaterialName] IS NULL) OR ([MaterialName] = ?)) AND ((? = 1 AND [Qty] IS NULL) OR ([Qty] = ?)) AND ((? = 1 AND [UOM] IS NULL) OR ([UOM] = ?)) AND ((? = 1 AND [Naration] IS NULL) OR ([Naration] = ?)) AND ((? = 1 AND [Ipaddress] IS NULL) OR ([Ipaddress] = ?)) AND ((? = 1 AND [EntryDate] IS NULL) OR ([EntryDate] = ?)) AND ((? = 1 AND [Code] IS NULL) OR ([Code] = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="MPNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MPNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="MaterialName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MaterialName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Qty" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="Qty" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="UOM" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="UOM" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Naration" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Naration" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Ipaddress" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Ipaddress" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="EntryDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="EntryDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Code" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Code" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_TID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_MPNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MPNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_MPNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MPNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_MaterialName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MaterialName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_MaterialName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="MaterialName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Qty" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Qty" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_Qty" Precision="18" ProviderType="Numeric" Scale="2" Size="0" SourceColumn="Qty" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_UOM" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="UOM" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_UOM" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="UOM" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Naration" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Naration" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_Naration" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Naration" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Ipaddress" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Ipaddress" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_Ipaddress" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Ipaddress" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_EntryDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EntryDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_EntryDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="EntryDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_Code" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Code" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_Code" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Code" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TID" DataSetColumn="TID" />
+              <Mapping SourceColumn="MPNo" DataSetColumn="MPNo" />
+              <Mapping SourceColumn="MaterialName" DataSetColumn="MaterialName" />
+              <Mapping SourceColumn="Qty" DataSetColumn="Qty" />
+              <Mapping SourceColumn="UOM" DataSetColumn="UOM" />
+              <Mapping SourceColumn="Naration" DataSetColumn="Naration" />
+              <Mapping SourceColumn="Ipaddress" DataSetColumn="Ipaddress" />
+              <Mapping SourceColumn="EntryDate" DataSetColumn="EntryDate" />
+              <Mapping SourceColumn="Code" DataSetColumn="Code" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Matreq" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Matreq" msprop:Generator_UserDSName="Matreq">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_Plan" msprop:Generator_TableClassName="tbl_planDataTable" msprop:Generator_TableVarName="tabletbl_plan" msprop:Generator_TablePropName="tbl_plan" msprop:Generator_RowDeletingName="tbl_planRowDeleting" msprop:Generator_RowChangingName="tbl_planRowChanging" msprop:Generator_RowEvHandlerName="tbl_planRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_planRowDeleted" msprop:Generator_UserTableName="tbl_Plan" msprop:Generator_RowChangedName="tbl_planRowChanged" msprop:Generator_RowEvArgName="tbl_planRowChangeEvent" msprop:Generator_RowClassName="tbl_planRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MPID" msprop:Generator_ColumnVarNameInTable="columnMPID" msprop:Generator_ColumnPropNameInRow="MPID" msprop:Generator_ColumnPropNameInTable="MPIDColumn" msprop:Generator_UserColumnName="MPID" type="xs:int" />
+              <xs:element name="ClientID" msprop:Generator_ColumnVarNameInTable="columnClientID" msprop:Generator_ColumnPropNameInRow="ClientID" msprop:Generator_ColumnPropNameInTable="ClientIDColumn" msprop:Generator_UserColumnName="ClientID" type="xs:int" />
+              <xs:element name="ModelID" msprop:Generator_ColumnVarNameInTable="columnModelID" msprop:Generator_ColumnPropNameInRow="ModelID" msprop:Generator_ColumnPropNameInTable="ModelIDColumn" msprop:Generator_UserColumnName="ModelID" type="xs:int" />
+              <xs:element name="ArtID" msprop:Generator_ColumnVarNameInTable="columnArtID" msprop:Generator_ColumnPropNameInRow="ArtID" msprop:Generator_ColumnPropNameInTable="ArtIDColumn" msprop:Generator_UserColumnName="ArtID" type="xs:int" />
+              <xs:element name="ArtSize" msprop:Generator_ColumnVarNameInTable="columnArtSize" msprop:Generator_ColumnPropNameInRow="ArtSize" msprop:Generator_ColumnPropNameInTable="ArtSizeColumn" msprop:Generator_UserColumnName="ArtSize">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PrdLine" msprop:Generator_ColumnVarNameInTable="columnPrdLine" msprop:Generator_ColumnPropNameInRow="PrdLine" msprop:Generator_ColumnPropNameInTable="PrdLineColumn" msprop:Generator_UserColumnName="PrdLine" type="xs:int" />
+              <xs:element name="BarCode" msprop:Generator_ColumnVarNameInTable="columnBarCode" msprop:Generator_ColumnPropNameInRow="BarCode" msprop:Generator_ColumnPropNameInTable="BarCodeColumn" msprop:Generator_UserColumnName="BarCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ArtCode" msprop:Generator_ColumnVarNameInTable="columnArtCode" msprop:Generator_ColumnPropNameInRow="ArtCode" msprop:Generator_ColumnPropNameInTable="ArtCodeColumn" msprop:Generator_UserColumnName="ArtCode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ModelNo" msprop:Generator_ColumnVarNameInTable="columnModelNo" msprop:Generator_ColumnPropNameInRow="ModelNo" msprop:Generator_ColumnPropNameInTable="ModelNoColumn" msprop:Generator_UserColumnName="ModelNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ModelName" msprop:Generator_ColumnVarNameInTable="columnModelName" msprop:Generator_ColumnPropNameInRow="ModelName" msprop:Generator_ColumnPropNameInTable="ModelNameColumn" msprop:Generator_UserColumnName="ModelName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FactoryCode" msprop:Generator_ColumnVarNameInTable="columnFactoryCode" msprop:Generator_ColumnPropNameInRow="FactoryCode" msprop:Generator_ColumnPropNameInTable="FactoryCodeColumn" msprop:Generator_UserColumnName="FactoryCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PlanDate" msprop:Generator_ColumnVarNameInTable="columnPlanDate" msprop:Generator_ColumnPropNameInRow="PlanDate" msprop:Generator_ColumnPropNameInTable="PlanDateColumn" msprop:Generator_UserColumnName="PlanDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TotalQty" msprop:Generator_ColumnVarNameInTable="columnTotalQty" msprop:Generator_ColumnPropNameInRow="TotalQty" msprop:Generator_ColumnPropNameInTable="TotalQtyColumn" msprop:Generator_UserColumnName="TotalQty" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_MPNO_Wise_Material" msprop:Generator_TableClassName="tbl_MPNO_Wise_MaterialDataTable" msprop:Generator_TableVarName="tabletbl_MPNO_Wise_Material" msprop:Generator_TablePropName="tbl_MPNO_Wise_Material" msprop:Generator_RowDeletingName="tbl_MPNO_Wise_MaterialRowDeleting" msprop:Generator_RowChangingName="tbl_MPNO_Wise_MaterialRowChanging" msprop:Generator_RowEvHandlerName="tbl_MPNO_Wise_MaterialRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_MPNO_Wise_MaterialRowDeleted" msprop:Generator_UserTableName="tbl_MPNO_Wise_Material" msprop:Generator_RowChangedName="tbl_MPNO_Wise_MaterialRowChanged" msprop:Generator_RowEvArgName="tbl_MPNO_Wise_MaterialRowChangeEvent" msprop:Generator_RowClassName="tbl_MPNO_Wise_MaterialRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TID" msprop:Generator_ColumnVarNameInTable="columnTID" msprop:Generator_ColumnPropNameInRow="TID" msprop:Generator_ColumnPropNameInTable="TIDColumn" msprop:Generator_UserColumnName="TID" type="xs:int" />
+              <xs:element name="MPNo" msprop:Generator_ColumnVarNameInTable="columnMPNo" msprop:Generator_ColumnPropNameInRow="MPNo" msprop:Generator_ColumnPropNameInTable="MPNoColumn" msprop:Generator_UserColumnName="MPNo" type="xs:int" minOccurs="0" />
+              <xs:element name="MaterialName" msprop:Generator_ColumnVarNameInTable="columnMaterialName" msprop:Generator_ColumnPropNameInRow="MaterialName" msprop:Generator_ColumnPropNameInTable="MaterialNameColumn" msprop:Generator_UserColumnName="MaterialName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5050" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnPropNameInTable="QtyColumn" msprop:Generator_UserColumnName="Qty" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UOM" msprop:Generator_ColumnVarNameInTable="columnUOM" msprop:Generator_ColumnPropNameInRow="UOM" msprop:Generator_ColumnPropNameInTable="UOMColumn" msprop:Generator_UserColumnName="UOM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Naration" msprop:Generator_ColumnVarNameInTable="columnNaration" msprop:Generator_ColumnPropNameInRow="Naration" msprop:Generator_ColumnPropNameInTable="NarationColumn" msprop:Generator_UserColumnName="Naration" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5050" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ipaddress" msprop:Generator_ColumnVarNameInTable="columnIpaddress" msprop:Generator_ColumnPropNameInRow="Ipaddress" msprop:Generator_ColumnPropNameInTable="IpaddressColumn" msprop:Generator_UserColumnName="Ipaddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EntryDate" msprop:Generator_ColumnVarNameInTable="columnEntryDate" msprop:Generator_ColumnPropNameInRow="EntryDate" msprop:Generator_ColumnPropNameInTable="EntryDateColumn" msprop:Generator_UserColumnName="EntryDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tbl_Plan" />
+      <xs:field xpath="mstns:MPID" />
+    </xs:unique>
+    <xs:unique name="tbl_MPNO_Wise_Material_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tbl_MPNO_Wise_Material" />
+      <xs:field xpath="mstns:TID" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="tbl_Plan_tbl_MPNO_Wise_Material" msdata:parent="tbl_Plan" msdata:child="tbl_MPNO_Wise_Material" msdata:parentkey="MPID" msdata:childkey="MPNo" msprop:Generator_UserChildTable="tbl_MPNO_Wise_Material" msprop:Generator_ChildPropName="Gettbl_MPNO_Wise_MaterialRows" msprop:Generator_UserRelationName="tbl_Plan_tbl_MPNO_Wise_Material" msprop:Generator_ParentPropName="tbl_PlanRow" msprop:Generator_RelationVarName="relationtbl_Plan_tbl_MPNO_Wise_Material" msprop:Generator_UserParentTable="tbl_Plan" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

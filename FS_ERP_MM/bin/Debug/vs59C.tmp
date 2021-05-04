@@ -1,0 +1,1831 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+FS_ERP_MM
+</name>
+</assembly>
+<members>
+<member name="T:FS_ERP_MM.DataSet1.tbl_MIS_UserDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DataSet1.tbl_MIS_User_DeptDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DataSet1.tbl_MIS_User_LogDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DataSet1.tbl_MIS_UserRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DataSet1.tbl_MIS_User_DeptRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DataSet1.tbl_MIS_User_LogRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DataSet1.tbl_MIS_UserRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DataSet1.tbl_MIS_User_DeptRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DataSet1.tbl_MIS_User_LogRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:FS_ERP_MM.DataSet1TableAdapters.tbl_MIS_UserTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DataSet1TableAdapters.tbl_MIS_User_DeptTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DataSet1TableAdapters.tbl_MIS_User_LogTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSCode.tbl_Inv_L1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSCode.tbl_Inv_L2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSCode.tbl_Inv_L3DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSCode.tbl_Pro_CountryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSCode.tbl_Inv_L4DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSCode.tbl_MM_CurrancyDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSCode.tbl_Inv_L1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSCode.tbl_Inv_L2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSCode.tbl_Inv_L3Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSCode.tbl_Pro_CountryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSCode.tbl_Inv_L4Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSCode.tbl_MM_CurrancyRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSCode.tbl_Inv_L1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSCode.tbl_Inv_L2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSCode.tbl_Inv_L3RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSCode.tbl_Pro_CountryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSCode.tbl_Inv_L4RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSCode.tbl_MM_CurrancyRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSCode">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSCodeTableAdapters.tbl_Inv_L1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSCodeTableAdapters.tbl_Inv_L2TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSCodeTableAdapters.tbl_Inv_L3TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSCodeTableAdapters.tbl_Pro_CountryTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSCodeTableAdapters.tbl_Inv_L4TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSCodeTableAdapters.tbl_MM_CurrancyTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptL4Code.tbl_Inv_L1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptL4Code.tbl_Inv_L2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptL4Code.tbl_Inv_L3DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptL4Code.tbl_Inv_L42DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptL4Code.tbl_Inv_L41DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptL4Code.tbl_Inv_L1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptL4Code.tbl_Inv_L2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptL4Code.tbl_Inv_L3Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptL4Code.tbl_Inv_L42Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptL4Code.tbl_Inv_L41Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptL4Code.tbl_Inv_L1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptL4Code.tbl_Inv_L2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptL4Code.tbl_Inv_L3RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptL4Code.tbl_Inv_L42RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptL4Code.tbl_Inv_L41RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptL4Code">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptL4CodeTableAdapters.tbl_Inv_L1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptL4CodeTableAdapters.tbl_Inv_L2TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptL4CodeTableAdapters.tbl_Inv_L3TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptL4CodeTableAdapters.tbl_Inv_L42TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptL4CodeTableAdapters.tbl_Inv_L41TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranIn.tbl_Inv_SupplierDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranIn.tbl_Inv_Tran_DateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranIn.tbl_Inv_Tran_InDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranIn.View_Inv_TotalInDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranIn.View_Inv_TotalOutDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranIn.tbl_Inv_L4DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranIn.tbl_Pur_UnitOfMeasurementDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranIn.tbl_Inv_SupplierRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranIn.tbl_Inv_Tran_DateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranIn.tbl_Inv_Tran_InRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranIn.View_Inv_TotalInRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranIn.View_Inv_TotalOutRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranIn.tbl_Inv_L4Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranIn.tbl_Pur_UnitOfMeasurementRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranIn.tbl_Inv_SupplierRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranIn.tbl_Inv_Tran_DateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranIn.tbl_Inv_Tran_InRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranIn.View_Inv_TotalInRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranIn.View_Inv_TotalOutRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranIn.tbl_Inv_L4RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranIn.tbl_Pur_UnitOfMeasurementRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranIn">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranInTableAdapters.tbl_Inv_SupplierTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranInTableAdapters.tbl_Inv_Tran_DateTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranInTableAdapters.tbl_Inv_Tran_InTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranInTableAdapters.View_Inv_TotalInTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranInTableAdapters.View_Inv_TotalOutTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranInTableAdapters.tbl_Inv_L4TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranInTableAdapters.tbl_Pur_UnitOfMeasurementTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSOut.tbl_Inv_LocalCustDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSOut.tbl_Inv_Tran_DateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSOut.View_Inv_TotalInDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSOut.View_Inv_TotalOutDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSOut.tbl_Inv_L4DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSOut.tbl_Pro_PODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSOut.tbl_Inv_Tran_OutDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSOut.tbl_Pur_UnitOfMeasurementDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSOut.tbl_Inv_LocalCustRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSOut.tbl_Inv_Tran_DateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSOut.View_Inv_TotalInRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSOut.View_Inv_TotalOutRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSOut.tbl_Inv_L4Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSOut.tbl_Pro_PORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSOut.tbl_Inv_Tran_OutRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSOut.tbl_Pur_UnitOfMeasurementRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSOut.tbl_Inv_LocalCustRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSOut.tbl_Inv_Tran_DateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSOut.View_Inv_TotalInRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSOut.View_Inv_TotalOutRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSOut.tbl_Inv_L4RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSOut.tbl_Pro_PORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSOut.tbl_Inv_Tran_OutRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSOut.tbl_Pur_UnitOfMeasurementRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSOut">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSOutTableAdapters.tbl_Inv_LocalCustTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSOutTableAdapters.tbl_Inv_Tran_DateTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSOutTableAdapters.View_Inv_TotalInTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSOutTableAdapters.View_Inv_TotalOutTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSOutTableAdapters.tbl_Inv_L4TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSOutTableAdapters.tbl_Pro_POTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSOutTableAdapters.tbl_Inv_Tran_OutTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSOutTableAdapters.tbl_Pur_UnitOfMeasurementTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.dsUOM.tbl_Pur_UnitOfMeasurementDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.dsUOM.tbl_Pur_UnitOfMeasurementRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.dsUOM.tbl_Pur_UnitOfMeasurementRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.dsUOM">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:FS_ERP_MM.dsUOMTableAdapters.tbl_Pur_UnitOfMeasurementTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:FS_ERP_MM.dsUOMTableAdapters.TableAdapterManager.UpdateUpdatedRows(FS_ERP_MM.dsUOM,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:FS_ERP_MM.dsUOMTableAdapters.TableAdapterManager.UpdateInsertedRows(FS_ERP_MM.dsUOM,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:FS_ERP_MM.dsUOMTableAdapters.TableAdapterManager.UpdateDeletedRows(FS_ERP_MM.dsUOM,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:FS_ERP_MM.dsUOMTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:FS_ERP_MM.dsUOMTableAdapters.TableAdapterManager.UpdateAll(FS_ERP_MM.dsUOM)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:FS_ERP_MM.dsUOMTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:FS_ERP_MM.dsUOMTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:FS_ERP_MM.dsUOMTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:FS_ERP_MM.DsDispatchPOs.tbl_Inv_Tran_DateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DsDispatchPOs.tbl_Inv_Tran_InDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DsDispatchPOs.View_PO_DDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DsDispatchPOs.tbl_Pur_PO_DDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DsDispatchPOs.View_PO_PandingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DsDispatchPOs.tbl_Inv_L4DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DsDispatchPOs.tbl_Inv_Tran_DateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DsDispatchPOs.tbl_Inv_Tran_InRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DsDispatchPOs.View_PO_DRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DsDispatchPOs.tbl_Pur_PO_DRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DsDispatchPOs.View_PO_PandingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DsDispatchPOs.tbl_Inv_L4Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DsDispatchPOs.tbl_Inv_Tran_DateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DsDispatchPOs.tbl_Inv_Tran_InRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DsDispatchPOs.View_PO_DRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DsDispatchPOs.tbl_Pur_PO_DRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DsDispatchPOs.View_PO_PandingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DsDispatchPOs.tbl_Inv_L4RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DsDispatchPOs">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:FS_ERP_MM.DsDispatchPOsTableAdapters.tbl_Inv_Tran_DateTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DsDispatchPOsTableAdapters.tbl_Inv_Tran_InTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DsDispatchPOsTableAdapters.View_PO_DTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DsDispatchPOsTableAdapters.tbl_Pur_PO_DTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DsDispatchPOsTableAdapters.View_PO_PandingTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DsDispatchPOsTableAdapters.tbl_Inv_L4TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:FS_ERP_MM.DsDispatchPOsTableAdapters.TableAdapterManager.UpdateUpdatedRows(FS_ERP_MM.DsDispatchPOs,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:FS_ERP_MM.DsDispatchPOsTableAdapters.TableAdapterManager.UpdateInsertedRows(FS_ERP_MM.DsDispatchPOs,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:FS_ERP_MM.DsDispatchPOsTableAdapters.TableAdapterManager.UpdateDeletedRows(FS_ERP_MM.DsDispatchPOs,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:FS_ERP_MM.DsDispatchPOsTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:FS_ERP_MM.DsDispatchPOsTableAdapters.TableAdapterManager.UpdateAll(FS_ERP_MM.DsDispatchPOs)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:FS_ERP_MM.DsDispatchPOsTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:FS_ERP_MM.DsDispatchPOsTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:FS_ERP_MM.DsDispatchPOsTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranIn.tbl_Inv_Tran_InDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranIn.tbl_Inv_Tran_DateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranIn.tbl_Inv_SupplierDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranIn.tbl_CompaniesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranIn.tbl_Inv_CodeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranIn.tbl_Inv_L4DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranIn.tbl_Inv_Tran_InRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranIn.tbl_Inv_Tran_DateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranIn.tbl_Inv_SupplierRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranIn.tbl_CompaniesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranIn.tbl_Inv_CodeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranIn.tbl_Inv_L4Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranIn.tbl_Inv_Tran_InRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranIn.tbl_Inv_Tran_DateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranIn.tbl_Inv_SupplierRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranIn.tbl_CompaniesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranIn.tbl_Inv_CodeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranIn.tbl_Inv_L4RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranIn">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranInTableAdapters.tbl_Inv_Tran_InTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranInTableAdapters.tbl_Inv_Tran_DateTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranInTableAdapters.tbl_Inv_SupplierTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranInTableAdapters.tbl_CompaniesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranInTableAdapters.tbl_Inv_CodeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranInTableAdapters.tbl_Inv_L4TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOut.tbl_Inv_CodeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOut.tbl_Inv_L4DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOut.tbl_Inv_Tran_OutDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOut.tbl_CompaniesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOut.tbl_Inv_LocalCustDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOut.tbl_Inv_Tran_DateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOut.tbl_Inv_ExternalCustDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOut.tbl_Inv_CodeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOut.tbl_Inv_L4Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOut.tbl_Inv_Tran_OutRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOut.tbl_CompaniesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOut.tbl_Inv_LocalCustRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOut.tbl_Inv_Tran_DateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOut.tbl_Inv_ExternalCustRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOut.tbl_Inv_CodeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOut.tbl_Inv_L4RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOut.tbl_Inv_Tran_OutRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOut.tbl_CompaniesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOut.tbl_Inv_LocalCustRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOut.tbl_Inv_Tran_DateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOut.tbl_Inv_ExternalCustRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOut">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOutTableAdapters.tbl_Inv_CodeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOutTableAdapters.tbl_Inv_L4TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOutTableAdapters.tbl_Inv_Tran_OutTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOutTableAdapters.tbl_CompaniesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOutTableAdapters.tbl_Inv_LocalCustTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOutTableAdapters.tbl_Inv_Tran_DateTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPackTranOutTableAdapters.tbl_Inv_ExternalCustTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRpt.tbl_Pro_Plan2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRpt.tbl_Pro_Plan1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRpt.tbl_Prd_LinesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRpt.tbl_Inv_SupplierDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRpt.tbl_Pro_Plan2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRpt.tbl_Pro_Plan1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRpt.tbl_Prd_LinesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRpt.tbl_Inv_SupplierRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRpt.tbl_Pro_Plan2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSRpt.tbl_Pro_Plan1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSRpt.tbl_Prd_LinesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSRpt.tbl_Inv_SupplierRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSRpt">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptTableAdapters.tbl_Pro_Plan2TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptTableAdapters.tbl_Pro_Plan1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptTableAdapters.tbl_Prd_LinesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptTableAdapters.tbl_Inv_SupplierTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:FS_ERP_MM.DSRptTableAdapters.TableAdapterManager.UpdateUpdatedRows(FS_ERP_MM.DSRpt,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:FS_ERP_MM.DSRptTableAdapters.TableAdapterManager.UpdateInsertedRows(FS_ERP_MM.DSRpt,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:FS_ERP_MM.DSRptTableAdapters.TableAdapterManager.UpdateDeletedRows(FS_ERP_MM.DSRpt,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:FS_ERP_MM.DSRptTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:FS_ERP_MM.DSRptTableAdapters.TableAdapterManager.UpdateAll(FS_ERP_MM.DSRpt)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:FS_ERP_MM.DSRequisition.tbl_Inv_Requisition_UpdateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRequisition.tbl_Inv_Tran_DateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRequisition.View_Inv_Tran_OutDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRequisition.tbl_Inv_RequisitionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRequisition.tbl_Inv_Tran_OutDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRequisition.tbl_Inv_Requisition_UpdateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRequisition.tbl_Inv_Tran_DateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRequisition.View_Inv_Tran_OutRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRequisition.tbl_Inv_RequisitionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRequisition.tbl_Inv_Tran_OutRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRequisition.tbl_Inv_Requisition_UpdateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSRequisition.tbl_Inv_Tran_DateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSRequisition.View_Inv_Tran_OutRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSRequisition.tbl_Inv_RequisitionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSRequisition.tbl_Inv_Tran_OutRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSRequisition">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRequisitionTableAdapters.tbl_Inv_Requisition_UpdateTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRequisitionTableAdapters.tbl_Inv_Tran_DateTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRequisitionTableAdapters.View_Inv_Tran_OutTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRequisitionTableAdapters.tbl_Inv_RequisitionTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRequisitionTableAdapters.tbl_Inv_Tran_OutTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:FS_ERP_MM.DSRequisitionTableAdapters.TableAdapterManager.UpdateUpdatedRows(FS_ERP_MM.DSRequisition,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:FS_ERP_MM.DSRequisitionTableAdapters.TableAdapterManager.UpdateInsertedRows(FS_ERP_MM.DSRequisition,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:FS_ERP_MM.DSRequisitionTableAdapters.TableAdapterManager.UpdateDeletedRows(FS_ERP_MM.DSRequisition,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:FS_ERP_MM.DSRequisitionTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:FS_ERP_MM.DSRequisitionTableAdapters.TableAdapterManager.UpdateAll(FS_ERP_MM.DSRequisition)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRequisitionTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:FS_ERP_MM.DSRequisitionTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:FS_ERP_MM.DSRequisitionTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:FS_ERP_MM.DsAdminUser.tbl_User_LogDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DsAdminUser.tbl_User_DomainDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DsAdminUser.tbl_UsersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DsAdminUser.tbl_User_LogRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DsAdminUser.tbl_User_DomainRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DsAdminUser.tbl_UsersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DsAdminUser.tbl_User_LogRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DsAdminUser.tbl_User_DomainRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DsAdminUser.tbl_UsersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DsAdminUser">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:FS_ERP_MM.DsAdminUserTableAdapters.tbl_User_LogTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DsAdminUserTableAdapters.tbl_User_DomainTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DsAdminUserTableAdapters.tbl_UsersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:FS_ERP_MM.DsAdminUserTableAdapters.TableAdapterManager.UpdateUpdatedRows(FS_ERP_MM.DsAdminUser,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:FS_ERP_MM.DsAdminUserTableAdapters.TableAdapterManager.UpdateInsertedRows(FS_ERP_MM.DsAdminUser,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:FS_ERP_MM.DsAdminUserTableAdapters.TableAdapterManager.UpdateDeletedRows(FS_ERP_MM.DsAdminUser,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:FS_ERP_MM.DsAdminUserTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:FS_ERP_MM.DsAdminUserTableAdapters.TableAdapterManager.UpdateAll(FS_ERP_MM.DsAdminUser)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:FS_ERP_MM.DsAdminUserTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:FS_ERP_MM.DsAdminUserTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:FS_ERP_MM.DsAdminUserTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:FS_ERP_MM.DSLocalCust.tbl_Inv_LocalCustDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSLocalCust.tbl_Inv_LocalCustRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSLocalCust.tbl_Inv_LocalCustRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSLocalCust">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSLocalCustTableAdapters.tbl_Inv_LocalCustTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptCode.tbl_Inv_L12DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptCode.tbl_Inv_L11DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptCode.tbl_Inv_L2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptCode.tbl_Inv_L3DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptCode.tbl_Inv_L42DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptCode.tbl_Inv_L41DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptCode.tbl_Inv_L12Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptCode.tbl_Inv_L11Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptCode.tbl_Inv_L2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptCode.tbl_Inv_L3Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptCode.tbl_Inv_L42Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptCode.tbl_Inv_L41Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptCode.tbl_Inv_L12RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptCode.tbl_Inv_L11RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptCode.tbl_Inv_L2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptCode.tbl_Inv_L3RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptCode.tbl_Inv_L42RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptCode.tbl_Inv_L41RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptCode">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptCodeTableAdapters.tbl_Inv_L12TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptCodeTableAdapters.tbl_Inv_L11TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptCodeTableAdapters.tbl_Inv_L2TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptCodeTableAdapters.tbl_Inv_L3TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptCodeTableAdapters.tbl_Inv_L42TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSRptCodeTableAdapters.tbl_Inv_L41TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPOR.tbl_Inv_Tran_InDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPOR.tbl_Inv_Tran_DateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPOR.View_PO_DDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPOR.tbl_Pur_PO_DDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPOR.View_PO_PandingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPOR.tbl_Inv_L4DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPOR.tbl_Inv_Tran_InRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPOR.tbl_Inv_Tran_DateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPOR.View_PO_DRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPOR.tbl_Pur_PO_DRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPOR.View_PO_PandingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPOR.tbl_Inv_L4Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPOR.tbl_Inv_Tran_InRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSPOR.tbl_Inv_Tran_DateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSPOR.View_PO_DRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSPOR.tbl_Pur_PO_DRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSPOR.View_PO_PandingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSPOR.tbl_Inv_L4RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSPOR">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPORTableAdapters.tbl_Inv_Tran_InTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPORTableAdapters.tbl_Inv_Tran_DateTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPORTableAdapters.View_PO_DTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPORTableAdapters.tbl_Pur_PO_DTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPORTableAdapters.View_PO_PandingTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPORTableAdapters.tbl_Inv_L4TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:FS_ERP_MM.DSPORTableAdapters.TableAdapterManager.UpdateUpdatedRows(FS_ERP_MM.DSPOR,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:FS_ERP_MM.DSPORTableAdapters.TableAdapterManager.UpdateInsertedRows(FS_ERP_MM.DSPOR,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:FS_ERP_MM.DSPORTableAdapters.TableAdapterManager.UpdateDeletedRows(FS_ERP_MM.DSPOR,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:FS_ERP_MM.DSPORTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:FS_ERP_MM.DSPORTableAdapters.TableAdapterManager.UpdateAll(FS_ERP_MM.DSPOR)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:FS_ERP_MM.DSPORTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:FS_ERP_MM.DSPORTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:FS_ERP_MM.DSPORTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOut.tbl_Inv_CodeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOut.tbl_Inv_L4DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOut.tbl_Inv_Tran_OutDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOut.tbl_CompaniesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOut.tbl_Inv_LocalCustDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOut.tbl_Inv_Tran_DateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOut.tbl_Inv_ExternalCustDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOut.tbl_Pur_UnitOfMeasurementDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOut.tbl_Inv_CodeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOut.tbl_Inv_L4Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOut.tbl_Inv_Tran_OutRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOut.tbl_CompaniesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOut.tbl_Inv_LocalCustRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOut.tbl_Inv_Tran_DateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOut.tbl_Inv_ExternalCustRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOut.tbl_Pur_UnitOfMeasurementRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOut.tbl_Inv_CodeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOut.tbl_Inv_L4RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOut.tbl_Inv_Tran_OutRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOut.tbl_CompaniesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOut.tbl_Inv_LocalCustRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOut.tbl_Inv_Tran_DateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOut.tbl_Inv_ExternalCustRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOut.tbl_Pur_UnitOfMeasurementRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOut">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOutTableAdapters.tbl_Inv_CodeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOutTableAdapters.tbl_Inv_L4TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOutTableAdapters.tbl_Inv_Tran_OutTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOutTableAdapters.tbl_CompaniesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOutTableAdapters.tbl_Inv_LocalCustTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOutTableAdapters.tbl_Inv_Tran_DateTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOutTableAdapters.tbl_Inv_ExternalCustTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranOutTableAdapters.tbl_Pur_UnitOfMeasurementTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSYM.tbl_Inv_Tran_DateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSYM.tbl_Inv_Tran_Date1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSYM.tbl_Inv_Tran_DateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSYM.tbl_Inv_Tran_Date1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSYM.tbl_Inv_Tran_DateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSYM.tbl_Inv_Tran_Date1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSYM">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSYMTableAdapters.tbl_Inv_Tran_DateTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSYMTableAdapters.tbl_Inv_Tran_Date1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranInCodeLayer.tbl_Inv_L1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranInCodeLayer.tbl_Inv_L2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranInCodeLayer.tbl_Inv_L3DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranInCodeLayer.tbl_Inv_L4DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranInCodeLayer.tbl_Inv_L1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranInCodeLayer.tbl_Inv_L2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranInCodeLayer.tbl_Inv_L3Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranInCodeLayer.tbl_Inv_L4Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranInCodeLayer.tbl_Inv_L1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranInCodeLayer.tbl_Inv_L2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranInCodeLayer.tbl_Inv_L3RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranInCodeLayer.tbl_Inv_L4RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranInCodeLayer">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranInCodeLayerTableAdapters.tbl_Inv_L1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranInCodeLayerTableAdapters.tbl_Inv_L2TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranInCodeLayerTableAdapters.tbl_Inv_L3TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSTranInCodeLayerTableAdapters.tbl_Inv_L4TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranIn.tbl_Inv_Tran_InDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranIn.tbl_Inv_Tran_DateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranIn.tbl_CompaniesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranIn.tbl_Inv_CodeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranIn.tbl_Inv_L4DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranIn.tbl_Pur_PO_DDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranIn.tbl_Inv_SupplierDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranIn.tbl_Pur_UnitOfMeasurementDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranIn.tbl_MM_CurrancyDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranIn.tbl_Inv_Tran_InRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranIn.tbl_Inv_Tran_DateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranIn.tbl_CompaniesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranIn.tbl_Inv_CodeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranIn.tbl_Inv_L4Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranIn.tbl_Pur_PO_DRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranIn.tbl_Inv_SupplierRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranIn.tbl_Pur_UnitOfMeasurementRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranIn.tbl_MM_CurrancyRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranIn.tbl_Inv_Tran_InRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranIn.tbl_Inv_Tran_DateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranIn.tbl_CompaniesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranIn.tbl_Inv_CodeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranIn.tbl_Inv_L4RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranIn.tbl_Pur_PO_DRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranIn.tbl_Inv_SupplierRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranIn.tbl_Pur_UnitOfMeasurementRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranIn.tbl_MM_CurrancyRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranIn">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranInTableAdapters.tbl_Inv_Tran_InTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranInTableAdapters.tbl_Inv_Tran_DateTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranInTableAdapters.tbl_CompaniesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranInTableAdapters.tbl_Inv_CodeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranInTableAdapters.tbl_Inv_L4TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranInTableAdapters.tbl_Pur_PO_DTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranInTableAdapters.tbl_Inv_SupplierTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranInTableAdapters.tbl_Pur_UnitOfMeasurementTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FS_ERP_MM.DSNewTranInTableAdapters.tbl_MM_CurrancyTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+</members>
+</doc>

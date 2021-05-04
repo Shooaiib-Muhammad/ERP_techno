@@ -1,0 +1,3918 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D18D3916-4F0F-4381-9712-3B171029CAF9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>FS_ERP_MM.My.MyApplication</StartupObject>
+    <RootNamespace>FS_ERP_MM</RootNamespace>
+    <AssemblyName>FS_ERP_MM</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>50F7344168E7DFC30DDD80C1CCC0800A5EA72865</ManifestCertificateThumbprint>
+    <ManifestKeyFile>frmRptFilterTran.vb_8_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <ApplicationIcon>Resources\MM.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>\\server\it shared\ERPFS\MM\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>\\Server\IT Shared\ERPFS\MM\</UpdateUrl>
+    <ProductName>ERP MM</ProductName>
+    <PublisherName>Forward Sports</PublisherName>
+    <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
+    <ApplicationRevision>954</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>FS_ERP_MM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>FS_ERP_MM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>true</DelaySign>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\CrystalDecisions.ReportSource\10.5.3700.0__692fbea5521e1304\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Asserts\DS\DSAsserts.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSAsserts.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Asserts\Forms\FrmAsserts.Designer.vb">
+      <DependentUpon>FrmAsserts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Asserts\Forms\FrmAsserts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asserts\Forms\FrmORG_Life.Designer.vb">
+      <DependentUpon>FrmORG_Life.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Asserts\Forms\FrmORG_Life.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asserts\Forms\Frm_Asserts_type.Designer.vb">
+      <DependentUpon>Frm_Asserts_type.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Asserts\Forms\Frm_Asserts_type.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Audit\DSAudit.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSAudit.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Audit\DSCredit.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSCredit.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Audit\DSCredit.vb">
+      <DependentUpon>DSCredit.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Audit\DS\DSInwardVeri.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSInwardVeri.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Audit\Forms\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Audit\Forms\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Audit\Forms\FrmBillingGMVerfication.Designer.vb">
+      <DependentUpon>FrmBillingGMVerfication.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Audit\Forms\FrmBillingGMVerfication.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Audit\Forms\FrmDemandsupdatation.Designer.vb">
+      <DependentUpon>FrmDemandsupdatation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Audit\Forms\FrmDemandsupdatation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Audit\frmCancelledReq.Designer.vb">
+      <DependentUpon>frmCancelledReq.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Audit\frmCancelledReq.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Audit\FrmCreditNew.Designer.vb">
+      <DependentUpon>FrmCreditNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Audit\FrmCreditNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Audit\NewFromcreditDebit.Designer.vb">
+      <DependentUpon>NewFromcreditDebit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Audit\NewFromcreditDebit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BE\DSBERec.Designer.vb" />
+    <Compile Include="BE\DSNewBEMatIssuance.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSNewBEMatIssuance.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BE\frmBERec.Designer.vb">
+      <DependentUpon>frmBERec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\frmBERec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BE\frmNewBEMatIssued.designer.vb">
+      <DependentUpon>frmNewBEMatIssued.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\frmNewBEMatIssued.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BE\frmSMS.Designer.vb">
+      <DependentUpon>frmSMS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\frmSMS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BE\Reports\DSBEMatIssuance.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSBEMatIssuance.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BE\Reports\DSRptBE1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRptBE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BE\Reports\frmRptDailyTran.Designer.vb">
+      <DependentUpon>frmRptDailyTran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\Reports\frmRptDailyTran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\Class_Utility.vb" />
+    <Compile Include="Demand\DSDemand.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSDemand.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Demand\DSDemand.vb">
+      <DependentUpon>DSDemand.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Demand\DSDemandsNew.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSDemandsNew.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Demand\frmAuditVerficationDemand.Designer.vb">
+      <DependentUpon>frmAuditVerficationDemand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Demand\frmAuditVerficationDemand.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Demand\frmDemandRec.Designer.vb">
+      <DependentUpon>frmDemandRec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Demand\frmDemandRec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Demand\frmDemandRecPurchase.Designer.vb">
+      <DependentUpon>frmDemandRecPurchase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Demand\frmDemandRecPurchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Demand\frmIssuance.Designer.vb">
+      <DependentUpon>frmIssuance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Demand\frmIssuance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Demand\FrmNewIssuance.Designer.vb">
+      <DependentUpon>FrmNewIssuance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Demand\FrmNewIssuance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMMS\DS\DMMS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DMMS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DMMS\DS\DMMS.vb">
+      <DependentUpon>DMMS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DMMS\Forms\FrmDMMSCat.Designer.vb">
+      <DependentUpon>FrmDMMSCat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMMS\Forms\FrmDMMSCat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMMS\Forms\FrmDMMS_Dept.Designer.vb">
+      <DependentUpon>FrmDMMS_Dept.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMMS\Forms\FrmDMMS_Dept.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMMS\Forms\FrmMachineparts.Designer.vb">
+      <DependentUpon>FrmMachineparts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMMS\Forms\FrmMachineparts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMMS\Forms\Machines.Designer.vb">
+      <DependentUpon>Machines.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMMS\Forms\Machines.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EDM\DS\DSEDM.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSEDM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EDM\DS\DSEDM.vb">
+      <DependentUpon>DSEDM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EDM\Forms\FrmEDM.Designer.vb">
+      <DependentUpon>FrmEDM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EDM\Forms\FrmEDM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FIT\DS\DSFIT.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSFIT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FIT\Forms\FrmFITMATIN.Designer.vb">
+      <DependentUpon>FrmFITMATIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FIT\Forms\FrmFITMATIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FIT\Forms\FrmMaterialType.Designer.vb">
+      <DependentUpon>FrmMaterialType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FIT\Forms\FrmMaterialType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FIT\Forms\FrmMatReceived.Designer.vb">
+      <DependentUpon>FrmMatReceived.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FIT\Forms\FrmMatReceived.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FIT\Forms\FrmSupplipers.Designer.vb">
+      <DependentUpon>FrmSupplipers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FIT\Forms\FrmSupplipers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FIT\Forms\Frmtestcatalog.Designer.vb">
+      <DependentUpon>Frmtestcatalog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FIT\Forms\Frmtestcatalog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GatePass\CancelationGP.Designer.vb">
+      <DependentUpon>CancelationGP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GatePass\CancelationGP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GatePass\DSLocalPur.Designer.vb">
+      <DependentUpon>DSLocalPur.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="GatePass\DSLocalPur.vb">
+      <DependentUpon>DSLocalPur.xsd</DependentUpon>
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="GatePass\DSMat.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSMat.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GatePass\FrmGM.Designer.vb">
+      <DependentUpon>FrmGM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GatePass\FrmGM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GatePass\FrmGMApproval.Designer.vb">
+      <DependentUpon>FrmGMApproval.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GatePass\FrmGMApproval.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GatePass\frmGP.Designer.vb">
+      <DependentUpon>frmGP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GatePass\frmGP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GatePass\frmGPApp.Designer.vb">
+      <DependentUpon>frmGPApp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GatePass\frmGPApp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GatePass\frmGPReports.Designer.vb">
+      <DependentUpon>frmGPReports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GatePass\frmGPReports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GatePass\frmGPVerify.Designer.vb">
+      <DependentUpon>frmGPVerify.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GatePass\frmGPVerify.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GatePass\FrmHOD.Designer.vb">
+      <DependentUpon>FrmHOD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GatePass\FrmHOD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GatePass\FrmMatArticle.Designer.vb">
+      <DependentUpon>FrmMatArticle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GatePass\FrmMatArticle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Admin\DSdemands.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSdemands.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Admin\DSRacksInfo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRacksInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Admin\frmDemandApproval.Designer.vb">
+      <DependentUpon>frmDemandApproval.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Admin\frmDemandApproval.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Admin\frmUOMD.Designer.vb">
+      <DependentUpon>frmUOMD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Admin\frmUOMD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Audit\DSInWard.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSInWard.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Audit\frmDailyTranAudit.Designer.vb">
+      <DependentUpon>frmDailyTranAudit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Audit\frmDailyTranAudit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Billing\DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Billing\DSBilling.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSBilling.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Billing\DSBillingVerify.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSBillingVerify.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Billing\DSMisSec.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSMisSec.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Billing\frmActsBilling.Designer.vb">
+      <DependentUpon>frmActsBilling.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Billing\frmActsBilling.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Billing\frmbillingMatTran.Designer.vb">
+      <DependentUpon>frmbillingMatTran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Billing\frmbillingMatTran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Billing\frmBillingParty.Designer.vb">
+      <DependentUpon>frmBillingParty.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Billing\frmBillingParty.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Billing\frmBillingTranNew.Designer.vb">
+      <DependentUpon>frmBillingTranNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Billing\frmBillingTranNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Billing\frmBillingTranNewUndoVerifying.Designer.vb">
+      <DependentUpon>frmBillingTranNewUndoVerifying.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Billing\frmBillingTranNewUndoVerifying.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Billing\frmBillingTranNewVerifying.Designer.vb">
+      <DependentUpon>frmBillingTranNewVerifying.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Billing\frmBillingTranNewVerifying.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Billing\frmInwardTranVer.Designer.vb">
+      <DependentUpon>frmInwardTranVer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Billing\frmInwardTranVer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Billing\Reports\frmRptBillingTranNew.Designer.vb">
+      <DependentUpon>frmRptBillingTranNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Billing\Reports\frmRptBillingTranNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Billing\Reports\frmRptBillingTran.Designer.vb">
+      <DependentUpon>frmRptBillingTran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Billing\Reports\frmRptBillingTran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Bladder\DSCustBlader.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSCustBlader.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Bladder\DSRepairBladderRec.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRepairBladderRec.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Bladder\DSRepairedBladdersRec.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRepairedBladdersRec.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Bladder\DSRptRepairBladers.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRptRepairBladers.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Bladder\DSWindedBladderIssuance.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSWindedBladderIssuance.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Bladder\DSWindedBladderIssuance.vb">
+      <DependentUpon>DSWindedBladderIssuance.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Bladder\frmBladderRepairIssuance.Designer.vb">
+      <DependentUpon>frmBladderRepairIssuance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Bladder\frmBladderRepairIssuance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Bladder\frmBladerBillingTran4Winding.Designer.vb">
+      <DependentUpon>frmBladerBillingTran4Winding.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Bladder\frmBladerBillingTran4Winding.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Bladder\frmBladerBillingTran.Designer.vb">
+      <DependentUpon>frmBladerBillingTran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Bladder\frmBladerBillingTran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Bladder\frmCustBladderFormula.Designer.vb">
+      <DependentUpon>frmCustBladderFormula.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Bladder\frmCustBladderFormula.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Bladder\FrmRepaireBladderRec.Designer.vb">
+      <DependentUpon>FrmRepaireBladderRec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Bladder\FrmRepaireBladderRec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Bladder\frmRepairedBladderRec.Designer.vb">
+      <DependentUpon>frmRepairedBladderRec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Bladder\frmRepairedBladderRec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Bladder\frmWindedBladderProcess4Winding.Designer.vb">
+      <DependentUpon>frmWindedBladderProcess4Winding.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Bladder\frmWindedBladderProcess4Winding.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Bladder\frmWindedBladderProcess.Designer.vb">
+      <DependentUpon>frmWindedBladderProcess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Bladder\frmWindedBladderProcess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Bladder\frmWindedExect.Designer.vb">
+      <DependentUpon>frmWindedExect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Bladder\frmWindedExect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Bladder\DSBladderBillingTran.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSBladderBillingTran.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Bladder\Reports\frmRptBillingTransactions.Designer.vb">
+      <DependentUpon>frmRptBillingTransactions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Bladder\Reports\frmRptBillingTransactions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Bladder\Reports\frmRptRepairedBladders.Designer.vb">
+      <DependentUpon>frmRptRepairedBladders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Bladder\Reports\frmRptRepairedBladders.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Blader Repair Rec\DSPassBladder.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSPassBladder.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Blader Repair Rec\DSRepairBalderRec.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRepairBalderRec.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Blader Repair Rec\frmBladderProcesses.Designer.vb">
+      <DependentUpon>frmBladderProcesses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Blader Repair Rec\frmBladderProcesses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Blader Repair Rec\frmBladerRepRec.Designer.vb">
+      <DependentUpon>frmBladerRepRec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Blader Repair Rec\frmBladerRepRec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Blader Repair Rec\frmPassBaladerRec.Designer.vb">
+      <DependentUpon>frmPassBaladerRec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Blader Repair Rec\frmPassBaladerRec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Client\AutoTran\DSAutoPOIN.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSAutoPOIN.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\AutoTran\DSAutoPOIN.vb">
+      <DependentUpon>DSAutoPOIN.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\AutoTran\frmAutoPOIN.Designer.vb">
+      <DependentUpon>frmAutoPOIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\AutoTran\frmAutoPOIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Client\AutoTran\frmPOIn.designer.vb">
+      <DependentUpon>frmPOIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\AutoTran\frmPOIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Client\DSPURGate.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSPURGate.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\DSRepairIssuance.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRepairIssuance.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\DSRepairIssuance.vb">
+      <DependentUpon>DSRepairIssuance.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\frmDailyTranIn.designer.vb">
+      <DependentUpon>frmDailyTranIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\frmDailyTranIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Client\frmLinesRacksInfo.Designer.vb">
+      <DependentUpon>frmLinesRacksInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\frmLinesRacksInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Client\frmMatWrongAdjustment.Designer.vb">
+      <DependentUpon>frmMatWrongAdjustment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\frmMatWrongAdjustment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Client\frmDailyTranInscrab.designer.vb">
+      <DependentUpon>frmDailyTranInscrab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\frmDailyTranInscrab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Client\frmNewTranOut.designer.vb">
+      <DependentUpon>frmNewTranOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\frmNewTranOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Client\frmPOAtGate.Designer.vb">
+      <DependentUpon>frmPOAtGate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\frmPOAtGate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Client\frmPrintTranIn.Designer.vb">
+      <DependentUpon>frmPrintTranIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\frmPrintTranIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Client\frmRepairIssuance.Designer.vb">
+      <DependentUpon>frmRepairIssuance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\frmRepairIssuance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Client\NewTRIn.Designer.vb">
+      <DependentUpon>NewTRIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\NewTRIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Client\OlDTranIN.Designer.vb">
+      <DependentUpon>OlDTranIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\OlDTranIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Common\frmCurrency.Designer.vb">
+      <DependentUpon>frmCurrency.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Common\frmCurrency.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Common\frmItemsData.Designer.vb">
+      <DependentUpon>frmItemsData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Common\frmItemsData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Dispatch\frmDispMat.designer.vb">
+      <DependentUpon>frmDispMat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Dispatch\frmDispMat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\frmNewDemands.Designer.vb">
+      <DependentUpon>frmNewDemands.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\frmNewDemands.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Material Sale\AutoSaleIssuance.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoSaleIssuance.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Material Sale\frmAutoSaleIssuance.Designer.vb">
+      <DependentUpon>frmAutoSaleIssuance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Material Sale\frmAutoSaleIssuance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Material Sale\Sale Return\DSSaleReturn.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSSaleReturn.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Material Sale\Sale Return\frmSaleUndo.Designer.vb">
+      <DependentUpon>frmSaleUndo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Material Sale\Sale Return\frmSaleUndo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Material Sale\Sale Return\frmSaleReturn.Designer.vb">
+      <DependentUpon>frmSaleReturn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Material Sale\Sale Return\frmSaleReturn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Reports\DSArticle.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSArticle.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\DSMatData.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSMatData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\DSRpt.vb">
+      <DependentUpon>DSRpt.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\DSRptGatePasses.vb">
+      <DependentUpon>DSRptGatePasses.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptArticle.Designer.vb">
+      <DependentUpon>frmRptArticle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptArticle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptFortechTran.Designer.vb">
+      <DependentUpon>frmRptFortechTran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptFortechTran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptMaker.Designer.vb">
+      <DependentUpon>frmRptMaker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptMaker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptMRP.designer.vb">
+      <DependentUpon>frmRptMRP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptMRP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptSupplierLedger.Designer.vb">
+      <DependentUpon>frmRptSupplierLedger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptSupplierLedger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT Inventory\DS\DSIT.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSIT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IT Inventory\Forms\FrmDailyIN.Designer.vb">
+      <DependentUpon>FrmDailyIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IT Inventory\Forms\FrmDailyIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT Inventory\Forms\FrmmaterialIssuance.Designer.vb">
+      <DependentUpon>FrmmaterialIssuance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IT Inventory\Forms\FrmmaterialIssuance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IT Inventory\Forms\FrmVendors.Designer.vb">
+      <DependentUpon>FrmVendors.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IT Inventory\Forms\FrmVendors.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOM\DSLOM.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSLOM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LOM\frmLOMRec.Designer.vb">
+      <DependentUpon>frmLOMRec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LOM\frmLOMRec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Admin\IDMSSubDept.Designer.vb">
+      <DependentUpon>IDMSSubDept.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Admin\IDMSSubDept.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Admin\IDMS_User_Dept.Designer.vb">
+      <DependentUpon>IDMS_User_Dept.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Admin\IDMS_User_Dept.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Client\frmLoginVer.designer.vb">
+      <DependentUpon>frmLoginVer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Client\frmLoginVer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Client\FrmuserDept.Designer.vb">
+      <DependentUpon>FrmuserDept.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Client\FrmuserDept.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\DS\DSUL.vb">
+      <DependentUpon>DSUL.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MatRequization\DS\DSMPMat.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSMPMat.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MatRequization\DS\Matreq.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Matreq.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MatRequization\DS\Matreq.vb">
+      <DependentUpon>Matreq.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MatRequization\Forms\FrmMPNOWiseMaterial.Designer.vb">
+      <DependentUpon>FrmMPNOWiseMaterial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MatRequization\Forms\FrmMPNOWiseMaterial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatRequization\Forms\newFrmMpMat.Designer.vb">
+      <DependentUpon>newFrmMpMat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MatRequization\Forms\newFrmMpMat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New Procurement\DSGatePassVer.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSGatePassVer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="New Procurement\DSNewProcurement.vb">
+      <DependentUpon>DSNewProcurement.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="New Procurement\frmNewSetPurchaseAmt.designer.vb">
+      <DependentUpon>frmNewSetPurchaseAmt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New Procurement\frmNewSetPurchaseAmt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New Procurement\DSNewProcurement.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSNewProcurement.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="New Procurement\frmNewDemandCompletion.designer.vb">
+      <DependentUpon>frmNewDemandCompletion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New Procurement\frmNewDemandCompletion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New Procurement\frmNewVerifyAfterComp.designer.vb">
+      <DependentUpon>frmNewVerifyAfterComp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New Procurement\frmNewVerifyAfterComp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New Procurement\frmNewUndoChanges.designer.vb">
+      <DependentUpon>frmNewUndoChanges.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New Procurement\frmNewUndoChanges.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New Procurement\frmNewPartialRecAmt.designer.vb">
+      <DependentUpon>frmNewPartialRecAmt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New Procurement\frmNewPartialRecAmt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New Procurement\frmNewProcDemandExceptPO.designer.vb">
+      <DependentUpon>frmNewProcDemandExceptPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New Procurement\frmNewProcDemandExceptPO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\batchIN.Designer.vb">
+      <DependentUpon>batchIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\batchIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\DS\DSDemandOut.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSDemandOut.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DS\DSPartialDemandsTransactions.vb">
+      <DependentUpon>DSPartialDemandsTransactions.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DS\DSScrab.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSScrab.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmGDemandIssue.Designer.vb">
+      <DependentUpon>frmGDemandIssue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmGDemandIssue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\FrmNewScrab.Designer.vb">
+      <DependentUpon>FrmNewScrab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\FrmNewScrab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\Local Sale\DSLocalSale.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSLocalSale.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DSVendorInfo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSVendorInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DS\DSDemandIssuance.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSDemandIssuance.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DS\DSJalaEntry.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSJalaEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DS\DSNewPO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSNewPO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DS\DSNewPurOrders.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSNewPurOrders.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DS\DSPartialDemandsTransactions.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSPartialDemandsTransactions.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DS\DSPOImportEntry.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSPOImportEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DS\DSPOImportEntry.vb">
+      <DependentUpon>DSPOImportEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DS\DSPURBILL.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSPURBILL.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DS\DSPURBILL.vb">
+      <DependentUpon>DSPURBILL.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DS\DSPurOrdersNew.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSPurOrdersNew.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmDailyJALAEntry.Designer.vb">
+      <DependentUpon>frmDailyJALAEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmDailyJALAEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\frmDemandIssuance.Designer.vb">
+      <DependentUpon>frmDemandIssuance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmDemandIssuance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\frmPartialRecDemands.Designer.vb">
+      <DependentUpon>frmPartialRecDemands.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmPartialRecDemands.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New Procurement\frmNewPartialReceiving.designer.vb">
+      <DependentUpon>frmNewPartialReceiving.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New Procurement\frmNewPartialReceiving.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\frmPOImportTrans.Designer.vb">
+      <DependentUpon>frmPOImportTrans.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmPOImportTrans.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\frmPOImpShipmentTrans.Designer.vb">
+      <DependentUpon>frmPOImpShipmentTrans.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmPOImpShipmentTrans.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\frmPurOrders.Designer.vb">
+      <DependentUpon>frmPurOrders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmPurOrders.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\frmPurOrdersNew.Designer.vb">
+      <DependentUpon>frmPurOrdersNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmPurOrdersNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\frmPurVendorInfo.Designer.vb">
+      <DependentUpon>frmPurVendorInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmPurVendorInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\frmSetPurchaseAmtBilling.designer.vb">
+      <DependentUpon>frmSetPurchaseAmtBilling.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmSetPurchaseAmtBilling.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\frmUndoVerifyAfterComp.designer.vb">
+      <DependentUpon>frmUndoVerifyAfterComp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmUndoVerifyAfterComp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\Local Sale\frmLocalSale.Designer.vb">
+      <DependentUpon>frmLocalSale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\Local Sale\frmLocalSale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\NewScrabMaterial.Designer.vb">
+      <DependentUpon>NewScrabMaterial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\NewScrabMaterial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\Reports\frmDemandReports4Ver.designer.vb">
+      <DependentUpon>frmDemandReports4Ver.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\Reports\frmDemandReports4Ver.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\Reports\FrmMPNoWise.Designer.vb">
+      <DependentUpon>FrmMPNoWise.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\Reports\FrmMPNoWise.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\Reports\frmRptScrapeSale.Designer.vb">
+      <DependentUpon>frmRptScrapeSale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\Reports\frmRptScrapeSale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Admin\frmLockedUsers.Designer.vb">
+      <DependentUpon>frmLockedUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Admin\frmLockedUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Admin\frmModuleMgt.Designer.vb">
+      <DependentUpon>frmModuleMgt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Admin\frmModuleMgt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Admin\frmUL.designer.vb">
+      <DependentUpon>frmUL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Admin\frmUL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Admin\frmUserMgt.designer.vb">
+      <DependentUpon>frmUserMgt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Admin\frmUserMgt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\DS\DSLockedUsers.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSLockedUsers.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Main\DS\DSUL1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSUL.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Main\DS\DSUM.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSUM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DS\DSSSGP.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSSSGP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DS\DSSupItems.vb">
+      <DependentUpon>DSSupItems.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DS\dsUOM.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsUOM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Admin\DSCompanies1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSCompanies.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Admin\DSExtCust1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSExtCust.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Admin\DSTranIn.vb">
+      <DependentUpon>DSTranIn.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Admin\DSTranIn1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSTranIn.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Admin\frmExtCust.Designer.vb">
+      <DependentUpon>frmExtCust.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Admin\frmExtCust.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Admin\FrmGroupComp.designer.vb">
+      <DependentUpon>FrmGroupComp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Admin\FrmGroupComp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Admin\frmLocalCust.designer.vb">
+      <DependentUpon>frmLocalCust.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Admin\frmLocalCust.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Admin\frmOut.designer.vb">
+      <DependentUpon>frmOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Admin\frmOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Admin\frmTranIn.designer.vb">
+      <DependentUpon>frmTranIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Admin\frmTranIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Client\AutoTran\DsPasFailQty.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsPasFailQty.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\AutoTran\DSPOR.vb">
+      <DependentUpon>DSPOR.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\AutoTran\DSPOR1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSPOR.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\AutoTran\DSPR.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSPR.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\AutoTran\DSPR.vb">
+      <DependentUpon>DSPR.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\AutoTran\DSRequisition.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRequisition.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\AutoTran\DSRequisition.vb">
+      <DependentUpon>DSRequisition.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\AutoTran\frmInspectionMaterial.designer.vb">
+      <DependentUpon>frmInspectionMaterial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\AutoTran\frmInspectionMaterial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Client\AutoTran\frmMatReq.designer.vb">
+      <DependentUpon>frmMatReq.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\AutoTran\frmMatReq.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Client\AutoTran\FrmPartial.Designer.vb">
+      <DependentUpon>FrmPartial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\AutoTran\FrmPartial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Client\AutoTran\frmPurchaseReturn.Designer.vb">
+      <DependentUpon>frmPurchaseReturn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\AutoTran\frmPurchaseReturn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Client\DsAdjustEnteries.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsAdjustEnteries.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\DsAdjustEnteries.vb">
+      <DependentUpon>DsAdjustEnteries.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\DSNewTranIn.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSNewTranIn.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\DSNewTranOut.vb">
+      <DependentUpon>DSNewTranOut.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\DSNewTranOut1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSNewTranOut.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\DSYM.vb">
+      <DependentUpon>DSYM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\DSYM1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSYM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\frmMatAdjustment.Designer.vb">
+      <DependentUpon>frmMatAdjustment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\frmMatAdjustment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Client\frmNewTranIn123.designer.vb">
+      <DependentUpon>frmNewTranIn123.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\frmNewTranIn123.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Client\frmTranYear.designer.vb">
+      <DependentUpon>frmTranYear.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Client\frmTranYear.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Common\DSCode.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSCode.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Common\DSCode.vb">
+      <DependentUpon>DSCode.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Common\frmCode.designer.vb">
+      <DependentUpon>frmCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Common\frmCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Common\frmUOM.Designer.vb">
+      <DependentUpon>frmUOM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Common\frmUOM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Dispatch\DsDispatchPOs.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsDispatchPOs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Dispatch\DSPackTranIn1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSPackTranIn.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Dispatch\DSPackTranOut1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSPackTranOut.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Dispatch\frmDispatchPOsReceive.Designer.vb">
+      <DependentUpon>frmDispatchPOsReceive.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Dispatch\frmDispatchPOsReceive.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Dispatch\frmPackOut.Designer.vb">
+      <DependentUpon>frmPackOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Dispatch\frmPackOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Dispatch\frmPackTranIn.designer.vb">
+      <DependentUpon>frmPackTranIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Dispatch\frmPackTranIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Admin\DSTranInCodeLayer1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSTranInCodeLayer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Admin\DSOut.vb">
+      <DependentUpon>DSOut.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Admin\DSOut1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSOut.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Admin\DSLocalCust1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSLocalCust.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Material Borrowing\DSMat_Brow.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSMat_Brow.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Material Borrowing\DSMat_Brow.vb">
+      <DependentUpon>DSMat_Brow.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Material Borrowing\frmMatBorrowedIssued.Designer.vb">
+      <DependentUpon>frmMatBorrowedIssued.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Material Borrowing\frmMatBorrowedIssued.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Material Lending\DSM_Lending.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSM_Lending.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Material Lending\DSM_Lending.vb">
+      <DependentUpon>DSM_Lending.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Material Lending\frmLendedMatRec.Designer.vb">
+      <DependentUpon>frmLendedMatRec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Material Lending\frmLendedMatRec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Material Sale\DSCust.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSCust.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Material Sale\DSCustItems.vb">
+      <DependentUpon>DSCustItems.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Material Sale\DSCustItems1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSCustItems.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Material Sale\DSSale.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSSale.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Material Sale\DSSaleAccounts.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSSaleAccounts.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Material Sale\DSSaleAccounts.vb">
+      <DependentUpon>DSSaleAccounts.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Material Sale\DSSaleBill.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSSaleBill.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Material Sale\DSSaleBill.vb">
+      <DependentUpon>DSSaleBill.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Material Sale\DsSaleIssuence.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsSaleIssuence.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Material Sale\DsSaleIssuence.vb">
+      <DependentUpon>DsSaleIssuence.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Material Sale\frmCustItems.Designer.vb">
+      <DependentUpon>frmCustItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Material Sale\frmCustItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Material Sale\frmCustomer.Designer.vb">
+      <DependentUpon>frmCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Material Sale\frmCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Material Sale\frmMaterialSale.Designer.vb">
+      <DependentUpon>frmMaterialSale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Material Sale\frmMaterialSale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Material Sale\frmSaleAccounts.Designer.vb">
+      <DependentUpon>frmSaleAccounts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Material Sale\frmSaleAccounts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Material Sale\frmSaleInvoice.Designer.vb">
+      <DependentUpon>frmSaleInvoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Material Sale\frmSaleInvoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Material Sale\frmSalesBill.Designer.vb">
+      <DependentUpon>frmSalesBill.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Material Sale\frmSalesBill.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Reports\DSClient.vb">
+      <DependentUpon>DSClient.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\DSClient1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSClient.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\DsDailyTran.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsDailyTran.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\DSRpt.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRpt.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\DSRptCode.vb">
+      <DependentUpon>DSRptCode.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\DSRptCode1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRptCode.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\DSRptGatePasses.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRptGatePasses.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\DSRptL4Code.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRptL4Code.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\DsRptSale.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsRptSale.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\DSRptSaleBill.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRptSaleBill.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptDeptWiseOut.Designer.vb">
+      <DependentUpon>frmRptDeptWiseOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptDeptWiseOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptFilterBalance.designer.vb">
+      <DependentUpon>frmRptFilterBalance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptFilterBalance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptFilterBalance1.designer.vb">
+      <DependentUpon>frmRptFilterBalance1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptFilterBalance1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptFilterCode.designer.vb">
+      <DependentUpon>frmRptFilterCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptFilterCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptFilterTran.designer.vb">
+      <DependentUpon>frmRptFilterTran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptFilterTran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptGatePasses.Designer.vb">
+      <DependentUpon>frmRptGatePasses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptGatePasses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptMaterialAging.Designer.vb">
+      <DependentUpon>frmRptMaterialAging.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptMaterialAging.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptMaterialReceiving.Designer.vb">
+      <DependentUpon>frmRptMaterialReceiving.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptMaterialReceiving.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Reports\FrmRptMRPD.designer.vb">
+      <DependentUpon>FrmRptMRPD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\FrmRptMRPD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptMIRN.Designer.vb">
+      <DependentUpon>frmRptMIRN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptMIRN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptPurchaseReturn.Designer.vb">
+      <DependentUpon>frmRptPurchaseReturn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptPurchaseReturn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptSaleBill.Designer.vb">
+      <DependentUpon>frmRptSaleBill.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptSaleBill.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptSaleInvoice.Designer.vb">
+      <DependentUpon>frmRptSaleInvoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Reports\frmRptSaleInvoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Client\frmChngPswd.Designer.vb">
+      <DependentUpon>frmChngPswd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Client\frmChngPswd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Client\frmmain.designer.vb">
+      <DependentUpon>frmmain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Client\frmmain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Common\frmRptViewer.Designer.vb">
+      <DependentUpon>frmRptViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Common\frmRptViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\db.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Procurement\DS\DSCodeProc.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSCodeProc.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DS\DSCodeProc.vb">
+      <DependentUpon>DSCodeProc.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DS\DSPO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSPO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DS\DSPO.vb">
+      <DependentUpon>DSPO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DS\DSPurOrder.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSPurOrder.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DS\DSSupItems.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSSupItems.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DS\DSSupp.vb">
+      <DependentUpon>DSSupp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\DS\DSSupp1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSSupp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmAddDemands.designer.vb">
+      <DependentUpon>frmAddDemands.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmAddDemands.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\frmBookingStatus.designer.vb">
+      <DependentUpon>frmBookingStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmBookingStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INV\Common\frmCodeProc.Designer.vb">
+      <DependentUpon>frmCodeProc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INV\Common\frmCodeProc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\frmDemandCompletion.designer.vb">
+      <DependentUpon>frmDemandCompletion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmDemandCompletion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\frmDemandPurchased.designer.vb">
+      <DependentUpon>frmDemandPurchased.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmDemandPurchased.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\frmPartialPO.designer.vb">
+      <DependentUpon>frmPartialPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmPartialPO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\frmPartialRecAmt.designer.vb">
+      <DependentUpon>frmPartialRecAmt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmPartialRecAmt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\frmPartialReceiving.designer.vb">
+      <DependentUpon>frmPartialReceiving.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmPartialReceiving.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\frmProcDemandExceptPO.designer.vb">
+      <DependentUpon>frmProcDemandExceptPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmProcDemandExceptPO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\frmProcDemandSleep.designer.vb">
+      <DependentUpon>frmProcDemandSleep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmProcDemandSleep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\frmProcessDemand.designer.vb">
+      <DependentUpon>frmProcessDemand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmProcessDemand.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\FrmScrapSale.Designer.vb">
+      <DependentUpon>FrmScrapSale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\FrmScrapSale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\frmSetPurchaseAmt.designer.vb">
+      <DependentUpon>frmSetPurchaseAmt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmSetPurchaseAmt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\frmSupItems.designer.vb">
+      <DependentUpon>frmSupItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmSupItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\frmSuppliers.designer.vb">
+      <DependentUpon>frmSuppliers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmSuppliers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\frmUndoChanges.designer.vb">
+      <DependentUpon>frmUndoChanges.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmUndoChanges.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\frmVendorInfo.Designer.vb">
+      <DependentUpon>frmVendorInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmVendorInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\frmVerifyAfterComp.designer.vb">
+      <DependentUpon>frmVerifyAfterComp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmVerifyAfterComp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\frmVerifyDemand.designer.vb">
+      <DependentUpon>frmVerifyDemand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmVerifyDemand.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\Reports\frmDemandReports11.Designer.vb">
+      <DependentUpon>frmDemandReports11.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\Reports\frmDemandReports11.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\Reports\frmDemandReports4Acc.designer.vb">
+      <DependentUpon>frmDemandReports4Acc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\Reports\frmDemandReports4Acc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\Reports\frmDemandReports4Ver1.designer.vb">
+      <DependentUpon>frmDemandReports4Ver1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\Reports\frmDemandReports4Ver1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\Reports\frmMiscReports4Purchase.designer.vb">
+      <DependentUpon>frmMiscReports4Purchase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\Reports\frmMiscReports4Purchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\frmPartialRecVStatus.designer.vb">
+      <DependentUpon>frmPartialRecVStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\frmPartialRecVStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\Reports\frmPOBalance.Designer.vb">
+      <DependentUpon>frmPOBalance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\Reports\frmPOBalance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\Reports\frmRptPO.Designer.vb">
+      <DependentUpon>frmRptPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\Reports\frmRptPO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\Reports\frmRptPOLedger.designer.vb">
+      <DependentUpon>frmRptPOLedger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\Reports\frmRptPOLedger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\Reports\frmRptSupList.Designer.vb">
+      <DependentUpon>frmRptSupList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\Reports\frmRptSupList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\Reports\frmTMBalances.designer.vb">
+      <DependentUpon>frmTMBalances.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\Reports\frmTMBalances.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\Reports\NewDemandreports.Designer.vb">
+      <DependentUpon>NewDemandreports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\Reports\NewDemandreports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procurement\Reports\NewDemandsreportsAcc1.Designer.vb">
+      <DependentUpon>NewDemandsreportsAcc1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Procurement\Reports\NewDemandsreportsAcc1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase Return\DSPRGP.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSPRGP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Return\frmPRRN.Designer.vb">
+      <DependentUpon>frmPRRN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Return\frmPRRN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\DS\DSSec.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSSec.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Reports\FrmmatReports.Designer.vb">
+      <DependentUpon>FrmmatReports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Reports\FrmmatReports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\Reports\Reports.Designer.vb">
+      <DependentUpon>Reports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Reports\Reports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ware House\DSWareHouse.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSWareHouse.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ware House\DSWareHouse.vb">
+      <DependentUpon>DSWareHouse.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ware House\frmWareHouseInfo.Designer.vb">
+      <DependentUpon>frmWareHouseInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ware House\frmWareHouseInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ware House\frmWareHouseIssuance.Designer.vb">
+      <DependentUpon>frmWareHouseIssuance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ware House\frmWareHouseIssuance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ware House\frmWareHouseRec.Designer.vb">
+      <DependentUpon>frmWareHouseRec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ware House\frmWareHouseRec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Westage\DS\DSWestage.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSWestage.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Westage\Forms\FrmArticleWiseWestage.Designer.vb">
+      <DependentUpon>FrmArticleWiseWestage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Westage\Forms\FrmArticleWiseWestage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Asserts\Forms\FrmAsserts.resx">
+      <DependentUpon>FrmAsserts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Asserts\Forms\FrmORG_Life.resx">
+      <DependentUpon>FrmORG_Life.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Asserts\Forms\Frm_Asserts_type.resx">
+      <DependentUpon>Frm_Asserts_type.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Audit\Forms\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Audit\Forms\FrmBillingGMVerfication.resx">
+      <DependentUpon>FrmBillingGMVerfication.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Audit\Forms\FrmDemandsupdatation.resx">
+      <DependentUpon>FrmDemandsupdatation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Audit\frmCancelledReq.resx">
+      <DependentUpon>frmCancelledReq.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Audit\FrmCreditNew.resx">
+      <DependentUpon>FrmCreditNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Audit\NewFromcreditDebit.resx">
+      <DependentUpon>NewFromcreditDebit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BE\frmBERec.resx">
+      <DependentUpon>frmBERec.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BE\frmNewBEMatIssued.resx">
+      <DependentUpon>frmNewBEMatIssued.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BE\frmSMS.resx">
+      <DependentUpon>frmSMS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BE\Reports\frmRptDailyTran.resx">
+      <DependentUpon>frmRptDailyTran.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Demand\frmAuditVerficationDemand.resx">
+      <DependentUpon>frmAuditVerficationDemand.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Demand\frmDemandRec.resx">
+      <DependentUpon>frmDemandRec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Demand\frmDemandRecPurchase.resx">
+      <DependentUpon>frmDemandRecPurchase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Demand\frmIssuance.resx">
+      <DependentUpon>frmIssuance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Demand\FrmNewIssuance.resx">
+      <DependentUpon>FrmNewIssuance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMMS\Forms\FrmDMMSCat.resx">
+      <DependentUpon>FrmDMMSCat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMMS\Forms\FrmDMMS_Dept.resx">
+      <DependentUpon>FrmDMMS_Dept.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMMS\Forms\FrmMachineparts.resx">
+      <DependentUpon>FrmMachineparts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMMS\Forms\Machines.resx">
+      <DependentUpon>Machines.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EDM\Forms\FrmEDM.resx">
+      <DependentUpon>FrmEDM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FIT\Forms\FrmFITMATIN.resx">
+      <DependentUpon>FrmFITMATIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FIT\Forms\FrmMaterialType.resx">
+      <DependentUpon>FrmMaterialType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FIT\Forms\FrmMatReceived.resx">
+      <DependentUpon>FrmMatReceived.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FIT\Forms\FrmSupplipers.resx">
+      <DependentUpon>FrmSupplipers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FIT\Forms\Frmtestcatalog.resx">
+      <DependentUpon>Frmtestcatalog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GatePass\CancelationGP.resx">
+      <DependentUpon>CancelationGP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GatePass\FrmGM.resx">
+      <DependentUpon>FrmGM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GatePass\FrmGMApproval.resx">
+      <DependentUpon>FrmGMApproval.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GatePass\frmGP.resx">
+      <DependentUpon>frmGP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GatePass\frmGPApp.resx">
+      <DependentUpon>frmGPApp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GatePass\frmGPReports.resx">
+      <DependentUpon>frmGPReports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GatePass\frmGPVerify.resx">
+      <DependentUpon>frmGPVerify.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GatePass\FrmHOD.resx">
+      <DependentUpon>FrmHOD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GatePass\FrmMatArticle.resx">
+      <DependentUpon>FrmMatArticle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Admin\frmDemandApproval.resx">
+      <DependentUpon>frmDemandApproval.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Admin\frmExtCust.resx">
+      <DependentUpon>frmExtCust.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Admin\FrmGroupComp.resx">
+      <DependentUpon>FrmGroupComp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Admin\frmLocalCust.resx">
+      <DependentUpon>frmLocalCust.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Admin\frmOut.resx">
+      <DependentUpon>frmOut.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Admin\frmTranIn.resx">
+      <DependentUpon>frmTranIn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Admin\frmUOMD.resx">
+      <DependentUpon>frmUOMD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Audit\frmDailyTranAudit.resx">
+      <DependentUpon>frmDailyTranAudit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Billing\frmActsBilling.resx">
+      <DependentUpon>frmActsBilling.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Billing\frmbillingMatTran.resx">
+      <DependentUpon>frmbillingMatTran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Billing\frmBillingParty.resx">
+      <DependentUpon>frmBillingParty.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Billing\frmBillingTranNew.resx">
+      <DependentUpon>frmBillingTranNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Billing\frmBillingTranNewUndoVerifying.resx">
+      <DependentUpon>frmBillingTranNewUndoVerifying.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Billing\frmBillingTranNewVerifying.resx">
+      <DependentUpon>frmBillingTranNewVerifying.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Billing\frmInwardTranVer.resx">
+      <DependentUpon>frmInwardTranVer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Billing\Reports\frmRptBillingTranNew.resx">
+      <DependentUpon>frmRptBillingTranNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Billing\Reports\frmRptBillingTran.resx">
+      <DependentUpon>frmRptBillingTran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Bladder\frmBladderRepairIssuance.resx">
+      <DependentUpon>frmBladderRepairIssuance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Bladder\frmBladerBillingTran4Winding.resx">
+      <DependentUpon>frmBladerBillingTran4Winding.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Bladder\frmBladerBillingTran.resx">
+      <DependentUpon>frmBladerBillingTran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Bladder\frmCustBladderFormula.resx">
+      <DependentUpon>frmCustBladderFormula.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Bladder\FrmRepaireBladderRec.resx">
+      <DependentUpon>FrmRepaireBladderRec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Bladder\frmRepairedBladderRec.resx">
+      <DependentUpon>frmRepairedBladderRec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Bladder\frmWindedBladderProcess4Winding.resx">
+      <DependentUpon>frmWindedBladderProcess4Winding.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Bladder\frmWindedBladderProcess.resx">
+      <DependentUpon>frmWindedBladderProcess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Bladder\frmWindedExect.resx">
+      <DependentUpon>frmWindedExect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Bladder\Reports\frmRptBillingTransactions.resx">
+      <DependentUpon>frmRptBillingTransactions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Bladder\Reports\frmRptRepairedBladders.resx">
+      <DependentUpon>frmRptRepairedBladders.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Blader Repair Rec\frmBladderProcesses.resx">
+      <DependentUpon>frmBladderProcesses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Blader Repair Rec\frmBladerRepRec.resx">
+      <DependentUpon>frmBladerRepRec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Blader Repair Rec\frmPassBaladerRec.resx">
+      <DependentUpon>frmPassBaladerRec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Client\AutoTran\frmAutoPOIN.resx">
+      <DependentUpon>frmAutoPOIN.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Client\AutoTran\frmInspectionMaterial.resx">
+      <DependentUpon>frmInspectionMaterial.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Client\AutoTran\frmMatReq.resx">
+      <DependentUpon>frmMatReq.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Client\AutoTran\FrmPartial.resx">
+      <DependentUpon>FrmPartial.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Client\AutoTran\frmPOIn.resx">
+      <DependentUpon>frmPOIn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Client\AutoTran\frmPurchaseReturn.resx">
+      <DependentUpon>frmPurchaseReturn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Client\frmDailyTranIn.resx">
+      <DependentUpon>frmDailyTranIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Client\frmLinesRacksInfo.resx">
+      <DependentUpon>frmLinesRacksInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Client\frmMatWrongAdjustment.resx">
+      <DependentUpon>frmMatWrongAdjustment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Client\frmMatAdjustment.resx">
+      <DependentUpon>frmMatAdjustment.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Client\frmDailyTranInscrab.resx">
+      <DependentUpon>frmDailyTranInscrab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Client\frmNewTranIn123.resx">
+      <DependentUpon>frmNewTranIn123.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Client\frmNewTranOut.resx">
+      <DependentUpon>frmNewTranOut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Client\frmPOAtGate.resx">
+      <DependentUpon>frmPOAtGate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Client\frmPrintTranIn.resx">
+      <DependentUpon>frmPrintTranIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Client\frmRepairIssuance.resx">
+      <DependentUpon>frmRepairIssuance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Client\frmTranYear.resx">
+      <DependentUpon>frmTranYear.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Client\NewTRIn.resx">
+      <DependentUpon>NewTRIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Common\frmCode.resx">
+      <DependentUpon>frmCode.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Common\frmCurrency.resx">
+      <DependentUpon>frmCurrency.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Common\frmItemsData.resx">
+      <DependentUpon>frmItemsData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Common\frmUOM.resx">
+      <DependentUpon>frmUOM.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Dispatch\frmDispatchPOsReceive.resx">
+      <DependentUpon>frmDispatchPOsReceive.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Dispatch\frmDispMat.resx">
+      <DependentUpon>frmDispMat.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Dispatch\frmPackOut.resx">
+      <DependentUpon>frmPackOut.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Dispatch\frmPackTranIn.resx">
+      <DependentUpon>frmPackTranIn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\frmNewDemands.resx">
+      <DependentUpon>frmNewDemands.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Material Borrowing\frmMatBorrowedIssued.resx">
+      <DependentUpon>frmMatBorrowedIssued.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Material Lending\frmLendedMatRec.resx">
+      <DependentUpon>frmLendedMatRec.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Material Sale\frmAutoSaleIssuance.resx">
+      <DependentUpon>frmAutoSaleIssuance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Material Sale\frmCustItems.resx">
+      <DependentUpon>frmCustItems.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Material Sale\frmCustomer.resx">
+      <DependentUpon>frmCustomer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Material Sale\frmMaterialSale.resx">
+      <DependentUpon>frmMaterialSale.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Material Sale\frmSaleAccounts.resx">
+      <DependentUpon>frmSaleAccounts.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Material Sale\frmSaleInvoice.resx">
+      <DependentUpon>frmSaleInvoice.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Material Sale\frmSalesBill.resx">
+      <DependentUpon>frmSalesBill.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Material Sale\Sale Return\frmSaleUndo.resx">
+      <DependentUpon>frmSaleUndo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Material Sale\Sale Return\frmSaleReturn.resx">
+      <DependentUpon>frmSaleReturn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Reports\frmRptArticle.resx">
+      <DependentUpon>frmRptArticle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Reports\frmRptDeptWiseOut.resx">
+      <DependentUpon>frmRptDeptWiseOut.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Reports\frmRptFilterBalance.resx">
+      <DependentUpon>frmRptFilterBalance.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Reports\frmRptFilterBalance1.resx">
+      <DependentUpon>frmRptFilterBalance1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Reports\frmRptFilterCode.resx">
+      <DependentUpon>frmRptFilterCode.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Reports\frmRptFilterTran.resx">
+      <DependentUpon>frmRptFilterTran.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Reports\frmRptFortechTran.resx">
+      <DependentUpon>frmRptFortechTran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Reports\frmRptGatePasses.resx">
+      <DependentUpon>frmRptGatePasses.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Reports\frmRptMaker.resx">
+      <DependentUpon>frmRptMaker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Reports\frmRptMaterialAging.resx">
+      <DependentUpon>frmRptMaterialAging.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Reports\frmRptMaterialReceiving.resx">
+      <DependentUpon>frmRptMaterialReceiving.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Reports\frmRptMRP.resx">
+      <DependentUpon>frmRptMRP.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Reports\FrmRptMRPD.resx">
+      <DependentUpon>FrmRptMRPD.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Reports\frmRptMIRN.resx">
+      <DependentUpon>frmRptMIRN.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Reports\frmRptPurchaseReturn.resx">
+      <DependentUpon>frmRptPurchaseReturn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Reports\frmRptSaleBill.resx">
+      <DependentUpon>frmRptSaleBill.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Reports\frmRptSaleInvoice.resx">
+      <DependentUpon>frmRptSaleInvoice.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Reports\frmRptSupplierLedger.resx">
+      <DependentUpon>frmRptSupplierLedger.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT Inventory\Forms\FrmDailyIN.resx">
+      <DependentUpon>FrmDailyIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT Inventory\Forms\FrmmaterialIssuance.resx">
+      <DependentUpon>FrmmaterialIssuance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IT Inventory\Forms\FrmVendors.resx">
+      <DependentUpon>FrmVendors.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOM\frmLOMRec.resx">
+      <DependentUpon>frmLOMRec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Admin\IDMSSubDept.resx">
+      <DependentUpon>IDMSSubDept.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Admin\IDMS_User_Dept.resx">
+      <DependentUpon>IDMS_User_Dept.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Client\frmLoginVer.resx">
+      <DependentUpon>frmLoginVer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Client\FrmuserDept.resx">
+      <DependentUpon>FrmuserDept.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatRequization\Forms\FrmMPNOWiseMaterial.resx">
+      <DependentUpon>FrmMPNOWiseMaterial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatRequization\Forms\newFrmMpMat.resx">
+      <DependentUpon>newFrmMpMat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New Procurement\frmNewSetPurchaseAmt.resx">
+      <DependentUpon>frmNewSetPurchaseAmt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New Procurement\frmNewDemandCompletion.resx">
+      <DependentUpon>frmNewDemandCompletion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New Procurement\frmNewVerifyAfterComp.resx">
+      <DependentUpon>frmNewVerifyAfterComp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New Procurement\frmNewUndoChanges.resx">
+      <DependentUpon>frmNewUndoChanges.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New Procurement\frmNewPartialRecAmt.resx">
+      <DependentUpon>frmNewPartialRecAmt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New Procurement\frmNewProcDemandExceptPO.resx">
+      <DependentUpon>frmNewProcDemandExceptPO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\batchIN.resx">
+      <DependentUpon>batchIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmDailyJALAEntry.resx">
+      <DependentUpon>frmDailyJALAEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmDemandIssuance.resx">
+      <DependentUpon>frmDemandIssuance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmGDemandIssue.resx">
+      <DependentUpon>frmGDemandIssue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\FrmNewScrab.resx">
+      <DependentUpon>FrmNewScrab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmPartialRecDemands.resx">
+      <DependentUpon>frmPartialRecDemands.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New Procurement\frmNewPartialReceiving.resx">
+      <DependentUpon>frmNewPartialReceiving.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmPOImportTrans.resx">
+      <DependentUpon>frmPOImportTrans.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmPOImpShipmentTrans.resx">
+      <DependentUpon>frmPOImpShipmentTrans.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmPurOrders.resx">
+      <DependentUpon>frmPurOrders.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmPurOrdersNew.resx">
+      <DependentUpon>frmPurOrdersNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmPurVendorInfo.resx">
+      <DependentUpon>frmPurVendorInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmSetPurchaseAmtBilling.resx">
+      <DependentUpon>frmSetPurchaseAmtBilling.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmUndoVerifyAfterComp.resx">
+      <DependentUpon>frmUndoVerifyAfterComp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\Local Sale\frmLocalSale.resx">
+      <DependentUpon>frmLocalSale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\NewScrabMaterial.resx">
+      <DependentUpon>NewScrabMaterial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\Reports\frmDemandReports4Ver.resx">
+      <DependentUpon>frmDemandReports4Ver.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\Reports\FrmMPNoWise.resx">
+      <DependentUpon>FrmMPNoWise.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\Reports\frmRptScrapeSale.resx">
+      <DependentUpon>frmRptScrapeSale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Admin\frmLockedUsers.resx">
+      <DependentUpon>frmLockedUsers.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Admin\frmModuleMgt.resx">
+      <DependentUpon>frmModuleMgt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Client\frmChngPswd.resx">
+      <DependentUpon>frmChngPswd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Client\frmmain.resx">
+      <DependentUpon>frmmain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Admin\frmUL.resx">
+      <DependentUpon>frmUL.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Admin\frmUserMgt.resx">
+      <DependentUpon>frmUserMgt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Common\frmRptViewer.resx">
+      <DependentUpon>frmRptViewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmAddDemands.resx">
+      <DependentUpon>frmAddDemands.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmBookingStatus.resx">
+      <DependentUpon>frmBookingStatus.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INV\Common\frmCodeProc.resx">
+      <DependentUpon>frmCodeProc.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmDemandCompletion.resx">
+      <DependentUpon>frmDemandCompletion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmDemandPurchased.resx">
+      <DependentUpon>frmDemandPurchased.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmPartialPO.resx">
+      <DependentUpon>frmPartialPO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmPartialRecAmt.resx">
+      <DependentUpon>frmPartialRecAmt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmPartialReceiving.resx">
+      <DependentUpon>frmPartialReceiving.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmProcDemandExceptPO.resx">
+      <DependentUpon>frmProcDemandExceptPO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmProcDemandSleep.resx">
+      <DependentUpon>frmProcDemandSleep.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmProcessDemand.resx">
+      <DependentUpon>frmProcessDemand.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\FrmScrapSale.resx">
+      <DependentUpon>FrmScrapSale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmSetPurchaseAmt.resx">
+      <DependentUpon>frmSetPurchaseAmt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmSupItems.resx">
+      <DependentUpon>frmSupItems.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmSuppliers.resx">
+      <DependentUpon>frmSuppliers.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmUndoChanges.resx">
+      <DependentUpon>frmUndoChanges.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmVendorInfo.resx">
+      <DependentUpon>frmVendorInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmVerifyAfterComp.resx">
+      <DependentUpon>frmVerifyAfterComp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmVerifyDemand.resx">
+      <DependentUpon>frmVerifyDemand.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\Reports\frmDemandReports11.resx">
+      <DependentUpon>frmDemandReports11.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\Reports\frmDemandReports4Acc.resx">
+      <DependentUpon>frmDemandReports4Acc.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\Reports\frmDemandReports4Ver1.resx">
+      <DependentUpon>frmDemandReports4Ver1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\Reports\frmMiscReports4Purchase.resx">
+      <DependentUpon>frmMiscReports4Purchase.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\frmPartialRecVStatus.resx">
+      <DependentUpon>frmPartialRecVStatus.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\Reports\frmPOBalance.resx">
+      <DependentUpon>frmPOBalance.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\Reports\frmRptPO.resx">
+      <DependentUpon>frmRptPO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\Reports\frmRptPOLedger.resx">
+      <DependentUpon>frmRptPOLedger.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\Reports\frmRptSupList.resx">
+      <DependentUpon>frmRptSupList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\Reports\frmTMBalances.resx">
+      <DependentUpon>frmTMBalances.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\Reports\NewDemandreports.resx">
+      <DependentUpon>NewDemandreports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procurement\Reports\NewDemandsreportsAcc1.resx">
+      <DependentUpon>NewDemandsreportsAcc1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Return\frmPRRN.resx">
+      <DependentUpon>frmPRRN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\Reports\FrmmatReports.resx">
+      <DependentUpon>FrmmatReports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\Reports\Reports.resx">
+      <DependentUpon>Reports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ware House\frmWareHouseInfo.resx">
+      <DependentUpon>frmWareHouseInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ware House\frmWareHouseIssuance.resx">
+      <DependentUpon>frmWareHouseIssuance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ware House\frmWareHouseRec.resx">
+      <DependentUpon>frmWareHouseRec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Westage\Forms\FrmArticleWiseWestage.resx">
+      <DependentUpon>FrmArticleWiseWestage.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Asserts\DS\DSAsserts.xsc">
+      <DependentUpon>DSAsserts.xsd</DependentUpon>
+    </None>
+    <None Include="Asserts\DS\DSAsserts.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSAsserts.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Asserts\DS\DSAsserts.xss">
+      <DependentUpon>DSAsserts.xsd</DependentUpon>
+    </None>
+    <None Include="Audit\DSAudit.xsc">
+      <DependentUpon>DSAudit.xsd</DependentUpon>
+    </None>
+    <None Include="Audit\DSAudit.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSAudit.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Audit\DSAudit.xss">
+      <DependentUpon>DSAudit.xsd</DependentUpon>
+    </None>
+    <None Include="Audit\DSCredit.xsc">
+      <DependentUpon>DSCredit.xsd</DependentUpon>
+    </None>
+    <None Include="Audit\DSCredit.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSCredit.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Audit\DSCredit.xss">
+      <DependentUpon>DSCredit.xsd</DependentUpon>
+    </None>
+    <None Include="Audit\DS\DSInwardVeri.xsc">
+      <DependentUpon>DSInwardVeri.xsd</DependentUpon>
+    </None>
+    <None Include="Audit\DS\DSInwardVeri.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSInwardVeri.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Audit\DS\DSInwardVeri.xss">
+      <DependentUpon>DSInwardVeri.xsd</DependentUpon>
+    </None>
+    <None Include="Demand\DSDemand.xsc">
+      <DependentUpon>DSDemand.xsd</DependentUpon>
+    </None>
+    <None Include="Demand\DSDemand.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSDemand.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Demand\DSDemand.xss">
+      <DependentUpon>DSDemand.xsd</DependentUpon>
+    </None>
+    <None Include="Demand\DSDemandsNew.xsc">
+      <DependentUpon>DSDemandsNew.xsd</DependentUpon>
+    </None>
+    <None Include="Demand\DSDemandsNew.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSDemandsNew.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Demand\DSDemandsNew.xss">
+      <DependentUpon>DSDemandsNew.xsd</DependentUpon>
+    </None>
+    <None Include="DMMS\DS\DMMS.xsc">
+      <DependentUpon>DMMS.xsd</DependentUpon>
+    </None>
+    <None Include="DMMS\DS\DMMS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DMMS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DMMS\DS\DMMS.xss">
+      <DependentUpon>DMMS.xsd</DependentUpon>
+    </None>
+    <None Include="EDM\DS\DSEDM.xsc">
+      <DependentUpon>DSEDM.xsd</DependentUpon>
+    </None>
+    <None Include="EDM\DS\DSEDM.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSEDM.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="EDM\DS\DSEDM.xss">
+      <DependentUpon>DSEDM.xsd</DependentUpon>
+    </None>
+    <None Include="FIT\DS\DSFIT.xsc">
+      <DependentUpon>DSFIT.xsd</DependentUpon>
+    </None>
+    <None Include="FIT\DS\DSFIT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSFIT.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="FIT\DS\DSFIT.xss">
+      <DependentUpon>DSFIT.xsd</DependentUpon>
+    </None>
+    <None Include="frmRptFilterTran.vb_8_TemporaryKey.pfx" />
+    <None Include="GatePass\DSLocalPur.xsc">
+      <DependentUpon>DSLocalPur.xsd</DependentUpon>
+    </None>
+    <None Include="GatePass\DSLocalPur.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSLocalPur.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="GatePass\DSLocalPur.xss">
+      <DependentUpon>DSLocalPur.xsd</DependentUpon>
+    </None>
+    <None Include="GatePass\DSMat.xsc">
+      <DependentUpon>DSMat.xsd</DependentUpon>
+    </None>
+    <None Include="GatePass\DSMat.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSMat.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="GatePass\DSMat.xss">
+      <DependentUpon>DSMat.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Admin\DSdemands.xsc">
+      <DependentUpon>DSdemands.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Admin\DSdemands.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSdemands.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Admin\DSdemands.xss">
+      <DependentUpon>DSdemands.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Admin\DSRacksInfo.xsc">
+      <DependentUpon>DSRacksInfo.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Admin\DSRacksInfo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRacksInfo.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Admin\DSRacksInfo.xss">
+      <DependentUpon>DSRacksInfo.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Audit\DSInWard.xsc">
+      <DependentUpon>DSInWard.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Audit\DSInWard.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSInWard.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Audit\DSInWard.xss">
+      <DependentUpon>DSInWard.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Billing\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Billing\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Billing\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Reports\DSMatData.xsc">
+      <DependentUpon>DSMatData.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Reports\DSMatData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSMatData.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Reports\DSMatData.xss">
+      <DependentUpon>DSMatData.xsd</DependentUpon>
+    </None>
+    <None Include="IT Inventory\DS\DSIT.xsc">
+      <DependentUpon>DSIT.xsd</DependentUpon>
+    </None>
+    <None Include="IT Inventory\DS\DSIT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSIT.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="IT Inventory\DS\DSIT.xss">
+      <DependentUpon>DSIT.xsd</DependentUpon>
+    </None>
+    <None Include="MatRequization\DS\DSMPMat.xsc">
+      <DependentUpon>DSMPMat.xsd</DependentUpon>
+    </None>
+    <None Include="MatRequization\DS\DSMPMat.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSMPMat.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="MatRequization\DS\DSMPMat.xss">
+      <DependentUpon>DSMPMat.xsd</DependentUpon>
+    </None>
+    <None Include="MatRequization\DS\Matreq.xsc">
+      <DependentUpon>Matreq.xsd</DependentUpon>
+    </None>
+    <None Include="MatRequization\DS\Matreq.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Matreq.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="MatRequization\DS\Matreq.xss">
+      <DependentUpon>Matreq.xsd</DependentUpon>
+    </None>
+    <None Include="New Procurement\DSGatePassVer.xsc">
+      <DependentUpon>DSGatePassVer.xsd</DependentUpon>
+    </None>
+    <None Include="New Procurement\DSGatePassVer.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSGatePassVer.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="New Procurement\DSGatePassVer.xss">
+      <DependentUpon>DSGatePassVer.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSDemandOut.xsc">
+      <DependentUpon>DSDemandOut.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSDemandOut.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSDemandOut.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Procurement\DS\DSDemandOut.xss">
+      <DependentUpon>DSDemandOut.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSScrab.xsc">
+      <DependentUpon>DSScrab.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSScrab.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSScrab.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Procurement\DS\DSScrab.xss">
+      <DependentUpon>DSScrab.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\dsUOM.xsc">
+      <DependentUpon>dsUOM.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\dsUOM.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsUOM.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Procurement\DS\dsUOM.xss">
+      <DependentUpon>dsUOM.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Admin\DSCompanies.xsc">
+      <DependentUpon>DSCompanies.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Admin\DSCompanies.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSCompanies1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="INV\Admin\DSCompanies.xss">
+      <DependentUpon>DSCompanies.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Admin\DSExtCust.xsc">
+      <DependentUpon>DSExtCust.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Admin\DSExtCust.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSExtCust1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="INV\Admin\DSExtCust.xss">
+      <DependentUpon>DSExtCust.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Admin\DSTranIn.xsc">
+      <DependentUpon>DSTranIn.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Admin\DSTranIn.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSTranIn1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="INV\Admin\DSTranIn.xss">
+      <DependentUpon>DSTranIn.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Client\AutoTran\DsPasFailQty.xsc">
+      <DependentUpon>DsPasFailQty.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Client\AutoTran\DsPasFailQty.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsPasFailQty.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="INV\Client\AutoTran\DsPasFailQty.xss">
+      <DependentUpon>DsPasFailQty.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Client\AutoTran\DSPR.xsc">
+      <DependentUpon>DSPR.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Client\AutoTran\DSPR.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSPR.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Client\AutoTran\DSPR.xss">
+      <DependentUpon>DSPR.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Client\AutoTran\DSRequisition.xsc">
+      <DependentUpon>DSRequisition.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Client\AutoTran\DSRequisition.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRequisition.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Client\AutoTran\DSRequisition.xss">
+      <DependentUpon>DSRequisition.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Client\DSNewTranOut.xsc">
+      <DependentUpon>DSNewTranOut.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Client\DSNewTranOut.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSNewTranOut1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="INV\Client\DSNewTranOut.xss">
+      <DependentUpon>DSNewTranOut.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Client\DSYM.xsc">
+      <DependentUpon>DSYM.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Client\DSYM.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSYM1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="INV\Client\DSYM.xss">
+      <DependentUpon>DSYM.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Admin\DSOut.xsc">
+      <DependentUpon>DSOut.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Admin\DSOut.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSOut1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="INV\Admin\DSOut.xss">
+      <DependentUpon>DSOut.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Admin\DSTranInCodeLayer.xsc">
+      <DependentUpon>DSTranInCodeLayer.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Admin\DSTranInCodeLayer.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSTranInCodeLayer1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="INV\Admin\DSTranInCodeLayer.xss">
+      <DependentUpon>DSTranInCodeLayer.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Common\DSCode.xsc">
+      <DependentUpon>DSCode.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Common\DSCode.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSCode.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="INV\Common\DSCode.xss">
+      <DependentUpon>DSCode.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Dispatch\DsDispatchPOs.xsc">
+      <DependentUpon>DsDispatchPOs.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Dispatch\DsDispatchPOs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsDispatchPOs.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Dispatch\DsDispatchPOs.xss">
+      <DependentUpon>DsDispatchPOs.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Dispatch\DSPackTranIn.xsc">
+      <DependentUpon>DSPackTranIn.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Dispatch\DSPackTranIn.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSPackTranIn1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="INV\Dispatch\DSPackTranIn.xss">
+      <DependentUpon>DSPackTranIn.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Dispatch\DSPackTranOut.xsc">
+      <DependentUpon>DSPackTranOut.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Dispatch\DSPackTranOut.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSPackTranOut1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="INV\Dispatch\DSPackTranOut.xss">
+      <DependentUpon>DSPackTranOut.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Admin\DSLocalCust.xsc">
+      <DependentUpon>DSLocalCust.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Admin\DSLocalCust.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSLocalCust1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="INV\Admin\DSLocalCust.xss">
+      <DependentUpon>DSLocalCust.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Material Borrowing\DSMat_Brow.xsc">
+      <DependentUpon>DSMat_Brow.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Material Borrowing\DSMat_Brow.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSMat_Brow.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Material Borrowing\DSMat_Brow.xss">
+      <DependentUpon>DSMat_Brow.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Material Lending\DSM_Lending.xsc">
+      <DependentUpon>DSM_Lending.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Material Lending\DSM_Lending.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSM_Lending.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Material Lending\DSM_Lending.xss">
+      <DependentUpon>DSM_Lending.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Material Sale\DSCust.xsc">
+      <DependentUpon>DSCust.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Material Sale\DSCust.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSCust.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Material Sale\DSCust.xss">
+      <DependentUpon>DSCust.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Material Sale\DSCustItems.xsc">
+      <DependentUpon>DSCustItems.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Material Sale\DSCustItems.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSCustItems1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="INV\Material Sale\DSCustItems.xss">
+      <DependentUpon>DSCustItems.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Material Sale\DSSale.xsc">
+      <DependentUpon>DSSale.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Material Sale\DSSale.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSSale.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Material Sale\DSSale.xss">
+      <DependentUpon>DSSale.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Material Sale\DSSaleAccounts.xsc">
+      <DependentUpon>DSSaleAccounts.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Material Sale\DSSaleAccounts.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSSaleAccounts.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Material Sale\DSSaleAccounts.xss">
+      <DependentUpon>DSSaleAccounts.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Material Sale\DsSaleIssuence.xsc">
+      <DependentUpon>DsSaleIssuence.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Material Sale\DsSaleIssuence.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsSaleIssuence.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Material Sale\DsSaleIssuence.xss">
+      <DependentUpon>DsSaleIssuence.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Reports\DsDailyTran.xsc">
+      <DependentUpon>DsDailyTran.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Reports\DsDailyTran.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsDailyTran.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="INV\Reports\DsDailyTran.xss">
+      <DependentUpon>DsDailyTran.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Reports\DSRpt.xsc">
+      <DependentUpon>DSRpt.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Reports\DSRpt.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRpt.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Reports\DSRpt.xss">
+      <DependentUpon>DSRpt.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Reports\DSRptCode.xsc">
+      <DependentUpon>DSRptCode.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Reports\DSRptCode.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRptCode1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="INV\Reports\DSRptCode.xss">
+      <DependentUpon>DSRptCode.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Reports\DSRptL4Code.xsc">
+      <DependentUpon>DSRptL4Code.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Reports\DSRptL4Code.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRptL4Code.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="INV\Reports\DSRptL4Code.xss">
+      <DependentUpon>DSRptL4Code.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Reports\DsRptSale.xsc">
+      <DependentUpon>DsRptSale.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Reports\DsRptSale.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsRptSale.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Reports\DsRptSale.xss">
+      <DependentUpon>DsRptSale.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Procurement\DS\DSCodeProc.xsc">
+      <DependentUpon>DSCodeProc.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSCodeProc.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSCodeProc.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Procurement\DS\DSCodeProc.xss">
+      <DependentUpon>DSCodeProc.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSPO.xsc">
+      <DependentUpon>DSPO.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSPO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSPO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Procurement\DS\DSPO.xss">
+      <DependentUpon>DSPO.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSSupItems.xsc">
+      <DependentUpon>DSSupItems.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSSupItems.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSSupItems.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Procurement\DS\DSSupItems.xss">
+      <DependentUpon>DSSupItems.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSSupp.xsc">
+      <DependentUpon>DSSupp.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSSupp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSSupp1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Procurement\DS\DSSupp.xss">
+      <DependentUpon>DSSupp.xsd</DependentUpon>
+    </None>
+    <None Include="Security\DS\DSSec.xsc">
+      <DependentUpon>DSSec.xsd</DependentUpon>
+    </None>
+    <None Include="Security\DS\DSSec.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSSec.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Security\DS\DSSec.xss">
+      <DependentUpon>DSSec.xsd</DependentUpon>
+    </None>
+    <None Include="Westage\DS\DSWestage.xsc">
+      <DependentUpon>DSWestage.xsd</DependentUpon>
+    </None>
+    <None Include="Westage\DS\DSWestage.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSWestage.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Westage\DS\DSWestage.xss">
+      <DependentUpon>DSWestage.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="INV\Client\AutoTran\DSPOR.xsc">
+      <DependentUpon>DSPOR.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Client\AutoTran\DSPOR.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSPOR1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="INV\Client\AutoTran\DSPOR.xss">
+      <DependentUpon>DSPOR.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Client\DSNewTranIn.xsc">
+      <DependentUpon>DSNewTranIn.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Client\DSNewTranIn.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSNewTranIn.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="INV\Client\DSNewTranIn.xss">
+      <DependentUpon>DSNewTranIn.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Material Sale\DSSaleBill.xsc">
+      <DependentUpon>DSSaleBill.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Material Sale\DSSaleBill.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSSaleBill.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Material Sale\DSSaleBill.xss">
+      <DependentUpon>DSSaleBill.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Reports\DSClient.xsc">
+      <DependentUpon>DSClient.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Reports\DSClient.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSClient1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="INV\Reports\DSClient.xss">
+      <DependentUpon>DSClient.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Reports\DSRptGatePasses.xsc">
+      <DependentUpon>DSRptGatePasses.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Reports\DSRptGatePasses.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRptGatePasses.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Reports\DSRptGatePasses.xss">
+      <DependentUpon>DSRptGatePasses.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Reports\DSRptSaleBill.xsc">
+      <DependentUpon>DSRptSaleBill.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Reports\DSRptSaleBill.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRptSaleBill.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Reports\DSRptSaleBill.xss">
+      <DependentUpon>DSRptSaleBill.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\ForwardLogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-259074.jpeg" />
+    <None Include="Resources\why-us2.jpg" />
+    <None Include="Resources\wp2164077.jpg" />
+    <None Include="frmRptFilterTran.vb_5_TemporaryKey.pfx" />
+    <None Include="frmRptFilterTran.vb_6_TemporaryKey.pfx" />
+    <None Include="frmRptFilterTran.vb_7_TemporaryKey.pfx" />
+    <None Include="INV\Billing\DSMisSec.xsc">
+      <DependentUpon>DSMisSec.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Billing\DSMisSec.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSMisSec.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Billing\DSMisSec.xss">
+      <DependentUpon>DSMisSec.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Bladder\DSBladderBillingTran.xsc">
+      <DependentUpon>DSBladderBillingTran.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Bladder\DSBladderBillingTran.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSBladderBillingTran.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Bladder\DSBladderBillingTran.xss">
+      <DependentUpon>DSBladderBillingTran.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Bladder\DSCustBlader.xsc">
+      <DependentUpon>DSCustBlader.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Bladder\DSCustBlader.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSCustBlader.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Bladder\DSCustBlader.xss">
+      <DependentUpon>DSCustBlader.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Bladder\DSRptRepairBladers.xsc">
+      <DependentUpon>DSRptRepairBladers.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Bladder\DSRptRepairBladers.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRptRepairBladers.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Bladder\DSRptRepairBladers.xss">
+      <DependentUpon>DSRptRepairBladers.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Client\DSPURGate.xsc">
+      <DependentUpon>DSPURGate.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Client\DSPURGate.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSPURGate.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Client\DSPURGate.xss">
+      <DependentUpon>DSPURGate.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Material Sale\Sale Return\DSSaleReturn.xsc">
+      <DependentUpon>DSSaleReturn.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Material Sale\Sale Return\DSSaleReturn.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSSaleReturn.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Material Sale\Sale Return\DSSaleReturn.xss">
+      <DependentUpon>DSSaleReturn.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Reports\DSArticle.xsc">
+      <DependentUpon>DSArticle.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Reports\DSArticle.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSArticle.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Reports\DSArticle.xss">
+      <DependentUpon>DSArticle.xsd</DependentUpon>
+    </None>
+    <None Include="LOM\DSLOM.xsc">
+      <DependentUpon>DSLOM.xsd</DependentUpon>
+    </None>
+    <None Include="LOM\DSLOM.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSLOM.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="LOM\DSLOM.xss">
+      <DependentUpon>DSLOM.xsd</DependentUpon>
+    </None>
+    <None Include="New Procurement\DSNewProcurement.xsc">
+      <DependentUpon>DSNewProcurement.xsd</DependentUpon>
+    </None>
+    <None Include="New Procurement\DSNewProcurement.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSNewProcurement.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="New Procurement\DSNewProcurement.xss">
+      <DependentUpon>DSNewProcurement.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\Local Sale\DSLocalSale.xsc">
+      <DependentUpon>DSLocalSale.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\Local Sale\DSLocalSale.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSLocalSale.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Procurement\Local Sale\DSLocalSale.xss">
+      <DependentUpon>DSLocalSale.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DSVendorInfo.xsc">
+      <DependentUpon>DSVendorInfo.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DSVendorInfo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSVendorInfo.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Procurement\DSVendorInfo.xss">
+      <DependentUpon>DSVendorInfo.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSJalaEntry.xsc">
+      <DependentUpon>DSJalaEntry.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSJalaEntry.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSJalaEntry.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Procurement\DS\DSJalaEntry.xss">
+      <DependentUpon>DSJalaEntry.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSNewPO.xsc">
+      <DependentUpon>DSNewPO.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSNewPO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSNewPO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Procurement\DS\DSNewPO.xss">
+      <DependentUpon>DSNewPO.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSNewPurOrders.xsc">
+      <DependentUpon>DSNewPurOrders.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSNewPurOrders.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSNewPurOrders.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Procurement\DS\DSNewPurOrders.xss">
+      <DependentUpon>DSNewPurOrders.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSPOImportEntry.xsc">
+      <DependentUpon>DSPOImportEntry.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSPOImportEntry.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSPOImportEntry.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Procurement\DS\DSPOImportEntry.xss">
+      <DependentUpon>DSPOImportEntry.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSPURBILL.xsc">
+      <DependentUpon>DSPURBILL.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSPURBILL.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSPURBILL.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Procurement\DS\DSPURBILL.xss">
+      <DependentUpon>DSPURBILL.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSPurOrdersNew.xsc">
+      <DependentUpon>DSPurOrdersNew.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSPurOrdersNew.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSPurOrdersNew.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Procurement\DS\DSPurOrdersNew.xss">
+      <DependentUpon>DSPurOrdersNew.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\68-512.png" />
+    <None Include="Resources\images.png" />
+    <Content Include="Resources\MM.ico" />
+    <None Include="BE\DSBERec.xsc">
+      <DependentUpon>DSBERec.xsd</DependentUpon>
+    </None>
+    <None Include="BE\DSBERec.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BE\DSBERec.xss">
+      <DependentUpon>DSBERec.xsd</DependentUpon>
+    </None>
+    <None Include="BE\DSNewBEMatIssuance.xsc">
+      <DependentUpon>DSNewBEMatIssuance.xsd</DependentUpon>
+    </None>
+    <None Include="BE\DSNewBEMatIssuance.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSNewBEMatIssuance.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="BE\DSNewBEMatIssuance.xss">
+      <DependentUpon>DSNewBEMatIssuance.xsd</DependentUpon>
+    </None>
+    <None Include="BE\Reports\DSBEMatIssuance.xsc">
+      <DependentUpon>DSBEMatIssuance.xsd</DependentUpon>
+    </None>
+    <None Include="BE\Reports\DSBEMatIssuance.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSBEMatIssuance.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="BE\Reports\DSBEMatIssuance.xss">
+      <DependentUpon>DSBEMatIssuance.xsd</DependentUpon>
+    </None>
+    <None Include="BE\Reports\DSRptBE.xsc">
+      <DependentUpon>DSRptBE.xsd</DependentUpon>
+    </None>
+    <None Include="BE\Reports\DSRptBE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRptBE1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BE\Reports\DSRptBE.xss">
+      <DependentUpon>DSRptBE.xsd</DependentUpon>
+    </None>
+    <None Include="frmRptFilterTran.vb_1_TemporaryKey.pfx" />
+    <None Include="frmRptFilterTran.vb_2_TemporaryKey.pfx" />
+    <None Include="frmRptFilterTran.vb_3_TemporaryKey.pfx" />
+    <None Include="frmRptFilterTran.vb_4_TemporaryKey.pfx" />
+    <None Include="frmRptFilterTran.vb_TemporaryKey.pfx" />
+    <None Include="INV\Billing\DSBilling.xsc">
+      <DependentUpon>DSBilling.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Billing\DSBilling.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSBilling.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Billing\DSBilling.xss">
+      <DependentUpon>DSBilling.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Billing\DSBillingVerify.xsc">
+      <DependentUpon>DSBillingVerify.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Billing\DSBillingVerify.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSBillingVerify.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Billing\DSBillingVerify.xss">
+      <DependentUpon>DSBillingVerify.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Bladder\DSRepairBladderRec.xsc">
+      <DependentUpon>DSRepairBladderRec.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Bladder\DSRepairBladderRec.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRepairBladderRec.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Bladder\DSRepairBladderRec.xss">
+      <DependentUpon>DSRepairBladderRec.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Bladder\DSRepairedBladdersRec.xsc">
+      <DependentUpon>DSRepairedBladdersRec.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Bladder\DSRepairedBladdersRec.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRepairedBladdersRec.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Bladder\DSRepairedBladdersRec.xss">
+      <DependentUpon>DSRepairedBladdersRec.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Bladder\DSWindedBladderIssuance.xsc">
+      <DependentUpon>DSWindedBladderIssuance.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Bladder\DSWindedBladderIssuance.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSWindedBladderIssuance.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Bladder\DSWindedBladderIssuance.xss">
+      <DependentUpon>DSWindedBladderIssuance.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Blader Repair Rec\DSPassBladder.xsc">
+      <DependentUpon>DSPassBladder.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Blader Repair Rec\DSPassBladder.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSPassBladder.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Blader Repair Rec\DSPassBladder.xss">
+      <DependentUpon>DSPassBladder.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Blader Repair Rec\DSRepairBalderRec.xsc">
+      <DependentUpon>DSRepairBalderRec.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Blader Repair Rec\DSRepairBalderRec.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRepairBalderRec.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Blader Repair Rec\DSRepairBalderRec.xss">
+      <DependentUpon>DSRepairBalderRec.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Client\AutoTran\DSAutoPOIN.xsc">
+      <DependentUpon>DSAutoPOIN.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Client\AutoTran\DSAutoPOIN.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSAutoPOIN.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Client\AutoTran\DSAutoPOIN.xss">
+      <DependentUpon>DSAutoPOIN.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Client\DsAdjustEnteries.xsc">
+      <DependentUpon>DsAdjustEnteries.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Client\DsAdjustEnteries.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsAdjustEnteries.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Client\DsAdjustEnteries.xss">
+      <DependentUpon>DsAdjustEnteries.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Client\DSRepairIssuance.xsc">
+      <DependentUpon>DSRepairIssuance.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Client\DSRepairIssuance.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRepairIssuance.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Client\DSRepairIssuance.xss">
+      <DependentUpon>DSRepairIssuance.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Material Sale\AutoSaleIssuance.xsc">
+      <DependentUpon>AutoSaleIssuance.xsd</DependentUpon>
+    </None>
+    <None Include="INV\Material Sale\AutoSaleIssuance.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutoSaleIssuance.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INV\Material Sale\AutoSaleIssuance.xss">
+      <DependentUpon>AutoSaleIssuance.xsd</DependentUpon>
+    </None>
+    <None Include="Main\DS\DSLockedUsers.xsc">
+      <DependentUpon>DSLockedUsers.xsd</DependentUpon>
+    </None>
+    <None Include="Main\DS\DSLockedUsers.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSLockedUsers.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Main\DS\DSLockedUsers.xss">
+      <DependentUpon>DSLockedUsers.xsd</DependentUpon>
+    </None>
+    <None Include="Main\DS\DSUL.xsc">
+      <DependentUpon>DSUL.xsd</DependentUpon>
+    </None>
+    <None Include="Main\DS\DSUL.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSUL1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Main\DS\DSUL.xss">
+      <DependentUpon>DSUL.xsd</DependentUpon>
+    </None>
+    <None Include="Main\DS\DSUM.xsc">
+      <DependentUpon>DSUM.xsd</DependentUpon>
+    </None>
+    <None Include="Main\DS\DSUM.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSUM.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Main\DS\DSUM.xss">
+      <DependentUpon>DSUM.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSDemandIssuance.xsc">
+      <DependentUpon>DSDemandIssuance.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSDemandIssuance.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSDemandIssuance.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Procurement\DS\DSDemandIssuance.xss">
+      <DependentUpon>DSDemandIssuance.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSPartialDemandsTransactions.xsc">
+      <DependentUpon>DSPartialDemandsTransactions.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSPartialDemandsTransactions.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSPartialDemandsTransactions.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Procurement\DS\DSPartialDemandsTransactions.xss">
+      <DependentUpon>DSPartialDemandsTransactions.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSPurOrder.xsc">
+      <DependentUpon>DSPurOrder.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSPurOrder.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSPurOrder.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Procurement\DS\DSPurOrder.xss">
+      <DependentUpon>DSPurOrder.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSSSGP.xsc">
+      <DependentUpon>DSSSGP.xsd</DependentUpon>
+    </None>
+    <None Include="Procurement\DS\DSSSGP.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSSSGP.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Procurement\DS\DSSSGP.xss">
+      <DependentUpon>DSSSGP.xsd</DependentUpon>
+    </None>
+    <None Include="Purchase Return\DSPRGP.xsc">
+      <DependentUpon>DSPRGP.xsd</DependentUpon>
+    </None>
+    <None Include="Purchase Return\DSPRGP.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSPRGP.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Purchase Return\DSPRGP.xss">
+      <DependentUpon>DSPRGP.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\MM.jpg" />
+    <None Include="Ware House\DSWareHouse.xsc">
+      <DependentUpon>DSWareHouse.xsd</DependentUpon>
+    </None>
+    <None Include="Ware House\DSWareHouse.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSWareHouse.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Ware House\DSWareHouse.xss">
+      <DependentUpon>DSWareHouse.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Resources\MM.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
