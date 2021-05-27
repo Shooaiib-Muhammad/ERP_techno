@@ -80,7 +80,7 @@
         ElseIf RadioButton3.Checked = True Then
             Filter = " {View_Mat_OutwardGatePass.TranOutID}in " & Me.TranOutIDComboBox.SelectedValue & " to " & Me.TranOutIDComboBox1.SelectedValue & ""
             Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptMatOutwardGatePass.rpt"
-            Param = "Vehicle=" & Me.VehicleTextBox1.Text & "&Driver=" & Me.DriverNameTextBox2.Text & " &Vehicle1=" & Me.VehicleTextBox1.Text & "&Driver1=" & Me.DriverNameTextBox2.Text & ""
+            Param = "Vehicle=" & Me.VehicleTextBox1.Text & "&Driver=" & Me.DriverNameTextBox2.Text & " &SubVehicle=" & Me.VehicleTextBox1.Text & "&SubDriver=" & Me.DriverNameTextBox2.Text & ""
         ElseIf RadioButton4.Checked = True Then
             Filter = "{View_Lended_MM_GP.Tranoutid} in " & Me.TranOutIDComboBox.SelectedValue & " to " & Me.TranOutIDComboBox1.SelectedValue & ""
             Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptLendedMatGatePass.rpt"
@@ -92,7 +92,7 @@
         ElseIf RadioButton6.Checked = True Then
             Filter = "{View_Mat_Sale.TranOutID}in " & Me.TranOutIDComboBox.SelectedValue & " to " & Me.TranOutIDComboBox1.SelectedValue & ""
             Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptMatOutwardSaleGatePass.rpt"
-            Param = "Vehicle=" & Me.VehicleTextBox1.Text & "&Driver=" & Me.DriverNameTextBox2.Text & ""
+            Param = "Vehicle=" & Me.VehicleTextBox1.Text & "&Driver=" & Me.DriverNameTextBox2.Text & "&Vehicle1=" & Me.VehicleTextBox1.Text & "&Driver1=" & Me.DriverNameTextBox2.Text & ""
         ElseIf RadioButton7.Checked = True Then
             Filter = "{View_Borrowed_MMGP.TranOutID}in " & Me.TranOutIDComboBox.SelectedValue & " to " & Me.TranOutIDComboBox1.SelectedValue & ""
             Path = "\\Server\MyReports$\FSERPMM\Procurement\OtherMaterial\RptBorrowedMatGatePass.rpt"
