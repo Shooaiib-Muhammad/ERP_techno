@@ -103,7 +103,7 @@ Partial Class FrmGM
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(0, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(1399, 40)
+        Me.Label1.Size = New System.Drawing.Size(1345, 40)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Gate Pass G.M / Official Approval"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -126,6 +126,9 @@ Partial Class FrmGM
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.Connection = Nothing
+        Me.TableAdapterManager.tbl_GP_Customer1TableAdapter = Nothing
+        Me.TableAdapterManager.tbl_GP_CustomerTableAdapter = Nothing
+        Me.TableAdapterManager.tbl_Inv_L4TableAdapter = Nothing
         Me.TableAdapterManager.tbl_Mat_GatePass_Details_GMTableAdapter = Nothing
         Me.TableAdapterManager.tbl_Mat_GatePass_Details_HODTableAdapter = Nothing
         Me.TableAdapterManager.tbl_Mat_GatePass_DetailsTableAdapter = Nothing
@@ -355,6 +358,7 @@ Partial Class FrmGM
         '
         Me.BindingNavigatorPositionItem.AccessibleName = "Position"
         Me.BindingNavigatorPositionItem.AutoSize = False
+        Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
         Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 23)
         Me.BindingNavigatorPositionItem.Text = "0"
@@ -405,6 +409,7 @@ Partial Class FrmGM
         'ToolStripTextBox1
         '
         Me.ToolStripTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ToolStripTextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.ToolStripTextBox1.Name = "ToolStripTextBox1"
         Me.ToolStripTextBox1.Size = New System.Drawing.Size(100, 25)
         '
@@ -555,7 +560,7 @@ Partial Class FrmGM
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1399, 608)
+        Me.ClientSize = New System.Drawing.Size(1345, 608)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.LocalCustIDLabel1)

@@ -5,152 +5,152 @@
         Dim objRptViewer As New Class_Utility
         If RadioButton1.Checked Then 'For Pending Demands
             If RadioButton4.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsDt.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsDt.rpt"
                 Filter = "Isnull({View_Rpt_Pur_GenDemands.VerificationStatus}) And {View_Rpt_Pur_GenDemands.PDDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ")"
             ElseIf RadioButton5.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsDt.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsDt.rpt"
                 Filter = "Isnull({View_Rpt_Pur_GenDemands.VerificationStatus}) And {View_Rpt_Pur_GenDemands.PDDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ") And {View_Rpt_Pur_GenDemands.Code} = '" & L4NameComboBox.SelectedValue & "'"
             ElseIf RadioButton6.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsDt.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsDt.rpt"
                 Filter = "Isnull({View_Rpt_Pur_GenDemands.VerificationStatus}) And {View_Rpt_Pur_GenDemands.PDDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ") And {View_Rpt_Pur_GenDemands.LocalCustID} = " & CustNameComboBox.SelectedValue
             ElseIf RadioButton17.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsDt.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsDt.rpt"
                 Filter = "Isnull({View_Rpt_Pur_GenDemands.VerificationStatus}) And {View_Rpt_Pur_GenDemands.PDDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ") And {View_Rpt_Pur_GenDemands.Code} = '" & L4NameComboBox.SelectedValue & "' And {View_Rpt_Pur_GenDemands.LocalCustID} = " & CustNameComboBox.SelectedValue
             ElseIf RadioButton10.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsDt.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsDt.rpt"
                 Filter = "Isnull({View_Rpt_Pur_GenDemands.VerificationStatus}) And {View_Rpt_Pur_GenDemands.PDDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ") And {View_Rpt_Pur_GenDemands.GMNo} = " & GMNoComboBox.SelectedValue
             ElseIf RadioButton11.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsMn.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsMn.rpt"
                 Filter = "Isnull({View_Rpt_Pur_GenDemands.VerificationStatus}) And {@MyYear} = " & DateTimePicker1.Value.Year & " And {@MyMonth} = " & DateTimePicker1.Value.Month
             ElseIf RadioButton12.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsMn.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsMn.rpt"
                 Filter = "Isnull({View_Rpt_Pur_GenDemands.VerificationStatus}) And {@MyYear} = " & DateTimePicker1.Value.Year & " And {@MyMonth} = " & DateTimePicker1.Value.Month & " And {View_Rpt_Pur_GenDemands.Code} = '" & L4NameComboBox.SelectedValue & "'"
             ElseIf RadioButton13.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsMn.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsMn.rpt"
                 Filter = "Isnull({View_Rpt_Pur_GenDemands.VerificationStatus}) And {@MyYear} = " & DateTimePicker1.Value.Year & " And {@MyMonth} = " & DateTimePicker1.Value.Month & " And {View_Rpt_Pur_GenDemands.LocalCustID} = " & CustNameComboBox.SelectedValue
             ElseIf RadioButton9.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsMn.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsMn.rpt"
                 Filter = "Isnull({View_Rpt_Pur_GenDemands.VerificationStatus}) And {@MyYear} = " & DateTimePicker1.Value.Year & " And {@MyMonth} = " & DateTimePicker1.Value.Month & " And {View_Rpt_Pur_GenDemands.GMNo} = " & GMNoComboBox.SelectedValue
             End If
         ElseIf RadioButton2.Checked Then 'For Approved Demands After Process
             If RadioButton4.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsDt.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsDt.rpt"
                 Filter = "{View_Rpt_Pur_GenDemands.VerificationStatus} = true And Isnull({View_Rpt_Pur_GenDemands.BookingStatus})And {View_Rpt_Pur_GenDemands.PDDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ")"
             ElseIf RadioButton5.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsDt.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsDt.rpt"
                 Filter = "{View_Rpt_Pur_GenDemands.VerificationStatus} = true  And {View_Rpt_Pur_GenDemands.InProcessStatus}And {View_Rpt_Pur_GenDemands.PDDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ") And {View_Rpt_Pur_GenDemands.Code} = '" & L4NameComboBox.SelectedValue & "'"
             ElseIf RadioButton6.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsDt.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsDt.rpt"
                 Filter = "{View_Rpt_Pur_GenDemands.VerificationStatus} = true And {View_Rpt_Pur_GenDemands.InProcessStatus} And {View_Rpt_Pur_GenDemands.PDDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ") And {View_Rpt_Pur_GenDemands.LocalCustID} = " & CustNameComboBox.SelectedValue
             ElseIf RadioButton17.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsDt.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsDt.rpt"
                 Filter = "{View_Rpt_Pur_GenDemands.VerificationStatus}= True And {View_Rpt_Pur_GenDemands.PDDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ") And {View_Rpt_Pur_GenDemands.Code} = '" & L4NameComboBox.SelectedValue & "' And {View_Rpt_Pur_GenDemands.LocalCustID} = " & CustNameComboBox.SelectedValue
             ElseIf RadioButton10.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsDt.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsDt.rpt"
                 Filter = "{View_Rpt_Pur_GenDemands.VerificationStatus} = true And {View_Rpt_Pur_GenDemands.InProcessStatus} And {View_Rpt_Pur_GenDemands.PDDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ") And {View_Rpt_Pur_GenDemands.GMNo} = " & GMNoComboBox.SelectedValue
             ElseIf RadioButton11.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsMn.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsMn.rpt"
                 Filter = "{View_Rpt_Pur_GenDemands.VerificationStatus} = true And {View_Rpt_Pur_GenDemands.InProcessStatus}And {@MyYear} = " & DateTimePicker1.Value.Year & " And {@MyMonth} = " & DateTimePicker1.Value.Month
             ElseIf RadioButton12.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsMn.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsMn.rpt"
                 Filter = "{View_Rpt_Pur_GenDemands.VerificationStatus} = true And {View_Rpt_Pur_GenDemands.InProcessStatus} And {@MyYear} = " & DateTimePicker1.Value.Year & " And {@MyMonth} = " & DateTimePicker1.Value.Month & " And {View_Rpt_Pur_GenDemands.Code} = '" & L4NameComboBox.SelectedValue & "'"
             ElseIf RadioButton13.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsMn.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsMn.rpt"
                 Filter = "{View_Rpt_Pur_GenDemands.VerificationStatus} = true And {View_Rpt_Pur_GenDemands.InProcessStatus} And {@MyYear} = " & DateTimePicker1.Value.Year & " And {@MyMonth} = " & DateTimePicker1.Value.Month & " And {View_Rpt_Pur_GenDemands.LocalCustID} = " & CustNameComboBox.SelectedValue
             ElseIf RadioButton9.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsMn.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsMn.rpt"
                 Filter = "{View_Rpt_Pur_GenDemands.VerificationStatus} = true And {View_Rpt_Pur_GenDemands.InProcessStatus} And {@MyYear} = " & DateTimePicker1.Value.Year & " And {@MyMonth} = " & DateTimePicker1.Value.Month & " And {View_Rpt_Pur_GenDemands.GMNo} = " & GMNoComboBox.SelectedValue
             End If
         ElseIf RadioButton3.Checked Then 'For All Generated Demands
             If RadioButton4.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsDt.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsDt.rpt"
                 Filter = "{View_Rpt_Pur_GenDemands.PDDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ")"
             ElseIf RadioButton5.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsDt.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsDt.rpt"
                 Filter = "{View_Rpt_Pur_GenDemands.PDDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ") And {View_Rpt_Pur_GenDemands.Code} = '" & L4NameComboBox.SelectedValue & "'"
             ElseIf RadioButton6.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsDt.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsDt.rpt"
                 Filter = "{View_Rpt_Pur_GenDemands.PDDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ") And {View_Rpt_Pur_GenDemands.LocalCustID} = " & CustNameComboBox.SelectedValue
             ElseIf RadioButton17.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsDt.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsDt.rpt"
                 Filter = "{View_Rpt_Pur_GenDemands.PDDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ") And {View_Rpt_Pur_GenDemands.Code} = '" & L4NameComboBox.SelectedValue & "' And {View_Rpt_Pur_GenDemands.LocalCustID} = " & CustNameComboBox.SelectedValue
             ElseIf RadioButton10.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsDt.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsDt.rpt"
                 Filter = "{View_Rpt_Pur_GenDemands.PDDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ") And {View_Rpt_Pur_GenDemands.GMNo} = " & GMNoComboBox.SelectedValue
             ElseIf RadioButton11.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsMn.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsMn.rpt"
                 Filter = "{@MyYear} = " & DateTimePicker1.Value.Year & " And {@MyMonth} = " & DateTimePicker1.Value.Month
             ElseIf RadioButton12.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsMn.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsMn.rpt"
                 Filter = "{@MyYear} = " & DateTimePicker1.Value.Year & " And {@MyMonth} = " & DateTimePicker1.Value.Month & " And {View_Rpt_Pur_GenDemands.Code} = '" & L4NameComboBox.SelectedValue & "'"
             ElseIf RadioButton13.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsMn.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsMn.rpt"
                 Filter = "{@MyYear} = " & DateTimePicker1.Value.Year & " And {@MyMonth} = " & DateTimePicker1.Value.Month & " And {View_Rpt_Pur_GenDemands.LocalCustID} = " & CustNameComboBox.SelectedValue
             ElseIf RadioButton9.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsMn.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsMn.rpt"
                 Filter = "{@MyYear} = " & DateTimePicker1.Value.Year & " And {@MyMonth} = " & DateTimePicker1.Value.Month & " And {View_Rpt_Pur_GenDemands.GMNo} = " & GMNoComboBox.SelectedValue
             End If
         ElseIf RadioButton7.Checked Then 'For Rejected Demands
             If RadioButton4.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsDt.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsDt.rpt"
                 Filter = "{View_Rpt_Pur_GenDemands.VerificationStatus} = False And {View_Rpt_Pur_GenDemands.PDDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ")"
             ElseIf RadioButton5.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsDt.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsDt.rpt"
                 Filter = "{View_Rpt_Pur_GenDemands.VerificationStatus} = False And {View_Rpt_Pur_GenDemands.PDDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ") And {View_Rpt_Pur_GenDemands.Code} = '" & L4NameComboBox.SelectedValue & "'"
             ElseIf RadioButton6.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsDt.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsDt.rpt"
                 Filter = "{View_Rpt_Pur_GenDemands.VerificationStatus} = False And {View_Rpt_Pur_GenDemands.PDDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ") And {View_Rpt_Pur_GenDemands.LocalCustID} = " & CustNameComboBox.SelectedValue
             ElseIf RadioButton17.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsDt.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsDt.rpt"
                 Filter = "{View_Rpt_Pur_GenDemands.VerificationStatus}= false And {View_Rpt_Pur_GenDemands.PDDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ") And {View_Rpt_Pur_GenDemands.Code} = '" & L4NameComboBox.SelectedValue & "' And {View_Rpt_Pur_GenDemands.LocalCustID} = " & CustNameComboBox.SelectedValue
             ElseIf RadioButton10.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsDt.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsDt.rpt"
                 Filter = "{View_Rpt_Pur_GenDemands.VerificationStatus} = False And {View_Rpt_Pur_GenDemands.PDDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ") And {View_Rpt_Pur_GenDemands.GMNo} = " & GMNoComboBox.SelectedValue
             ElseIf RadioButton11.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsMn.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsMn.rpt"
                 Filter = "{View_Rpt_Pur_GenDemands.VerificationStatus} = False And {@MyYear} = " & DateTimePicker1.Value.Year & " And {@MyMonth} = " & DateTimePicker1.Value.Month
             ElseIf RadioButton12.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsMn.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsMn.rpt"
                 Filter = "{View_Rpt_Pur_GenDemands.VerificationStatus} = False And {@MyYear} = " & DateTimePicker1.Value.Year & " And {@MyMonth} = " & DateTimePicker1.Value.Month & " And {View_Rpt_Pur_GenDemands.Code} = '" & L4NameComboBox.SelectedValue & "'"
             ElseIf RadioButton13.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsMn.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsMn.rpt"
                 Filter = "{View_Rpt_Pur_GenDemands.VerificationStatus} = False And {@MyYear} = " & DateTimePicker1.Value.Year & " And {@MyMonth} = " & DateTimePicker1.Value.Month & " And {View_Rpt_Pur_GenDemands.LocalCustID} = " & CustNameComboBox.SelectedValue
             ElseIf RadioButton9.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsMn.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsMn.rpt"
                 Filter = "{View_Rpt_Pur_GenDemands.VerificationStatus} = False And {@MyYear} = " & DateTimePicker1.Value.Year & " And {@MyMonth} = " & DateTimePicker1.Value.Month & " And {View_Rpt_Pur_GenDemands.GMNo} = " & GMNoComboBox.SelectedValue
             End If
         ElseIf RadioButton8.Checked Then 'For Full Received Demands
             If RadioButton4.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptRecDemandsDt.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptRecDemandsDt.rpt"
                 Filter = "Isnull({View_Rpt_Pur_GenDemands.PartialRecStatus}) And {View_Rpt_Pur_GenDemands.CompStatus} = True And {View_Rpt_Pur_GenDemands.CompDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ")"
             ElseIf RadioButton5.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptRecDemandsDt.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptRecDemandsDt.rpt"
                 Filter = "Isnull({View_Rpt_Pur_GenDemands.PartialRecStatus}) And {View_Rpt_Pur_GenDemands.CompStatus} = True And {View_Rpt_Pur_GenDemands.CompDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ") And {View_Rpt_Pur_GenDemands.Code} = '" & L4NameComboBox.SelectedValue & "'"
             ElseIf RadioButton6.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptRecDemandsDt.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptRecDemandsDt.rpt"
                 Filter = "Isnull({View_Rpt_Pur_GenDemands.PartialRecStatus}) And {View_Rpt_Pur_GenDemands.CompStatus} = True And {View_Rpt_Pur_GenDemands.CompDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ") And {View_Rpt_Pur_GenDemands.LocalCustID} = " & CustNameComboBox.SelectedValue
             ElseIf RadioButton17.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptRecDemandsDt.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptRecDemandsDt.rpt"
                 Filter = "Isnull({View_Rpt_Pur_GenDemands.PartialRecStatus}) And {View_Rpt_Pur_GenDemands.CompStatus} = True And {View_Rpt_Pur_GenDemands.CompDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ") And {View_Rpt_Pur_GenDemands.Code} = '" & Me.L4NameComboBox.SelectedValue & "' And {View_Rpt_Pur_GenDemands.LocalCustID} = " & CustNameComboBox.SelectedValue
             ElseIf RadioButton10.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptRecDemandsDt.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptRecDemandsDt.rpt"
                 Filter = "Isnull({View_Rpt_Pur_GenDemands.PartialRecStatus}) And {View_Rpt_Pur_GenDemands.CompStatus} = True And {View_Rpt_Pur_GenDemands.CompDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ") And {View_Rpt_Pur_GenDemands.GMNo} = " & GMNoComboBox.SelectedValue
             ElseIf RadioButton11.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptRecDemandsMn.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptRecDemandsMn.rpt"
                 Filter = "Isnull({View_Rpt_Pur_GenDemands.PartialRecStatus}) And {View_Rpt_Pur_GenDemands.CompStatus} = True And {@MyYear} = " & DateTimePicker1.Value.Year & " And {@MyMonth} = " & DateTimePicker1.Value.Month
             ElseIf RadioButton12.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptRecDemandsMn.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptRecDemandsMn.rpt"
                 Filter = "Isnull({View_Rpt_Pur_GenDemands.PartialRecStatus}) And {View_Rpt_Pur_GenDemands.CompStatus} = True And {@MyYear} = " & DateTimePicker1.Value.Year & " And {@MyMonth} = " & DateTimePicker1.Value.Month & " And {View_Rpt_Pur_GenDemands.Code} = '" & L4NameComboBox.SelectedValue & "'"
             ElseIf RadioButton13.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptRecDemandsMn.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptRecDemandsMn.rpt"
                 Filter = "Isnull({View_Rpt_Pur_GenDemands.PartialRecStatus}) And {View_Rpt_Pur_GenDemands.CompStatus} = True And {@MyYear} = " & DateTimePicker1.Value.Year & " And {@MyMonth} = " & DateTimePicker1.Value.Month & " And {View_Rpt_Pur_GenDemands.LocalCustID} = " & CustNameComboBox.SelectedValue
             ElseIf RadioButton9.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptRecDemandsMn.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptRecDemandsMn.rpt"
                 Filter = "Isnull({View_Rpt_Pur_GenDemands.PartialRecStatus}) And {View_Rpt_Pur_GenDemands.CompStatus} = True And {@MyYear} = " & DateTimePicker1.Value.Year & " And {@MyMonth} = " & DateTimePicker1.Value.Month & " And {View_Rpt_Pur_GenDemands.GMNo} = " & GMNoComboBox.SelectedValue
             End If
             'here
         ElseIf RadioButton16.Checked Then 'For Issuance Demands
-            Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptIssueDemandsDt.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\rptIssueDemandsDt.rpt"
             If RadioButton4.Checked Then
                 'Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptIssueDemandsDt.rpt"
                 Filter = "{View_Rpt_Pur_GenDemands.DateName} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ")"
@@ -181,7 +181,7 @@
             End If
             'End here
         ElseIf RadioButton14.Checked Then 'For Partial Received Demands
-            Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptPartialReceiving.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\rptPartialReceiving.rpt"
             If RadioButton5.Checked Then
                 Filter = "{View_Rpt_Pur_GenDemands.VerificationStatus} = True And Isnull({View_Rpt_Pur_GenDemands.CompStatus}) And {View_Rpt_Pur_GenDemands.PartialRecStatus} =  True And {tbl_Pur_PartialReceiving.PatialRecDate} In Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") To Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ") And {View_Rpt_Pur_GenDemands.Code} = '" & L4NameComboBox.SelectedValue & "'"
             ElseIf RadioButton6.Checked Then
@@ -192,7 +192,7 @@
                 Filter = "{View_Rpt_Pur_GenDemands.VerificationStatus} = true And Isnull({View_Rpt_Pur_GenDemands.CompStatus}) And {View_Rpt_Pur_GenDemands.PartialRecStatus} =  true And {View_Rpt_Pur_GenDemands.GMNo} = " & GMNoComboBox.SelectedValue
             End If
         ElseIf RadioButton15.Checked Then 'For Approved Demands Before Process
-            Path = "\\server\MyReports$\FSERPMM\NewProcuments\OtherMaterial\rptGenDemandsDt.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\rptGenDemandsDt.rpt"
             Filter = "{View_Rpt_Pur_GenDemands.DemandStatus} = 'Active' And {View_Rpt_Pur_GenDemands.VerificationStatus} And isnull({View_Rpt_Pur_GenDemands.InProcessStatus})"
 
         ElseIf RadioButton18.Checked Then 'For Approved Demands Before Process

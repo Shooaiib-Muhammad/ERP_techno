@@ -29,7 +29,7 @@
         Dim obj As New Class_Utility
         Dim Filter As String = ""
         Dim Path As String
-        Path = "\\Server\MyReports$\FSERPMM\Inventory\materialCencel.rpt"
+        Path = "" & frmLoginVer.Reportpath & "\materialCencel.rpt"
         If RadioButton7.Checked = True Then '' Adidas
 
             If RadioButton2.Checked = True Then '' All

@@ -142,8 +142,8 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim GP As Int16 = InputBox("Enter GP Number")
 
-        Path = "\\server\MyReports$\FSERPMM\GatePass\RptGatePass_new.rpt"
-            Filter = "{View_Mat_SalesDetails.CancelationStatus} = 'Active' And {View_Mat_SalesDetails.GPNo} = " & GP & ""
+        Path = "" & frmLoginVer.Reportpath & "\RptGatePass_new.rpt"
+        Filter = "{View_Mat_SalesDetails.CancelationStatus} = 'Active' And {View_Mat_SalesDetails.GPNo} = " & GP & ""
             objRptViewer.LoadReports(Path, Filter, parameter)
 
 

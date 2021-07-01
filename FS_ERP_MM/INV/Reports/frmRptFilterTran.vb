@@ -17,7 +17,7 @@ Public Class frmRptFilterTran
         If Me.RBInward.Checked = True Then
 
             'Path = "\\server\myreports$\FSERPMM\Inventory\New\RptInvIn11.rpt"
-            Path = "\\server\myreports$\FSERPMM\Inventory\New\RptInvIn.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\New\RptInvIn.rpt"
             If RadioButton14.Checked = True Then
                 If Me.ComboBox1.Text = "ALL" Then
                     Filter = "{tbl_Inv_Tran_Date.DateName} in # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# to # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " # and " & L4 & ""
@@ -49,19 +49,19 @@ Public Class frmRptFilterTran
                 Filter = "{tbl_Inv_Tran_Date.DateName} in # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# to # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " # AND  {tbl_Inv_L4.L4Name} = '" & Me.L4NameComboBox.Text & "' and " & L4 & " "
             ElseIf RadioButton26.Checked = True Then
 
-                Path = "\\server\myreports$\FSERPMM\Inventory\New\RptInvInL3.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\New\RptInvInL3.rpt"
                 Filter = "{tbl_Inv_Tran_Date.DateName} In # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# To # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " # And  {tbl_Inv_L3.L3Name} = '" & ComboBox8.Text & "'"
 
 
             End If
         ElseIf Me.RadioButton8.Checked Then
-            Path = "\\server\myreports$\FSERPMM\Inventory\New\RptInvLedgerMonthly.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\New\RptInvLedgerMonthly.rpt"
             Filter = "{View_Inv_Tran_Main.DateName} In # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# To # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " #"
         ElseIf Me.RadioButton13.Checked Then
-            Path = "\\server\myreports$\FSERPMM\Inventory\New\RptPrintIn.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\New\RptPrintIn.rpt"
             Filter = "{tbl_Inv_Tran_Date.DateName} In # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# To # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " #"
         ElseIf Me.RadioButton17.Checked Then
-            Path = "\\server\myreports$\FSERPMM\Inventory\New\RptInvOutGeneralAudit.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\New\RptInvOutGeneralAudit.rpt"
             If ComboBox2.Text = "ALL" Then
                 If RadioButton14.Checked = True Then
                     Filter = "{tbl_Inv_Tran_Date.DateName} In # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# To # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " #  And " & L4 & ""
@@ -111,7 +111,7 @@ Public Class frmRptFilterTran
 
                 If Me.ComboBox2.Text = "General" Then
 
-                    Path = "\\server\myreports$\FSERPMM\Inventory\New\RptInvOutGeneral.rpt"
+                    Path = "" & frmLoginVer.Reportpath & "\New\RptInvOutGeneral.rpt"
                     If RadioButton14.Checked = True Then
 
                         Filter = "{tbl_Inv_Tran_Date.DateName} in # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# to # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " # AND {tbl_Inv_Tran_Out.TranType} = '" & Me.ComboBox2.Text & "' and " & L4 & ""
@@ -123,7 +123,7 @@ Public Class frmRptFilterTran
 
                 Else
                     'RptInvOutGeneral.rpt
-                    Path = "\\server\myreports$\FSERPMM\Inventory\New\RptInvOut.rpt"
+                    Path = "" & frmLoginVer.Reportpath & "\New\RptInvOut.rpt"
                     If ComboBox2.Text = "ALL" Then
                         If RadioButton14.Checked = True Then
                             Filter = "{tbl_Inv_Tran_Date.DateName} In # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# To # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " #  And " & L4 & ""
@@ -161,17 +161,17 @@ Public Class frmRptFilterTran
                 End If
             ElseIf RadioButton24.Checked = True Then
                 If Me.ComboBox2.Text = "General" Then
-                    Path = "\\server\myreports$\FSERPMM\Inventory\New\RptInvOutGeneral.rpt"
+                    Path = "" & frmLoginVer.Reportpath & "\New\RptInvOutGeneral.rpt"
                 Else
-                    Path = "\\server\myreports$\FSERPMM\Inventory\New\RptInvOut.rpt"
+                    Path = "" & frmLoginVer.Reportpath & "\New\RptInvOut.rpt"
 
                 End If
                 Filter = "{tbl_Inv_Tran_Date.DateName} In # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# To # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " # AND {tbl_Inv_L4.L4Name} ='" & Me.L4NameComboBox.Text & "' and " & L4 & " "
             ElseIf RadioButton25.Checked = True Then
                 If Me.ComboBox2.Text = "General" Then
-                    Path = "\\server\myreports$\FSERPMM\Inventory\New\RptInvOutGeneral.rpt"
+                    Path = "" & frmLoginVer.Reportpath & "\New\RptInvOutGeneral.rpt"
                 Else
-                    Path = "\\server\myreports$\FSERPMM\Inventory\New\RptInvOut.rpt"
+                    Path = "" & frmLoginVer.Reportpath & "\New\RptInvOut.rpt"
 
                 End If
                 Filter = "{tbl_Inv_Tran_Out.TranType} = '" & Me.ComboBox2.Text & "' And  {tbl_Inv_Tran_Date.DateName} In # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# To # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " # AND {tbl_Inv_L4.L4Name} ='" & Me.L4NameComboBox.Text & "' and " & L4 & " "
@@ -179,22 +179,22 @@ Public Class frmRptFilterTran
 
             ElseIf RadioButton26.Checked = True Then
 
-                Path = "\\server\myreports$\FSERPMM\Inventory\New\RptInvOutL3.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\New\RptInvOutL3.rpt"
                 Filter = "{tbl_Inv_Tran_Date.DateName} In # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# To # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " # And  {tbl_Inv_L3.L3Name} = '" & ComboBox8.Text & "'"
 
             ElseIf RadioButton15.Checked = True Then
                 If Me.ComboBox2.Text = "General" Then
-                    Path = "\\server\myreports$\FSERPMM\Inventory\New\RptInvOutGeneral.rpt"
+                    Path = "" & frmLoginVer.Reportpath & "\New\RptInvOutGeneral.rpt"
                 Else
-                    Path = "\\server\myreports$\FSERPMM\Inventory\New\RptInvOut.rpt"
+                    Path = "" & frmLoginVer.Reportpath & "\New\RptInvOut.rpt"
 
                 End If
                 Filter = "{tbl_Inv_Tran_Date.DateName} In # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# To # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " # AND {@Company} = '" & Me.ComboBox3.Text & " ' "
             ElseIf RadioButton21.Checked = True Then
                 If Me.ComboBox2.Text = "General" Then
-                    Path = "\\server\myreports$\FSERPMM\Inventory\New\RptInvOutGeneral.rpt"
+                    Path = "" & frmLoginVer.Reportpath & "\New\RptInvOutGeneral.rpt"
                 Else
-                    Path = "\\server\myreports$\FSERPMM\Inventory\New\RptInvOut.rpt"
+                    Path = "" & frmLoginVer.Reportpath & "\New\RptInvOut.rpt"
 
                 End If
                 Filter = "{tbl_Inv_Tran_Date.DateName} In # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# To # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " # AND {@Company} = '" & Me.ComboBox5.Text & " ' "
@@ -204,16 +204,16 @@ Public Class frmRptFilterTran
             End If
         ElseIf Me.RadioButton1.Checked Then
             Filter = "{tbl_Inv_Tran_Date.DateName} in # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# to # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " #"
-            Path = "\\server\myreports$\FSERPMM\Inventory\New\RptInvOutSummary.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\New\RptInvOutSummary.rpt"
         ElseIf Me.RadioButton2.Checked Then
             Filter = "{tbl_Inv_Tran_Date.DateName} in # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# to # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " #"
-            Path = "\\server\myreports$\FSERPMM\Inventory\New\RptRepairBaladerRec.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\New\RptRepairBaladerRec.rpt"
         ElseIf Me.RadioButton3.Checked Then
             Filter = "{tbl_Inv_Tran_Date.DateName} in # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# to # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " #"
-            Path = "\\server\myreports$\FSERPMM\Inventory\New\RptRepairBaladerProcess.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\New\RptRepairBaladerProcess.rpt"
         ElseIf Me.RadioButton4.Checked Then
             Filter = "{tbl_Inv_Tran_Date.DateName} in # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# to # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " #"
-            Path = "\\server\myreports$\FSERPMM\Inventory\New\RptProcessedBladderRec.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\New\RptProcessedBladderRec.rpt"
         ElseIf Me.RadioButton7.Checked Then
             Filter = "{tbl_Inv_Tran_Date.DateName} in # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# to # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " #"
             Path = "\\server\myreports$\FSERPMM\WareHouse\RptInvIssuance.rpt"
@@ -270,7 +270,7 @@ Public Class frmRptFilterTran
                 Filter = "{View_Demand_Issuance.DeptName} = '" & Me.ComboBox3.Text & "'  and {View_Demand_Issuance.DateName}  in # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# to # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " #"
             End If
 
-            Path = "\\server\myreports$\FSERPMM\Inventory\RptDailyDemadIssuance.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptDailyDemadIssuance.rpt"
         ElseIf Me.RadioButton22.Checked Then
             If RadioButton14.Checked = True Then
                 Filter = "{View_Issuance_By_GDR.DateName}  in # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# to # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " #"
@@ -278,7 +278,7 @@ Public Class frmRptFilterTran
                 Filter = "{View_Issuance_By_GDR.DeptName} = '" & Me.ComboBox3.Text & "'  and {View_Issuance_By_GDR.DateName}  in # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# to # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " #"
             End If
 
-            Path = "\\server\myreports$\FSERPMM\Inventory\Rpt_Demand_issuance.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\Rpt_Demand_issuance.rpt"
         ElseIf Me.RadioButton23.Checked Then
             If RadioButton14.Checked = True Then
                 Filter = "{View_Inv_Trans_Stock.DateName}  in # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# to # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " #"
@@ -286,9 +286,9 @@ Public Class frmRptFilterTran
                 Filter = "{View_Inv_Trans_Stock.CustName} = '" & Me.ComboBox3.Text & "'  and {View_Inv_Trans_Stock.DateName}  in # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# to # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " #"
             End If
 
-            Path = "\\server\myreports$\FSERPMM\Inventory\Rpt_Stock.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\Rpt_Stock.rpt"
         ElseIf RadioButton27.Checked = True Then
-            Path = "\\server\myreports$\FSERPMM\Inventory\internaldemands.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\internaldemands.rpt"
             If RadioButton14.Checked = True Then
                 Filter = "{VIew_internal_Demands_Status.ExpireStatus} And {VIew_internal_Demands_Status.PDDate}  in # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# to # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " #"
             End If

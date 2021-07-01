@@ -4,7 +4,7 @@
         Dim Path As String
         Dim objRptViewer As New Class_Utility
         If RadioButton1.Checked = True Then
-            Path = "\\server\MyReports$\FSERPMM\Inventory\RptMatBatchOut.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptMatBatchOut.rpt"
             If RadioButton2.Checked Then '' By Date Wise
                 Filter = "{View_Inv_BatchNo_Issue.IssueDate} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "# "
 

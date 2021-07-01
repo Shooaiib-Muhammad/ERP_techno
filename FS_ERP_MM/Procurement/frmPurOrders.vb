@@ -502,13 +502,13 @@
         Dim Filter As String = ""
         If RadioButton1.Checked Then
             If frmLoginVer.DeptID = 24 Then
-                Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptPO(Disc).rpt"
+                Path = "" & frmLoginVer.Reportpath & "\RptPO(Disc).rpt"
             Else
-                Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptPO.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\RptPO.rpt"
             End If
             Filter = "{tbl_Pur_PO_D.POID} = " & Me.POIDLabel2.Text & ""
         ElseIf RadioButton2.Checked Then
-            Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptPORec.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptPORec.rpt"
             Filter = "  {tbl_Pur_PO.POID} = " & Me.POIDLabel2.Text & ""
         End If
 

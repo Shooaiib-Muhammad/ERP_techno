@@ -25,7 +25,7 @@
         ElseIf RadioButton2.Checked Then
             Filter = "{tbl_Inv_Tran_Date.DateName} in # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# to # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " # AND {tbl_Inv_Tran_Out.TranType} = 'LSGP' AND {tbl_Inv_Tran_Out.Code} = '" & Me.CompanyNameComboBox.SelectedValue & "'"
         ElseIf RadioButton3.Checked Then
-            Path = "\\server\myreports$\FSERPMM\Inventory\New\RptScrapSaleSummary.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\New\RptScrapSaleSummary.rpt"
             Filter = "{tbl_Inv_Tran_Date.DateName} in # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# to # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " # AND {tbl_Inv_Tran_Out.TranType} = 'LSGP'"
         ElseIf RadioButton5.Checked Then
             Path = "\\server\myreports$\FSERPMM\Procurement\RptDailyJalaEntry.rpt"

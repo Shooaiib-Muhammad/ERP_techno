@@ -41,33 +41,33 @@
         Dim Filter As String = ""
         Dim objRptViewer As New Class_Utility
         If frmLoginVer.DeptID = 24 Then
-            Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptSale1.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptSale1.rpt"
         Else
-            Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptSale.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptSale.rpt"
         End If
         If RadioButton1.Checked Then
 
             Filter = "{tbl_MM_Sale.SID} in " & Me.SIDComboBox.SelectedValue & " to " & Me.SIDComboBox1.SelectedValue & ""
         ElseIf RadioButton2.Checked Then
-            'Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptSale.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptSale.rpt"
             Filter = "{tbl_MM_Sale.SDate} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "#"
         ElseIf RadioButton3.Checked Then
-            Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptSale.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptSale.rpt"
             Filter = "{tbl_MM_Sale.CustID}= " & Me.CustomerNameComboBox.SelectedValue & ""
         ElseIf RadioButton4.Checked Then
-            'Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptSale.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptSale.rpt"
             Filter = " {tbl_MM_Sale.SDate} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "# And {tbl_MM_Sale.CustID}= " & Me.CustomerNameComboBox.SelectedValue & ""
         ElseIf RadioButton5.Checked Then
-            Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptCustLedger.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptCustLedger.rpt"
             Filter = "{View_Customer_Ledger.CustID}= " & Me.CustomerNameComboBox.SelectedValue & ""
         ElseIf RadioButton6.Checked Then
-            Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptCustLedger.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptCustLedger.rpt"
             Filter = "{View_Customer_Ledger.SaleDate} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "#"
         ElseIf RadioButton8.Checked Then
-            Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptCustLedger.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptCustLedger.rpt"
             Filter = "{View_Customer_Ledger.CustID} = " & Me.CustomerNameComboBox.SelectedValue & " and {View_Customer_Ledger.SaleDate} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "#"
         ElseIf RadioButton7.Checked Then
-            Path = "\\server\myreports$\FSERPMM\Inventory\RptSaleBalance.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptSaleBalance.rpt"
             Filter = "{View_MM_Sale_D.CustID}=" & Me.CustomerNameComboBox.SelectedValue & "And {View_MM_Sale_D.EntryDate} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "#"
         End If
         objRptViewer.LoadReports(Path, Filter, "")

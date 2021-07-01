@@ -4,13 +4,13 @@
         Dim Filter As String = ""
         Dim objRptViewer As New Class_Utility
         If RadioButton1.Checked And RadioButton3.Checked Then
-            Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\rptSupplierItems.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\rptSupplierItems.rpt"
             Filter = "{View_Rpt_Proc_SupplierItems.SupplierID} = " & CompanyNameComboBox.SelectedValue & ""
         ElseIf RadioButton1.Checked And RadioButton4.Checked Then
-            Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\rptSupplierItems.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\rptSupplierItems.rpt"
             Filter = "{View_Rpt_Proc_SupplierItems.Code} = '" & Me.L4NameComboBox.SelectedValue & "'"
         ElseIf RadioButton2.Checked Then
-            Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\rptAPVSDemandsDt.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\rptAPVSDemandsDt.rpt"
             If RadioButton3.Checked Then
                 ' Filter = "{View_Rpt_Pur_GenDemands.AfterPurchaseVStatus} = True And {View_Rpt_Pur_GenDemands.AfterPurchaseVDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ")"
                 Filter = "{View_Rpt_Pur_GenDemands.AmtEntryDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ")"

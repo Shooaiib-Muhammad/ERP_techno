@@ -25,11 +25,11 @@
         If Me.RadioButton7.Checked = True Then
             Param = "FirstDate = " & Format(Me.DateTimePicker1.Value, "dd/MM/yyyy")
             Filter = "{Proc_MM_Inv_Bal;1.TMStatus}"
-            Path = "\\server\myreports$\FSERPMM\Inventory\RptInvMMTMBalance.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvMMTMBalance.rpt"
         ElseIf Me.RadioButton8.Checked = True Then
             Param = "FirstDate = " & Format(Me.DateTimePicker1.Value, "dd/MM/yyyy")
             Filter = "{View_Inv_Tran_Main.Code} ='" & Me.L4NameComboBox.SelectedValue & "' AND {View_Inv_Tran_Main.DateName} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to  #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "#"
-            Path = "\\server\myreports$\FSERPMM\Inventory\RptCompInvLedger.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptCompInvLedger.rpt"
         End If
         objRptViewer.LoadReports(Path, Filter, Param)
     End Sub

@@ -15,7 +15,7 @@
         Dim Filter As String = ""
         Dim objRptViewer As New Class_Utility
         If RadioButton1.Checked Then
-            Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptPORec.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptPORec.rpt"
             If CheckBox1.CheckState = CheckState.Checked Then
                 Filter = "{@BCheckStatealance} > 0.00"
             ElseIf CheckBox1.CheckState = CheckState.Indeterminate Then
@@ -24,7 +24,7 @@
                 Filter = "{@Balance} = 0.00"
             End If
         ElseIf RadioButton2.Checked Then
-            Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptPORec.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptPORec.rpt"
             If CheckBox1.CheckState = CheckState.Checked Then
                 Filter = "{tbl_Pur_PO.POID} in " & Me.POIDComboBox2.SelectedValue & " to " & Me.POIDComboBox1.SelectedValue & "And {@Balance} > 0.00"
             ElseIf CheckBox1.CheckState = CheckState.Indeterminate Then
@@ -33,7 +33,7 @@
                 Filter = "{tbl_Pur_PO.POID} in " & Me.POIDComboBox2.SelectedValue & " to " & Me.POIDComboBox1.SelectedValue & "And {@Balance} = 0.00"
             End If
         ElseIf RadioButton3.Checked Then
-            Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptPORec.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptPORec.rpt"
             If CheckBox1.CheckState = CheckState.Checked Then
                 Filter = "{tbl_Pur_PO.SupplierID} = " & Me.CompanyNameComboBox.SelectedValue & "And {@Balance} > 0.00"
             ElseIf CheckBox1.CheckState = CheckState.Indeterminate Then
@@ -43,7 +43,7 @@
             End If
             'here
         ElseIf RadioButton9.Checked Then
-            Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptPORec.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptPORec.rpt"
             If CheckBox1.CheckState = CheckState.Checked Then
                 Filter = "{tbl_Pur_PO.SupplierID} = " & Me.CompanyNameComboBox.SelectedValue & "And {tbl_Pur_Supplier_Code.Code} ='" & Me.L4NameComboBox.SelectedValue & "' And {tbl_Pur_PO.ReqDate} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "# And {@Balance} > 0.00"
             ElseIf CheckBox1.CheckState = CheckState.Indeterminate Then
@@ -53,7 +53,7 @@
             End If
             'end here
         ElseIf RadioButton4.Checked Then
-            Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptPORec.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptPORec.rpt"
             If CheckBox1.CheckState = CheckState.Checked Then
                 Filter = "{tbl_Pur_PO.ReqDate} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "#And {@Balance} > 0.00"
             ElseIf CheckBox1.CheckState = CheckState.Indeterminate Then
@@ -62,7 +62,7 @@
                 Filter = "{tbl_Pur_PO.ReqDate} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "#And {@Balance} = 0.00"
             End If
         ElseIf RadioButton5.Checked Then
-            Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptPORec.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptPORec.rpt"
             If CheckBox1.CheckState = CheckState.Checked Then
                 Filter = "{tbl_Pur_PO.PODate} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "#And {@Balance} > 0.00"
             ElseIf CheckBox1.CheckState = CheckState.Indeterminate Then
@@ -71,7 +71,7 @@
                 Filter = "{tbl_Pur_PO.PODate} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "#And {@Balance} = 0.00"
             End If
         ElseIf RadioButton6.Checked Then
-            Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptPORec.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptPORec.rpt"
             If CheckBox1.CheckState = CheckState.Checked Then
                 Filter = "{tbl_Pur_Supplier_Code.Code} ='" & Me.L4NameComboBox.SelectedValue & "'And {@Balance} > 0.00"
             ElseIf CheckBox1.CheckState = CheckState.Indeterminate Then
@@ -80,10 +80,10 @@
                 Filter = "{tbl_Pur_Supplier_Code.Code} ='" & Me.L4NameComboBox.SelectedValue & "'And {@Balance} = 0.00"
             End If
         ElseIf RadioButton7.Checked Then
-            Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptPODetail.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptPODetail.rpt"
             Filter = "{View_Rpt_MM_PO.PODate} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "# And {View_Rpt_MM_PO.SupplierID}=" & Me.CompanyNameComboBox.SelectedValue & ""
         ElseIf RadioButton8.Checked Then
-            Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptSupPODetail.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptSupPODetail.rpt"
             Filter = "{View_Rpt_MM_PO.SupplierID} in " & Me.CompanyNameComboBox.SelectedValue & " to " & Me.ComboBox1.SelectedValue & ""
         ElseIf RadioButton10.Checked Then
             Path = "\\server\myreports$\FSERPMM\Procurement\RptSupList.rpt"

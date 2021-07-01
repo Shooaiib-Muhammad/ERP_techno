@@ -63,14 +63,14 @@ Public Class frmRptPO
         Dim objRptViewer As New Class_Utility
         If RadioButton4.Checked And RadioButton7.Checked = False And RadioButton8.Checked = False Then
             If frmLoginVer.DeptID = 24 Then
-                Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptPO(Disc).rpt"
+                Path = "" & frmLoginVer.Reportpath & "\RptPO(Disc).rpt"
             Else
-                Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptPO.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\RptPO.rpt"
             End If
         ElseIf RadioButton5.Checked Then
-            Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptPODouble.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptPODouble.rpt"
         ElseIf RadioButton4.Checked = True And RadioButton7.Checked Or RadioButton8.Checked Then
-            Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptPODetail.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptPODetail.rpt"
         End If
         If Me.RadioButton1.Checked = True Then
             Filter = "{tbl_Pur_PO_D.POID} in " & Me.POIDComboBox1.SelectedValue & " to " & Me.POIDComboBox2.SelectedValue & ""

@@ -155,7 +155,9 @@
         Dim objFrmFilter As New frmRptViewer
 
         Filter = "{View_Mat_SalesDetails.CancelationStatus} = 'Active' And {View_Mat_SalesDetails.GPNo} = " & Val(GMNoLabel4.Text) & ""
-        objFrmFilter.ViewReport("\\server\MyReports$\FSERPMM\GatePass\RptGatePass.rpt", Filter)
+        Path = "" & frmLoginVer.Reportpath & "\RptGatePass.rpt"
+        objFrmFilter.ViewReport(Path, Filter)
+
         objFrmFilter.MdiParent = frmMain
         objFrmFilter.Show()
     End Sub

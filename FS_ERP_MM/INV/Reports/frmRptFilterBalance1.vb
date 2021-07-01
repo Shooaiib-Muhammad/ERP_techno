@@ -17,102 +17,102 @@ Public Class frmRptFilterBalance1
             Param = "MyDate = " & Format(Me.DateTimePicker1.Value, "dd/MM/yyyy")
             If Me.Status.CheckState = CheckState.Checked Then
                 Filter = "{Proc_MM_Inv_Bal;1.Code} in '" & Me.CodeComboBox.SelectedValue & "' to '" & Me.CodeComboBox1.SelectedValue & "'" & " And {Proc_MM_Inv_Bal;1.Status}"
-                Path = "\\server\MyReports$\FSERPMM\Inventory\RptInvBalanceAmount.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\RptInvBalanceAmount.rpt"
             Else
                 Filter = "{Proc_MM_Inv_Bal;1.Code} in '" & Me.CodeComboBox.SelectedValue & "' to '" & Me.CodeComboBox1.SelectedValue & "'"
-                Path = "\\server\MyReports$\FSERPMM\Inventory\RptInvBalanceAmount.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\RptInvBalanceAmount.rpt"
             End If
         ElseIf Me.RadioButton2.Checked = True Then
             Filter = ""
-            Path = "\\server\myreports$\FSERPMM\Inventory\RptMinBalAlert.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptMinBalAlert.rpt"
         ElseIf Me.RadioButton3.Checked = True Then
             Param = "FirstDate = " & Format(Me.DateTimePicker1.Value, "dd/MM/yyyy")
             If Me.Status.CheckState = CheckState.Checked Then
                 Filter = "{View_Inv_Tran_Main.Code} in '" & Me.CodeComboBox.SelectedValue & "' to '" & Me.CodeComboBox1.SelectedValue & "' AND {View_Inv_Tran_Main.DateName} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "# And {View_Inv_Tran_Main.ActStat}"
-                Path = "\\server\myreports$\FSERPMM\Inventory\RptInvLedger.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\RptInvLedger.rpt"
             Else
                 Filter = "{View_Inv_Tran_Main.Code} in '" & Me.CodeComboBox.SelectedValue & "' to '" & Me.CodeComboBox1.SelectedValue & "' AND {View_Inv_Tran_Main.DateName} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to  #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "#"
-                Path = "\\server\myreports$\FSERPMM\Inventory\RptInvLedger.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\RptInvLedger.rpt"
             End If
         ElseIf Me.RadioButton13.Checked = True Then
             'Param = "FirstDate = " & Format(Me.DateTimePicker1.Value, "dd/MM/yyyy")"&ToDate=" & Format(DateTimePicker2.Value, "dd/MM/yyyy")"
             Param = "FirstDate=" & Format(DateTimePicker1.Value, "dd/MM/yyyy") & "&ToDate=" & Format(DateTimePicker2.Value, "dd/MM/yyyy")
             'If Me.Status.CheckState = CheckState.Checked Then
             Filter = "{View_Inv_Tran_Main.L3Name} = '" & Me.Layer3IDComboBox.Text & "' AND {View_Inv_Tran_Main.DateName} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "# And {View_Inv_Tran_Main.ActStat}"
-            Path = "\\server\myreports$\FSERPMM\Inventory\RptInvLedgerNew.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvLedgerNew.rpt"
             'Else
             '    Filter = "{View_Inv_Tran_Main.Code} in '" & Me.CodeComboBox.SelectedValue & "' to '" & Me.CodeComboBox1.SelectedValue & "' AND {View_Inv_Tran_Main.DateName} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to  #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "#"
-            '    Path = "\\server\myreports$\FSERPMM\Inventory\RptInvLedger.rpt"
+            '    Path = "" & frmLoginVer.Reportpath & "\RptInvLedger.rpt"
             'End If
         ElseIf Me.RadioButton4.Checked = True Then
             If Me.Status.CheckState = CheckState.Checked Then
                 Filter = "{tbl_Inv_Code.Code} >= '" & Me.CodeComboBox.SelectedValue & "' And {tbl_Inv_Code.Code} <= '" & Me.CodeComboBox1.SelectedValue & "'" & " And {tbl_Inv_L4.Status}"
-                Path = "\\server\myreports$\FSERPMM\Inventory\RptInvDailyBalance.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\RptInvDailyBalance.rpt"
             Else
                 Filter = "{tbl_Inv_Code.Code} >= '" & Me.CodeComboBox.SelectedValue & "' And {tbl_Inv_Code.Code} <= '" & Me.CodeComboBox1.SelectedValue & "'"
-                Path = "\\server\myreports$\FSERPMM\Inventory\RptInvDailyBalance.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\RptInvDailyBalance.rpt"
             End If
         ElseIf Me.RadioButton5.Checked = True Then
             Filter = ""
             Param = "TillDate = " & Format(Me.DateTimePicker1.Value, "dd/MM/yyyy")
-            Path = "\\server\myreports$\FSERPMM\Inventory\RptInvL3Balance.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvL3Balance.rpt"
         ElseIf Me.RadioButton7.Checked = True Then
             Filter = "{tbl_Inv_L4.TMStatus}"
-            Path = "\\server\myreports$\FSERPMM\Inventory\RptInvBalanceTM.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvBalanceTM.rpt"
         ElseIf Me.RadioButton8.Checked = True Then
             Param = "FirstDate = " & Format(Me.DateTimePicker1.Value, "dd/MM/yyyy")
             Filter = "{View_Inv_Tran_Main.Code} ='" & Me.L4NameComboBox.SelectedValue & "' AND {View_Inv_Tran_Main.DateName} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to  #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "#"
-            Path = "\\server\myreports$\FSERPMM\Inventory\RptCompInvLedger.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptCompInvLedger.rpt"
         ElseIf Me.RadioButton6.Checked = True Then
             Param = "MyDate = " & Format(Me.DateTimePicker1.Value, "dd/MM/yyyy")
             If Me.Status.CheckState = CheckState.Checked Then
                 Filter = "{Proc_MM_Inv_Bal;1.Layer1ID} = '" & Me.Layer1IDComboBox.SelectedValue & "' And {Proc_MM_Inv_Bal;1.Status} "
-                Path = "\\server\MyReports$\FSERPMM\Inventory\RptInvBalanceAmount.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\RptInvBalanceAmount.rpt"
             Else
                 Filter = "{Proc_MM_Inv_Bal;1.Layer1ID} = '" & Me.Layer1IDComboBox.SelectedValue & "'"
-                Path = "\\server\MyReports$\FSERPMM\Inventory\RptInvBalanceAmount.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\RptInvBalanceAmount.rpt"
             End If
         ElseIf Me.RadioButton9.Checked = True Then
             Param = "MyDate = " & Format(Me.DateTimePicker1.Value, "dd/MM/yyyy")
             If Me.Status.CheckState = CheckState.Checked Then
                 Filter = "{Proc_MM_Inv_Bal;1.Layer1ID} = '" & Me.Layer1IDComboBox.SelectedValue & "' And {Proc_MM_Inv_Bal;1.Layer2ID} = '" & Me.Layer2IDComboBox.SelectedValue & "' And {Proc_MM_Inv_Bal;1.Status}"
-                Path = "\\server\MyReports$\FSERPMM\Inventory\RptInvBalanceAmount.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\RptInvBalanceAmount.rpt"
             Else
                 Filter = "{Proc_MM_Inv_Bal;1.Layer1ID} = '" & Me.Layer1IDComboBox.SelectedValue & "' And {Proc_MM_Inv_Bal;1.Layer2ID} = '" & Me.Layer2IDComboBox.SelectedValue & "'"
-                Path = "\\server\MyReports$\FSERPMM\Inventory\RptInvBalanceAmount.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\RptInvBalanceAmount.rpt"
             End If
         ElseIf Me.RadioButton10.Checked = True Then
             Param = "MyDate = " & Format(Me.DateTimePicker1.Value, "dd/MM/yyyy")
             If Me.Status.CheckState = CheckState.Checked Then
                 Filter = "{Proc_MM_Inv_Bal;1.Layer1ID} = '" & Me.Layer1IDComboBox.SelectedValue & "' And {Proc_MM_Inv_Bal;1.Layer2ID} = '" & Me.Layer2IDComboBox.SelectedValue & "' And {Proc_MM_Inv_Bal;1.Layer3ID} = '" & Me.Layer3IDComboBox.SelectedValue & "' And {Proc_MM_Inv_Bal;1.Status}"
-                Path = "\\server\MyReports$\FSERPMM\Inventory\RptInvBalanceAmount.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\RptInvBalanceAmount.rpt"
             Else
                 Filter = "{Proc_MM_Inv_Bal;1.Layer1ID} = '" & Me.Layer1IDComboBox.SelectedValue & "' And {Proc_MM_Inv_Bal;1.Layer2ID} = '" & Me.Layer2IDComboBox.SelectedValue & "' And {Proc_MM_Inv_Bal;1.Layer3ID} = '" & Me.Layer3IDComboBox.SelectedValue & "'"
-                Path = "\\server\MyReports$\FSERPMM\Inventory\RptInvBalanceAmount.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\RptInvBalanceAmount.rpt"
             End If
         ElseIf Me.RadioButton11.Checked = True Then
             Param = "MyDate = " & Format(Me.DateTimePicker1.Value, "dd/MM/yyyy")
             If Me.Status.CheckState = CheckState.Checked Then
                 Filter = " {Proc_MM_Inv_Bal;1.Status}"
-                Path = "\\server\MyReports$\FSERPMM\Inventory\RptInvBalanceAmount.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\RptInvBalanceAmount.rpt"
             Else
                 Filter = ""
-                Path = "\\server\MyReports$\FSERPMM\Inventory\RptInvBalanceAmount.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\RptInvBalanceAmount.rpt"
             End If
         ElseIf Me.RadioButton12.Checked = True Then
             Param = "MyDate = " & Format(Me.DateTimePicker1.Value, "dd/MM/yyyy")
             If Me.Status.CheckState = CheckState.Checked Then
                 Filter = "{Proc_MM_Inv_Bal;1.Layer1ID} =  '1' and {Proc_MM_Inv_Bal;1.Balance}>00 and {Proc_MM_Inv_Bal;1.Status}"
-                Path = "\\server\MyReports$\FSERPMM\Inventory\RptInvBalanceAmountSum.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\RptInvBalanceAmountSum.rpt"
             Else
                 Filter = "{Proc_MM_Inv_Bal;1.Layer1ID} = '1' and {Proc_MM_Inv_Bal;1.Balance}>00"
-                Path = "\\server\MyReports$\FSERPMM\Inventory\RptInvBalanceAmountSum.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\RptInvBalanceAmountSum.rpt"
             End If
         ElseIf Me.RadioButton14.Checked = True Then
 
 
             Filter = "{View_INV_Month_INOUT.MONTH} = " & Me.DateTimePicker1.Value.Month & " and {View_INV_Month_INOUT.YEAR} = " & Me.DateTimePicker1.Value.Year & ""
-            Path = "\\server\MyReports$\FSERPMM\Inventory\rptInvMonthINOUT.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\rptInvMonthINOUT.rpt"
 
 
         End If

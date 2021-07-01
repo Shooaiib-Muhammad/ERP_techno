@@ -52,7 +52,7 @@
         Dim Filter As String = ""
         Dim objRptViewer As New Class_Utility
         If RadioButton1.Checked Then
-            Path = "\\server\MyReports$\FSERPMM\Procurement\OtherMaterial\rptPurDemandsDt.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\rptPurDemandsDt.rpt"
             If RadioButton5.Checked Then
                 Filter = "{View_Rpt_Pur_GenDemands.PurchaseStatus} =  true And {View_Rpt_Pur_GenDemands.PurchaseDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ")"
             ElseIf RadioButton6.Checked Then
@@ -60,14 +60,14 @@
             ElseIf RadioButton7.Checked Then
                 Filter = "{View_Rpt_Pur_GenDemands.PurchaseStatus} =  true And {View_Rpt_Pur_GenDemands.PurchaseDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ") And {View_Rpt_Pur_GenDemands.LocalCustID} = " & CustNameComboBox.SelectedValue
             ElseIf RadioButton8.Checked Then
-                Path = "\\server\MyReports$\FSERPMM\Procurement\OtherMaterial\rptPurDemandsGDNo.rpt"
+                Path = "" & frmLoginVer.Reportpath & "\rptPurDemandsGDNo.rpt"
                 Filter = "{View_Rpt_Pur_GenDemands.PurchaseStatus} =  true And {View_Rpt_Pur_GenDemands.PurchaseDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ") And {View_Rpt_Pur_GenDemands.GMNo} = " & GMNoComboBox.SelectedValue
             End If
         ElseIf RadioButton2.Checked Then
             MsgBox("Under Construction")
             Exit Sub
         ElseIf RadioButton3.Checked Then
-            Path = "\\server\MyReports$\FSERPMM\Procurement\OtherMaterial\rptAPVSDemandsDt.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\rptAPVSDemandsDt.rpt"
             If RadioButton5.Checked Then
                 Filter = "{View_Rpt_Pur_GenDemands.AfterPurchaseVStatus} = True And {View_Rpt_Pur_GenDemands.AfterPurchaseVDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ")"
             ElseIf RadioButton6.Checked Then
@@ -86,7 +86,7 @@
                 Filter = "{View_Rpt_Pur_GenDemands.AfterPurchaseVStatus} = True And {View_Rpt_Pur_GenDemands.VendorName} = '" & Me.VendorNameComboBox.Text & "'And {View_Rpt_Pur_GenDemands.BillNo} = '" & Me.TextBox1.Text & "'"
             End If
         ElseIf RadioButton4.Checked Then
-            Path = "\\server\MyReports$\FSERPMM\Procurement\OtherMaterial\rptPartialReceivingVer.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\rptPartialReceivingVer.rpt"
             If RadioButton5.Checked Then
                 Filter = "{tbl_Pur_PartialReceiving.VerificationDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ")"
             ElseIf RadioButton6.Checked Then
@@ -110,7 +110,7 @@
             End If
             'Exit Sub
         ElseIf RadioButton9.Checked Then
-            Path = "\\server\MyReports$\FSERPMM\Procurement\OtherMaterial\rptAPVSDemandsDtAcc.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\rptAPVSDemandsDtAcc.rpt"
             If RadioButton5.Checked Then
                 Filter = "{View_Rpt_Pur_GenDemands.ActStatus} = True And {View_Rpt_Pur_GenDemands.ActRecDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ")"
             ElseIf RadioButton6.Checked Then
@@ -121,7 +121,7 @@
                 Filter = "{View_Rpt_Pur_GenDemands.ActStatus} = True And {View_Rpt_Pur_GenDemands.ActRecDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ") And {View_Rpt_Pur_GenDemands.GMNo} = " & GMNoComboBox.SelectedValue
             End If
         ElseIf RadioButton10.Checked Then
-            Path = "\\server\MyReports$\FSERPMM\Procurement\OtherMaterial\rptPartialReceivingVerAcct.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\rptPartialReceivingVerAcct.rpt"
             If RadioButton5.Checked Then
                 Filter = "{tbl_Pur_PartialReceiving.ActVerDate} in Datetime(" & DateTimePicker1.Value.Year & "," & DateTimePicker1.Value.Month & "," & DateTimePicker1.Value.Day & ") to Datetime(" & DateTimePicker2.Value.Year & "," & DateTimePicker2.Value.Month & "," & DateTimePicker2.Value.Day & ")"
             ElseIf RadioButton6.Checked Then

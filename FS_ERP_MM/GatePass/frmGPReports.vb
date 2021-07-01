@@ -6,6 +6,8 @@
 
     Private Sub btn_Show_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btn_Show.Click
         Dim Filter As String = ""
+        Dim Path As String = ""
+
         Dim Param As String = ""
         Dim Staus As String
         Dim objFrmFilter As New frmRptViewer
@@ -35,7 +37,8 @@
                 End If
             End If
 
-            objFrmFilter.ViewReport("\\server\MyReports$\FSERPMM\GatePass\RptGatePass_new.rpt", Filter)
+            Path = "" & frmLoginVer.Reportpath & "\RptGatePass_new.rpt"
+            objFrmFilter.ViewReport(path, Filter)
             objFrmFilter.MdiParent = frmMain
             objFrmFilter.Show()
         ElseIf RadioButton1.Checked Then
@@ -48,7 +51,9 @@
                 'ElseIf RadioUserName.Checked = True Then
                 '    Filter = "{View_Mat_GatePassDetails.Type} = '" & TypeCombo.Text & "' and {View_Mat_GatePassDetails.EnteryDate} in #" & Format(Me.dtFrom.Value, "MM/dd/yyyy") & "# to #" & Format(Me.dtTo.Value, "MM/dd/yyyy") & "# and  {View_Mat_SalesDetails.UserID} =" & ComboBoxUsername.SelectedValue & ""
             End If
-            objFrmFilter.ViewReport("\\server\MyReports$\FSERPMM\GatePass\RptPendingReturnableGP.rpt", Filter)
+            Path = "" & frmLoginVer.Reportpath & "\RptPendingReturnableGP.rpt"
+            objFrmFilter.ViewReport(Path, Filter)
+
             objFrmFilter.MdiParent = frmMain
             objFrmFilter.Show()
         ElseIf RadioButton2.Checked Then
@@ -88,8 +93,9 @@
 
 
             End If
+            Path = "" & frmLoginVer.Reportpath & "\RptDailyGP.rpt"
+            objFrmFilter.ViewReport(Path, Filter)
 
-            objFrmFilter.ViewReport("\\server\MyReports$\FSERPMM\GatePass\RptDailyGP.rpt", Filter)
             objFrmFilter.MdiParent = frmMain
             objFrmFilter.Show()
 
@@ -109,7 +115,9 @@
                 Filter = "{View_Mat_GatePassDetails.DepID} = " & LocalCustIDLabel1.Text & " And {View_Mat_GatePassDetails.GPNo} in " & GPNO.Text & " To " & GPNO1.Text & " And " & Staus & ""
 
             End If
-            objFrmFilter.ViewReport("\\server\MyReports$\FSERPMM\GatePass\RptDailyGPHODApproval.rpt", Filter)
+            Path = "" & frmLoginVer.Reportpath & "\RptDailyGPHODApproval.rpt"
+            objFrmFilter.ViewReport(Path, Filter)
+
             objFrmFilter.MdiParent = frmMain
             objFrmFilter.Show()
 
@@ -127,7 +135,9 @@
                 Filter = "{View_Mat_GatePassDetails.DepID} = " & LocalCustIDLabel1.Text & " And {View_Mat_GatePassDetails.GPNo} in " & GPNO.Text & " To " & GPNO1.Text & " And " & Staus & ""
 
             End If
-            objFrmFilter.ViewReport("\\server\MyReports$\FSERPMM\GatePass\RptDailyGPGMApproval.rpt", Filter)
+            Path = "" & frmLoginVer.Reportpath & "\RptDailyGPGMApproval.rpt"
+            objFrmFilter.ViewReport(Path, Filter)
+
             objFrmFilter.MdiParent = frmMain
             objFrmFilter.Show()
         End If

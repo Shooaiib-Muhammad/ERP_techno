@@ -20,68 +20,68 @@ Public Class frmRptDeptWiseOut
         Dim objRptViewer As New Class_Utility
         If Me.RadioButton1.Checked = True Then
             Filter = "{tbl_Inv_Tran_Out.LocalCustID} = " & Me.CustNameComboBox.SelectedValue & " AND {tbl_Inv_Tran_Out.DateName} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "#"
-            Path = "\\server\myreports$\FSERPMM\technoInventory\RptInvOutDeptwiseDate1.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvOutDeptwiseDate1.rpt"
         ElseIf Me.RadioButton2.Checked = True Then
             Filter = "{tbl_Inv_Tran_Out.LocalCustID} = " & Me.CustNameComboBox.SelectedValue & " AND {tbl_Inv_Tran_Out.Code} in '" & Me.CodeComboBox.SelectedValue & "'to '" & Me.CodeComboBox1.SelectedValue & "'"
-            Path = "\\server\myreports$\FSERPMM\technoInventory\RptInvOutDeptwiseDate1.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvOutDeptwiseDate1.rpt"
         ElseIf Me.RadioButton3.Checked = True Then
             Filter = "{tbl_Inv_Tran_Out.LocalCustID} = " & Me.CustNameComboBox.SelectedValue & " AND {tbl_Inv_Tran_Out.Code} in '" & Me.CodeComboBox.SelectedValue & "'to '" & Me.CodeComboBox1.SelectedValue & "' AND {tbl_Inv_Tran_Out.DateName} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "#"
-            Path = "\\server\myreports$\FSERPMM\technoInventory\RptInvOutDeptwiseDate1.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvOutDeptwiseDate1.rpt"
         ElseIf Me.RadioButton6.Checked = True Then
             Filter = "{tbl_Inv_ExternalCust.ExtCustID} = " & Me.ComboBox1.SelectedValue & " AND {tbl_Inv_Tran_Date.DateName} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "#"
-            Path = "\\server\myreports$\FSERPMM\technoInventory\RptInvOutCustwise.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvOutCustwise.rpt"
         ElseIf Me.RadioButton5.Checked = True Then
             Filter = "{tbl_Inv_ExternalCust.ExtCustID} = " & Me.ComboBox1.SelectedValue & " AND {tbl_Inv_Code.Code} in '" & Me.CodeComboBox.SelectedValue & "'to '" & Me.CodeComboBox1.SelectedValue & "'"
-            Path = "\\server\myreports$\FSERPMM\technoInventory\RptInvOutCustwise.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvOutCustwise.rpt"
         ElseIf Me.RadioButton4.Checked = True Then
             Filter = "{tbl_Inv_ExternalCust.ExtCustID} = " & Me.ComboBox1.SelectedValue & " AND {tbl_Inv_Code.Code} in '" & Me.CodeComboBox.SelectedValue & "'to '" & Me.CodeComboBox1.SelectedValue & "' AND {tbl_Inv_Tran_Date.DateName} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "#"
-            Path = "\\server\myreports$\FSERPMM\technoInventory\RptInvOutCustwise.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvOutCustwise.rpt"
         ElseIf Me.RadioButton9.Checked = True Then
             Filter = "{tbl_Companies.CompanyID} = " & Me.ComboBox2.SelectedValue & " AND {tbl_Inv_Tran_Date.DateName} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "#"
-            Path = "\\server\myreports$\FSERPMM\technoInventory\RptInvOutCompwise.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvOutCompwise.rpt"
         ElseIf Me.RadioButton8.Checked = True Then
             Filter = "{tbl_Companies.CompanyID} = " & Me.ComboBox2.SelectedValue & " AND {tbl_Inv_Code.Code} in '" & Me.CodeComboBox.SelectedValue & "'to '" & Me.CodeComboBox1.SelectedValue & "'"
-            Path = "\\server\myreports$\FSERPMM\technoInventory\RptInvOutCompwise.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvOutCompwise.rpt"
         ElseIf Me.RadioButton7.Checked = True Then
             Filter = "{tbl_Companies.CompanyID} = " & Me.ComboBox2.SelectedValue & " AND {tbl_Inv_Code.Code} in '" & Me.CodeComboBox.SelectedValue & "'to '" & Me.CodeComboBox1.SelectedValue & "' AND {tbl_Inv_Tran_Date.DateName} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "#"
-            Path = "\\server\myreports$\FSERPMM\technoInventory\RptInvOutCompwise.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvOutCompwise.rpt"
         ElseIf Me.RadioButton25.Checked = True Then '' By date range
             Filter = "{tbl_Inv_Tran_Out.TranType} = 'MSGP' And {tbl_Inv_Tran_Date.DateName} In #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# To #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "#"
-            Path = "\\server\myreports$\FSERPMM\technoInventory\RptInvOutSaleCompwise.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvOutSaleCompwise.rpt"
         ElseIf Me.RadioButton12.Checked = True Then ' By Comany and Date rang
             Filter = "{tbl_MM_Customer.CustID} = " & Me.CompanyNameComboBox.SelectedValue & " And {tbl_Inv_Tran_Date.DateName} In #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# To #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "#"
-            Path = "\\server\myreports$\FSERPMM\technoInventory\RptInvOutSaleCompwise.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvOutSaleCompwise.rpt"
         ElseIf Me.RadioButton11.Checked = True Then
             Filter = "{tbl_Inv_Tran_Out.TranType} = '""'  And {tbl_MM_Customer.CustID} = " & Me.CompanyNameComboBox.SelectedValue & " And {tbl_Inv_Code.Code} In '" & Me.CodeComboBox.SelectedValue & "'to '" & Me.CodeComboBox1.SelectedValue & "'"
-            Path = "\\server\myreports$\FSERPMM\technoInventory\RptInvOutSaleCompwise.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvOutSaleCompwise.rpt"
         ElseIf RadioButton26.Checked = True Then
 
             Filter = "{tbl_Inv_Tran_Out.TranType} = 'LSGP' And {tbl_Inv_Tran_Date.DateName} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "# "
-            Path = "\\server\myreports$\FSERPMM\technoInventory\RptInvOutSaleCompwiseLSGP.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvOutSaleCompwiseLSGP.rpt"
 
         ElseIf Me.RadioButton10.Checked = True Then
             Filter = "{tbl_MM_Customer.CustID} = " & Me.CompanyNameComboBox.SelectedValue & " AND {tbl_Inv_Code.Code} in '" & Me.CodeComboBox.SelectedValue & "' to '" & Me.CodeComboBox1.SelectedValue & "' AND {tbl_Inv_Tran_Date.DateName} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "#"
-            Path = "\\server\myreports$\FSERPMM\technoInventory\RptInvOutSaleCompwise.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvOutSaleCompwise.rpt"
         ElseIf Me.RadioButton24.Checked = True Then
             Filter = "{tbl_Inv_Code.Code} in '" & Me.CodeComboBox.SelectedValue & "' to '" & Me.CodeComboBox1.SelectedValue & "' AND {tbl_Inv_Tran_Date.DateName} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "#"
-            Path = "\\server\myreports$\FSERPMM\technoInventory\RptInvOutSaleCompwise.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvOutSaleCompwise.rpt"
             '
         ElseIf Me.RadioButton21.Checked = True Then
             Filter = "{tbl_Inv_Supplier.SupplierID} = " & Me.CompanyNameComboBox1.SelectedValue & " AND {tbl_Inv_Tran_Date.DateName} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "#"
-            Path = "\\server\myreports$\FSERPMM\technoInventory\RptInvOutSuplierwise.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvOutSuplierwise.rpt"
         ElseIf Me.RadioButton20.Checked = True Then
             Filter = "{tbl_Inv_Supplier.SupplierID} = " & Me.CompanyNameComboBox1.SelectedValue & " AND {tbl_Inv_Code.Code} in '" & Me.CodeComboBox.SelectedValue & "'to '" & Me.CodeComboBox1.SelectedValue & "'"
-            Path = "\\server\myreports$\FSERPMM\technoInventory\RptInvOutSuplierwise.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvOutSuplierwise.rpt"
         ElseIf Me.RadioButton19.Checked = True Then
             Filter = "{tbl_Inv_Supplier.SupplierID} = " & Me.CompanyNameComboBox1.SelectedValue & " AND {tbl_Inv_Code.Code} in '" & Me.CodeComboBox.SelectedValue & "' to '" & Me.CodeComboBox1.SelectedValue & "' AND {tbl_Inv_Tran_Date.DateName} in #" & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to #" & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & "#"
-            Path = "\\server\myreports$\FSERPMM\technoInventory\RptInvOutSuplierwise.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvOutSuplierwise.rpt"
 
         ElseIf Me.RadioButton22.Checked = True Then
             Filter = "{View_Borrowed_MatBalance.SupplierID} = " & Me.CompanyNameComboBox1.SelectedValue & ""
-            Path = "\\server\myreports$\FSERPMM\technoInventory\RptBrowedMatBal.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptBrowedMatBal.rpt"
         ElseIf Me.RadioButton23.Checked = True Then
             Filter = "{View_Borrowed_MatBalance.ExtCustID} = " & Me.CompanyNameComboBox.SelectedValue & ""
-            Path = "\\server\myreports$\FSERPMM\technoInventory\RptLendedMatBal.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptLendedMatBal.rpt"
 
         End If
         objRptViewer.LoadReports(Path, Filter, Param)

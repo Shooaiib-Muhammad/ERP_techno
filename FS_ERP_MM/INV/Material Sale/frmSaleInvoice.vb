@@ -288,9 +288,9 @@
         Dim Filter As String = ""
         Dim objRptViewer As New Class_Utility
         If frmLoginVer.DeptID = 24 Then
-            Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptSale1.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptSale1.rpt"
         Else
-            Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptSale.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptSale.rpt"
         End If
         Filter = "{tbl_MM_Sale.SID} in " & Me.SaleIDLabel.Text & " to " & Me.SaleIDLabel.Text & ""
         objRptViewer.LoadReports(Path, Filter, "")

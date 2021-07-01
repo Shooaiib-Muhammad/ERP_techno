@@ -5,16 +5,16 @@
         Dim Filter As String = ""
         Dim objRptViewer As New Class_Utility
         If RadioButton1.Checked Then
-            Path = "\\server\myreports$\FSERPMM\Procurement\RptSupList.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptSupList.rpt"
             Filter = "not isnull({tbl_Inv_Supplier.CompanyName})"
         ElseIf RadioButton2.Checked Then
-            Path = "\\server\myreports$\FSERPMM\Procurement\SupplierItems.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\SupplierItems.rpt"
             Filter = "{tbl_Inv_Supplier.SupplierID} = " & Me.CompanyNameComboBox.SelectedValue & ""
         ElseIf RadioButton3.Checked Then
-            Path = "\\server\myreports$\FSERPMM\Procurement\RptInvPriceAnalysis.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvPriceAnalysis.rpt"
             Filter = "{View_Mat_Price_Analysis.Code} = '" & Me.L4NameComboBox.SelectedValue & "'"
         ElseIf RadioButton4.Checked = True Then
-            Path = "\\Server\myreports$\FSERPMM\Inventory\New\RptInvInSupwisevALUE.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\New\RptInvInSupwisevALUE.rpt"
             Filter = "{tbl_Inv_Tran_In.SupplierID} in " & Me.CompanyNameComboBox.SelectedValue & " to " & Me.ComboBox1.SelectedValue & ""
         End If
         objRptViewer.LoadReports(Path, Filter, "")

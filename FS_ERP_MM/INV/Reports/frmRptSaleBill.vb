@@ -27,7 +27,7 @@
     Private Sub btnShowReport_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnShowReport.Click
         Dim Filter As String = ""
         Dim objRptViewer As New Class_Utility
-        Dim Path As String = "\\server\myreports$\FSERPMM\Inventory\RptSaleBill.rpt"
+        Dim Path As String = "" & frmLoginVer.Reportpath & "\RptSaleBill.rpt"
         If RadioButton1.Checked = True Then
             Filter = "{View_Sale_Bill.BillID}in " & Me.BillIDComboBox.SelectedValue & " to " & Me.BillIDComboBox1.SelectedValue & " "
         ElseIf RadioButton2.Checked = True Then

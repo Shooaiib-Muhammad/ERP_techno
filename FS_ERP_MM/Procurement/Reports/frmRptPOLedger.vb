@@ -10,10 +10,10 @@ Public Class frmRptPOLedger
 
         If Me.RadioButton1.Checked = True Then
             Filter = "{View_Rpt_Pur_Sup_Ledger_H.SupplierID} = " & Me.CompanyNameComboBox.SelectedValue & " AND {View_Rpt_Pur_Sup_Ledger_H2.Code} =  '" & Me.L4NameComboBox.SelectedValue & "'"
-            Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptPOLedger.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptPOLedger.rpt"
         ElseIf RadioButton2.Checked Then
             Filter = "{tbl_MM_Customer.PurchaseStatus}"
-            Path = "\\server\myreports$\FSERPMM\Inventory\RptCustItem.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptCustItem.rpt"
         End If
         objRptViewer.LoadReports(Path, Filter, "")
     End Sub

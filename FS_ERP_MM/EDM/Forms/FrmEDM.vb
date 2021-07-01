@@ -167,13 +167,13 @@
         Dim Filter As String = ""
         If RadioButton1.Checked Then
 
-            Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptPONew.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptPONew.rpt"
 
             Filter = "{tbl_Pur_PO_D.POID} = " & Me.POIDLabel2.Text & ""
 
         ElseIf RadioButton2.Checked Then
 
-            Path = "\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptPORecReports.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptPORecReports.rpt"
 
             Filter = "{tbl_Pur_PO_D.POID} = " & Me.POIDLabel2.Text & ""
 

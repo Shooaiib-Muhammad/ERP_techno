@@ -20,7 +20,7 @@
 
             obj.LoadReports(Path, "{tbl_Inv_L4.Code} = '" & Me.L4NameComboBox.SelectedValue & "' And {tbl_Inv_Tran_Date.DateName} in # " & Format(Me.DateTimePicker1.Value, "MM/dd/yyyy") & "# to # " & Format(Me.DateTimePicker2.Value, "MM/dd/yyyy") & " # and {tbl_Inv_Tran_Out.ArtCode}='" & Me.ArtCodeComboBox.Text & "'", "")
         ElseIf RadioButton2.Checked Then
-            Path = "\\server\myreports$\FSERPMM\Inventory\New\RptInvOutArtNew.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\New\RptInvOutArtNew.rpt"
             'RptInvOutArtNew.rpt
             '"FirstDate=" & DateTimePicker1.Value.Day & "/" & DateTimePicker1.Value.Month & "/" & DateTimePicker1.Value.Year & "&MyDate1=" & DateTimePicker1.Value.Day & "/" & DateTimePicker1.Value.Month & "/" & DateTimePicker1.Value.Year & "&MyDate2=" & DateTimePicker2.Value.Day & "/" & DateTimePicker2.Value.Month & "/" & DateTimePicker2.Value.Year & ""
             obj.LoadReports(Path, "{Proc_Inv_Art_Out;1.ClientID}=" & Me.ClientNameComboBox.SelectedValue & " And {Proc_Inv_Art_Out;1.FactoryCode} = '" & Me.ComboBox1.Text & "'", "@FromDate=" & DateTimePicker1.Value.Day & "/" & DateTimePicker1.Value.Month & "/" & DateTimePicker1.Value.Year & "&@ToDate=" & DateTimePicker2.Value.Day & "/" & DateTimePicker2.Value.Month & "/" & DateTimePicker2.Value.Year & "")
