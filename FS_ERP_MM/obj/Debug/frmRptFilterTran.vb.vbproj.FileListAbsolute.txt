@@ -3475,3 +3475,4 @@ C:\Users\ITS-4\Desktop\Github working\ERP_techno\FS_ERP_MM\obj\Debug\FS_ERP_MM.e
 C:\Users\ITS-4\Desktop\Github working\ERP_techno\FS_ERP_MM\obj\Debug\FS_ERP_MM.xml
 C:\Users\ITS-4\Desktop\Github working\ERP_techno\FS_ERP_MM\obj\Debug\FS_ERP_MM.pdb
 C:\Users\ITS-4\Desktop\Github working\ERP_techno\FS_ERP_MM\obj\Debug\FS_ERP_MM.FrmCompany.resources
+C:\Users\ITS-4\Desktop\Github working\ERP_techno\FS_ERP_MM\obj\Debug\frmRptFilterTran.vb.vbprojAssemblyReference.cache

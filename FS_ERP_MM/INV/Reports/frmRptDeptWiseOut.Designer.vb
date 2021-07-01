@@ -34,12 +34,6 @@ Partial Class frmRptDeptWiseOut
         Me.RadioButton19 = New System.Windows.Forms.RadioButton()
         Me.RadioButton20 = New System.Windows.Forms.RadioButton()
         Me.RadioButton21 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton16 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton17 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton18 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton15 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton14 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton13 = New System.Windows.Forms.RadioButton()
         Me.RadioButton10 = New System.Windows.Forms.RadioButton()
         Me.RadioButton11 = New System.Windows.Forms.RadioButton()
         Me.RadioButton12 = New System.Windows.Forms.RadioButton()
@@ -176,12 +170,6 @@ Partial Class frmRptDeptWiseOut
         Me.GroupBox1.Controls.Add(Me.RadioButton19)
         Me.GroupBox1.Controls.Add(Me.RadioButton20)
         Me.GroupBox1.Controls.Add(Me.RadioButton21)
-        Me.GroupBox1.Controls.Add(Me.RadioButton16)
-        Me.GroupBox1.Controls.Add(Me.RadioButton17)
-        Me.GroupBox1.Controls.Add(Me.RadioButton18)
-        Me.GroupBox1.Controls.Add(Me.RadioButton15)
-        Me.GroupBox1.Controls.Add(Me.RadioButton14)
-        Me.GroupBox1.Controls.Add(Me.RadioButton13)
         Me.GroupBox1.Controls.Add(Me.RadioButton10)
         Me.GroupBox1.Controls.Add(Me.RadioButton11)
         Me.GroupBox1.Controls.Add(Me.RadioButton12)
@@ -197,7 +185,7 @@ Partial Class frmRptDeptWiseOut
         Me.GroupBox1.Controls.Add(Me.RadioButton1)
         Me.GroupBox1.Location = New System.Drawing.Point(77, 48)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(340, 659)
+        Me.GroupBox1.Size = New System.Drawing.Size(337, 515)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Select Report"
@@ -235,7 +223,7 @@ Partial Class frmRptDeptWiseOut
         'RadioButton23
         '
         Me.RadioButton23.AutoSize = True
-        Me.RadioButton23.Location = New System.Drawing.Point(6, 622)
+        Me.RadioButton23.Location = New System.Drawing.Point(6, 477)
         Me.RadioButton23.Name = "RadioButton23"
         Me.RadioButton23.Size = New System.Drawing.Size(143, 17)
         Me.RadioButton23.TabIndex = 24
@@ -245,7 +233,7 @@ Partial Class frmRptDeptWiseOut
         'RadioButton22
         '
         Me.RadioButton22.AutoSize = True
-        Me.RadioButton22.Location = New System.Drawing.Point(6, 599)
+        Me.RadioButton22.Location = New System.Drawing.Point(6, 454)
         Me.RadioButton22.Name = "RadioButton22"
         Me.RadioButton22.Size = New System.Drawing.Size(152, 17)
         Me.RadioButton22.TabIndex = 23
@@ -281,66 +269,6 @@ Partial Class frmRptDeptWiseOut
         Me.RadioButton21.TabIndex = 20
         Me.RadioButton21.Text = "Issuance Supplier and Date wise"
         Me.RadioButton21.UseVisualStyleBackColor = True
-        '
-        'RadioButton16
-        '
-        Me.RadioButton16.AutoSize = True
-        Me.RadioButton16.Location = New System.Drawing.Point(6, 572)
-        Me.RadioButton16.Name = "RadioButton16"
-        Me.RadioButton16.Size = New System.Drawing.Size(293, 17)
-        Me.RadioButton16.TabIndex = 19
-        Me.RadioButton16.Text = "SR Bladder Ledger Report Date +Selected Bladder Wise"
-        Me.RadioButton16.UseVisualStyleBackColor = True
-        '
-        'RadioButton17
-        '
-        Me.RadioButton17.AutoSize = True
-        Me.RadioButton17.Location = New System.Drawing.Point(6, 548)
-        Me.RadioButton17.Name = "RadioButton17"
-        Me.RadioButton17.Size = New System.Drawing.Size(203, 17)
-        Me.RadioButton17.TabIndex = 18
-        Me.RadioButton17.Text = "SR Bladder Ledger Report Date Wise"
-        Me.RadioButton17.UseVisualStyleBackColor = True
-        '
-        'RadioButton18
-        '
-        Me.RadioButton18.AutoSize = True
-        Me.RadioButton18.Location = New System.Drawing.Point(6, 525)
-        Me.RadioButton18.Name = "RadioButton18"
-        Me.RadioButton18.Size = New System.Drawing.Size(150, 17)
-        Me.RadioButton18.TabIndex = 17
-        Me.RadioButton18.Text = "SR Bladder Ledger Report"
-        Me.RadioButton18.UseVisualStyleBackColor = True
-        '
-        'RadioButton15
-        '
-        Me.RadioButton15.AutoSize = True
-        Me.RadioButton15.Location = New System.Drawing.Point(6, 502)
-        Me.RadioButton15.Name = "RadioButton15"
-        Me.RadioButton15.Size = New System.Drawing.Size(304, 17)
-        Me.RadioButton15.TabIndex = 16
-        Me.RadioButton15.Text = "Latex Bladder Ledger Report Date +Selected Bladder Wise"
-        Me.RadioButton15.UseVisualStyleBackColor = True
-        '
-        'RadioButton14
-        '
-        Me.RadioButton14.AutoSize = True
-        Me.RadioButton14.Location = New System.Drawing.Point(6, 478)
-        Me.RadioButton14.Name = "RadioButton14"
-        Me.RadioButton14.Size = New System.Drawing.Size(214, 17)
-        Me.RadioButton14.TabIndex = 15
-        Me.RadioButton14.Text = "Latex Bladder Ledger Report Date Wise"
-        Me.RadioButton14.UseVisualStyleBackColor = True
-        '
-        'RadioButton13
-        '
-        Me.RadioButton13.AutoSize = True
-        Me.RadioButton13.Location = New System.Drawing.Point(6, 455)
-        Me.RadioButton13.Name = "RadioButton13"
-        Me.RadioButton13.Size = New System.Drawing.Size(161, 17)
-        Me.RadioButton13.TabIndex = 14
-        Me.RadioButton13.Text = "Latex Bladder Ledger Report"
-        Me.RadioButton13.UseVisualStyleBackColor = True
         '
         'RadioButton10
         '
@@ -936,13 +864,7 @@ Partial Class frmRptDeptWiseOut
     Friend WithEvents Tbl_Inv_L42BindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents Tbl_Inv_L42TableAdapter As FS_ERP_MM.DSRptL4CodeTableAdapters.tbl_Inv_L42TableAdapter
     Friend WithEvents CodeComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents RadioButton13 As System.Windows.Forms.RadioButton
-    Friend WithEvents RadioButton15 As System.Windows.Forms.RadioButton
-    Friend WithEvents RadioButton14 As System.Windows.Forms.RadioButton
     Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents RadioButton16 As System.Windows.Forms.RadioButton
-    Friend WithEvents RadioButton17 As System.Windows.Forms.RadioButton
-    Friend WithEvents RadioButton18 As System.Windows.Forms.RadioButton
     Friend WithEvents Tbl_Inv_SupplierBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents Tbl_Inv_SupplierTableAdapter As FS_ERP_MM.DSLocalCustTableAdapters.tbl_Inv_SupplierTableAdapter
     Friend WithEvents CompanyNameComboBox1 As System.Windows.Forms.ComboBox

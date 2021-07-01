@@ -12,8 +12,9 @@ Public Class frmRptFilterCode
         Dim Path As String = ""
         Dim objRptViewer As New Class_Utility
         Dim Param As String = ""
+
         If RadioButton1.Checked = True Then
-            Path = "\\server\myreports$\FSERPMM\Inventory\RptInvCode.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvCode.rpt"
             If CheckBox1.CheckState = CheckState.Checked Then
                 Filter = "{tbl_Inv_L1.Layer1ID} in '" & Me.Layer1IDComboBox.SelectedValue & "' to '" & Me.Layer1IDComboBox1.SelectedValue & "' AND {tbl_Inv_L4.Status} "
             Else
@@ -25,24 +26,24 @@ Public Class frmRptFilterCode
             Else
                 Filter = "{tbl_Inv_L1.Layer1ID} = '" & Me.Layer1IDComboBox.SelectedValue & "' and {tbl_Inv_L2.Layer2ID} = '" & Me.L2NameComboBox.SelectedValue & "'"
             End If
-            Path = "\\server\myreports$\FSERPMM\Inventory\RptInvCode.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvCode.rpt"
         ElseIf RadioButton3.Checked = True Then
             If CheckBox1.CheckState = CheckState.Checked Then
                 Filter = "{tbl_Inv_L1.Layer1ID} = '" & Me.Layer1IDComboBox.SelectedValue & "' and {tbl_Inv_L2.Layer2ID} ='" & Me.L2NameComboBox.SelectedValue & "' and {tbl_Inv_L3.Layer3ID} ='" & Me.L3NameComboBox.SelectedValue & "' AND {tbl_Inv_L4.Status}"
             Else
                 Filter = "{tbl_Inv_L1.Layer1ID} = '" & Me.Layer1IDComboBox.SelectedValue & "' and {tbl_Inv_L2.Layer2ID} ='" & Me.L2NameComboBox.SelectedValue & "' and {tbl_Inv_L3.Layer3ID} ='" & Me.L3NameComboBox.SelectedValue & "'"
             End If
-            Path = "\\server\myreports$\FSERPMM\Inventory\RptInvCode.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvCode.rpt"
         ElseIf RadioButton4.Checked = True Then
             If CheckBox1.CheckState = CheckState.Checked Then
                 Filter = "{tbl_Inv_L1.Layer1ID} = '" & Me.Layer1IDComboBox.SelectedValue & "' and {tbl_Inv_L2.Layer2ID} ='" & Me.L2NameComboBox.SelectedValue & "' and {tbl_Inv_L3.Layer3ID} ='" & Me.L3NameComboBox.SelectedValue & "' and {tbl_Inv_L4.Layer4ID} in '" & Me.L4NameComboBox.SelectedValue & "' to '" & Me.L4NameComboBox1.SelectedValue & "'AND {tbl_Inv_L4.Status}"
             Else
                 Filter = "{tbl_Inv_L1.Layer1ID} = '" & Me.Layer1IDComboBox.SelectedValue & "' and {tbl_Inv_L2.Layer2ID} ='" & Me.L2NameComboBox.SelectedValue & "' and {tbl_Inv_L3.Layer3ID} ='" & Me.L3NameComboBox.SelectedValue & "' and {tbl_Inv_L4.Layer4ID} in '" & Me.L4NameComboBox.SelectedValue & "' to '" & Me.L4NameComboBox1.SelectedValue & "'"
             End If
-            Path = "\\server\myreports$\FSERPMM\Inventory\RptInvCode.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvCode.rpt"
         ElseIf RadioButton5.Checked = True Then
             Filter = "{tbl_Inv_L4.Status}"
-            Path = "\\server\myreports$\FSERPMM\Inventory\RptInvCode.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvCode.rpt"
         End If
         objRptViewer.LoadReports(Path, Filter, Param)
     End Sub

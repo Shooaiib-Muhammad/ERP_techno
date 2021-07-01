@@ -1198,72 +1198,84 @@ Partial Class frmMain
         Me.SupAndMatReportToolStripMenuItem.Name = "SupAndMatReportToolStripMenuItem"
         Me.SupAndMatReportToolStripMenuItem.Size = New System.Drawing.Size(295, 22)
         Me.SupAndMatReportToolStripMenuItem.Text = "Material Receiving Reports"
+        Me.SupAndMatReportToolStripMenuItem.Visible = False
         '
         'PuchaseReturnReportsToolStripMenuItem
         '
         Me.PuchaseReturnReportsToolStripMenuItem.Name = "PuchaseReturnReportsToolStripMenuItem"
         Me.PuchaseReturnReportsToolStripMenuItem.Size = New System.Drawing.Size(295, 22)
         Me.PuchaseReturnReportsToolStripMenuItem.Text = "Puchase Return Reports"
+        Me.PuchaseReturnReportsToolStripMenuItem.Visible = False
         '
         'TMMaterialBalanceToolStripMenuItem
         '
         Me.TMMaterialBalanceToolStripMenuItem.Name = "TMMaterialBalanceToolStripMenuItem"
         Me.TMMaterialBalanceToolStripMenuItem.Size = New System.Drawing.Size(295, 22)
         Me.TMMaterialBalanceToolStripMenuItem.Text = "TM Material Balance"
+        Me.TMMaterialBalanceToolStripMenuItem.Visible = False
         '
         'MaterialAgingToolStripMenuItem
         '
         Me.MaterialAgingToolStripMenuItem.Name = "MaterialAgingToolStripMenuItem"
         Me.MaterialAgingToolStripMenuItem.Size = New System.Drawing.Size(295, 22)
         Me.MaterialAgingToolStripMenuItem.Text = "Material Aging"
+        Me.MaterialAgingToolStripMenuItem.Visible = False
         '
         'MaterialGatePassesToolStripMenuItem
         '
         Me.MaterialGatePassesToolStripMenuItem.Name = "MaterialGatePassesToolStripMenuItem"
         Me.MaterialGatePassesToolStripMenuItem.Size = New System.Drawing.Size(295, 22)
         Me.MaterialGatePassesToolStripMenuItem.Text = "Material Gate Pass Reports"
+        Me.MaterialGatePassesToolStripMenuItem.Visible = False
         '
         'BladderBillingTransactionReportsToolStripMenuItem
         '
         Me.BladderBillingTransactionReportsToolStripMenuItem.Name = "BladderBillingTransactionReportsToolStripMenuItem"
         Me.BladderBillingTransactionReportsToolStripMenuItem.Size = New System.Drawing.Size(295, 22)
         Me.BladderBillingTransactionReportsToolStripMenuItem.Text = "Bladder Billing Transaction Reports"
+        Me.BladderBillingTransactionReportsToolStripMenuItem.Visible = False
         '
         'SupplierLedgerReportToolStripMenuItem
         '
         Me.SupplierLedgerReportToolStripMenuItem.Name = "SupplierLedgerReportToolStripMenuItem"
         Me.SupplierLedgerReportToolStripMenuItem.Size = New System.Drawing.Size(295, 22)
         Me.SupplierLedgerReportToolStripMenuItem.Text = "Supplier Ledger Report"
+        Me.SupplierLedgerReportToolStripMenuItem.Visible = False
         '
         'ForeTechMaterialReportsToolStripMenuItem
         '
         Me.ForeTechMaterialReportsToolStripMenuItem.Name = "ForeTechMaterialReportsToolStripMenuItem"
         Me.ForeTechMaterialReportsToolStripMenuItem.Size = New System.Drawing.Size(295, 22)
         Me.ForeTechMaterialReportsToolStripMenuItem.Text = "ForeTech Material Reports"
+        Me.ForeTechMaterialReportsToolStripMenuItem.Visible = False
         '
         'MaterialIssuanceArticleWiseToolStripMenuItem
         '
         Me.MaterialIssuanceArticleWiseToolStripMenuItem.Name = "MaterialIssuanceArticleWiseToolStripMenuItem"
         Me.MaterialIssuanceArticleWiseToolStripMenuItem.Size = New System.Drawing.Size(295, 22)
         Me.MaterialIssuanceArticleWiseToolStripMenuItem.Text = "Material Issuance Article Wise"
+        Me.MaterialIssuanceArticleWiseToolStripMenuItem.Visible = False
         '
         'BillingReportToolStripMenuItem
         '
         Me.BillingReportToolStripMenuItem.Name = "BillingReportToolStripMenuItem"
         Me.BillingReportToolStripMenuItem.Size = New System.Drawing.Size(295, 22)
         Me.BillingReportToolStripMenuItem.Text = "Billing Report"
+        Me.BillingReportToolStripMenuItem.Visible = False
         '
         'MakerBillToolStripMenuItem1
         '
         Me.MakerBillToolStripMenuItem1.Name = "MakerBillToolStripMenuItem1"
         Me.MakerBillToolStripMenuItem1.Size = New System.Drawing.Size(295, 22)
         Me.MakerBillToolStripMenuItem1.Text = "Maker Bill"
+        Me.MakerBillToolStripMenuItem1.Visible = False
         '
         'DailyMaterialIssuanceToolStripMenuItem1
         '
         Me.DailyMaterialIssuanceToolStripMenuItem1.Name = "DailyMaterialIssuanceToolStripMenuItem1"
         Me.DailyMaterialIssuanceToolStripMenuItem1.Size = New System.Drawing.Size(295, 22)
         Me.DailyMaterialIssuanceToolStripMenuItem1.Text = "Daily Material Issuance"
+        Me.DailyMaterialIssuanceToolStripMenuItem1.Visible = False
         '
         'SaleToolStripMenuItem
         '
