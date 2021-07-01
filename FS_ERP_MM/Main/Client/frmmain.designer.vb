@@ -44,6 +44,7 @@ Partial Class frmMain
         Me.RawMaterialToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.UOMToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UOMConversionEntryToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MaterialCodeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AccessoriesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DepartmentsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GroupCompaniesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -116,6 +117,8 @@ Partial Class frmMain
         Me.SettingsToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem109 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem110 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VendorInfomationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GeneratePOsToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.PurchaseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem89 = New System.Windows.Forms.ToolStripMenuItem()
         Me.DemandIntoSleepProcessToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -716,9 +719,7 @@ Partial Class frmMain
         Me.Tbl_User_LogTableAdapter = New FS_ERP_MM.DSUMTableAdapters.tbl_User_LogTableAdapter()
         Me.DSUM = New FS_ERP_MM.DSUM()
         Me.Tbl_User_LogBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.MaterialCodeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.VendorInfomationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GeneratePOsToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CompanyProfileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MainMenu.SuspendLayout()
         Me.MenuStripMMITAdmin.SuspendLayout()
         Me.MenuStripInventoryAdmin.SuspendLayout()
@@ -790,7 +791,7 @@ Partial Class frmMain
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PswdToolStripMenuItem, Me.DomainManagementToolStripMenuItem, Me.UsersManagementToolStripMenuItem, Me.UsersLoginToolStripMenuItem, Me.UserAndDepartmentsToolStripMenuItem, Me.IDMSSubDeptToolStripMenuItem, Me.LockedUsersToolStripMenuItem, Me.LogOutToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PswdToolStripMenuItem, Me.CompanyProfileToolStripMenuItem, Me.DomainManagementToolStripMenuItem, Me.UsersManagementToolStripMenuItem, Me.UsersLoginToolStripMenuItem, Me.UserAndDepartmentsToolStripMenuItem, Me.IDMSSubDeptToolStripMenuItem, Me.LockedUsersToolStripMenuItem, Me.LogOutToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(43, 20)
         Me.FileToolStripMenuItem.Text = "&File"
@@ -900,6 +901,12 @@ Partial Class frmMain
         Me.UOMConversionEntryToolStripMenuItem1.Name = "UOMConversionEntryToolStripMenuItem1"
         Me.UOMConversionEntryToolStripMenuItem1.Size = New System.Drawing.Size(219, 22)
         Me.UOMConversionEntryToolStripMenuItem1.Text = "UOM Conversion Entry"
+        '
+        'MaterialCodeToolStripMenuItem
+        '
+        Me.MaterialCodeToolStripMenuItem.Name = "MaterialCodeToolStripMenuItem"
+        Me.MaterialCodeToolStripMenuItem.Size = New System.Drawing.Size(219, 22)
+        Me.MaterialCodeToolStripMenuItem.Text = "Material Code"
         '
         'AccessoriesToolStripMenuItem
         '
@@ -1346,6 +1353,18 @@ Partial Class frmMain
         Me.ToolStripMenuItem110.Size = New System.Drawing.Size(194, 22)
         Me.ToolStripMenuItem110.Text = "Suppliers &Items"
         '
+        'VendorInfomationToolStripMenuItem
+        '
+        Me.VendorInfomationToolStripMenuItem.Name = "VendorInfomationToolStripMenuItem"
+        Me.VendorInfomationToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
+        Me.VendorInfomationToolStripMenuItem.Text = "vendor Infomation"
+        '
+        'GeneratePOsToolStripMenuItem1
+        '
+        Me.GeneratePOsToolStripMenuItem1.Name = "GeneratePOsToolStripMenuItem1"
+        Me.GeneratePOsToolStripMenuItem1.Size = New System.Drawing.Size(291, 22)
+        Me.GeneratePOsToolStripMenuItem1.Text = "Generate POs"
+        '
         'PurchaseToolStripMenuItem
         '
         Me.PurchaseToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem89, Me.DemandIntoSleepProcessToolStripMenuItem, Me.ToolStripMenuItem93, Me.ToolStripMenuItem94, Me.ToolStripMenuItem95, Me.ToolStripMenuItem96, Me.VendorInformationToolStripMenuItem, Me.ScrapSaleTransactionsToolStripMenuItem, Me.PurchaseBillNoToolStripMenuItem, Me.NewDemandReceivingToolStripMenuItem})
@@ -1564,7 +1583,7 @@ Partial Class frmMain
         'ToolStripMenuItem85
         '
         Me.ToolStripMenuItem85.Name = "ToolStripMenuItem85"
-        Me.ToolStripMenuItem85.Size = New System.Drawing.Size(180, 22)
+        Me.ToolStripMenuItem85.Size = New System.Drawing.Size(93, 22)
         Me.ToolStripMenuItem85.Text = "&PO"
         '
         'ToolStripMenuItem211
@@ -5234,23 +5253,11 @@ Partial Class frmMain
         Me.Tbl_User_LogBindingSource.DataMember = "tbl_User_Log"
         Me.Tbl_User_LogBindingSource.DataSource = Me.DSUM
         '
-        'MaterialCodeToolStripMenuItem
+        'CompanyProfileToolStripMenuItem
         '
-        Me.MaterialCodeToolStripMenuItem.Name = "MaterialCodeToolStripMenuItem"
-        Me.MaterialCodeToolStripMenuItem.Size = New System.Drawing.Size(219, 22)
-        Me.MaterialCodeToolStripMenuItem.Text = "Material Code"
-        '
-        'VendorInfomationToolStripMenuItem
-        '
-        Me.VendorInfomationToolStripMenuItem.Name = "VendorInfomationToolStripMenuItem"
-        Me.VendorInfomationToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
-        Me.VendorInfomationToolStripMenuItem.Text = "vendor Infomation"
-        '
-        'GeneratePOsToolStripMenuItem1
-        '
-        Me.GeneratePOsToolStripMenuItem1.Name = "GeneratePOsToolStripMenuItem1"
-        Me.GeneratePOsToolStripMenuItem1.Size = New System.Drawing.Size(291, 22)
-        Me.GeneratePOsToolStripMenuItem1.Text = "Generate POs"
+        Me.CompanyProfileToolStripMenuItem.Name = "CompanyProfileToolStripMenuItem"
+        Me.CompanyProfileToolStripMenuItem.Size = New System.Drawing.Size(220, 22)
+        Me.CompanyProfileToolStripMenuItem.Text = "Company Profile"
         '
         'frmMain
         '
@@ -6038,4 +6045,5 @@ Partial Class frmMain
     Friend WithEvents MaterialCodeToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents VendorInfomationToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents GeneratePOsToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents CompanyProfileToolStripMenuItem As ToolStripMenuItem
 End Class

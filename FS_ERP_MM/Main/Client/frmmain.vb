@@ -4193,4 +4193,13 @@ Public Class frmMain
             objPurOrders.Show()
         End If
     End Sub
+
+    Private Sub CompanyProfileToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CompanyProfileToolStripMenuItem.Click
+        If ChildWindowOpen("FrmCompany") = False Then
+            Dim objPurOrders As New FrmCompany
+            objPurOrders.MdiParent = Me
+            objPurOrders.WindowState = FormWindowState.Maximized
+            objPurOrders.Show()
+        End If
+    End Sub
 End Class

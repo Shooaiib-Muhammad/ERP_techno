@@ -896,6 +896,12 @@
     <Compile Include="Main\Admin\IDMS_User_Dept.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Main\Client\FrmCompany.Designer.vb">
+      <DependentUpon>FrmCompany.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Client\FrmCompany.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Main\Client\frmLoginVer.designer.vb">
       <DependentUpon>frmLoginVer.vb</DependentUpon>
     </Compile>
@@ -2427,6 +2433,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main\Admin\IDMS_User_Dept.resx">
       <DependentUpon>IDMS_User_Dept.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Client\FrmCompany.resx">
+      <DependentUpon>FrmCompany.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\Client\frmLoginVer.resx">
       <DependentUpon>frmLoginVer.vb</DependentUpon>

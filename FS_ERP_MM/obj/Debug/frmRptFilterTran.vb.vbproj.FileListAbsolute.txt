@@ -3261,7 +3261,6 @@ C:\Users\ITS-4\Desktop\Github working\ERP_techno\FS_ERP_MM\bin\Debug\FS_ERP_MM.p
 C:\Users\ITS-4\Desktop\Github working\ERP_techno\FS_ERP_MM\bin\Debug\FS_ERP_MM.xml
 C:\Users\ITS-4\Desktop\Github working\ERP_techno\FS_ERP_MM\bin\Debug\CrystalDecisions.ReportSource.dll
 C:\Users\ITS-4\Desktop\Github working\ERP_techno\FS_ERP_MM\bin\Debug\stdole.dll
-C:\Users\ITS-4\Desktop\Github working\ERP_techno\FS_ERP_MM\obj\Debug\frmRptFilterTran.vb.vbprojAssemblyReference.cache
 C:\Users\ITS-4\Desktop\Github working\ERP_techno\FS_ERP_MM\obj\Debug\FS_ERP_MM.FrmAsserts.resources
 C:\Users\ITS-4\Desktop\Github working\ERP_techno\FS_ERP_MM\obj\Debug\FS_ERP_MM.FrmORG_Life.resources
 C:\Users\ITS-4\Desktop\Github working\ERP_techno\FS_ERP_MM\obj\Debug\FS_ERP_MM.Frm_Asserts_type.resources
@@ -3475,3 +3474,4 @@ C:\Users\ITS-4\Desktop\Github working\ERP_techno\FS_ERP_MM\obj\Debug\frmRptFilte
 C:\Users\ITS-4\Desktop\Github working\ERP_techno\FS_ERP_MM\obj\Debug\FS_ERP_MM.exe
 C:\Users\ITS-4\Desktop\Github working\ERP_techno\FS_ERP_MM\obj\Debug\FS_ERP_MM.xml
 C:\Users\ITS-4\Desktop\Github working\ERP_techno\FS_ERP_MM\obj\Debug\FS_ERP_MM.pdb
+C:\Users\ITS-4\Desktop\Github working\ERP_techno\FS_ERP_MM\obj\Debug\FS_ERP_MM.FrmCompany.resources

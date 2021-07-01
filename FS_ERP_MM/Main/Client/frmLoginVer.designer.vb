@@ -42,6 +42,11 @@ Partial Class frmLoginVer
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.EntryDateLabel1 = New System.Windows.Forms.Label()
+        Me.DSUL = New FS_ERP_MM.DSUL()
+        Me.Tbl_Comp_ProfileBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Tbl_Comp_ProfileTableAdapter = New FS_ERP_MM.DSULTableAdapters.tbl_Comp_ProfileTableAdapter()
+        Me.TableAdapterManager = New FS_ERP_MM.DSULTableAdapters.TableAdapterManager()
+        Me.ReportsPathLabel1 = New System.Windows.Forms.Label()
         DepartmentIDLabel = New System.Windows.Forms.Label()
         Label1 = New System.Windows.Forms.Label()
         Label2 = New System.Windows.Forms.Label()
@@ -52,6 +57,8 @@ Partial Class frmLoginVer
         CType(Me.Tbl_User_LogBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
+        CType(Me.DSUL, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Tbl_Comp_ProfileBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DepartmentIDLabel
@@ -162,7 +169,7 @@ Partial Class frmLoginVer
         Me.Panel1.Controls.Add(Me.btnCancel)
         Me.Panel1.Location = New System.Drawing.Point(286, 128)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(307, 157)
+        Me.Panel1.Size = New System.Drawing.Size(367, 157)
         Me.Panel1.TabIndex = 18
         '
         'txtPswd
@@ -247,6 +254,41 @@ Partial Class frmLoginVer
         Me.EntryDateLabel1.Size = New System.Drawing.Size(100, 13)
         Me.EntryDateLabel1.TabIndex = 20
         '
+        'DSUL
+        '
+        Me.DSUL.DataSetName = "DSUL"
+        Me.DSUL.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'Tbl_Comp_ProfileBindingSource
+        '
+        Me.Tbl_Comp_ProfileBindingSource.DataMember = "tbl_Comp_Profile"
+        Me.Tbl_Comp_ProfileBindingSource.DataSource = Me.DSUL
+        '
+        'Tbl_Comp_ProfileTableAdapter
+        '
+        Me.Tbl_Comp_ProfileTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.tbl_Comp_ProfileTableAdapter = Me.Tbl_Comp_ProfileTableAdapter
+        Me.TableAdapterManager.tbl_IDMS_Sub_deptTableAdapter = Nothing
+        Me.TableAdapterManager.tbl_idms_user_deptTableAdapter = Nothing
+        Me.TableAdapterManager.tbl_Inv_LocalCustTableAdapter = Nothing
+        Me.TableAdapterManager.tbl_PIR_UsersTableAdapter = Nothing
+        Me.TableAdapterManager.tbl_User_LoginsTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = FS_ERP_MM.DSULTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
+        'ReportsPathLabel1
+        '
+        Me.ReportsPathLabel1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_Comp_ProfileBindingSource, "ReportsPath", True))
+        Me.ReportsPathLabel1.ForeColor = System.Drawing.Color.White
+        Me.ReportsPathLabel1.Location = New System.Drawing.Point(151, 293)
+        Me.ReportsPathLabel1.Name = "ReportsPathLabel1"
+        Me.ReportsPathLabel1.Size = New System.Drawing.Size(195, 23)
+        Me.ReportsPathLabel1.TabIndex = 16
+        Me.ReportsPathLabel1.Text = "Label4"
+        '
         'frmLoginVer
         '
         Me.AcceptButton = Me.btnLogin
@@ -254,8 +296,9 @@ Partial Class frmLoginVer
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.CancelButton = Me.btnCancel
-        Me.ClientSize = New System.Drawing.Size(625, 316)
+        Me.ClientSize = New System.Drawing.Size(665, 322)
         Me.ControlBox = False
+        Me.Controls.Add(Me.ReportsPathLabel1)
         Me.Controls.Add(Me.EntryDateLabel1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Panel1)
@@ -273,6 +316,8 @@ Partial Class frmLoginVer
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.DSUL, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Tbl_Comp_ProfileBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -298,4 +343,9 @@ Partial Class frmLoginVer
     Friend WithEvents Label3 As System.Windows.Forms.Label
     'Friend WithEvents Tbl_Comp_InfoTableAdapter As fs_ERP_MM.DSUMTableAdapters.tbl_Comp_InfoTableAdapter
     Friend WithEvents EntryDateLabel1 As System.Windows.Forms.Label
+    Friend WithEvents DSUL As DSUL
+    Friend WithEvents Tbl_Comp_ProfileBindingSource As BindingSource
+    Friend WithEvents Tbl_Comp_ProfileTableAdapter As DSULTableAdapters.tbl_Comp_ProfileTableAdapter
+    Friend WithEvents TableAdapterManager As DSULTableAdapters.TableAdapterManager
+    Friend WithEvents ReportsPathLabel1 As Label
 End Class

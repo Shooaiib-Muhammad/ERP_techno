@@ -7,11 +7,15 @@ Public Class frmLoginVer
     Public Shared UserID As Integer
     Public Shared LoginName As String = Nothing
     Public Shared SysIP As String = Nothing
+    Public Shared Reportpath As String
+
     'Dim HostName As String = Dns.GetHostName
     'Dim ipEntry As IPHostEntry = Dns.GetHostEntry(HostName)
     'Dim IpAddr As IPAddress() = ipEntry.AddressList
     Dim Counter As Integer = 0
     Private Sub frmLogin_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'DSUL.tbl_Comp_Profile' table. You can move, or remove it, as needed.
+        Me.Tbl_Comp_ProfileTableAdapter.Fill(Me.DSUL.tbl_Comp_Profile)
         'Me.Tbl_User_LoginsTableAdapter.Fill(Me.DSUM.tbl_User_Logins)
         Me.View_User_AccountsTableAdapter.Fill(Me.DSUM.View_User_Accounts)
         Me.Tbl_User_DomainTableAdapter.FillBy(Me.DSUM.tbl_User_Domain, ModID)
@@ -83,6 +87,8 @@ Public Class frmLoginVer
         UserID = Me.UserIDComboBox.SelectedValue
         frmMain.CDomID = DomID
         frmMain.CUserID = UserID
+
+
         DBIpAdd = Me.Tbl_User_LoginsTableAdapter.GetUserIP(UserID)
         'SysIpAdd = IpAddr(0).ToString
         SysIpAdd = System.Net.Dns.Resolve(Environment.MachineName).AddressList(0).ToString()
@@ -135,6 +141,7 @@ Public Class frmLoginVer
                 If LogStatus = 0 Then
                     SysIP = SysIpAdd
                     LoginName = Me.UserIDComboBox.Text
+                    Reportpath = ReportsPathLabel1.Text
                     Me.Tbl_User_LoginsTableAdapter.FillBy(Me.DSUM.tbl_User_Logins, UserIDComboBox.SelectedValue)
                     HODStatus = Me.DSUM.tbl_User_Logins(0).Item("HODStatus")
                     SPrStatus = Me.DSUM.tbl_User_Logins(0).Item("SprStatus")
