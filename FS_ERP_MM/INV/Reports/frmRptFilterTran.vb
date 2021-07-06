@@ -332,7 +332,11 @@ Public Class frmRptFilterTran
         'TODO: This line of code loads data into the 'DSRptL4Code.tbl_Inv_L1' table. You can move, or remove it, as needed.
         Me.Tbl_Inv_L1TableAdapter.Fill(Me.DSRptL4Code.tbl_Inv_L1)
         'TODO: This line of code loads data into the 'DSNewTranIn.tbl_Inv_L4' table. You can move, or remove it, as needed.
-        Me.Tbl_Inv_L4TableAdapter.Fill(Me.DSNewTranIn.tbl_Inv_L4)
+        Try
+            Me.Tbl_Inv_L4TableAdapter.Fill(Me.DSNewTranIn.tbl_Inv_L4)
+        Catch ex As Exception
+
+        End Try
         'TODO: This line of code loads data into the 'DSNewTranIn.tbl_PIR_Dept' table. You can move, or remove it, as needed.
         Me.Tbl_PIR_DeptTableAdapter.Fill(Me.DSNewTranIn.tbl_PIR_Dept)
         'TODO: This line of code loads data into the 'DSNewTranIn.tbl_Inv_LocalCust' table. You can move, or remove it, as needed.

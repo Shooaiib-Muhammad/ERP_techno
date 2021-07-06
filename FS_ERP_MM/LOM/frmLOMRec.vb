@@ -14,7 +14,11 @@
 
     Private Sub frmLOMRec_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'DSLOM.tbl_Inv_L4' table. You can move, or remove it, as needed.
-        Me.Tbl_Inv_L4TableAdapter.Fill(Me.DSLOM.tbl_Inv_L4)
+        Try
+            Me.Tbl_Inv_L4TableAdapter.Fill(Me.DSLOM.tbl_Inv_L4)
+        Catch ex As Exception
+
+        End Try
         'TODO: This line of code loads data into the 'DSLOM.tbl_Inv_LocalCust' table. You can move, or remove it, as needed.
         Me.Tbl_Inv_LocalCustTableAdapter.Fill(Me.DSLOM.tbl_Inv_LocalCust)
         'TODO: This line of code loads data into the 'DSLOM.tbl_Inv_Tran_In' table. You can move, or remove it, as needed.

@@ -69,14 +69,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FS_ERP_MM.exe" size="20666880">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FS_ERP_MM.exe" size="20667904">
       <assemblyIdentity name="FS_ERP_MM" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>nHGVovyc4rnkEdTPdAqKlKUh6g0=</dsig:DigestValue>
+        <dsig:DigestValue>nZIq9PN9kZhlUkANk5L2xCvQaGg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

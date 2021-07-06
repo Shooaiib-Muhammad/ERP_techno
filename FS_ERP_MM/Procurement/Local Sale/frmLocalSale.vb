@@ -81,10 +81,16 @@
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Dim obj As New Class_Utility
+        Dim Path As String = ""
         If RadioButton2.Checked Then
-            obj.LoadReports("\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptMatOutwardSaleGatePassScrap.rpt", "{View_Mat_Sale.SaleID}= " & SaleIDLabel1.Text & "", "")
+            Path = "" & frmLoginVer.Reportpath & "\RptMatOutwardSaleGatePassScrap.rpt"
+
+            obj.LoadReports(Path, "{View_Mat_Sale.SaleID}= " & SaleIDLabel1.Text & "", "")
         ElseIf RadioButton1.Checked Then
-            obj.LoadReports("\\server\myreports$\FSERPMM\Procurement\OtherMaterial\RptSaleScrap.rpt", "{tbl_Mat_SaleH.SaleID} = " & SaleIDLabel1.Text & "", "")
+            Path = "" & frmLoginVer.Reportpath & "\RptSaleScrap.rpt"
+
+            obj.LoadReports(Path, "{View_Mat_Sale.SaleID}= " & SaleIDLabel1.Text & "", "")
+
         End If
     End Sub
 

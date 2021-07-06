@@ -28,12 +28,12 @@ Partial Class frmMatAdjustment
         Dim TotalInLabel As System.Windows.Forms.Label
         Dim TotalOutLabel As System.Windows.Forms.Label
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMatAdjustment))
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMatAdjustment))
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -42,19 +42,7 @@ Partial Class frmMatAdjustment
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Tbl_Inv_Tran_InDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.Tbl_Inv_L4BindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DsAdjustEnteries = New FS_ERP_MM.DsAdjustEnteries()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Tbl_Inv_Tran_InBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Tbl_Inv_Tran_DateBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.BindingNavigator1 = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
@@ -71,15 +59,6 @@ Partial Class frmMatAdjustment
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Tbl_Inv_Tran_OutDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn15 = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.DataGridViewTextBoxColumn16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Tbl_Inv_Tran_OutBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.BindingNavigator2 = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
@@ -111,14 +90,35 @@ Partial Class frmMatAdjustment
         Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
         Me.DateNameLabel1 = New System.Windows.Forms.Label()
         Me.BalanceLabel1 = New System.Windows.Forms.Label()
+        Me.TotalInLabel1 = New System.Windows.Forms.Label()
+        Me.TotalOutLabel1 = New System.Windows.Forms.Label()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Tbl_Inv_L4BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DsAdjustEnteries = New FS_ERP_MM.DsAdjustEnteries()
+        Me.Tbl_Inv_Tran_DateBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn15 = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.DataGridViewTextBoxColumn16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Tbl_Inv_Tran_DateTableAdapter = New FS_ERP_MM.DsAdjustEnteriesTableAdapters.tbl_Inv_Tran_DateTableAdapter()
         Me.TableAdapterManager = New FS_ERP_MM.DsAdjustEnteriesTableAdapters.TableAdapterManager()
         Me.Tbl_Inv_Tran_InTableAdapter = New FS_ERP_MM.DsAdjustEnteriesTableAdapters.tbl_Inv_Tran_InTableAdapter()
         Me.Tbl_Inv_Tran_OutTableAdapter = New FS_ERP_MM.DsAdjustEnteriesTableAdapters.tbl_Inv_Tran_OutTableAdapter()
         Me.Tbl_Inv_L4TableAdapter = New FS_ERP_MM.DsAdjustEnteriesTableAdapters.tbl_Inv_L4TableAdapter()
-        Me.TotalInLabel1 = New System.Windows.Forms.Label()
-        Me.TotalOutLabel1 = New System.Windows.Forms.Label()
-        Me.Panel4 = New System.Windows.Forms.Panel()
         DateNameLabel = New System.Windows.Forms.Label()
         BalanceLabel = New System.Windows.Forms.Label()
         TotalInLabel = New System.Windows.Forms.Label()
@@ -127,10 +127,7 @@ Partial Class frmMatAdjustment
         Me.TabPage1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.Tbl_Inv_Tran_InDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Tbl_Inv_L4BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DsAdjustEnteries, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tbl_Inv_Tran_InBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Tbl_Inv_Tran_DateBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.BindingNavigator1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -143,6 +140,9 @@ Partial Class frmMatAdjustment
         CType(Me.Tbl_Inv_Tran_DateBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Tbl_Inv_Tran_DateBindingNavigator.SuspendLayout()
         Me.Panel4.SuspendLayout()
+        CType(Me.Tbl_Inv_L4BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DsAdjustEnteries, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Tbl_Inv_Tran_DateBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DateNameLabel
@@ -231,104 +231,10 @@ Partial Class frmMatAdjustment
         Me.Tbl_Inv_Tran_InDataGridView.Size = New System.Drawing.Size(787, 476)
         Me.Tbl_Inv_Tran_InDataGridView.TabIndex = 1
         '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "TranInID"
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.DataGridViewTextBoxColumn2.DefaultCellStyle = DataGridViewCellStyle2
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Positive Entry No."
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "TranType"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "TranType"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.Visible = False
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "MRIN"
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.DataGridViewTextBoxColumn4.DefaultCellStyle = DataGridViewCellStyle3
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Tran Doc No."
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        Me.DataGridViewTextBoxColumn4.Visible = False
-        Me.DataGridViewTextBoxColumn4.Width = 90
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Code"
-        Me.DataGridViewTextBoxColumn5.DataSource = Me.Tbl_Inv_L4BindingSource
-        Me.DataGridViewTextBoxColumn5.DisplayMember = "L4Name"
-        Me.DataGridViewTextBoxColumn5.DisplayStyleForCurrentCellOnly = True
-        Me.DataGridViewTextBoxColumn5.HeaderText = "Material Name"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        Me.DataGridViewTextBoxColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewTextBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.DataGridViewTextBoxColumn5.ValueMember = "Code"
-        Me.DataGridViewTextBoxColumn5.Width = 250
-        '
-        'Tbl_Inv_L4BindingSource
-        '
-        Me.Tbl_Inv_L4BindingSource.DataMember = "tbl_Inv_L4"
-        Me.Tbl_Inv_L4BindingSource.DataSource = Me.DsAdjustEnteries
-        '
-        'DsAdjustEnteries
-        '
-        Me.DsAdjustEnteries.DataSetName = "DsAdjustEnteries"
-        Me.DsAdjustEnteries.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Currency"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "Currency"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        Me.DataGridViewTextBoxColumn6.Visible = False
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "PPU"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "PPU"
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        Me.DataGridViewTextBoxColumn7.Visible = False
-        '
-        'DataGridViewTextBoxColumn10
-        '
-        Me.DataGridViewTextBoxColumn10.DataPropertyName = "UOM"
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.DataGridViewTextBoxColumn10.DefaultCellStyle = DataGridViewCellStyle4
-        Me.DataGridViewTextBoxColumn10.HeaderText = "UOM"
-        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
-        Me.DataGridViewTextBoxColumn10.ReadOnly = True
-        Me.DataGridViewTextBoxColumn10.Width = 80
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        Me.DataGridViewTextBoxColumn8.DataPropertyName = "Qty"
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.DataGridViewTextBoxColumn8.DefaultCellStyle = DataGridViewCellStyle5
-        Me.DataGridViewTextBoxColumn8.HeaderText = "Qty"
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        Me.DataGridViewTextBoxColumn8.Width = 80
-        '
-        'DataGridViewTextBoxColumn9
-        '
-        Me.DataGridViewTextBoxColumn9.DataPropertyName = "Narration"
-        Me.DataGridViewTextBoxColumn9.HeaderText = "Naration"
-        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
-        Me.DataGridViewTextBoxColumn9.Width = 200
-        '
         'Tbl_Inv_Tran_InBindingSource
         '
         Me.Tbl_Inv_Tran_InBindingSource.DataMember = "tbl_Inv_Tran_Date_tbl_Inv_Tran_In"
         Me.Tbl_Inv_Tran_InBindingSource.DataSource = Me.Tbl_Inv_Tran_DateBindingSource
-        '
-        'Tbl_Inv_Tran_DateBindingSource
-        '
-        Me.Tbl_Inv_Tran_DateBindingSource.DataMember = "tbl_Inv_Tran_Date"
-        Me.Tbl_Inv_Tran_DateBindingSource.DataSource = Me.DsAdjustEnteries
         '
         'BindingNavigator1
         '
@@ -483,85 +389,6 @@ Partial Class frmMatAdjustment
         Me.Tbl_Inv_Tran_OutDataGridView.Name = "Tbl_Inv_Tran_OutDataGridView"
         Me.Tbl_Inv_Tran_OutDataGridView.Size = New System.Drawing.Size(787, 476)
         Me.Tbl_Inv_Tran_OutDataGridView.TabIndex = 1
-        '
-        'DataGridViewTextBoxColumn12
-        '
-        Me.DataGridViewTextBoxColumn12.DataPropertyName = "TranOutID"
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.DataGridViewTextBoxColumn12.DefaultCellStyle = DataGridViewCellStyle7
-        Me.DataGridViewTextBoxColumn12.HeaderText = "Negtive Entry No."
-        Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
-        Me.DataGridViewTextBoxColumn12.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn13
-        '
-        Me.DataGridViewTextBoxColumn13.DataPropertyName = "TranType"
-        Me.DataGridViewTextBoxColumn13.HeaderText = "TranType"
-        Me.DataGridViewTextBoxColumn13.Name = "DataGridViewTextBoxColumn13"
-        Me.DataGridViewTextBoxColumn13.Visible = False
-        '
-        'DataGridViewTextBoxColumn14
-        '
-        Me.DataGridViewTextBoxColumn14.DataPropertyName = "TranDocNo"
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.DataGridViewTextBoxColumn14.DefaultCellStyle = DataGridViewCellStyle8
-        Me.DataGridViewTextBoxColumn14.HeaderText = "Tran Doc No."
-        Me.DataGridViewTextBoxColumn14.Name = "DataGridViewTextBoxColumn14"
-        Me.DataGridViewTextBoxColumn14.Visible = False
-        Me.DataGridViewTextBoxColumn14.Width = 90
-        '
-        'DataGridViewTextBoxColumn15
-        '
-        Me.DataGridViewTextBoxColumn15.DataPropertyName = "Code"
-        Me.DataGridViewTextBoxColumn15.DataSource = Me.Tbl_Inv_L4BindingSource
-        Me.DataGridViewTextBoxColumn15.DisplayMember = "L4Name"
-        Me.DataGridViewTextBoxColumn15.DisplayStyleForCurrentCellOnly = True
-        Me.DataGridViewTextBoxColumn15.HeaderText = "Material Name"
-        Me.DataGridViewTextBoxColumn15.Name = "DataGridViewTextBoxColumn15"
-        Me.DataGridViewTextBoxColumn15.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewTextBoxColumn15.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.DataGridViewTextBoxColumn15.ValueMember = "Code"
-        Me.DataGridViewTextBoxColumn15.Width = 250
-        '
-        'DataGridViewTextBoxColumn16
-        '
-        Me.DataGridViewTextBoxColumn16.DataPropertyName = "Currency"
-        Me.DataGridViewTextBoxColumn16.HeaderText = "Currency"
-        Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
-        Me.DataGridViewTextBoxColumn16.Visible = False
-        '
-        'DataGridViewTextBoxColumn17
-        '
-        Me.DataGridViewTextBoxColumn17.DataPropertyName = "PPU"
-        Me.DataGridViewTextBoxColumn17.HeaderText = "PPU"
-        Me.DataGridViewTextBoxColumn17.Name = "DataGridViewTextBoxColumn17"
-        Me.DataGridViewTextBoxColumn17.Visible = False
-        '
-        'DataGridViewTextBoxColumn20
-        '
-        Me.DataGridViewTextBoxColumn20.DataPropertyName = "UOM"
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.DataGridViewTextBoxColumn20.DefaultCellStyle = DataGridViewCellStyle9
-        Me.DataGridViewTextBoxColumn20.HeaderText = "UOM"
-        Me.DataGridViewTextBoxColumn20.Name = "DataGridViewTextBoxColumn20"
-        Me.DataGridViewTextBoxColumn20.ReadOnly = True
-        Me.DataGridViewTextBoxColumn20.Width = 80
-        '
-        'DataGridViewTextBoxColumn18
-        '
-        Me.DataGridViewTextBoxColumn18.DataPropertyName = "Qty"
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.DataGridViewTextBoxColumn18.DefaultCellStyle = DataGridViewCellStyle10
-        Me.DataGridViewTextBoxColumn18.HeaderText = "Qty"
-        Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
-        Me.DataGridViewTextBoxColumn18.Width = 80
-        '
-        'DataGridViewTextBoxColumn19
-        '
-        Me.DataGridViewTextBoxColumn19.DataPropertyName = "Naration"
-        Me.DataGridViewTextBoxColumn19.HeaderText = "Naration"
-        Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
-        Me.DataGridViewTextBoxColumn19.Width = 200
         '
         'Tbl_Inv_Tran_OutBindingSource
         '
@@ -849,33 +676,6 @@ Partial Class frmMatAdjustment
         Me.BalanceLabel1.Text = "Label2"
         Me.BalanceLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Tbl_Inv_Tran_DateTableAdapter
-        '
-        Me.Tbl_Inv_Tran_DateTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.tbl_Inv_CodeTableAdapter = Nothing
-        Me.TableAdapterManager.tbl_Inv_Tran_DateTableAdapter = Me.Tbl_Inv_Tran_DateTableAdapter
-        Me.TableAdapterManager.tbl_Inv_Tran_In_AdjTableAdapter = Nothing
-        Me.TableAdapterManager.tbl_Inv_Tran_InTableAdapter = Me.Tbl_Inv_Tran_InTableAdapter
-        Me.TableAdapterManager.tbl_Inv_Tran_Out_AdjTableAdapter = Nothing
-        Me.TableAdapterManager.tbl_Inv_Tran_OutTableAdapter = Me.Tbl_Inv_Tran_OutTableAdapter
-        Me.TableAdapterManager.UpdateOrder = FS_ERP_MM.DsAdjustEnteriesTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        '
-        'Tbl_Inv_Tran_InTableAdapter
-        '
-        Me.Tbl_Inv_Tran_InTableAdapter.ClearBeforeFill = True
-        '
-        'Tbl_Inv_Tran_OutTableAdapter
-        '
-        Me.Tbl_Inv_Tran_OutTableAdapter.ClearBeforeFill = True
-        '
-        'Tbl_Inv_L4TableAdapter
-        '
-        Me.Tbl_Inv_L4TableAdapter.ClearBeforeFill = True
-        '
         'TotalInLabel1
         '
         Me.TotalInLabel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -913,6 +713,206 @@ Partial Class frmMatAdjustment
         Me.Panel4.TabIndex = 51
         Me.Panel4.Visible = False
         '
+        'Tbl_Inv_L4BindingSource
+        '
+        Me.Tbl_Inv_L4BindingSource.DataMember = "tbl_Inv_L4"
+        Me.Tbl_Inv_L4BindingSource.DataSource = Me.DsAdjustEnteries
+        '
+        'DsAdjustEnteries
+        '
+        Me.DsAdjustEnteries.DataSetName = "DsAdjustEnteries"
+        Me.DsAdjustEnteries.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'Tbl_Inv_Tran_DateBindingSource
+        '
+        Me.Tbl_Inv_Tran_DateBindingSource.DataMember = "tbl_Inv_Tran_Date"
+        Me.Tbl_Inv_Tran_DateBindingSource.DataSource = Me.DsAdjustEnteries
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "TranInID"
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.DataGridViewTextBoxColumn2.DefaultCellStyle = DataGridViewCellStyle2
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Positive Entry No."
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "TranType"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "TranType"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.Visible = False
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "MRIN"
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.DataGridViewTextBoxColumn4.DefaultCellStyle = DataGridViewCellStyle3
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Tran Doc No."
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.Visible = False
+        Me.DataGridViewTextBoxColumn4.Width = 90
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Code"
+        Me.DataGridViewTextBoxColumn5.DataSource = Me.Tbl_Inv_L4BindingSource
+        Me.DataGridViewTextBoxColumn5.DisplayMember = "L4Name"
+        Me.DataGridViewTextBoxColumn5.DisplayStyleForCurrentCellOnly = True
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Material Name"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewTextBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.DataGridViewTextBoxColumn5.ValueMember = "Code"
+        Me.DataGridViewTextBoxColumn5.Width = 250
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Currency"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Currency"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.Visible = False
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "PPU"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "PPU"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        Me.DataGridViewTextBoxColumn7.Visible = False
+        '
+        'DataGridViewTextBoxColumn10
+        '
+        Me.DataGridViewTextBoxColumn10.DataPropertyName = "UOM"
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.DataGridViewTextBoxColumn10.DefaultCellStyle = DataGridViewCellStyle4
+        Me.DataGridViewTextBoxColumn10.HeaderText = "UOM"
+        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
+        Me.DataGridViewTextBoxColumn10.ReadOnly = True
+        Me.DataGridViewTextBoxColumn10.Width = 80
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.DataPropertyName = "Qty"
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.DataGridViewTextBoxColumn8.DefaultCellStyle = DataGridViewCellStyle5
+        Me.DataGridViewTextBoxColumn8.HeaderText = "Qty"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        Me.DataGridViewTextBoxColumn8.Width = 80
+        '
+        'DataGridViewTextBoxColumn9
+        '
+        Me.DataGridViewTextBoxColumn9.DataPropertyName = "Narration"
+        Me.DataGridViewTextBoxColumn9.HeaderText = "Naration"
+        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
+        Me.DataGridViewTextBoxColumn9.Width = 200
+        '
+        'DataGridViewTextBoxColumn12
+        '
+        Me.DataGridViewTextBoxColumn12.DataPropertyName = "TranOutID"
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.DataGridViewTextBoxColumn12.DefaultCellStyle = DataGridViewCellStyle7
+        Me.DataGridViewTextBoxColumn12.HeaderText = "Negtive Entry No."
+        Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
+        Me.DataGridViewTextBoxColumn12.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn13
+        '
+        Me.DataGridViewTextBoxColumn13.DataPropertyName = "TranType"
+        Me.DataGridViewTextBoxColumn13.HeaderText = "TranType"
+        Me.DataGridViewTextBoxColumn13.Name = "DataGridViewTextBoxColumn13"
+        Me.DataGridViewTextBoxColumn13.Visible = False
+        '
+        'DataGridViewTextBoxColumn14
+        '
+        Me.DataGridViewTextBoxColumn14.DataPropertyName = "TranDocNo"
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.DataGridViewTextBoxColumn14.DefaultCellStyle = DataGridViewCellStyle8
+        Me.DataGridViewTextBoxColumn14.HeaderText = "Tran Doc No."
+        Me.DataGridViewTextBoxColumn14.Name = "DataGridViewTextBoxColumn14"
+        Me.DataGridViewTextBoxColumn14.Visible = False
+        Me.DataGridViewTextBoxColumn14.Width = 90
+        '
+        'DataGridViewTextBoxColumn15
+        '
+        Me.DataGridViewTextBoxColumn15.DataPropertyName = "Code"
+        Me.DataGridViewTextBoxColumn15.DataSource = Me.Tbl_Inv_L4BindingSource
+        Me.DataGridViewTextBoxColumn15.DisplayMember = "L4Name"
+        Me.DataGridViewTextBoxColumn15.DisplayStyleForCurrentCellOnly = True
+        Me.DataGridViewTextBoxColumn15.HeaderText = "Material Name"
+        Me.DataGridViewTextBoxColumn15.Name = "DataGridViewTextBoxColumn15"
+        Me.DataGridViewTextBoxColumn15.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewTextBoxColumn15.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.DataGridViewTextBoxColumn15.ValueMember = "Code"
+        Me.DataGridViewTextBoxColumn15.Width = 250
+        '
+        'DataGridViewTextBoxColumn16
+        '
+        Me.DataGridViewTextBoxColumn16.DataPropertyName = "Currency"
+        Me.DataGridViewTextBoxColumn16.HeaderText = "Currency"
+        Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
+        Me.DataGridViewTextBoxColumn16.Visible = False
+        '
+        'DataGridViewTextBoxColumn17
+        '
+        Me.DataGridViewTextBoxColumn17.DataPropertyName = "PPU"
+        Me.DataGridViewTextBoxColumn17.HeaderText = "PPU"
+        Me.DataGridViewTextBoxColumn17.Name = "DataGridViewTextBoxColumn17"
+        Me.DataGridViewTextBoxColumn17.Visible = False
+        '
+        'DataGridViewTextBoxColumn20
+        '
+        Me.DataGridViewTextBoxColumn20.DataPropertyName = "UOM"
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.DataGridViewTextBoxColumn20.DefaultCellStyle = DataGridViewCellStyle9
+        Me.DataGridViewTextBoxColumn20.HeaderText = "UOM"
+        Me.DataGridViewTextBoxColumn20.Name = "DataGridViewTextBoxColumn20"
+        Me.DataGridViewTextBoxColumn20.ReadOnly = True
+        Me.DataGridViewTextBoxColumn20.Width = 80
+        '
+        'DataGridViewTextBoxColumn18
+        '
+        Me.DataGridViewTextBoxColumn18.DataPropertyName = "Qty"
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.DataGridViewTextBoxColumn18.DefaultCellStyle = DataGridViewCellStyle10
+        Me.DataGridViewTextBoxColumn18.HeaderText = "Qty"
+        Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
+        Me.DataGridViewTextBoxColumn18.Width = 80
+        '
+        'DataGridViewTextBoxColumn19
+        '
+        Me.DataGridViewTextBoxColumn19.DataPropertyName = "Naration"
+        Me.DataGridViewTextBoxColumn19.HeaderText = "Naration"
+        Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
+        Me.DataGridViewTextBoxColumn19.Width = 200
+        '
+        'Tbl_Inv_Tran_DateTableAdapter
+        '
+        Me.Tbl_Inv_Tran_DateTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.tbl_Inv_CodeTableAdapter = Nothing
+        Me.TableAdapterManager.tbl_Inv_Tran_DateTableAdapter = Me.Tbl_Inv_Tran_DateTableAdapter
+        Me.TableAdapterManager.tbl_Inv_Tran_In_AdjTableAdapter = Nothing
+        Me.TableAdapterManager.tbl_Inv_Tran_InTableAdapter = Me.Tbl_Inv_Tran_InTableAdapter
+        Me.TableAdapterManager.tbl_Inv_Tran_Out_AdjTableAdapter = Nothing
+        Me.TableAdapterManager.tbl_Inv_Tran_OutTableAdapter = Me.Tbl_Inv_Tran_OutTableAdapter
+        Me.TableAdapterManager.UpdateOrder = FS_ERP_MM.DsAdjustEnteriesTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
+        'Tbl_Inv_Tran_InTableAdapter
+        '
+        Me.Tbl_Inv_Tran_InTableAdapter.ClearBeforeFill = True
+        '
+        'Tbl_Inv_Tran_OutTableAdapter
+        '
+        Me.Tbl_Inv_Tran_OutTableAdapter.ClearBeforeFill = True
+        '
+        'Tbl_Inv_L4TableAdapter
+        '
+        Me.Tbl_Inv_L4TableAdapter.ClearBeforeFill = True
+        '
         'frmMatAdjustment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -931,10 +931,7 @@ Partial Class frmMatAdjustment
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.Tbl_Inv_Tran_InDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Tbl_Inv_L4BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DsAdjustEnteries, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Tbl_Inv_Tran_InBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Tbl_Inv_Tran_DateBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.BindingNavigator1.ResumeLayout(False)
         Me.BindingNavigator1.PerformLayout()
@@ -952,6 +949,9 @@ Partial Class frmMatAdjustment
         Me.Tbl_Inv_Tran_DateBindingNavigator.ResumeLayout(False)
         Me.Tbl_Inv_Tran_DateBindingNavigator.PerformLayout()
         Me.Panel4.ResumeLayout(False)
+        CType(Me.Tbl_Inv_L4BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DsAdjustEnteries, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Tbl_Inv_Tran_DateBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

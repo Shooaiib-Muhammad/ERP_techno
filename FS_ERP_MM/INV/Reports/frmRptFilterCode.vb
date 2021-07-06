@@ -1,6 +1,10 @@
 Public Class frmRptFilterCode
     Private Sub frmRptFilterCode_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Me.Tbl_Inv_L42TableAdapter.Fill(Me.DSRptCode.tbl_Inv_L42)
+        Try
+            Me.Tbl_Inv_L42TableAdapter.Fill(Me.DSRptCode.tbl_Inv_L42)
+        Catch ex As Exception
+
+        End Try
         Me.Tbl_Inv_L41TableAdapter.Fill(Me.DSRptCode.tbl_Inv_L41)
         Me.Tbl_Inv_L3TableAdapter.Fill(Me.DSRptCode.tbl_Inv_L3)
         Me.Tbl_Inv_L2TableAdapter.Fill(Me.DSRptCode.tbl_Inv_L2)

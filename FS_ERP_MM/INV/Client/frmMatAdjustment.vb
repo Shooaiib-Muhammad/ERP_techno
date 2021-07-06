@@ -3,7 +3,11 @@
         If frmLoginVer.UserID = 184 Or frmLoginVer.UserID = 69 Then
             Me.Tbl_Inv_L4TableAdapter.FillBy(Me.DsAdjustEnteries.tbl_Inv_L4)
         Else
-            Me.Tbl_Inv_L4TableAdapter.Fill(Me.DsAdjustEnteries.tbl_Inv_L4)
+            Try
+                Me.Tbl_Inv_L4TableAdapter.Fill(Me.DsAdjustEnteries.tbl_Inv_L4)
+            Catch ex As Exception
+
+            End Try
         End If
 
         Me.Tbl_Inv_Tran_OutTableAdapter.Fill(Me.DsAdjustEnteries.tbl_Inv_Tran_Out)
@@ -47,10 +51,14 @@
         Me.Tbl_Inv_Tran_InTableAdapter.FillBy(Me.DsAdjustEnteries.tbl_Inv_Tran_In, Me.DayNoLabel1.Text)
     End Sub
     Sub SaveRecordOut()
-        Me.Validate()
-        Me.Tbl_Inv_Tran_OutBindingSource.EndEdit()
-        Me.Tbl_Inv_Tran_OutTableAdapter.Update(Me.DsAdjustEnteries.tbl_Inv_Tran_Out)
-        Me.Tbl_Inv_Tran_OutTableAdapter.FillBy(Me.DsAdjustEnteries.tbl_Inv_Tran_Out, Me.DayNoLabel1.Text)
+        Try
+            Me.Validate()
+            Me.Tbl_Inv_Tran_OutBindingSource.EndEdit()
+            Me.Tbl_Inv_Tran_OutTableAdapter.Update(Me.DsAdjustEnteries.tbl_Inv_Tran_Out)
+            Me.Tbl_Inv_Tran_OutTableAdapter.FillBy(Me.DsAdjustEnteries.tbl_Inv_Tran_Out, Me.DayNoLabel1.Text)
+        Catch ex As Exception
+
+        End Try
     End Sub
     Private Sub Tbl_Inv_Tran_InDataGridView_EditingControlShowing(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewEditingControlShowingEventArgs) Handles Tbl_Inv_Tran_InDataGridView.EditingControlShowing
         If TypeOf e.Control Is DataGridViewComboBoxEditingControl Then
@@ -90,6 +98,10 @@
     End Sub
 
     Private Sub Tbl_Inv_Tran_InDataGridView_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles Tbl_Inv_Tran_InDataGridView.CellContentClick
+
+    End Sub
+
+    Private Sub Tbl_Inv_Tran_OutDataGridView_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles Tbl_Inv_Tran_OutDataGridView.CellContentClick
 
     End Sub
 End Class

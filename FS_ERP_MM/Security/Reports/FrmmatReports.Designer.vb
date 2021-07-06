@@ -313,7 +313,7 @@ Partial Class FrmmatReports
         '
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(343, 262)
+        Me.Button1.Location = New System.Drawing.Point(463, 212)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(114, 44)
         Me.Button1.TabIndex = 46

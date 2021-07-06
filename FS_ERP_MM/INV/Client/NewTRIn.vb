@@ -4,7 +4,11 @@
 
 
     Private Sub NewTRIn_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.Tbl_Inv_L4TableAdapter.Fill(Me.DSNewTranIn.tbl_Inv_L4)
+        Try
+            Me.Tbl_Inv_L4TableAdapter.Fill(Me.DSNewTranIn.tbl_Inv_L4)
+        Catch ex As Exception
+
+        End Try
         Try
             Me.Tbl_Inv_Rack_InfoTableAdapter.Fill(Me.DSMat_Brow.tbl_Inv_Rack_Info)
         Catch ex As Exception

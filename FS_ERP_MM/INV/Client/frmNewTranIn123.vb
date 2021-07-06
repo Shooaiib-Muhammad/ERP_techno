@@ -2,7 +2,11 @@
     Private Sub frmNewTranIn_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'DSLOM.tbl_Pur_UnitOfMeasurement' table. You can move, or remove it, as needed.
         Me.Tbl_Pur_UnitOfMeasurementTableAdapter.Fill(Me.DSLOM.tbl_Pur_UnitOfMeasurement)
-        Me.Tbl_Inv_L4TableAdapter.FillBy3(Me.DSNewTranIn.tbl_Inv_L4)
+        Try
+            Me.Tbl_Inv_L4TableAdapter.FillBy3(Me.DSNewTranIn.tbl_Inv_L4)
+        Catch ex As Exception
+
+        End Try
         Try
             Me.Tbl_Inv_Rack_InfoTableAdapter.Fill(Me.DSMat_Brow.tbl_Inv_Rack_Info)
         Catch ex As Exception

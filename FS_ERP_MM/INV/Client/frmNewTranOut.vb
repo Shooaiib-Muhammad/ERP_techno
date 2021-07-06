@@ -20,7 +20,11 @@ Public Class frmNewTranOut
         Me.Tbl_Inv_ExternalCustTableAdapter.Fill(Me.DSNewTranOut.tbl_Inv_ExternalCust)
         Me.Tbl_Inv_LocalCustTableAdapter.Fill(Me.DSNewTranOut.tbl_Inv_LocalCust)
         Me.Tbl_CompaniesTableAdapter.Fill(Me.DSNewTranOut.tbl_Companies)
-        Me.Tbl_Inv_L4TableAdapter.Fill(Me.DSNewTranOut.tbl_Inv_L4)
+        Try
+            Me.Tbl_Inv_L4TableAdapter.Fill(Me.DSNewTranOut.tbl_Inv_L4)
+        Catch ex As Exception
+
+        End Try
         Me.Tbl_Pur_UnitOfMeasurementTableAdapter.Fill(Me.DSNewTranOut.tbl_Pur_UnitOfMeasurement)
         Try
             Me.Tbl_Inv_Tran_DateTableAdapter.Fill(Me.DSNewTranOut.tbl_Inv_Tran_Date, CDate(Now.Date))

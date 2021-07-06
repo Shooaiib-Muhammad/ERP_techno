@@ -7,7 +7,11 @@
         Me.Tbl_Pur_UnitOfMeasurementTableAdapter.Fill(Me.DSCodeProc.tbl_Pur_UnitOfMeasurement)
         Me.Tbl_Pro_CountryTableAdapter.Fill(Me.DSCodeProc.tbl_Pro_Country)
         Me.Tbl_MM_CurrancyTableAdapter.Fill(Me.DSCodeProc.tbl_MM_Currancy)
-        Me.Tbl_Inv_L4TableAdapter.Fill(Me.DSCodeProc.tbl_Inv_L4)
+        Try
+            Me.Tbl_Inv_L4TableAdapter.Fill(Me.DSCodeProc.tbl_Inv_L4)
+        Catch ex As Exception
+
+        End Try
         Me.Tbl_Inv_L3TableAdapter.Fill(Me.DSCodeProc.tbl_Inv_L3)
         Me.Tbl_Inv_L2TableAdapter.Fill(Me.DSCodeProc.tbl_Inv_L2)
         Me.Tbl_Inv_L1TableAdapter.Fill(Me.DSCodeProc.tbl_Inv_L1)
