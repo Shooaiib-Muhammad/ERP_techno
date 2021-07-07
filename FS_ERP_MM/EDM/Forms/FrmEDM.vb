@@ -13,7 +13,11 @@
         'TODO: This line of code loads data into the 'DSEDM.View_MAX_PODNo' table. You can move, or remove it, as needed.
         'Me.View_MAX_PODNoTableAdapter.Fill(Me.DSEDM.View_MAX_PODNo)
         'TODO: This line of code loads data into the 'DSEDM.View_Pur_PO_D' table. You can move, or remove it, as needed.
-        Me.View_Pur_PO_DTableAdapter.Fill(Me.DSEDM.View_Pur_PO_D)
+        Try
+            Me.View_Pur_PO_DTableAdapter.Fill(Me.DSEDM.View_Pur_PO_D)
+        Catch ex As Exception
+
+        End Try
 
         Me.Tbl_Pur_POTableAdapter.Fill(Me.DSEDM.tbl_Pur_PO)
         'TODO: This line of code loads data into the 'DSEDM.tbl_Pur_Supplier_Code' table. You can move, or remove it, as needed.

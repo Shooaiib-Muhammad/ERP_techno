@@ -36,7 +36,18 @@ Partial Class frmNewTranOut
         Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle27 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -62,17 +73,6 @@ Partial Class frmNewTranOut
         Dim DataGridViewCellStyle47 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle48 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle49 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.DayNoLabel1 = New System.Windows.Forms.Label()
@@ -193,6 +193,19 @@ Partial Class frmNewTranOut
         Me.btnMTP = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.MRGP = New System.Windows.Forms.TabPage()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewComboBoxColumn2 = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.DataGridViewTextBoxColumn14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewComboBoxColumn3 = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.DataGridViewTextBoxColumn16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn37 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn38 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewComboBoxColumn15 = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.DataGridViewTextBoxColumn61 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewButtonColumn1 = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.BindingNavigator3 = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.ToolStripButton8 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripLabel2 = New System.Windows.Forms.ToolStripLabel()
@@ -208,6 +221,18 @@ Partial Class frmNewTranOut
         Me.ToolStripButton14 = New System.Windows.Forms.ToolStripButton()
         Me.PRGP = New System.Windows.Forms.TabPage()
         Me.DataGridView3 = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewComboBoxColumn4 = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn21 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewComboBoxColumn5 = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.DataGridViewTextBoxColumn22 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn39 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn40 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewComboBoxColumn16 = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.DataGridViewButtonColumn2 = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.BindingNavigator4 = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.ToolStripButton15 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripLabel4 = New System.Windows.Forms.ToolStripLabel()
@@ -331,31 +356,6 @@ Partial Class frmNewTranOut
         Me.BindingNavigatorMoveLastItem2 = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator8 = New System.Windows.Forms.ToolStripSeparator()
         Me.SaveToolStripButton1 = New System.Windows.Forms.ToolStripButton()
-        Me.DataGridViewTextBoxColumn17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewComboBoxColumn4 = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn21 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewComboBoxColumn5 = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.DataGridViewTextBoxColumn22 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn39 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn40 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewComboBoxColumn16 = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.DataGridViewButtonColumn2 = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewComboBoxColumn2 = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.DataGridViewTextBoxColumn14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewComboBoxColumn3 = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.DataGridViewTextBoxColumn16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn37 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn38 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewComboBoxColumn15 = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.DataGridViewTextBoxColumn61 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewButtonColumn1 = New System.Windows.Forms.DataGridViewButtonColumn()
         DateNameLabel = New System.Windows.Forms.Label()
         Label2 = New System.Windows.Forms.Label()
         Label3 = New System.Windows.Forms.Label()
@@ -1466,6 +1466,132 @@ Partial Class frmNewTranOut
         Me.DataGridView2.TabIndex = 29
         Me.DataGridView2.TabStop = False
         '
+        'DataGridViewTextBoxColumn11
+        '
+        Me.DataGridViewTextBoxColumn11.DataPropertyName = "TranOutID"
+        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.DataGridViewTextBoxColumn11.DefaultCellStyle = DataGridViewCellStyle13
+        Me.DataGridViewTextBoxColumn11.HeaderText = "S.R.No."
+        Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
+        Me.DataGridViewTextBoxColumn11.ReadOnly = True
+        Me.DataGridViewTextBoxColumn11.Width = 80
+        '
+        'DataGridViewTextBoxColumn12
+        '
+        Me.DataGridViewTextBoxColumn12.DataPropertyName = "TranDocNo"
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.DataGridViewTextBoxColumn12.DefaultCellStyle = DataGridViewCellStyle14
+        Me.DataGridViewTextBoxColumn12.HeaderText = "Tran Doc No."
+        Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
+        Me.DataGridViewTextBoxColumn12.Width = 80
+        '
+        'DataGridViewTextBoxColumn13
+        '
+        Me.DataGridViewTextBoxColumn13.DataPropertyName = "TranType"
+        Me.DataGridViewTextBoxColumn13.HeaderText = "TranType"
+        Me.DataGridViewTextBoxColumn13.Name = "DataGridViewTextBoxColumn13"
+        Me.DataGridViewTextBoxColumn13.Visible = False
+        '
+        'DataGridViewComboBoxColumn2
+        '
+        Me.DataGridViewComboBoxColumn2.DataPropertyName = "Code"
+        Me.DataGridViewComboBoxColumn2.DataSource = Me.Tbl_Inv_L4BindingSource
+        Me.DataGridViewComboBoxColumn2.DisplayMember = "L4Name"
+        Me.DataGridViewComboBoxColumn2.DisplayStyleForCurrentCellOnly = True
+        Me.DataGridViewComboBoxColumn2.HeaderText = "Material Name"
+        Me.DataGridViewComboBoxColumn2.Name = "DataGridViewComboBoxColumn2"
+        Me.DataGridViewComboBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewComboBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.DataGridViewComboBoxColumn2.ValueMember = "Code"
+        Me.DataGridViewComboBoxColumn2.Width = 175
+        '
+        'DataGridViewTextBoxColumn14
+        '
+        Me.DataGridViewTextBoxColumn14.DataPropertyName = "Qty"
+        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.DataGridViewTextBoxColumn14.DefaultCellStyle = DataGridViewCellStyle15
+        Me.DataGridViewTextBoxColumn14.HeaderText = "Quantity"
+        Me.DataGridViewTextBoxColumn14.Name = "DataGridViewTextBoxColumn14"
+        Me.DataGridViewTextBoxColumn14.Width = 75
+        '
+        'DataGridViewTextBoxColumn15
+        '
+        Me.DataGridViewTextBoxColumn15.DataPropertyName = "UOM"
+        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.DataGridViewTextBoxColumn15.DefaultCellStyle = DataGridViewCellStyle16
+        Me.DataGridViewTextBoxColumn15.HeaderText = "UOM"
+        Me.DataGridViewTextBoxColumn15.Name = "DataGridViewTextBoxColumn15"
+        Me.DataGridViewTextBoxColumn15.ReadOnly = True
+        Me.DataGridViewTextBoxColumn15.Width = 60
+        '
+        'DataGridViewComboBoxColumn3
+        '
+        Me.DataGridViewComboBoxColumn3.DataPropertyName = "SupplierID"
+        Me.DataGridViewComboBoxColumn3.DataSource = Me.Tbl_Inv_SupplierBindingSource
+        Me.DataGridViewComboBoxColumn3.DisplayMember = "CompanyName"
+        Me.DataGridViewComboBoxColumn3.DisplayStyleForCurrentCellOnly = True
+        Me.DataGridViewComboBoxColumn3.HeaderText = "Supplier Name"
+        Me.DataGridViewComboBoxColumn3.Name = "DataGridViewComboBoxColumn3"
+        Me.DataGridViewComboBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewComboBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.DataGridViewComboBoxColumn3.ValueMember = "SupplierID"
+        Me.DataGridViewComboBoxColumn3.Width = 145
+        '
+        'DataGridViewTextBoxColumn16
+        '
+        Me.DataGridViewTextBoxColumn16.DataPropertyName = "Naration"
+        Me.DataGridViewTextBoxColumn16.HeaderText = "Description"
+        Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
+        Me.DataGridViewTextBoxColumn16.Width = 130
+        '
+        'DataGridViewTextBoxColumn37
+        '
+        Me.DataGridViewTextBoxColumn37.DataPropertyName = "PPU"
+        Me.DataGridViewTextBoxColumn37.HeaderText = "PPU"
+        Me.DataGridViewTextBoxColumn37.Name = "DataGridViewTextBoxColumn37"
+        Me.DataGridViewTextBoxColumn37.Visible = False
+        '
+        'DataGridViewTextBoxColumn38
+        '
+        Me.DataGridViewTextBoxColumn38.DataPropertyName = "Currency"
+        Me.DataGridViewTextBoxColumn38.HeaderText = "Currency"
+        Me.DataGridViewTextBoxColumn38.Name = "DataGridViewTextBoxColumn38"
+        Me.DataGridViewTextBoxColumn38.Visible = False
+        '
+        'DataGridViewComboBoxColumn15
+        '
+        Me.DataGridViewComboBoxColumn15.DataPropertyName = "RackId"
+        Me.DataGridViewComboBoxColumn15.DataSource = Me.Tbl_Inv_Rack_InfoBindingSource
+        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        Me.DataGridViewComboBoxColumn15.DefaultCellStyle = DataGridViewCellStyle17
+        Me.DataGridViewComboBoxColumn15.DisplayMember = "RackNo"
+        Me.DataGridViewComboBoxColumn15.DisplayStyleForCurrentCellOnly = True
+        Me.DataGridViewComboBoxColumn15.HeaderText = "Rack No."
+        Me.DataGridViewComboBoxColumn15.Name = "DataGridViewComboBoxColumn15"
+        Me.DataGridViewComboBoxColumn15.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewComboBoxColumn15.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.DataGridViewComboBoxColumn15.ValueMember = "RackId"
+        '
+        'DataGridViewTextBoxColumn61
+        '
+        Me.DataGridViewTextBoxColumn61.DataPropertyName = "ReturnDate"
+        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle18.Format = "d"
+        Me.DataGridViewTextBoxColumn61.DefaultCellStyle = DataGridViewCellStyle18
+        Me.DataGridViewTextBoxColumn61.HeaderText = "ReturnDate"
+        Me.DataGridViewTextBoxColumn61.Name = "DataGridViewTextBoxColumn61"
+        '
+        'DataGridViewButtonColumn1
+        '
+        Me.DataGridViewButtonColumn1.HeaderText = "Show Report"
+        Me.DataGridViewButtonColumn1.Name = "DataGridViewButtonColumn1"
+        Me.DataGridViewButtonColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewButtonColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.DataGridViewButtonColumn1.Text = "Show Report"
+        Me.DataGridViewButtonColumn1.ToolTipText = "Show Report"
+        Me.DataGridViewButtonColumn1.UseColumnTextForButtonValue = True
+        Me.DataGridViewButtonColumn1.Width = 85
+        '
         'BindingNavigator3
         '
         Me.BindingNavigator3.AddNewItem = Me.ToolStripButton8
@@ -1612,6 +1738,123 @@ Partial Class frmNewTranOut
         Me.DataGridView3.Size = New System.Drawing.Size(1079, 480)
         Me.DataGridView3.TabIndex = 30
         Me.DataGridView3.TabStop = False
+        '
+        'DataGridViewTextBoxColumn17
+        '
+        Me.DataGridViewTextBoxColumn17.DataPropertyName = "TranOutID"
+        DataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.DataGridViewTextBoxColumn17.DefaultCellStyle = DataGridViewCellStyle20
+        Me.DataGridViewTextBoxColumn17.HeaderText = "S.R.No."
+        Me.DataGridViewTextBoxColumn17.Name = "DataGridViewTextBoxColumn17"
+        Me.DataGridViewTextBoxColumn17.ReadOnly = True
+        Me.DataGridViewTextBoxColumn17.Width = 80
+        '
+        'DataGridViewTextBoxColumn18
+        '
+        Me.DataGridViewTextBoxColumn18.DataPropertyName = "TranDocNo"
+        DataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.DataGridViewTextBoxColumn18.DefaultCellStyle = DataGridViewCellStyle21
+        Me.DataGridViewTextBoxColumn18.HeaderText = "Tran Doc No."
+        Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
+        Me.DataGridViewTextBoxColumn18.Width = 70
+        '
+        'DataGridViewTextBoxColumn19
+        '
+        Me.DataGridViewTextBoxColumn19.DataPropertyName = "TranType"
+        Me.DataGridViewTextBoxColumn19.HeaderText = "TranType"
+        Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
+        Me.DataGridViewTextBoxColumn19.Visible = False
+        '
+        'DataGridViewComboBoxColumn4
+        '
+        Me.DataGridViewComboBoxColumn4.DataPropertyName = "Code"
+        Me.DataGridViewComboBoxColumn4.DataSource = Me.Tbl_Inv_L4BindingSource
+        Me.DataGridViewComboBoxColumn4.DisplayMember = "L4Name"
+        Me.DataGridViewComboBoxColumn4.DisplayStyleForCurrentCellOnly = True
+        Me.DataGridViewComboBoxColumn4.HeaderText = "Material Name"
+        Me.DataGridViewComboBoxColumn4.Name = "DataGridViewComboBoxColumn4"
+        Me.DataGridViewComboBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewComboBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.DataGridViewComboBoxColumn4.ValueMember = "Code"
+        Me.DataGridViewComboBoxColumn4.Width = 175
+        '
+        'DataGridViewTextBoxColumn20
+        '
+        Me.DataGridViewTextBoxColumn20.DataPropertyName = "Qty"
+        DataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.DataGridViewTextBoxColumn20.DefaultCellStyle = DataGridViewCellStyle22
+        Me.DataGridViewTextBoxColumn20.HeaderText = "Quantity"
+        Me.DataGridViewTextBoxColumn20.Name = "DataGridViewTextBoxColumn20"
+        Me.DataGridViewTextBoxColumn20.Width = 70
+        '
+        'DataGridViewTextBoxColumn21
+        '
+        Me.DataGridViewTextBoxColumn21.DataPropertyName = "UOM"
+        DataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.DataGridViewTextBoxColumn21.DefaultCellStyle = DataGridViewCellStyle23
+        Me.DataGridViewTextBoxColumn21.HeaderText = "UOM"
+        Me.DataGridViewTextBoxColumn21.Name = "DataGridViewTextBoxColumn21"
+        Me.DataGridViewTextBoxColumn21.ReadOnly = True
+        Me.DataGridViewTextBoxColumn21.Width = 60
+        '
+        'DataGridViewComboBoxColumn5
+        '
+        Me.DataGridViewComboBoxColumn5.DataPropertyName = "SupplierID"
+        Me.DataGridViewComboBoxColumn5.DataSource = Me.Tbl_Inv_SupplierBindingSource
+        Me.DataGridViewComboBoxColumn5.DisplayMember = "CompanyName"
+        Me.DataGridViewComboBoxColumn5.DisplayStyleForCurrentCellOnly = True
+        Me.DataGridViewComboBoxColumn5.HeaderText = "Supplier Name"
+        Me.DataGridViewComboBoxColumn5.Name = "DataGridViewComboBoxColumn5"
+        Me.DataGridViewComboBoxColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewComboBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.DataGridViewComboBoxColumn5.ValueMember = "SupplierID"
+        Me.DataGridViewComboBoxColumn5.Width = 145
+        '
+        'DataGridViewTextBoxColumn22
+        '
+        Me.DataGridViewTextBoxColumn22.DataPropertyName = "Naration"
+        Me.DataGridViewTextBoxColumn22.HeaderText = "Description"
+        Me.DataGridViewTextBoxColumn22.Name = "DataGridViewTextBoxColumn22"
+        Me.DataGridViewTextBoxColumn22.Width = 130
+        '
+        'DataGridViewTextBoxColumn39
+        '
+        Me.DataGridViewTextBoxColumn39.DataPropertyName = "PPU"
+        Me.DataGridViewTextBoxColumn39.HeaderText = "PPU"
+        Me.DataGridViewTextBoxColumn39.Name = "DataGridViewTextBoxColumn39"
+        Me.DataGridViewTextBoxColumn39.Visible = False
+        '
+        'DataGridViewTextBoxColumn40
+        '
+        Me.DataGridViewTextBoxColumn40.DataPropertyName = "Currency"
+        Me.DataGridViewTextBoxColumn40.HeaderText = "Currency"
+        Me.DataGridViewTextBoxColumn40.Name = "DataGridViewTextBoxColumn40"
+        Me.DataGridViewTextBoxColumn40.Visible = False
+        '
+        'DataGridViewComboBoxColumn16
+        '
+        Me.DataGridViewComboBoxColumn16.DataPropertyName = "RackId"
+        Me.DataGridViewComboBoxColumn16.DataSource = Me.Tbl_Inv_Rack_InfoBindingSource
+        DataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        Me.DataGridViewComboBoxColumn16.DefaultCellStyle = DataGridViewCellStyle24
+        Me.DataGridViewComboBoxColumn16.DisplayMember = "RackNo"
+        Me.DataGridViewComboBoxColumn16.DisplayStyleForCurrentCellOnly = True
+        Me.DataGridViewComboBoxColumn16.HeaderText = "Rack No."
+        Me.DataGridViewComboBoxColumn16.Name = "DataGridViewComboBoxColumn16"
+        Me.DataGridViewComboBoxColumn16.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewComboBoxColumn16.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.DataGridViewComboBoxColumn16.ValueMember = "RackId"
+        '
+        'DataGridViewButtonColumn2
+        '
+        Me.DataGridViewButtonColumn2.HeaderText = "Show Report"
+        Me.DataGridViewButtonColumn2.Name = "DataGridViewButtonColumn2"
+        Me.DataGridViewButtonColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewButtonColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.DataGridViewButtonColumn2.Text = "Show Report"
+        Me.DataGridViewButtonColumn2.ToolTipText = "Show Report"
+        Me.DataGridViewButtonColumn2.UseColumnTextForButtonValue = True
+        Me.DataGridViewButtonColumn2.Width = 95
         '
         'BindingNavigator4
         '
@@ -2795,249 +3038,6 @@ Partial Class frmNewTranOut
         Me.SaveToolStripButton1.Name = "SaveToolStripButton1"
         Me.SaveToolStripButton1.Size = New System.Drawing.Size(23, 22)
         Me.SaveToolStripButton1.Text = "&Save"
-        '
-        'DataGridViewTextBoxColumn17
-        '
-        Me.DataGridViewTextBoxColumn17.DataPropertyName = "TranOutID"
-        DataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.DataGridViewTextBoxColumn17.DefaultCellStyle = DataGridViewCellStyle20
-        Me.DataGridViewTextBoxColumn17.HeaderText = "S.R.No."
-        Me.DataGridViewTextBoxColumn17.Name = "DataGridViewTextBoxColumn17"
-        Me.DataGridViewTextBoxColumn17.ReadOnly = True
-        Me.DataGridViewTextBoxColumn17.Width = 80
-        '
-        'DataGridViewTextBoxColumn18
-        '
-        Me.DataGridViewTextBoxColumn18.DataPropertyName = "TranDocNo"
-        DataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.DataGridViewTextBoxColumn18.DefaultCellStyle = DataGridViewCellStyle21
-        Me.DataGridViewTextBoxColumn18.HeaderText = "Tran Doc No."
-        Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
-        Me.DataGridViewTextBoxColumn18.Width = 70
-        '
-        'DataGridViewTextBoxColumn19
-        '
-        Me.DataGridViewTextBoxColumn19.DataPropertyName = "TranType"
-        Me.DataGridViewTextBoxColumn19.HeaderText = "TranType"
-        Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
-        Me.DataGridViewTextBoxColumn19.Visible = False
-        '
-        'DataGridViewComboBoxColumn4
-        '
-        Me.DataGridViewComboBoxColumn4.DataPropertyName = "Code"
-        Me.DataGridViewComboBoxColumn4.DataSource = Me.Tbl_Inv_L4BindingSource
-        Me.DataGridViewComboBoxColumn4.DisplayMember = "L4Name"
-        Me.DataGridViewComboBoxColumn4.DisplayStyleForCurrentCellOnly = True
-        Me.DataGridViewComboBoxColumn4.HeaderText = "Material Name"
-        Me.DataGridViewComboBoxColumn4.Name = "DataGridViewComboBoxColumn4"
-        Me.DataGridViewComboBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewComboBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.DataGridViewComboBoxColumn4.ValueMember = "Code"
-        Me.DataGridViewComboBoxColumn4.Width = 175
-        '
-        'DataGridViewTextBoxColumn20
-        '
-        Me.DataGridViewTextBoxColumn20.DataPropertyName = "Qty"
-        DataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.DataGridViewTextBoxColumn20.DefaultCellStyle = DataGridViewCellStyle22
-        Me.DataGridViewTextBoxColumn20.HeaderText = "Quantity"
-        Me.DataGridViewTextBoxColumn20.Name = "DataGridViewTextBoxColumn20"
-        Me.DataGridViewTextBoxColumn20.Width = 70
-        '
-        'DataGridViewTextBoxColumn21
-        '
-        Me.DataGridViewTextBoxColumn21.DataPropertyName = "UOM"
-        DataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.DataGridViewTextBoxColumn21.DefaultCellStyle = DataGridViewCellStyle23
-        Me.DataGridViewTextBoxColumn21.HeaderText = "UOM"
-        Me.DataGridViewTextBoxColumn21.Name = "DataGridViewTextBoxColumn21"
-        Me.DataGridViewTextBoxColumn21.ReadOnly = True
-        Me.DataGridViewTextBoxColumn21.Width = 60
-        '
-        'DataGridViewComboBoxColumn5
-        '
-        Me.DataGridViewComboBoxColumn5.DataPropertyName = "SupplierID"
-        Me.DataGridViewComboBoxColumn5.DataSource = Me.Tbl_Inv_SupplierBindingSource
-        Me.DataGridViewComboBoxColumn5.DisplayMember = "CompanyName"
-        Me.DataGridViewComboBoxColumn5.DisplayStyleForCurrentCellOnly = True
-        Me.DataGridViewComboBoxColumn5.HeaderText = "Supplier Name"
-        Me.DataGridViewComboBoxColumn5.Name = "DataGridViewComboBoxColumn5"
-        Me.DataGridViewComboBoxColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewComboBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.DataGridViewComboBoxColumn5.ValueMember = "SupplierID"
-        Me.DataGridViewComboBoxColumn5.Width = 145
-        '
-        'DataGridViewTextBoxColumn22
-        '
-        Me.DataGridViewTextBoxColumn22.DataPropertyName = "Naration"
-        Me.DataGridViewTextBoxColumn22.HeaderText = "Description"
-        Me.DataGridViewTextBoxColumn22.Name = "DataGridViewTextBoxColumn22"
-        Me.DataGridViewTextBoxColumn22.Width = 130
-        '
-        'DataGridViewTextBoxColumn39
-        '
-        Me.DataGridViewTextBoxColumn39.DataPropertyName = "PPU"
-        Me.DataGridViewTextBoxColumn39.HeaderText = "PPU"
-        Me.DataGridViewTextBoxColumn39.Name = "DataGridViewTextBoxColumn39"
-        Me.DataGridViewTextBoxColumn39.Visible = False
-        '
-        'DataGridViewTextBoxColumn40
-        '
-        Me.DataGridViewTextBoxColumn40.DataPropertyName = "Currency"
-        Me.DataGridViewTextBoxColumn40.HeaderText = "Currency"
-        Me.DataGridViewTextBoxColumn40.Name = "DataGridViewTextBoxColumn40"
-        Me.DataGridViewTextBoxColumn40.Visible = False
-        '
-        'DataGridViewComboBoxColumn16
-        '
-        Me.DataGridViewComboBoxColumn16.DataPropertyName = "RackId"
-        Me.DataGridViewComboBoxColumn16.DataSource = Me.Tbl_Inv_Rack_InfoBindingSource
-        DataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        Me.DataGridViewComboBoxColumn16.DefaultCellStyle = DataGridViewCellStyle24
-        Me.DataGridViewComboBoxColumn16.DisplayMember = "RackNo"
-        Me.DataGridViewComboBoxColumn16.DisplayStyleForCurrentCellOnly = True
-        Me.DataGridViewComboBoxColumn16.HeaderText = "Rack No."
-        Me.DataGridViewComboBoxColumn16.Name = "DataGridViewComboBoxColumn16"
-        Me.DataGridViewComboBoxColumn16.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewComboBoxColumn16.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.DataGridViewComboBoxColumn16.ValueMember = "RackId"
-        '
-        'DataGridViewButtonColumn2
-        '
-        Me.DataGridViewButtonColumn2.HeaderText = "Show Report"
-        Me.DataGridViewButtonColumn2.Name = "DataGridViewButtonColumn2"
-        Me.DataGridViewButtonColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewButtonColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.DataGridViewButtonColumn2.Text = "Show Report"
-        Me.DataGridViewButtonColumn2.ToolTipText = "Show Report"
-        Me.DataGridViewButtonColumn2.UseColumnTextForButtonValue = True
-        Me.DataGridViewButtonColumn2.Width = 95
-        '
-        'DataGridViewTextBoxColumn11
-        '
-        Me.DataGridViewTextBoxColumn11.DataPropertyName = "TranOutID"
-        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.DataGridViewTextBoxColumn11.DefaultCellStyle = DataGridViewCellStyle13
-        Me.DataGridViewTextBoxColumn11.HeaderText = "S.R.No."
-        Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
-        Me.DataGridViewTextBoxColumn11.ReadOnly = True
-        Me.DataGridViewTextBoxColumn11.Width = 80
-        '
-        'DataGridViewTextBoxColumn12
-        '
-        Me.DataGridViewTextBoxColumn12.DataPropertyName = "TranDocNo"
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.DataGridViewTextBoxColumn12.DefaultCellStyle = DataGridViewCellStyle14
-        Me.DataGridViewTextBoxColumn12.HeaderText = "Tran Doc No."
-        Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
-        Me.DataGridViewTextBoxColumn12.Width = 80
-        '
-        'DataGridViewTextBoxColumn13
-        '
-        Me.DataGridViewTextBoxColumn13.DataPropertyName = "TranType"
-        Me.DataGridViewTextBoxColumn13.HeaderText = "TranType"
-        Me.DataGridViewTextBoxColumn13.Name = "DataGridViewTextBoxColumn13"
-        Me.DataGridViewTextBoxColumn13.Visible = False
-        '
-        'DataGridViewComboBoxColumn2
-        '
-        Me.DataGridViewComboBoxColumn2.DataPropertyName = "Code"
-        Me.DataGridViewComboBoxColumn2.DataSource = Me.Tbl_Inv_L4BindingSource
-        Me.DataGridViewComboBoxColumn2.DisplayMember = "L4Name"
-        Me.DataGridViewComboBoxColumn2.DisplayStyleForCurrentCellOnly = True
-        Me.DataGridViewComboBoxColumn2.HeaderText = "Material Name"
-        Me.DataGridViewComboBoxColumn2.Name = "DataGridViewComboBoxColumn2"
-        Me.DataGridViewComboBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewComboBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.DataGridViewComboBoxColumn2.ValueMember = "Code"
-        Me.DataGridViewComboBoxColumn2.Width = 175
-        '
-        'DataGridViewTextBoxColumn14
-        '
-        Me.DataGridViewTextBoxColumn14.DataPropertyName = "Qty"
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.DataGridViewTextBoxColumn14.DefaultCellStyle = DataGridViewCellStyle15
-        Me.DataGridViewTextBoxColumn14.HeaderText = "Quantity"
-        Me.DataGridViewTextBoxColumn14.Name = "DataGridViewTextBoxColumn14"
-        Me.DataGridViewTextBoxColumn14.Width = 75
-        '
-        'DataGridViewTextBoxColumn15
-        '
-        Me.DataGridViewTextBoxColumn15.DataPropertyName = "UOM"
-        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.DataGridViewTextBoxColumn15.DefaultCellStyle = DataGridViewCellStyle16
-        Me.DataGridViewTextBoxColumn15.HeaderText = "UOM"
-        Me.DataGridViewTextBoxColumn15.Name = "DataGridViewTextBoxColumn15"
-        Me.DataGridViewTextBoxColumn15.ReadOnly = True
-        Me.DataGridViewTextBoxColumn15.Width = 60
-        '
-        'DataGridViewComboBoxColumn3
-        '
-        Me.DataGridViewComboBoxColumn3.DataPropertyName = "SupplierID"
-        Me.DataGridViewComboBoxColumn3.DataSource = Me.Tbl_Inv_SupplierBindingSource
-        Me.DataGridViewComboBoxColumn3.DisplayMember = "CompanyName"
-        Me.DataGridViewComboBoxColumn3.DisplayStyleForCurrentCellOnly = True
-        Me.DataGridViewComboBoxColumn3.HeaderText = "Supplier Name"
-        Me.DataGridViewComboBoxColumn3.Name = "DataGridViewComboBoxColumn3"
-        Me.DataGridViewComboBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewComboBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.DataGridViewComboBoxColumn3.ValueMember = "SupplierID"
-        Me.DataGridViewComboBoxColumn3.Width = 145
-        '
-        'DataGridViewTextBoxColumn16
-        '
-        Me.DataGridViewTextBoxColumn16.DataPropertyName = "Naration"
-        Me.DataGridViewTextBoxColumn16.HeaderText = "Description"
-        Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
-        Me.DataGridViewTextBoxColumn16.Width = 130
-        '
-        'DataGridViewTextBoxColumn37
-        '
-        Me.DataGridViewTextBoxColumn37.DataPropertyName = "PPU"
-        Me.DataGridViewTextBoxColumn37.HeaderText = "PPU"
-        Me.DataGridViewTextBoxColumn37.Name = "DataGridViewTextBoxColumn37"
-        Me.DataGridViewTextBoxColumn37.Visible = False
-        '
-        'DataGridViewTextBoxColumn38
-        '
-        Me.DataGridViewTextBoxColumn38.DataPropertyName = "Currency"
-        Me.DataGridViewTextBoxColumn38.HeaderText = "Currency"
-        Me.DataGridViewTextBoxColumn38.Name = "DataGridViewTextBoxColumn38"
-        Me.DataGridViewTextBoxColumn38.Visible = False
-        '
-        'DataGridViewComboBoxColumn15
-        '
-        Me.DataGridViewComboBoxColumn15.DataPropertyName = "RackId"
-        Me.DataGridViewComboBoxColumn15.DataSource = Me.Tbl_Inv_Rack_InfoBindingSource
-        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        Me.DataGridViewComboBoxColumn15.DefaultCellStyle = DataGridViewCellStyle17
-        Me.DataGridViewComboBoxColumn15.DisplayMember = "RackNo"
-        Me.DataGridViewComboBoxColumn15.DisplayStyleForCurrentCellOnly = True
-        Me.DataGridViewComboBoxColumn15.HeaderText = "Rack No."
-        Me.DataGridViewComboBoxColumn15.Name = "DataGridViewComboBoxColumn15"
-        Me.DataGridViewComboBoxColumn15.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewComboBoxColumn15.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.DataGridViewComboBoxColumn15.ValueMember = "RackId"
-        '
-        'DataGridViewTextBoxColumn61
-        '
-        Me.DataGridViewTextBoxColumn61.DataPropertyName = "ReturnDate"
-        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle18.Format = "d"
-        Me.DataGridViewTextBoxColumn61.DefaultCellStyle = DataGridViewCellStyle18
-        Me.DataGridViewTextBoxColumn61.HeaderText = "ReturnDate"
-        Me.DataGridViewTextBoxColumn61.Name = "DataGridViewTextBoxColumn61"
-        '
-        'DataGridViewButtonColumn1
-        '
-        Me.DataGridViewButtonColumn1.HeaderText = "Show Report"
-        Me.DataGridViewButtonColumn1.Name = "DataGridViewButtonColumn1"
-        Me.DataGridViewButtonColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewButtonColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.DataGridViewButtonColumn1.Text = "Show Report"
-        Me.DataGridViewButtonColumn1.ToolTipText = "Show Report"
-        Me.DataGridViewButtonColumn1.UseColumnTextForButtonValue = True
-        Me.DataGridViewButtonColumn1.Width = 85
         '
         'frmNewTranOut
         '

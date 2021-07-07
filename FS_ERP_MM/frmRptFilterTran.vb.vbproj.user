@@ -2,7 +2,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
     <ProjectView>ShowAllFiles</ProjectView>
-    <PublishUrlHistory>\\server\it shared\ERPFS\MM\|\\Server\IT Shared\ERPFS\MM\|publish\</PublishUrlHistory>
+    <PublishUrlHistory>\\server\it shared\ERPFS\Techno\|\\server\it shared\ERPFS\MM\|\\Server\IT Shared\ERPFS\MM\|publish\</PublishUrlHistory>
     <InstallUrlHistory>
     </InstallUrlHistory>
     <SupportUrlHistory>

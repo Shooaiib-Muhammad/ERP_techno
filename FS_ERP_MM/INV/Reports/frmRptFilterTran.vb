@@ -216,14 +216,14 @@ Public Class frmRptFilterTran
             Path = "" & frmLoginVer.Reportpath & "\New\RptProcessedBladderRec.rpt"
         ElseIf Me.RadioButton7.Checked Then
             Filter = "{tbl_Inv_Tran_Date.DateName} in # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# to # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " #"
-            Path = "\\server\myreports$\FSERPMM\WareHouse\RptInvIssuance.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvIssuance.rpt"
         ElseIf Me.RadioButton6.Checked Then
             Filter = "{tbl_Inv_Tran_Date.DateName} in # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# to # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " #"
-            Path = "\\server\myreports$\FSERPMM\WareHouse\RptInvReceiving.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\RptInvReceiving.rpt"
         ElseIf Me.RadioButton10.Checked Then
             Filter = "{View_Bladder_Billing_Transaction.DateName} in # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# to # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " #"
             Param = "FromDate = " & Format(Me.DTPicker1.Value, "dd/MM/yyyy") & "&ToDate=" & Format(Me.DTPicker2.Value, "dd/MM/yyyy") & ""
-            Path = "\\server\myreports$\FSERPMM\Billing\RptBillMaker.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\Billing\RptBillMaker.rpt"
         ElseIf Me.RadioButton11.Checked Then
             Filter = "{View_Bladder_Billing_Transaction.DateName} in # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# to # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " #"
             Param = "FromDate = " & Format(Me.DTPicker1.Value, "dd/MM/yyyy") & "&ToDate=" & Format(Me.DTPicker2.Value, "dd/MM/yyyy") & ""
@@ -241,7 +241,7 @@ Public Class frmRptFilterTran
 
             '{View_Rpt_Mat_Requisition_Cancel.PrdLineName} = "MLP"
             'Param = "FromDate = " & Format(Me.DTPicker1.Value, "dd/MM/yyyy") & "&ToDate=" & Format(Me.DTPicker2.Value, "dd/MM/yyyy") & ""
-            Path = "\\server\myreports$\ERPPPS\Material\MatReqCancel.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\Material\MatReqCancel.rpt"
         ElseIf Me.RadioButton19.Checked Then
             If RadioButton14.Checked Then
 
@@ -255,14 +255,14 @@ Public Class frmRptFilterTran
 
             '{View_Rpt_Mat_Requisition_Cancel.PrdLineName} = "MLP"
             'Param = "FromDate = " & Format(Me.DTPicker1.Value, "dd/MM/yyyy") & "&ToDate=" & Format(Me.DTPicker2.Value, "dd/MM/yyyy") & ""
-            Path = "\\server\myreports$\ERPPPS\Material\MatReqCancelAudit.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\MatReqCancelAudit.rpt"
             '
         ElseIf Me.RadioButton18.Checked Then
 
 
             Filter = "{View_PUR_Audit.CompDate} in # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# to # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " #"
 
-            Path = "\\server\myreports$\FSERPMM\Procurement\RptGeneralRec.rpt"
+            Path = "" & frmLoginVer.Reportpath & "\Procurement\RptGeneralRec.rpt"
         ElseIf Me.RadioButton20.Checked Then
             If RadioButton14.Checked = True Then
                 Filter = "{View_Demand_Issuance.DateName}  in # " & Format(Me.DTPicker1.Value, "MM/dd/yyyy") & "# to # " & Format(Me.DTPicker2.Value, "MM/dd/yyyy") & " #"
