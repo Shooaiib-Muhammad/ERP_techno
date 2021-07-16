@@ -10,7 +10,7 @@ Public Class frmRptViewer
         Dim intCounter As Integer
         Try
             objReport.Load(sReportName)
-            objReport.SetDatabaseLogon("ajax", "Forward@123")
+            objReport.SetDatabaseLogon("sa", "Waqas@123")
 
             RptViewer.Refresh()
 
@@ -58,5 +58,9 @@ Public Class frmRptViewer
         End Try
     End Function
     Private Sub RptViewer_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RptViewer.Load
+    End Sub
+
+    Private Sub frmRptViewer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

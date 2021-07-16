@@ -22,7 +22,7 @@ Partial Class frmRptViewer
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.RptViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer
+        Me.RptViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.SuspendLayout()
         '
         'RptViewer
