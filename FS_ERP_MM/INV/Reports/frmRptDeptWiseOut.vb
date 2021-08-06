@@ -3,11 +3,19 @@ Public Class frmRptDeptWiseOut
         'TODO: This line of code loads data into the 'DSLocalCust.tbl_Inv_Supplier' table. You can move, or remove it, as needed.
         Me.Tbl_Inv_SupplierTableAdapter.Fill(Me.DSLocalCust.tbl_Inv_Supplier)
         'TODO: This line of code loads data into the 'DSRptL4Code.tbl_Inv_L42' table. You can move, or remove it, as needed.
-        Me.Tbl_Inv_L42TableAdapter.Fill(Me.DSRptL4Code.tbl_Inv_L42)
+        Try
+            Me.Tbl_Inv_L42TableAdapter.Fill(Me.DSRptL4Code.tbl_Inv_L42)
+        Catch ex As Exception
+
+        End Try
         Me.Tbl_MM_CustomerTableAdapter.Fill(Me.DSLocalCust.tbl_MM_Customer)
         Me.Tbl_CompaniesTableAdapter.Fill(Me.DSLocalCust.tbl_Companies)
         Me.Tbl_Inv_ExternalCustTableAdapter.Fill(Me.DSLocalCust.tbl_Inv_ExternalCust)
-        Me.Tbl_Inv_L41TableAdapter.Fill(Me.DSRptL4Code.tbl_Inv_L41)
+        Try
+            Me.Tbl_Inv_L41TableAdapter.Fill(Me.DSRptL4Code.tbl_Inv_L41)
+        Catch ex As Exception
+
+        End Try
         Me.Tbl_Inv_L3TableAdapter.Fill(Me.DSRptL4Code.tbl_Inv_L3)
         Me.Tbl_Inv_L2TableAdapter.Fill(Me.DSRptL4Code.tbl_Inv_L2)
         Me.Tbl_Inv_L1TableAdapter.Fill(Me.DSRptL4Code.tbl_Inv_L1)

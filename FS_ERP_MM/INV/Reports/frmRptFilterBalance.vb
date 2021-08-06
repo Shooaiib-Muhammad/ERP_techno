@@ -3,14 +3,22 @@ Public Class frmRptFilterBalance
         'TODO: This line of code loads data into the 'DSRptL4Code.tbl_Inv_L_NEW' table. You can move, or remove it, as needed.
 
         'TODO: This line of code loads data into the 'DSRptL4Code.tbl_Inv_L43' table. You can move, or remove it, as needed.
-        Me.Tbl_Inv_L43TableAdapter.Fill(Me.DSRptL4Code.tbl_Inv_L43)
+        Try
+            Me.Tbl_Inv_L43TableAdapter.Fill(Me.DSRptL4Code.tbl_Inv_L43)
+        Catch ex As Exception
+
+        End Try
         Try
             Me.Tbl_Inv_Rack_InfoTableAdapter.Fill(Me.DSMat_Brow.tbl_Inv_Rack_Info)
         Catch ex As Exception
 
         End Try
 
-        Me.Tbl_Inv_L4TableAdapter.Fill(Me.DSRptL4Code.tbl_Inv_L4)
+        Try
+            Me.Tbl_Inv_L4TableAdapter.Fill(Me.DSRptL4Code.tbl_Inv_L4)
+        Catch ex As Exception
+
+        End Try
         Me.Tbl_Inv_L42TableAdapter.Fill(Me.DSRptL4Code.tbl_Inv_L42)
         Me.Tbl_Inv_L41TableAdapter.Fill(Me.DSRptL4Code.tbl_Inv_L41)
         Me.Tbl_Inv_L3TableAdapter.Fill(Me.DSRptL4Code.tbl_Inv_L3)

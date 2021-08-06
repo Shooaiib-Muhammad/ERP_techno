@@ -33,14 +33,14 @@ Partial Class frmGP
         Dim Label9 As System.Windows.Forms.Label
         Dim Label10 As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmGP))
-        Dim DataGridViewCellStyle65 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle66 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle72 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle67 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle68 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle69 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle70 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle71 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
@@ -48,12 +48,15 @@ Partial Class frmGP
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.NameComboBox = New System.Windows.Forms.ComboBox()
+        Me.Tbl_Mat_GatePassBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DSLocalPur = New FS_ERP_MM.DSLocalPur()
+        Me.Tbl_GP_CustomerBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.PurposeTextBox = New System.Windows.Forms.TextBox()
         Me.CarryingPersonTextBox = New System.Windows.Forms.TextBox()
-        Me.CustomerTextBox = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.BindingNavigator1 = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorAddNewItem1 = New System.Windows.Forms.ToolStripButton()
@@ -73,6 +76,7 @@ Partial Class frmGP
         Me.GMNoLabel4 = New System.Windows.Forms.Label()
         Me.EnteryDateLabel1 = New System.Windows.Forms.Label()
         Me.LocalCustIDComboBox = New System.Windows.Forms.ComboBox()
+        Me.CustomerTextBox = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -80,6 +84,12 @@ Partial Class frmGP
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Tbl_Mat_GatePass_DetailsDataGridView = New System.Windows.Forms.DataGridView()
         Me.PDID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.Tbl_Mat_ItemsLayer4BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.Tbl_Mat_MeasurementUnitsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.UserID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DepID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.HODStatus = New System.Windows.Forms.DataGridViewCheckBoxColumn()
@@ -106,14 +116,6 @@ Partial Class frmGP
         Me.RemoveFilterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LocalCustIDLabel2 = New System.Windows.Forms.Label()
         Me.View_userDeptBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DSLocalPur = New FS_ERP_MM.DSLocalPur()
-        Me.Tbl_Mat_GatePassBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.Tbl_Mat_ItemsLayer4BindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.Tbl_Mat_MeasurementUnitsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Tbl_Mat_GatePassTableAdapter = New FS_ERP_MM.DSLocalPurTableAdapters.tbl_Mat_GatePassTableAdapter()
         Me.TableAdapterManager = New FS_ERP_MM.DSLocalPurTableAdapters.TableAdapterManager()
         Me.Tbl_Mat_GatePass_DetailsTableAdapter = New FS_ERP_MM.DSLocalPurTableAdapters.tbl_Mat_GatePass_DetailsTableAdapter()
@@ -122,10 +124,9 @@ Partial Class frmGP
         Me.Tbl_Mat_Inter_DeptTableAdapter = New FS_ERP_MM.DSLocalPurTableAdapters.tbl_Mat_Inter_DeptTableAdapter()
         Me.Tbl_Mat_MeasurementUnitsTableAdapter = New FS_ERP_MM.DSLocalPurTableAdapters.tbl_Mat_MeasurementUnitsTableAdapter()
         Me.View_userDeptTableAdapter = New FS_ERP_MM.DSLocalPurTableAdapters.View_userDeptTableAdapter()
-        Me.Tbl_GP_CustomerBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Tbl_GP_CustomerTableAdapter = New FS_ERP_MM.DSLocalPurTableAdapters.tbl_GP_CustomerTableAdapter()
-        Me.NameComboBox = New System.Windows.Forms.ComboBox()
         Me.Label11 = New System.Windows.Forms.Label()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
         PurposeLabel = New System.Windows.Forms.Label()
         CarryingPersonLabel = New System.Windows.Forms.Label()
         CustomerLabel = New System.Windows.Forms.Label()
@@ -137,21 +138,21 @@ Partial Class frmGP
         Label10 = New System.Windows.Forms.Label()
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        CType(Me.Tbl_Mat_GatePassBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DSLocalPur, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Tbl_GP_CustomerBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.BindingNavigator1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.Tbl_Mat_GatePass_DetailsDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Tbl_Mat_ItemsLayer4BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Tbl_Mat_MeasurementUnitsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tbl_Mat_GatePass_DetailsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BindingNavigator2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.BindingNavigator2.SuspendLayout()
         Me.FilterByGDNo.SuspendLayout()
         CType(Me.View_userDeptBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DSLocalPur, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Tbl_Mat_GatePassBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Tbl_Mat_ItemsLayer4BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Tbl_Mat_MeasurementUnitsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tbl_Mat_Inter_DeptBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Tbl_GP_CustomerBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PurposeLabel
@@ -305,7 +306,7 @@ Partial Class frmGP
         'Panel2
         '
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel2.Controls.Add(Me.NameComboBox)
+        Me.Panel2.Controls.Add(Me.TextBox4)
         Me.Panel2.Controls.Add(Label10)
         Me.Panel2.Controls.Add(Me.TextBox3)
         Me.Panel2.Controls.Add(Label9)
@@ -329,6 +330,35 @@ Partial Class frmGP
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(972, 116)
         Me.Panel2.TabIndex = 21
+        '
+        'NameComboBox
+        '
+        Me.NameComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
+        Me.NameComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.NameComboBox.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.Tbl_Mat_GatePassBindingSource, "Customer", True))
+        Me.NameComboBox.DataSource = Me.Tbl_GP_CustomerBindingSource
+        Me.NameComboBox.DisplayMember = "Name"
+        Me.NameComboBox.FormattingEnabled = True
+        Me.NameComboBox.Location = New System.Drawing.Point(985, 455)
+        Me.NameComboBox.Name = "NameComboBox"
+        Me.NameComboBox.Size = New System.Drawing.Size(303, 21)
+        Me.NameComboBox.TabIndex = 29
+        Me.NameComboBox.ValueMember = "Name"
+        '
+        'Tbl_Mat_GatePassBindingSource
+        '
+        Me.Tbl_Mat_GatePassBindingSource.DataMember = "tbl_Mat_GatePass"
+        Me.Tbl_Mat_GatePassBindingSource.DataSource = Me.DSLocalPur
+        '
+        'DSLocalPur
+        '
+        Me.DSLocalPur.DataSetName = "DSLocalPur"
+        Me.DSLocalPur.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'Tbl_GP_CustomerBindingSource
+        '
+        Me.Tbl_GP_CustomerBindingSource.DataMember = "tbl_GP_Customer"
+        Me.Tbl_GP_CustomerBindingSource.DataSource = Me.DSLocalPur
         '
         'TextBox3
         '
@@ -370,15 +400,6 @@ Partial Class frmGP
         Me.CarryingPersonTextBox.Name = "CarryingPersonTextBox"
         Me.CarryingPersonTextBox.Size = New System.Drawing.Size(256, 20)
         Me.CarryingPersonTextBox.TabIndex = 19
-        '
-        'CustomerTextBox
-        '
-        Me.CustomerTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_Mat_GatePassBindingSource, "Customer", True))
-        Me.CustomerTextBox.Location = New System.Drawing.Point(979, 331)
-        Me.CustomerTextBox.Name = "CustomerTextBox"
-        Me.CustomerTextBox.Size = New System.Drawing.Size(113, 20)
-        Me.CustomerTextBox.TabIndex = 18
-        Me.CustomerTextBox.Visible = False
         '
         'Button1
         '
@@ -465,6 +486,7 @@ Partial Class frmGP
         '
         Me.BindingNavigatorPositionItem1.AccessibleName = "Position"
         Me.BindingNavigatorPositionItem1.AutoSize = False
+        Me.BindingNavigatorPositionItem1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BindingNavigatorPositionItem1.Name = "BindingNavigatorPositionItem1"
         Me.BindingNavigatorPositionItem1.Size = New System.Drawing.Size(50, 21)
         Me.BindingNavigatorPositionItem1.Text = "0"
@@ -558,6 +580,15 @@ Partial Class frmGP
         Me.LocalCustIDComboBox.Size = New System.Drawing.Size(142, 21)
         Me.LocalCustIDComboBox.TabIndex = 2
         '
+        'CustomerTextBox
+        '
+        Me.CustomerTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_Mat_GatePassBindingSource, "Customer", True))
+        Me.CustomerTextBox.Location = New System.Drawing.Point(979, 331)
+        Me.CustomerTextBox.Name = "CustomerTextBox"
+        Me.CustomerTextBox.Size = New System.Drawing.Size(113, 20)
+        Me.CustomerTextBox.TabIndex = 18
+        Me.CustomerTextBox.Visible = False
+        '
         'Label8
         '
         Me.Label8.AutoSize = True
@@ -610,30 +641,30 @@ Partial Class frmGP
         '
         'Tbl_Mat_GatePass_DetailsDataGridView
         '
-        DataGridViewCellStyle65.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Tbl_Mat_GatePass_DetailsDataGridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle65
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Tbl_Mat_GatePass_DetailsDataGridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.Tbl_Mat_GatePass_DetailsDataGridView.AutoGenerateColumns = False
-        DataGridViewCellStyle66.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle66.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle66.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle66.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle66.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle66.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle66.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Tbl_Mat_GatePass_DetailsDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle66
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Tbl_Mat_GatePass_DetailsDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.Tbl_Mat_GatePass_DetailsDataGridView.ColumnHeadersHeight = 25
         Me.Tbl_Mat_GatePass_DetailsDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.PDID, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn9, Me.UserID, Me.DepID, Me.HODStatus, Me.EnteryDate})
         Me.Tbl_Mat_GatePass_DetailsDataGridView.DataSource = Me.Tbl_Mat_GatePass_DetailsBindingSource
         Me.Tbl_Mat_GatePass_DetailsDataGridView.Location = New System.Drawing.Point(1, 24)
         Me.Tbl_Mat_GatePass_DetailsDataGridView.Name = "Tbl_Mat_GatePass_DetailsDataGridView"
-        DataGridViewCellStyle72.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle72.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle72.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle72.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle72.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle72.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle72.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Tbl_Mat_GatePass_DetailsDataGridView.RowHeadersDefaultCellStyle = DataGridViewCellStyle72
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Tbl_Mat_GatePass_DetailsDataGridView.RowHeadersDefaultCellStyle = DataGridViewCellStyle8
         Me.Tbl_Mat_GatePass_DetailsDataGridView.RowHeadersWidth = 20
         Me.Tbl_Mat_GatePass_DetailsDataGridView.Size = New System.Drawing.Size(967, 408)
         Me.Tbl_Mat_GatePass_DetailsDataGridView.TabIndex = 0
@@ -641,14 +672,73 @@ Partial Class frmGP
         'PDID
         '
         Me.PDID.DataPropertyName = "SrNo"
-        DataGridViewCellStyle67.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle67.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.PDID.DefaultCellStyle = DataGridViewCellStyle67
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.PDID.DefaultCellStyle = DataGridViewCellStyle3
         Me.PDID.HeaderText = "Sr No"
         Me.PDID.Name = "PDID"
         Me.PDID.ReadOnly = True
         Me.PDID.Visible = False
         Me.PDID.Width = 70
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "ItemCode"
+        Me.DataGridViewTextBoxColumn5.DataSource = Me.Tbl_Mat_ItemsLayer4BindingSource
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.Lavender
+        Me.DataGridViewTextBoxColumn5.DefaultCellStyle = DataGridViewCellStyle4
+        Me.DataGridViewTextBoxColumn5.DisplayMember = "L4Name"
+        Me.DataGridViewTextBoxColumn5.DisplayStyleForCurrentCellOnly = True
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Material Name"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewTextBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.DataGridViewTextBoxColumn5.ValueMember = "ItemCode"
+        Me.DataGridViewTextBoxColumn5.Width = 420
+        '
+        'Tbl_Mat_ItemsLayer4BindingSource
+        '
+        Me.Tbl_Mat_ItemsLayer4BindingSource.DataMember = "tbl_Mat_ItemsLayer4"
+        Me.Tbl_Mat_ItemsLayer4BindingSource.DataSource = Me.DSLocalPur
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "PDQty"
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.Lavender
+        Me.DataGridViewTextBoxColumn6.DefaultCellStyle = DataGridViewCellStyle5
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Quantity"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "UOM"
+        Me.DataGridViewTextBoxColumn7.DataSource = Me.Tbl_Mat_MeasurementUnitsBindingSource
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.DataGridViewTextBoxColumn7.DefaultCellStyle = DataGridViewCellStyle6
+        Me.DataGridViewTextBoxColumn7.DisplayMember = "UOM"
+        Me.DataGridViewTextBoxColumn7.DisplayStyleForCurrentCellOnly = True
+        Me.DataGridViewTextBoxColumn7.HeaderText = "UOM"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        Me.DataGridViewTextBoxColumn7.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewTextBoxColumn7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.DataGridViewTextBoxColumn7.ValueMember = "UOM"
+        '
+        'Tbl_Mat_MeasurementUnitsBindingSource
+        '
+        Me.Tbl_Mat_MeasurementUnitsBindingSource.DataMember = "tbl_Mat_MeasurementUnits"
+        Me.Tbl_Mat_MeasurementUnitsBindingSource.DataSource = Me.DSLocalPur
+        '
+        'DataGridViewTextBoxColumn9
+        '
+        Me.DataGridViewTextBoxColumn9.DataPropertyName = "Narration"
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        Me.DataGridViewTextBoxColumn9.DefaultCellStyle = DataGridViewCellStyle7
+        Me.DataGridViewTextBoxColumn9.HeaderText = "Narration"
+        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
+        Me.DataGridViewTextBoxColumn9.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewTextBoxColumn9.Width = 270
         '
         'UserID
         '
@@ -753,6 +843,7 @@ Partial Class frmGP
         '
         Me.BindingNavigatorPositionItem.AccessibleName = "Position"
         Me.BindingNavigatorPositionItem.AutoSize = False
+        Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
         Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 21)
         Me.BindingNavigatorPositionItem.Text = "0"
@@ -838,6 +929,7 @@ Partial Class frmGP
         'ToolStripTextBox1
         '
         Me.ToolStripTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ToolStripTextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.ToolStripTextBox1.Name = "ToolStripTextBox1"
         Me.ToolStripTextBox1.Size = New System.Drawing.Size(100, 23)
         '
@@ -862,75 +954,6 @@ Partial Class frmGP
         Me.View_userDeptBindingSource.DataMember = "View_userDept"
         Me.View_userDeptBindingSource.DataSource = Me.DSLocalPur
         '
-        'DSLocalPur
-        '
-        Me.DSLocalPur.DataSetName = "DSLocalPur"
-        Me.DSLocalPur.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'Tbl_Mat_GatePassBindingSource
-        '
-        Me.Tbl_Mat_GatePassBindingSource.DataMember = "tbl_Mat_GatePass"
-        Me.Tbl_Mat_GatePassBindingSource.DataSource = Me.DSLocalPur
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "ItemCode"
-        Me.DataGridViewTextBoxColumn5.DataSource = Me.Tbl_Mat_ItemsLayer4BindingSource
-        DataGridViewCellStyle68.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle68.BackColor = System.Drawing.Color.Lavender
-        Me.DataGridViewTextBoxColumn5.DefaultCellStyle = DataGridViewCellStyle68
-        Me.DataGridViewTextBoxColumn5.DisplayMember = "L4Name"
-        Me.DataGridViewTextBoxColumn5.DisplayStyleForCurrentCellOnly = True
-        Me.DataGridViewTextBoxColumn5.HeaderText = "Material Name"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        Me.DataGridViewTextBoxColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewTextBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.DataGridViewTextBoxColumn5.ValueMember = "ItemCode"
-        Me.DataGridViewTextBoxColumn5.Width = 420
-        '
-        'Tbl_Mat_ItemsLayer4BindingSource
-        '
-        Me.Tbl_Mat_ItemsLayer4BindingSource.DataMember = "tbl_Mat_ItemsLayer4"
-        Me.Tbl_Mat_ItemsLayer4BindingSource.DataSource = Me.DSLocalPur
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "PDQty"
-        DataGridViewCellStyle69.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle69.BackColor = System.Drawing.Color.Lavender
-        Me.DataGridViewTextBoxColumn6.DefaultCellStyle = DataGridViewCellStyle69
-        Me.DataGridViewTextBoxColumn6.HeaderText = "Quantity"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "UOM"
-        Me.DataGridViewTextBoxColumn7.DataSource = Me.Tbl_Mat_MeasurementUnitsBindingSource
-        DataGridViewCellStyle70.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.DataGridViewTextBoxColumn7.DefaultCellStyle = DataGridViewCellStyle70
-        Me.DataGridViewTextBoxColumn7.DisplayMember = "UOM"
-        Me.DataGridViewTextBoxColumn7.DisplayStyleForCurrentCellOnly = True
-        Me.DataGridViewTextBoxColumn7.HeaderText = "UOM"
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        Me.DataGridViewTextBoxColumn7.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewTextBoxColumn7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.DataGridViewTextBoxColumn7.ValueMember = "UOM"
-        '
-        'Tbl_Mat_MeasurementUnitsBindingSource
-        '
-        Me.Tbl_Mat_MeasurementUnitsBindingSource.DataMember = "tbl_Mat_MeasurementUnits"
-        Me.Tbl_Mat_MeasurementUnitsBindingSource.DataSource = Me.DSLocalPur
-        '
-        'DataGridViewTextBoxColumn9
-        '
-        Me.DataGridViewTextBoxColumn9.DataPropertyName = "Narration"
-        DataGridViewCellStyle71.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        Me.DataGridViewTextBoxColumn9.DefaultCellStyle = DataGridViewCellStyle71
-        Me.DataGridViewTextBoxColumn9.HeaderText = "Narration"
-        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
-        Me.DataGridViewTextBoxColumn9.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewTextBoxColumn9.Width = 270
-        '
         'Tbl_Mat_GatePassTableAdapter
         '
         Me.Tbl_Mat_GatePassTableAdapter.ClearBeforeFill = True
@@ -938,7 +961,9 @@ Partial Class frmGP
         'TableAdapterManager
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.tbl_GP_Customer1TableAdapter = Nothing
         Me.TableAdapterManager.tbl_GP_CustomerTableAdapter = Nothing
+        Me.TableAdapterManager.tbl_Inv_L4TableAdapter = Nothing
         Me.TableAdapterManager.tbl_Mat_GatePass_Details_GMTableAdapter = Nothing
         Me.TableAdapterManager.tbl_Mat_GatePass_Details_HODTableAdapter = Nothing
         Me.TableAdapterManager.tbl_Mat_GatePass_DetailsTableAdapter = Me.Tbl_Mat_GatePass_DetailsTableAdapter
@@ -975,28 +1000,9 @@ Partial Class frmGP
         '
         Me.View_userDeptTableAdapter.ClearBeforeFill = True
         '
-        'Tbl_GP_CustomerBindingSource
-        '
-        Me.Tbl_GP_CustomerBindingSource.DataMember = "tbl_GP_Customer"
-        Me.Tbl_GP_CustomerBindingSource.DataSource = Me.DSLocalPur
-        '
         'Tbl_GP_CustomerTableAdapter
         '
         Me.Tbl_GP_CustomerTableAdapter.ClearBeforeFill = True
-        '
-        'NameComboBox
-        '
-        Me.NameComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
-        Me.NameComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.NameComboBox.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.Tbl_Mat_GatePassBindingSource, "Customer", True))
-        Me.NameComboBox.DataSource = Me.Tbl_GP_CustomerBindingSource
-        Me.NameComboBox.DisplayMember = "Name"
-        Me.NameComboBox.FormattingEnabled = True
-        Me.NameComboBox.Location = New System.Drawing.Point(653, 34)
-        Me.NameComboBox.Name = "NameComboBox"
-        Me.NameComboBox.Size = New System.Drawing.Size(303, 21)
-        Me.NameComboBox.TabIndex = 29
-        Me.NameComboBox.ValueMember = "Name"
         '
         'Label11
         '
@@ -1008,11 +1014,20 @@ Partial Class frmGP
         Me.Label11.TabIndex = 29
         Me.Label11.Text = "Special Note :IF Party Name  is Not Exist Contact to Ext# 270"
         '
+        'TextBox4
+        '
+        Me.TextBox4.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_Mat_GatePassBindingSource, "Customer", True))
+        Me.TextBox4.Location = New System.Drawing.Point(653, 34)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(303, 20)
+        Me.TextBox4.TabIndex = 30
+        '
         'frmGP
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1260, 745)
+        Me.Controls.Add(Me.NameComboBox)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.LocalCustIDLabel2)
         Me.Controls.Add(Me.PreparedDeptID)
@@ -1031,24 +1046,24 @@ Partial Class frmGP
         Me.Panel3.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.Tbl_Mat_GatePassBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DSLocalPur, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Tbl_GP_CustomerBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.BindingNavigator1.ResumeLayout(False)
         Me.BindingNavigator1.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.Tbl_Mat_GatePass_DetailsDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Tbl_Mat_ItemsLayer4BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Tbl_Mat_MeasurementUnitsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Tbl_Mat_GatePass_DetailsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BindingNavigator2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.BindingNavigator2.ResumeLayout(False)
         Me.BindingNavigator2.PerformLayout()
         Me.FilterByGDNo.ResumeLayout(False)
         CType(Me.View_userDeptBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DSLocalPur, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Tbl_Mat_GatePassBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Tbl_Mat_ItemsLayer4BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Tbl_Mat_MeasurementUnitsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Tbl_Mat_Inter_DeptBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Tbl_GP_CustomerBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1138,4 +1153,5 @@ Partial Class frmGP
     Friend WithEvents Tbl_GP_CustomerTableAdapter As DSLocalPurTableAdapters.tbl_GP_CustomerTableAdapter
     Friend WithEvents NameComboBox As ComboBox
     Friend WithEvents Label11 As Label
+    Friend WithEvents TextBox4 As TextBox
 End Class

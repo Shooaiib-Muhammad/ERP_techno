@@ -34,10 +34,12 @@ Partial Class frmGPReports
         Me.btn_Cancel = New System.Windows.Forms.Button()
         Me.btn_Show = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.NameComboBox = New System.Windows.Forms.ComboBox()
+        Me.Tbl_GP_CustomerBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DSLocalPur = New FS_ERP_MM.DSLocalPur()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.L4NameComboBox = New System.Windows.Forms.ComboBox()
         Me.Tbl_Inv_L4BindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DSLocalPur = New FS_ERP_MM.DSLocalPur()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.ComboBoxUsername = New System.Windows.Forms.ComboBox()
         Me.View_Mat_GatePass_UserBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -70,9 +72,7 @@ Partial Class frmGPReports
         Me.View_userDeptTableAdapter = New FS_ERP_MM.DSLocalPurTableAdapters.View_userDeptTableAdapter()
         Me.LocalCustIDLabel1 = New System.Windows.Forms.Label()
         Me.Tbl_Inv_L4TableAdapter = New FS_ERP_MM.DSLocalPurTableAdapters.tbl_Inv_L4TableAdapter()
-        Me.Tbl_GP_CustomerBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Tbl_GP_CustomerTableAdapter = New FS_ERP_MM.DSLocalPurTableAdapters.tbl_GP_CustomerTableAdapter()
-        Me.NameComboBox = New System.Windows.Forms.ComboBox()
         Label4 = New System.Windows.Forms.Label()
         MPNOLabel1 = New System.Windows.Forms.Label()
         MPNOLabel = New System.Windows.Forms.Label()
@@ -82,14 +82,14 @@ Partial Class frmGPReports
         L4NameLabel = New System.Windows.Forms.Label()
         NameLabel = New System.Windows.Forms.Label()
         Me.GroupBox3.SuspendLayout()
-        CType(Me.Tbl_Inv_L4BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Tbl_GP_CustomerBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DSLocalPur, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Tbl_Inv_L4BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.View_Mat_GatePass_UserBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.View_Mat_GatePassBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.View_userDeptBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Tbl_GP_CustomerBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label4
@@ -162,6 +162,16 @@ Partial Class frmGPReports
         L4NameLabel.TabIndex = 61
         L4NameLabel.Text = "Material Name :"
         '
+        'NameLabel
+        '
+        NameLabel.AutoSize = True
+        NameLabel.ForeColor = System.Drawing.Color.Black
+        NameLabel.Location = New System.Drawing.Point(17, 245)
+        NameLabel.Name = "NameLabel"
+        NameLabel.Size = New System.Drawing.Size(79, 16)
+        NameLabel.TabIndex = 72
+        NameLabel.Text = "Party Name"
+        '
         'btn_Cancel
         '
         Me.btn_Cancel.BackColor = System.Drawing.Color.Maroon
@@ -218,6 +228,30 @@ Partial Class frmGPReports
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Options"
         '
+        'NameComboBox
+        '
+        Me.NameComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
+        Me.NameComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.NameComboBox.DataSource = Me.Tbl_GP_CustomerBindingSource
+        Me.NameComboBox.DisplayMember = "Name"
+        Me.NameComboBox.Enabled = False
+        Me.NameComboBox.FormattingEnabled = True
+        Me.NameComboBox.Location = New System.Drawing.Point(118, 242)
+        Me.NameComboBox.Name = "NameComboBox"
+        Me.NameComboBox.Size = New System.Drawing.Size(279, 24)
+        Me.NameComboBox.TabIndex = 73
+        Me.NameComboBox.ValueMember = "Name"
+        '
+        'Tbl_GP_CustomerBindingSource
+        '
+        Me.Tbl_GP_CustomerBindingSource.DataMember = "tbl_GP_Customer"
+        Me.Tbl_GP_CustomerBindingSource.DataSource = Me.DSLocalPur
+        '
+        'DSLocalPur
+        '
+        Me.DSLocalPur.DataSetName = "DSLocalPur"
+        Me.DSLocalPur.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'ComboBox2
         '
         Me.ComboBox2.DisplayMember = "ClientName"
@@ -249,11 +283,6 @@ Partial Class frmGPReports
         '
         Me.Tbl_Inv_L4BindingSource.DataMember = "tbl_Inv_L4"
         Me.Tbl_Inv_L4BindingSource.DataSource = Me.DSLocalPur
-        '
-        'DSLocalPur
-        '
-        Me.DSLocalPur.DataSetName = "DSLocalPur"
-        Me.DSLocalPur.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'ComboBox1
         '
@@ -345,6 +374,7 @@ Partial Class frmGPReports
         '
         Me.TypeCombo.DisplayMember = "ClientName"
         Me.TypeCombo.FormattingEnabled = True
+        Me.TypeCombo.Items.AddRange(New Object() {"OUTWARD", "RETURNABLE", "INTERNAL TRANSFER PASS", "Return To Store", "TRANSFER PASS"})
         Me.TypeCombo.Location = New System.Drawing.Point(118, 83)
         Me.TypeCombo.Name = "TypeCombo"
         Me.TypeCombo.Size = New System.Drawing.Size(279, 24)
@@ -577,38 +607,9 @@ Partial Class frmGPReports
         '
         Me.Tbl_Inv_L4TableAdapter.ClearBeforeFill = True
         '
-        'Tbl_GP_CustomerBindingSource
-        '
-        Me.Tbl_GP_CustomerBindingSource.DataMember = "tbl_GP_Customer"
-        Me.Tbl_GP_CustomerBindingSource.DataSource = Me.DSLocalPur
-        '
         'Tbl_GP_CustomerTableAdapter
         '
         Me.Tbl_GP_CustomerTableAdapter.ClearBeforeFill = True
-        '
-        'NameLabel
-        '
-        NameLabel.AutoSize = True
-        NameLabel.ForeColor = System.Drawing.Color.Black
-        NameLabel.Location = New System.Drawing.Point(17, 245)
-        NameLabel.Name = "NameLabel"
-        NameLabel.Size = New System.Drawing.Size(79, 16)
-        NameLabel.TabIndex = 72
-        NameLabel.Text = "Party Name"
-        '
-        'NameComboBox
-        '
-        Me.NameComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
-        Me.NameComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.NameComboBox.DataSource = Me.Tbl_GP_CustomerBindingSource
-        Me.NameComboBox.DisplayMember = "Name"
-        Me.NameComboBox.Enabled = False
-        Me.NameComboBox.FormattingEnabled = True
-        Me.NameComboBox.Location = New System.Drawing.Point(118, 242)
-        Me.NameComboBox.Name = "NameComboBox"
-        Me.NameComboBox.Size = New System.Drawing.Size(279, 24)
-        Me.NameComboBox.TabIndex = 73
-        Me.NameComboBox.ValueMember = "Name"
         '
         'frmGPReports
         '
@@ -626,8 +627,9 @@ Partial Class frmGPReports
         Me.Text = "Gate Pass Reports "
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
-        CType(Me.Tbl_Inv_L4BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Tbl_GP_CustomerBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DSLocalPur, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Tbl_Inv_L4BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.View_Mat_GatePass_UserBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
@@ -635,7 +637,6 @@ Partial Class frmGPReports
         Me.GroupBox1.PerformLayout()
         CType(Me.View_Mat_GatePassBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.View_userDeptBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Tbl_GP_CustomerBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

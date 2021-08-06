@@ -197,7 +197,11 @@
         'TODO: This line of code loads data into the 'DSArticle.tbl_Pro_Article' table. You can move, or remove it, as needed.
         Me.Tbl_Pro_ArticleTableAdapter.Fill(Me.DSArticle.tbl_Pro_Article)
         'TODO: This line of code loads data into the 'DSRpt.tbl_Inv_L4' table. You can move, or remove it, as needed.
-        Me.Tbl_Inv_L4TableAdapter.Fill(Me.DSRpt.tbl_Inv_L4)
+        Try
+            Me.Tbl_Inv_L4TableAdapter.Fill(Me.DSRpt.tbl_Inv_L4)
+        Catch ex As Exception
+
+        End Try
         Me.Tbl_Prd_LinesTableAdapter.Fill(Me.DSRpt.tbl_Prd_Lines)
         Me.Tbl_Pro_Plan2TableAdapter.Fill(Me.DSRpt.tbl_Pro_Plan2)
         Me.Tbl_Pro_Plan1TableAdapter.Fill(Me.DSRpt.tbl_Pro_Plan1)

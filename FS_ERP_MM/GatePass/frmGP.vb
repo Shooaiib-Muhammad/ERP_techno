@@ -33,7 +33,11 @@
         'TODO: This line of code loads data into the 'DSLocalPur.tbl_GP_Customer' table. You can move, or remove it, as needed.
         Me.Tbl_GP_CustomerTableAdapter.Fill(Me.DSLocalPur.tbl_GP_Customer)
         Me.Tbl_Mat_Inter_DeptTableAdapter.Fill(Me.DSLocalPur.tbl_Mat_Inter_Dept)
-        Me.Tbl_Mat_ItemsLayer4TableAdapter.Fill(Me.DSLocalPur.tbl_Mat_ItemsLayer4)
+        Try
+            Me.Tbl_Mat_ItemsLayer4TableAdapter.Fill(Me.DSLocalPur.tbl_Mat_ItemsLayer4)
+        Catch ex As Exception
+
+        End Try
         Me.Tbl_Mat_MeasurementUnitsTableAdapter.Fill(Me.DSLocalPur.tbl_Mat_MeasurementUnits)
         DateTimePicker1.Value = Now.Date
         loadData()
@@ -56,7 +60,7 @@
     End Sub
 
     Private Sub ToolStripButton1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton1.Click
-        If NameComboBox.Text.Length > 0 Then
+        If TextBox4.Text.Length > 0 Then
 
             Dim position As Integer = Tbl_Mat_GatePassBindingSource.Position
             Me.Validate()

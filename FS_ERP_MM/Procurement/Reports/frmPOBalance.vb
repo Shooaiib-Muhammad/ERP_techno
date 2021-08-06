@@ -97,7 +97,11 @@
         Me.Tbl_inv_SupplierTypeTableAdapter.Fill(Me.DSSupp.tbl_inv_SupplierType)
         Me.Tbl_Pur_PO1TableAdapter.Fill(Me.DSPO.tbl_Pur_PO1)
         Me.Tbl_Pur_POTableAdapter.Fill(Me.DSPO.tbl_Pur_PO)
-        Me.Tbl_Inv_L4TableAdapter.Fill(Me.DSSupp.tbl_Inv_L4)
+        Try
+            Me.Tbl_Inv_L4TableAdapter.Fill(Me.DSSupp.tbl_Inv_L4)
+        Catch ex As Exception
+
+        End Try
         Me.Tbl_Pur_POBindingSource.Sort = "POID DESC"
         Me.Tbl_Pur_PO1BindingSource.Sort = "POID DESC"
         If RadioButton1.Checked Then
