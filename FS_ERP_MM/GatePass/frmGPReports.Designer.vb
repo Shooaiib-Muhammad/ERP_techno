@@ -178,7 +178,7 @@ Partial Class frmGPReports
         Me.btn_Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btn_Cancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_Cancel.ForeColor = System.Drawing.Color.Yellow
-        Me.btn_Cancel.Location = New System.Drawing.Point(646, 340)
+        Me.btn_Cancel.Location = New System.Drawing.Point(634, 326)
         Me.btn_Cancel.Name = "btn_Cancel"
         Me.btn_Cancel.Size = New System.Drawing.Size(103, 35)
         Me.btn_Cancel.TabIndex = 58
@@ -190,7 +190,7 @@ Partial Class frmGPReports
         Me.btn_Show.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btn_Show.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_Show.ForeColor = System.Drawing.Color.Yellow
-        Me.btn_Show.Location = New System.Drawing.Point(536, 340)
+        Me.btn_Show.Location = New System.Drawing.Point(524, 326)
         Me.btn_Show.Name = "btn_Show"
         Me.btn_Show.Size = New System.Drawing.Size(103, 35)
         Me.btn_Show.TabIndex = 57
@@ -223,7 +223,7 @@ Partial Class frmGPReports
         Me.GroupBox3.ForeColor = System.Drawing.Color.Navy
         Me.GroupBox3.Location = New System.Drawing.Point(312, 40)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(437, 307)
+        Me.GroupBox3.Size = New System.Drawing.Size(436, 280)
         Me.GroupBox3.TabIndex = 56
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Options"

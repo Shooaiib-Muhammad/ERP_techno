@@ -4202,4 +4202,13 @@ Public Class frmMain
             objPurOrders.Show()
         End If
     End Sub
+
+    Private Sub GPVerifyToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GPVerifyToolStripMenuItem.Click
+        If ChildWindowOpen("frmGPVerify") = False Then
+            Dim objPurOrders As New frmGPVerify
+            objPurOrders.MdiParent = Me
+            objPurOrders.WindowState = FormWindowState.Maximized
+            objPurOrders.Show()
+        End If
+    End Sub
 End Class

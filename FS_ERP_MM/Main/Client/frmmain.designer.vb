@@ -28,6 +28,7 @@ Partial Class frmMain
         Me.MenuStripMMITAdmin = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PswdToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CompanyProfileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DomainManagementToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UsersManagementToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UsersLoginToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -719,7 +720,7 @@ Partial Class frmMain
         Me.Tbl_User_LogTableAdapter = New FS_ERP_MM.DSUMTableAdapters.tbl_User_LogTableAdapter()
         Me.DSUM = New FS_ERP_MM.DSUM()
         Me.Tbl_User_LogBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.CompanyProfileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GPVerifyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MainMenu.SuspendLayout()
         Me.MenuStripMMITAdmin.SuspendLayout()
         Me.MenuStripInventoryAdmin.SuspendLayout()
@@ -801,6 +802,12 @@ Partial Class frmMain
         Me.PswdToolStripMenuItem.Name = "PswdToolStripMenuItem"
         Me.PswdToolStripMenuItem.Size = New System.Drawing.Size(220, 22)
         Me.PswdToolStripMenuItem.Text = "Change Password"
+        '
+        'CompanyProfileToolStripMenuItem
+        '
+        Me.CompanyProfileToolStripMenuItem.Name = "CompanyProfileToolStripMenuItem"
+        Me.CompanyProfileToolStripMenuItem.Size = New System.Drawing.Size(220, 22)
+        Me.CompanyProfileToolStripMenuItem.Text = "Company Profile"
         '
         'DomainManagementToolStripMenuItem
         '
@@ -1711,7 +1718,7 @@ Partial Class frmMain
         '
         'ToolStripMenuItem256
         '
-        Me.ToolStripMenuItem256.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GatePassToolStripMenuItem1, Me.ToolStripMenuItem257, Me.GMApprovalToolStripMenuItem, Me.GMAprovalToolStripMenuItem})
+        Me.ToolStripMenuItem256.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GatePassToolStripMenuItem1, Me.ToolStripMenuItem257, Me.GMApprovalToolStripMenuItem, Me.GMAprovalToolStripMenuItem, Me.GPVerifyToolStripMenuItem})
         Me.ToolStripMenuItem256.Name = "ToolStripMenuItem256"
         Me.ToolStripMenuItem256.Size = New System.Drawing.Size(78, 20)
         Me.ToolStripMenuItem256.Text = "Gate Pass"
@@ -1719,25 +1726,25 @@ Partial Class frmMain
         'GatePassToolStripMenuItem1
         '
         Me.GatePassToolStripMenuItem1.Name = "GatePassToolStripMenuItem1"
-        Me.GatePassToolStripMenuItem1.Size = New System.Drawing.Size(166, 22)
+        Me.GatePassToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.GatePassToolStripMenuItem1.Text = "GatePass"
         '
         'ToolStripMenuItem257
         '
         Me.ToolStripMenuItem257.Name = "ToolStripMenuItem257"
-        Me.ToolStripMenuItem257.Size = New System.Drawing.Size(166, 22)
+        Me.ToolStripMenuItem257.Size = New System.Drawing.Size(180, 22)
         Me.ToolStripMenuItem257.Text = "Reports"
         '
         'GMApprovalToolStripMenuItem
         '
         Me.GMApprovalToolStripMenuItem.Name = "GMApprovalToolStripMenuItem"
-        Me.GMApprovalToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.GMApprovalToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.GMApprovalToolStripMenuItem.Text = "HOD Approval"
         '
         'GMAprovalToolStripMenuItem
         '
         Me.GMAprovalToolStripMenuItem.Name = "GMAprovalToolStripMenuItem"
-        Me.GMAprovalToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
+        Me.GMAprovalToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.GMAprovalToolStripMenuItem.Text = "GM Approval"
         '
         'DMMSToolStripMenuItem
@@ -5265,11 +5272,11 @@ Partial Class frmMain
         Me.Tbl_User_LogBindingSource.DataMember = "tbl_User_Log"
         Me.Tbl_User_LogBindingSource.DataSource = Me.DSUM
         '
-        'CompanyProfileToolStripMenuItem
+        'GPVerifyToolStripMenuItem
         '
-        Me.CompanyProfileToolStripMenuItem.Name = "CompanyProfileToolStripMenuItem"
-        Me.CompanyProfileToolStripMenuItem.Size = New System.Drawing.Size(220, 22)
-        Me.CompanyProfileToolStripMenuItem.Text = "Company Profile"
+        Me.GPVerifyToolStripMenuItem.Name = "GPVerifyToolStripMenuItem"
+        Me.GPVerifyToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.GPVerifyToolStripMenuItem.Text = "GP verify"
         '
         'frmMain
         '
@@ -6058,4 +6065,5 @@ Partial Class frmMain
     Friend WithEvents VendorInfomationToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents GeneratePOsToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents CompanyProfileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents GPVerifyToolStripMenuItem As ToolStripMenuItem
 End Class
